@@ -1,0 +1,586 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa"
+  name="TransportEmulator" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="6a7eda77-c4d6-441d-969a-60475b2b5f27">
+      <body>В соответсвии с ограничениями:
+*по полосе с трамвайными путями может двигаться только трамвай
+*трамвай не может двигаться без трамвайных путей
+*троллейбус может двигаться только по полосе, оборудованной троллейбусными проводами
+* по полосе, оборудованной троллейбусными проводами, может двигаться не только троллейбус
+*на гужевой повозке, велосипеде, самокате и танке можно двигаться только по крайним полосам
+</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="6788a48b-dc1f-4e60-8dcb-057c61061df4"
+          LastKnownName="Разместить ТС на дороге"
+          LastKnownLocation="TransportEmulator.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="14ae5a71-21ab-4a10-a00b-bc351e1fa290">
+      <body>Остановить симуляцию по требованию пользователя, после чего возобновить нажатием кнопки СТАРТ</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="0f8c16b4-2bf9-4a81-a508-0fa11babcfe5"
+          LastKnownName="Остановить ТС"
+          LastKnownLocation="TransportEmulator.uml" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <actor
+        Id="d2e6b1bb-e544-4433-a056-cd9b831b03c7"
+        name="Пользователь"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="47059549-f670-4167-b65d-06b6fb8561ef"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Создать список ТС"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1a6449a1-1f3c-4972-bc6f-87e910f66555"
+              LastKnownName="Создать список ТС"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8638bd1f-5503-41d7-adb9-87bbe6686130"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="046a4a6b-527e-4cb8-bf7d-826944ec2432"
+                  name="Создать список ТС"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="158f3601-ca0a-4ab1-ac9a-b3f758848726"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Создать список из видов топлива"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="f95f798c-b9f8-45c8-bd0f-57fc6c630972"
+              LastKnownName="Создать вид топлива"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c93d59a1-dfb7-470b-a549-5a5563d951fa"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80998322-b567-40db-b2c6-bd438b327a76"
+                  name="Создать список из видов топлива"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="09f8d7e8-923c-4f0a-b20d-f5192a4ae108"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="a1b7d8ef-ce62-424c-9d1f-c84cf1c4f299"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="4c72b573-fc3a-4826-83d6-1d6e701564d7"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Запустить симуляцию"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d1b800b5-9afe-453a-904a-6b3a07147ffd"
+              LastKnownName="Провести симуляцию"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6cf41dde-ecaf-46d1-8adc-add978aa6208"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5a415bcf-4f90-4614-b5af-43d73ec82d26"
+                  name="Запустить симуляцию"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="03bd94af-9b8e-466c-b1cf-b000552aba3a"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Вывести на экран журнал ТС"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="efddb394-d890-4467-89a8-8b34fac49285"
+              LastKnownName="Вывести на экран или экспортировать журнал ТС"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ff38fb52-10b6-49be-833e-c83c3dd4b387"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="0499aeaf-4046-40b3-a953-80e9eabc6d15"
+                  name="Вывести на экран журнал ТС"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="21586fe9-047e-4e74-93d5-6746f3e6e6f8"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Создать ТС"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="12f67b62-bd4f-4387-93fd-d93b600c8472"
+              LastKnownName="Создать ТС"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99d1e655-4f5a-41ec-bd51-b38568a7e1cf"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c5a5462e-b94f-423e-82e7-27f870d72dd0"
+                  name="Создать ТС"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9fc1190c-17ca-426a-9164-3f502b69fc7f"
+                      name="Lower"
+                      value="5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="2d544fd7-37d6-4c92-aa90-183e60f3747f"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="f95f798c-b9f8-45c8-bd0f-57fc6c630972"
+        name="Создать вид топлива"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="efddb394-d890-4467-89a8-8b34fac49285"
+        name="Вывести на экран или экспортировать журнал ТС"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="393cc662-ab3a-4bac-9f60-a102786a7f17"
+            isDerived="false"
+            sourceEndRoleName="Вывести на экран журнал ТС"
+            targetEndRoleName="Журнал"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="636571cf-da36-48bb-b3d5-167f20857207"
+              LastKnownName="Журнал"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e54271ef-9e68-489b-a60d-736c2a0a0815"
+                  name="Вывести на экран журнал ТС"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="001525f8-475a-493a-b188-116a397499f2"
+                  name="Журнал"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1a6449a1-1f3c-4972-bc6f-87e910f66555"
+        name="Создать список ТС"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6a196f92-3948-4ac5-b749-926593ef36b5"
+        name="Разместить ТС на дороге"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="b00565c2-7b1b-4f1a-ac4b-5977ab60f834">
+            <useCaseMoniker
+              Id="1a6449a1-1f3c-4972-bc6f-87e910f66555"
+              LastKnownName="Создать список ТС"
+              LastKnownLocation="TransportEmulator.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="636571cf-da36-48bb-b3d5-167f20857207"
+        name="Журнал"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a33448e4-bad2-4606-a844-a69a6b02977d"
+        name="Вести журнал"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="c8d4c7fd-fa06-4b94-9094-19cb936b12c9"
+            isDerived="false"
+            sourceEndRoleName="Вести журнал"
+            targetEndRoleName="Журнал"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="636571cf-da36-48bb-b3d5-167f20857207"
+              LastKnownName="Журнал"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa01f557-e8cd-4b80-8af4-c80eb9bf34f4"
+                  name="Вести журнал"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8675516e-6ada-4d3f-b7dc-1ab98215bf11"
+                  name="Журнал"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d1b800b5-9afe-453a-904a-6b3a07147ffd"
+        name="Провести симуляцию"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="37d9e3f7-79b2-4241-b5be-150ba98102ba">
+            <useCaseMoniker
+              Id="a33448e4-bad2-4606-a844-a69a6b02977d"
+              LastKnownName="Вести журнал"
+              LastKnownLocation="TransportEmulator.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c9c1714-70d1-4e40-81dc-f3d9c5c02279"
+        name="Вывести сообщение об ошибке"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="67eeabb4-8e34-457a-921d-99f40f026198">
+            <useCaseMoniker
+              Id="12f67b62-bd4f-4387-93fd-d93b600c8472"
+              LastKnownName="Создать ТС"
+              LastKnownLocation="TransportEmulator.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="c9f7456c-5a64-45de-ac4b-66dc8e10b031"
+        name="GUI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="12f67b62-bd4f-4387-93fd-d93b600c8472"
+        name="Создать ТС"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1c32646d-a3ff-4158-8b14-c97593385a64"
+        name="Изобразить дорогу"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d20bbd2d-2564-4915-9f47-aa8b8490dd20"
+            isDerived="false"
+            sourceEndRoleName="Изобразить дорогу"
+            targetEndRoleName="Пользователь"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="d2e6b1bb-e544-4433-a056-cd9b831b03c7"
+              LastKnownName="Пользователь"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="95e404de-af1f-418d-93da-402cfcede39a"
+                  name="Изобразить дорогу"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="97bb1610-d910-4224-8303-5cf9dd19dba0"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6788a48b-dc1f-4e60-8dcb-057c61061df4"
+        name="Разместить ТС на дороге"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="a6b700bb-b55b-4b56-9268-124315fedee6">
+            <useCaseMoniker
+              Id="1c32646d-a3ff-4158-8b14-c97593385a64"
+              LastKnownName="Изобразить дорогу"
+              LastKnownLocation="TransportEmulator.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5464c60e-ff5a-4bea-a65e-c9e8e4736bcf"
+        name="Сгенерировать дорожную полосу"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="2e933aaa-2475-4632-bda8-21712a336d51">
+            <useCaseMoniker
+              Id="1c32646d-a3ff-4158-8b14-c97593385a64"
+              LastKnownName="Изобразить дорогу"
+              LastKnownLocation="TransportEmulator.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f8c16b4-2bf9-4a81-a508-0fa11babcfe5"
+        name="Остановить ТС"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="9a2f0f8f-5f0e-43a3-950c-905b5fef0353">
+            <useCaseMoniker
+              Id="d1b800b5-9afe-453a-904a-6b3a07147ffd"
+              LastKnownName="Провести симуляцию"
+              LastKnownLocation="TransportEmulator.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
