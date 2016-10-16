@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="95229ed3-be51-4470-bc12-81545390928b" name="UMLClassDiagram1" linkedPackageId="7b87a096-b286-44ec-8e43-3ed80376bca6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" name="Vehicle" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bb11d407-9d6a-46c9-bd96-430e8f134b3d" />
+        <ownedAttributesInternal>
+          <property Id="b74c5d19-35c0-44f2-b557-50f05ddb22e8" name="maxDistance" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="89be37eb-7039-4f0a-9fdc-a9c8598d8e68" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="d27dab3b-a19f-4ef7-9447-2c135f3dc351" name="driverAge" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a57b5bd9-f01b-4e4f-9746-1a2ffed1dfb5" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="a0701cc7-a5e3-4cea-9d37-e4bfbf1a9333" name="curSpeed" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="464ce69e-d8df-45ba-985d-97522f051950" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="4f5aab75-0789-4bdb-b81c-fdd3ac69ba54" name="maxSpeed" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="cb6d839d-d23b-4cb7-b83f-dfb30fc1fed3" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="1937f684-5b1e-4e20-a121-5794eb4b99b9" name="weight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="04116cbe-0a3b-4931-9bc2-b380347d2963" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ab8df3f7-ffc1-49c3-a569-bc6a8a4b323f" name="Car" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="9639a209-9a5c-4199-8ddd-15295150855b" />
+        <generalsInternal>
+          <generalization Id="e81e944b-7df2-4c69-bcc5-3e5a2333f04f" isSubstitutable="false">
+            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
+            <elementDefinition Id="299ba57d-af56-4594-949a-a6e13344f9fc" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9a685a38-76f2-4292-82f5-ec0f59dba6c2" name="Truck" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d4aa1e7a-6bd1-43cf-ad69-76ca9b7c87f5" />
+        <generalsInternal>
+          <generalization Id="82f098e6-4648-4f08-b08c-15a100f3a383" isSubstitutable="false">
+            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
+            <elementDefinition Id="5e0a7048-bc20-474e-a65c-c6b77ee90499" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="fd4446a4-887e-47b0-b99f-6a93aa8df1f6" name="Trolleybus" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5a9512c1-9c93-4cee-9cc9-0b03a938cb5c" />
+        <generalsInternal>
+          <generalization Id="9bcdec0e-3088-4292-8076-cc783e024eb3" isSubstitutable="false">
+            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
+            <elementDefinition Id="a67c2717-6ab2-4a3d-95cf-a04bfd5ba2a7" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f3d7c38d-da92-4334-95f4-eb6e264ddb9b" name="Trum" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="db2f446b-fc5f-48c8-81cf-2e33486133d9" />
+        <generalsInternal>
+          <generalization Id="7d57ca8e-3480-43f9-be32-dcdb92b43d90" isSubstitutable="false">
+            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
+            <elementDefinition Id="29645027-9b44-438e-8d24-4b8585398383" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="df5c91e8-96eb-4962-a347-c7c412e2da53" name="Bike" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="667110ff-33d0-4b9e-bcf2-d9f9e29693a0" />
+        <generalsInternal>
+          <generalization Id="cbea50c4-e6ae-4206-9d43-3ba1f1b456e9" isSubstitutable="false">
+            <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
+            <elementDefinition Id="1ef7c7d3-30df-4d83-9654-269448d6a224" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1bb921d6-5182-4ada-b0f8-1eee041374ed" name="HorseDrawnCarriage" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="1c80b208-257d-415f-97d7-79728b33b965" />
+        <generalsInternal>
+          <generalization Id="40a7c4ab-cd20-49a6-98a4-71a57c3822e0" isSubstitutable="false">
+            <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
+            <elementDefinition Id="71d19b87-29b0-4fd2-8f48-9e914f160686" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d9db6e4b-a39f-4be0-986f-856998a99bd3" name="Bicycle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0cea4e43-1631-4b53-a0f3-e2f4b11533f5" />
+        <generalsInternal>
+          <generalization Id="d46c8bc7-c1ba-4105-be5d-10755a36e975" isSubstitutable="false">
+            <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
+            <elementDefinition Id="5d2b88ae-15a2-4e4f-a199-5b321ee6f71d" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="57c8ad28-b172-4768-9035-f9a891b44937" name="Scooter" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a2193845-2580-4338-ba72-8068aba19055" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d413b5c4-234d-495c-9ff7-18b62a97ef7c" name="Tank" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3b516466-0a69-4ab6-a754-74091e8b384e" />
+        <generalsInternal>
+          <generalization Id="8568855d-8eeb-4517-972e-eaa318ab8e6f" isSubstitutable="false">
+            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
+            <elementDefinition Id="7372edf7-14b5-4a1b-8f2c-5d875d0324b2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="86e2130e-49c1-40bb-a128-c5e98d2ddc8f" name="Fuel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fcfde72a-f4d3-47e9-b3b4-79d6f72b0e34" />
+        <targetEnds>
+          <association Id="e49ead94-6e9e-4978-9af0-53e636c038dc" isDerived="false" sourceEndRoleName="Fuel" targetEndRoleName="FuelType" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="3b1d1a8f-237b-4cc4-8a42-ef15c4e74813" LastKnownName="FuelType" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a61b2c3d-a2a0-476f-8d94-0c8a8e200319" name="Fuel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ff0d4394-04b1-4dd0-8a07-bde24b331f8b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a454d29d-97b8-4f21-a855-38970cb247cb" name="FuelType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="5eca5559-70ec-40e1-933e-79128bd95e12" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9b092f2c-c90d-4c1e-a4fd-7e18a861cc1d" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" name="MotorizedVehicle" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2840b83b-9272-41f3-a823-77a1e6011952" />
+        <generalsInternal>
+          <generalization Id="91765478-9788-47d7-b870-f02e30ae402b" isSubstitutable="false">
+            <classMoniker Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" LastKnownName="Vehicle" />
+            <elementDefinition Id="3ea8282e-d4d2-4d8c-9513-393c40d7cdbf" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association Id="058ca15e-d942-4e7a-abdf-7ed1e22a46dc" isDerived="false" sourceEndRoleName="MotorizedVehicle" targetEndRoleName="Fuel" isLeaf="false" isAbstract="false">
+            <classMoniker Id="86e2130e-49c1-40bb-a128-c5e98d2ddc8f" LastKnownName="Fuel" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5d44016e-3911-49b0-8176-eee19aad3991" name="MotorizedVehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e5f772d9-3945-409b-9398-ed5427e35b13" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="957de2f6-5235-4cc1-ad45-9d323e395041" name="Fuel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="751b1696-b181-49d4-9b02-9aa347bff532" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7792b58f-9fe2-45af-a82e-76ef66185755" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" name="NonMotorizedVehicle" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b86cc625-3e4f-481d-a6f8-c632a17715cd" />
+        <generalsInternal>
+          <generalization Id="94622343-be2c-4852-94cd-ee40a32e0c2f" isSubstitutable="false">
+            <classMoniker Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" LastKnownName="Vehicle" />
+            <elementDefinition Id="372c3f3e-a3a2-489f-a746-8dddaf62ab72" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="faa6a587-04e8-498d-8cdf-960bb57a8169" name="TrafficLane" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0b5d2959-6f86-47c6-85db-26621ac2f9e5" />
+        <targetEnds>
+          <association Id="e20e7eff-48d8-477d-bcc4-c4268f773930" isDerived="false" sourceEndRoleName="TrafficLane" targetEndRoleName="Vehicle" isLeaf="false" isAbstract="false">
+            <classMoniker Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" LastKnownName="Vehicle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b70cb855-1d6d-4189-be63-14bca8976911" name="TrafficLane" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="15a0068d-e439-4187-8abf-6c551c6b8e1e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8f635e3a-f5cb-4d5d-9157-40de388b08eb" name="Vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d702a429-2232-448e-bb31-64d8867f1c9e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b5784338-f12c-4306-94f8-b6b943f6c860" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="16315c61-a920-46b1-a17c-c94b5bfeb9d9" name="Road" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a0aa7a6c-84ba-46b7-9304-bad07e26db62" />
+        <targetEnds>
+          <association Id="c2cbe1b0-31da-40c8-916a-a23433c4394c" isDerived="false" sourceEndRoleName="Road" targetEndRoleName="TrafficLane" isLeaf="false" isAbstract="false">
+            <classMoniker Id="faa6a587-04e8-498d-8cdf-960bb57a8169" LastKnownName="TrafficLane" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eb23b413-cfd7-485c-9efe-8b578c0c3ba2" name="Road" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="722e121f-ac52-4a14-9ed7-a95842d69418" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1d878298-a593-49bd-932b-e324f7cdce11" name="TrafficLane" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="8f20af5e-5e71-494d-99d5-67097ab024bd" name="Lower" value="5">
+                      <elementDefinition Id="eb53e005-f9fc-4dc2-a99e-87f145455fda" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="9c99eede-fe1d-46f0-8cd8-beedce93ef78" name="Upper" value="5">
+                      <elementDefinition Id="13633d19-2172-4559-8758-6388ea36a8e2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="5482a79e-037d-47e1-a790-7493c5df26bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="27d860cc-941c-4129-9d20-cf9f0a4d58b9" />
+          </association>
+        </targetEnds>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="775e15e4-a519-4345-b2a3-f41f74d7b00a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="3b1d1a8f-237b-4cc4-8a42-ef15c4e74813" name="FuelType" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3505b861-75c5-4ae3-ad55-2b5086da2655" />
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="7b87a096-b286-44ec-8e43-3ed80376bca6" name="TransportEmulator">
+    <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />
+    <profileInstances>
+      <packageHasProfileInstances Id="939c7f93-763b-4aa9-adf7-aed607327533">
+        <profileInstance Id="8572509d-88f7-4568-99a4-7838c425a044" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="2a9ed513-2719-4c69-baa3-b71311961e6d">
+        <profileInstance Id="c91d0406-e1b4-49c8-8a1d-cd0e23fc9184" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>
