@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="95229ed3-be51-4470-bc12-81545390928b" name="UMLClassDiagram1" linkedPackageId="7b87a096-b286-44ec-8e43-3ed80376bca6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="95229ed3-be51-4470-bc12-81545390928b" name="UMLClassDiagram1" linkedPackageId="7b87a096-b286-44ec-8e43-3ed80376bca6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" name="Vehicle" isAbstract="true" isLeaf="false" isActiveClass="false">
@@ -31,6 +31,12 @@
           </property>
           <property Id="1937f684-5b1e-4e20-a121-5794eb4b99b9" name="weight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="04116cbe-0a3b-4931-9bc2-b380347d2963" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="327ce219-0f74-4168-abac-66b95abeb2a2" name="color" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c5268176-e75a-4c55-9269-4aedc1dce4b8" />
             <type_NamedElement>
               <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
             </type_NamedElement>
@@ -86,9 +92,9 @@
       <class Id="df5c91e8-96eb-4962-a347-c7c412e2da53" name="Bike" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="667110ff-33d0-4b9e-bcf2-d9f9e29693a0" />
         <generalsInternal>
-          <generalization Id="cbea50c4-e6ae-4206-9d43-3ba1f1b456e9" isSubstitutable="false">
+          <generalization Id="a014784c-4fd3-4e13-9bef-188fe74b1d40" isSubstitutable="false">
             <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
-            <elementDefinition Id="1ef7c7d3-30df-4d83-9654-269448d6a224" />
+            <elementDefinition Id="3426e5b0-2577-4753-bb4a-279c369ad7a7" />
           </generalization>
         </generalsInternal>
       </class>
@@ -97,9 +103,9 @@
       <class Id="1bb921d6-5182-4ada-b0f8-1eee041374ed" name="HorseDrawnCarriage" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="1c80b208-257d-415f-97d7-79728b33b965" />
         <generalsInternal>
-          <generalization Id="40a7c4ab-cd20-49a6-98a4-71a57c3822e0" isSubstitutable="false">
+          <generalization Id="4442cd28-c8cd-4817-8c1e-5ac6e72260f3" isSubstitutable="false">
             <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
-            <elementDefinition Id="71d19b87-29b0-4fd2-8f48-9e914f160686" />
+            <elementDefinition Id="fde5b8ea-32e2-4ce6-8470-9c4d748eb114" />
           </generalization>
         </generalsInternal>
       </class>
@@ -108,9 +114,9 @@
       <class Id="d9db6e4b-a39f-4be0-986f-856998a99bd3" name="Bicycle" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="0cea4e43-1631-4b53-a0f3-e2f4b11533f5" />
         <generalsInternal>
-          <generalization Id="d46c8bc7-c1ba-4105-be5d-10755a36e975" isSubstitutable="false">
+          <generalization Id="b7ec99c7-518c-484a-b6cc-0a6b04af9d87" isSubstitutable="false">
             <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
-            <elementDefinition Id="5d2b88ae-15a2-4e4f-a199-5b321ee6f71d" />
+            <elementDefinition Id="7b82aa6d-c183-4f1c-8bcb-34ae94d4c23d" />
           </generalization>
         </generalsInternal>
       </class>
@@ -118,6 +124,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="57c8ad28-b172-4768-9035-f9a891b44937" name="Scooter" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="a2193845-2580-4338-ba72-8068aba19055" />
+        <generalsInternal>
+          <generalization Id="7ab26053-9996-48e2-a2ca-eca0242cb039" isSubstitutable="false">
+            <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
+            <elementDefinition Id="a5f4f191-ad60-43be-837f-c2b642f2c548" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -181,6 +193,20 @@
             <elementDefinition Id="7792b58f-9fe2-45af-a82e-76ef66185755" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="3b9608b1-c99c-48d8-82b6-5dc392987401" name="tankVolume" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="76ebf9cf-7457-428b-bd96-4c5c15b102a2" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+          <property Id="a6ec4b56-0f24-4b63-811e-e9608957a773" name="consumption" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b3bfd195-eb70-4d24-95fc-7ba275361f66" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5cc6fe2e-2e05-445c-aa1d-0aa4dfbad298" LastKnownName="double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -215,6 +241,14 @@
             <elementDefinition Id="b5784338-f12c-4306-94f8-b6b943f6c860" />
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="840ce10c-629b-4e49-bb23-51e6a6ef2e15" name="speedLimit" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3e247995-8a48-43d9-b1d6-aa9bfd6819c9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -260,6 +294,11 @@
         <elementDefinition Id="3505b861-75c5-4ae3-ad55-2b5086da2655" />
       </enumeration>
     </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5cc6fe2e-2e05-445c-aa1d-0aa4dfbad298" name="double" isAbstract="false" isLeaf="false" cachedFullName="double">
+        <elementDefinition Id="73c40f57-764c-4529-b18b-a04a59adb77b" />
+      </referencedType>
+    </packageHasNamedElement>
   </packagedElements>
   <package Id="7b87a096-b286-44ec-8e43-3ed80376bca6" name="TransportEmulator">
     <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />

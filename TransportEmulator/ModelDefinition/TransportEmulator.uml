@@ -665,6 +665,25 @@
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="c5268176-e75a-4c55-9269-4aedc1dce4b8"
+            name="color"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
@@ -753,7 +772,7 @@
         isActiveClass="false">
         <generalsInternal>
           <generalization
-            Id="1ef7c7d3-30df-4d83-9654-269448d6a224"
+            Id="3426e5b0-2577-4753-bb4a-279c369ad7a7"
             isSubstitutable="false">
             <classMoniker
               Id="b86cc625-3e4f-481d-a6f8-c632a17715cd"
@@ -772,7 +791,7 @@
         isActiveClass="false">
         <generalsInternal>
           <generalization
-            Id="71d19b87-29b0-4fd2-8f48-9e914f160686"
+            Id="fde5b8ea-32e2-4ce6-8470-9c4d748eb114"
             isSubstitutable="false">
             <classMoniker
               Id="b86cc625-3e4f-481d-a6f8-c632a17715cd"
@@ -791,7 +810,7 @@
         isActiveClass="false">
         <generalsInternal>
           <generalization
-            Id="5d2b88ae-15a2-4e4f-a199-5b321ee6f71d"
+            Id="7b82aa6d-c183-4f1c-8bcb-34ae94d4c23d"
             isSubstitutable="false">
             <classMoniker
               Id="b86cc625-3e4f-481d-a6f8-c632a17715cd"
@@ -807,7 +826,18 @@
         name="Scooter"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a5f4f191-ad60-43be-837f-c2b642f2c548"
+            isSubstitutable="false">
+            <classMoniker
+              Id="b86cc625-3e4f-481d-a6f8-c632a17715cd"
+              LastKnownName="NonMotorizedVehicle"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -936,6 +966,46 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="76ebf9cf-7457-428b-bd96-4c5c15b102a2"
+            name="tankVolume"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b3bfd195-eb70-4d24-95fc-7ba275361f66"
+            name="consumption"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="73c40f57-764c-4529-b18b-a04a59adb77b"
+                LastKnownName="double"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1005,6 +1075,27 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="3e247995-8a48-43d9-b1d6-aa9bfd6819c9"
+            name="speedLimit"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1091,6 +1182,11 @@
         isAbstract="false"
         isLeaf="false"
         isReentrant="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="73c40f57-764c-4529-b18b-a04a59adb77b"
+        name="double" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
