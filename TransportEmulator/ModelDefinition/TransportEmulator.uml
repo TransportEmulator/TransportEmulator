@@ -1181,12 +1181,991 @@
         isActiveClass="false"
         isAbstract="false"
         isLeaf="false"
-        isReentrant="false" />
+        isReentrant="false">
+        <fragments>
+          <behaviorExecutionSpecification
+            Id="bedf8838-2e75-421d-a3d5-d59a8d8d282a"
+            name="BehaviorExecutionSpecification8">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="44c0f605-6aaf-46bd-af0c-27c1fdcb1ea2"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="TransportEmulator.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="297ca278-e5ee-4fa9-8a20-6fbb50dd68df"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="TransportEmulator.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="68924620-5364-4305-b60a-95702983fc95"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="TransportEmulator.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c5451c6a-f5c2-4f29-96ba-3f98e310f57d"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="TransportEmulator.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="297ca278-e5ee-4fa9-8a20-6fbb50dd68df"
+            name="ExecutionOccurrenceSpecification15">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="de768e2c-50cb-4e47-bf7c-3a8b78d6449c"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="68924620-5364-4305-b60a-95702983fc95"
+            name="MessageOccurrenceSpecification20">
+            <covered>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="e1cbab97-298d-432a-8e80-b992db8a2f35"
+            name="MessageOccurrenceSpecification19">
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="84045a45-c3cf-44a4-aaaf-7a1c8b28d4a0"
+            name="BehaviorExecutionSpecification9">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="2b8e3a1b-c6e1-4fae-b9ae-e0c380d963ea"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="TransportEmulator.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="9fd708e8-2d99-4364-a734-0e73eda83d86"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="TransportEmulator.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="b1da30c5-f83e-4419-ac03-125f008a34cd"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="TransportEmulator.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="ce3ac854-ba6d-4fd2-9a2a-8f5976d1b4f3"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="TransportEmulator.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="9fd708e8-2d99-4364-a734-0e73eda83d86"
+            name="ExecutionOccurrenceSpecification17">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a56e8489-90bf-43c0-9e0b-efa24950b128"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="b1da30c5-f83e-4419-ac03-125f008a34cd"
+            name="MessageOccurrenceSpecification22">
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c5451c6a-f5c2-4f29-96ba-3f98e310f57d"
+            name="MessageOccurrenceSpecification21">
+            <covered>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="44c0f605-6aaf-46bd-af0c-27c1fdcb1ea2"
+            name="ExecutionOccurrenceSpecification16">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c5f5a426-0dec-47ef-a68b-c0f1e2931424"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="de426ff0-8e58-4ba0-89cc-4902f663fb60"
+            name="BehaviorExecutionSpecification10">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="5d06293b-0482-46ad-97a2-427fc0507094"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="TransportEmulator.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="751c6ea2-37ed-4d9f-8f45-ee157215c950"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="TransportEmulator.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="894009b4-db4b-43e6-8a64-da484def43a7"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="TransportEmulator.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="89d18f20-c314-4942-a3c2-50e0014bd2cf"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="TransportEmulator.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="751c6ea2-37ed-4d9f-8f45-ee157215c950"
+            name="ExecutionOccurrenceSpecification19">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="0da80014-37c1-4c9d-a835-067a7b48c68b"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="894009b4-db4b-43e6-8a64-da484def43a7"
+            name="MessageOccurrenceSpecification24">
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ce3ac854-ba6d-4fd2-9a2a-8f5976d1b4f3"
+            name="MessageOccurrenceSpecification23">
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="2b8e3a1b-c6e1-4fae-b9ae-e0c380d963ea"
+            name="ExecutionOccurrenceSpecification18">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="954ccd67-dcbc-446f-93cc-e18b2c261b9a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="b6666b64-3e8f-433d-8104-18b0f4920436"
+            name="BehaviorExecutionSpecification12">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="47369f5d-71a4-4cf3-a822-1228adedf17d"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="TransportEmulator.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="a877489d-fccb-4550-a28a-81957c11d072"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="TransportEmulator.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="7b5895fc-333a-4e92-8ffc-3c2dd4d128f8"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="TransportEmulator.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="a7b0443a-4fa5-4e1a-a549-3a445b6ca4ae"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="TransportEmulator.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="401db1cf-9491-4a96-ad08-fa8c62b87ada"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="TransportEmulator.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="2152bcba-fea1-4a29-a2e2-defdb63c6ef9"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="TransportEmulator.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="c4da8742-5246-4d25-9ad4-db41fda3375d"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="TransportEmulator.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="a877489d-fccb-4550-a28a-81957c11d072"
+            name="ExecutionOccurrenceSpecification23">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="a2d3d6a3-1b98-4b86-bf3a-c2254f1802d3"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="89d18f20-c314-4942-a3c2-50e0014bd2cf"
+            name="MessageOccurrenceSpecification27">
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="7b5895fc-333a-4e92-8ffc-3c2dd4d128f8"
+            name="MessageOccurrenceSpecification28">
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="5015232e-b898-43e1-9621-c839879137d2"
+            name="BehaviorExecutionSpecification13">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="f678b7fc-ee01-4bd4-8c51-4f62d719c9d3"
+                LastKnownName="FuelList"
+                LastKnownLocation="TransportEmulator.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="13053474-2840-4827-b4b4-5a721b600184"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="TransportEmulator.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ab17a2f2-04b0-4459-85b5-cb44278075ed"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="TransportEmulator.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe1ffc53-1156-4aae-abec-664567dbdad3"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="TransportEmulator.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="5d06293b-0482-46ad-97a2-427fc0507094"
+            name="ExecutionOccurrenceSpecification20">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="d8bc23e3-d8ae-4514-802c-a390a99565c9"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="ab17a2f2-04b0-4459-85b5-cb44278075ed"
+            name="ExecutionOccurrenceSpecification25">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="74b34186-87d3-4398-87b7-640e4a4d2fcd"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f678b7fc-ee01-4bd4-8c51-4f62d719c9d3"
+                LastKnownName="FuelList"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="a7b0443a-4fa5-4e1a-a549-3a445b6ca4ae"
+            name="MessageOccurrenceSpecification29">
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="fe1ffc53-1156-4aae-abec-664567dbdad3"
+            name="MessageOccurrenceSpecification30">
+            <covered>
+              <lifelineMoniker
+                Id="f678b7fc-ee01-4bd4-8c51-4f62d719c9d3"
+                LastKnownName="FuelList"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="56bebca4-7cd9-4155-b546-5733c58228da"
+            name="BehaviorExecutionSpecification14">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="36db5a41-be6d-439a-aee3-3619a3f78cfe"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="TransportEmulator.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="ff63a450-cc3c-4c9e-ad8f-7a06a5c25b9d"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="TransportEmulator.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="76d9ddd5-0868-4cb7-aaf4-de4f274a5ee8"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="TransportEmulator.uml" />
+              <messageOccurrenceSpecificationMoniker
+                Id="3cc311af-1efc-4860-854c-8f63dbc1e8d3"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="TransportEmulator.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="ff63a450-cc3c-4c9e-ad8f-7a06a5c25b9d"
+            name="ExecutionOccurrenceSpecification27">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="2f31fd2b-e2b8-42ac-82cd-8b44792b5269"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="401db1cf-9491-4a96-ad08-fa8c62b87ada"
+            name="MessageOccurrenceSpecification31">
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="76d9ddd5-0868-4cb7-aaf4-de4f274a5ee8"
+            name="MessageOccurrenceSpecification32">
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="13053474-2840-4827-b4b4-5a721b600184"
+            name="ExecutionOccurrenceSpecification26">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="183f352c-b1fa-4410-be04-d1dad579d301"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="f678b7fc-ee01-4bd4-8c51-4f62d719c9d3"
+                LastKnownName="FuelList"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="3cc311af-1efc-4860-854c-8f63dbc1e8d3"
+            name="MessageOccurrenceSpecification33">
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="2152bcba-fea1-4a29-a2e2-defdb63c6ef9"
+            name="MessageOccurrenceSpecification34">
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="36db5a41-be6d-439a-aee3-3619a3f78cfe"
+            name="ExecutionOccurrenceSpecification28">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="c4e8c9e8-1e2c-4a72-8d7b-2a47fdef6629"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+                LastKnownName="User"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <behaviorExecutionSpecification
+            Id="553e905b-49a5-4db6-85a3-41ab54740f9d"
+            name="BehaviorExecutionSpecification15">
+            <coveredLifelines>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </coveredLifelines>
+            <finish>
+              <executionOccurrenceSpecificationMoniker
+                Id="b7c80a0a-2fe7-44c2-a78e-b0ec40914ad8"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="TransportEmulator.uml" />
+            </finish>
+            <start>
+              <executionOccurrenceSpecificationMoniker
+                Id="80eac372-cfa6-45ff-ab04-44cf317a4958"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="TransportEmulator.uml" />
+            </start>
+            <nestedOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="ed0f79e5-ad6b-49bc-89c6-12cded039d29"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="TransportEmulator.uml" />
+            </nestedOccurrences>
+          </behaviorExecutionSpecification>
+          <executionOccurrenceSpecification
+            Id="80eac372-cfa6-45ff-ab04-44cf317a4958"
+            name="ExecutionOccurrenceSpecification29">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="331a8635-95ab-4ff3-a15a-30ac265b656e"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="c4da8742-5246-4d25-9ad4-db41fda3375d"
+            name="MessageOccurrenceSpecification35">
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <messageOccurrenceSpecification
+            Id="ed0f79e5-ad6b-49bc-89c6-12cded039d29"
+            name="MessageOccurrenceSpecification36">
+            <covered>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </messageOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="47369f5d-71a4-4cf3-a822-1228adedf17d"
+            name="ExecutionOccurrenceSpecification24">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="59df6d80-aae0-401c-9d7c-92d02b98389a"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+                LastKnownName="GUI Fuel Input"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+          <executionOccurrenceSpecification
+            Id="b7c80a0a-2fe7-44c2-a78e-b0ec40914ad8"
+            name="ExecutionOccurrenceSpecification30">
+            <event>
+              <executionOccurrenceSpecificationReferencesEvent>
+                <executionEventMoniker
+                  Id="bb252d86-c96f-408a-94cb-7d6c780c5673"
+                  LastKnownName="ExecutionEvent"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </executionOccurrenceSpecificationReferencesEvent>
+            </event>
+            <covered>
+              <lifelineMoniker
+                Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+                LastKnownName="GUI Main Window"
+                LastKnownLocation="TransportEmulator.uml" />
+            </covered>
+          </executionOccurrenceSpecification>
+        </fragments>
+        <lifelines>
+          <lifeline
+            Id="df8e0811-a34b-465f-8f1b-0b076c1223ae"
+            name="User"
+            isActor="false"
+            lifelineDisplayName="User">
+            <topLevelOccurrences>
+              <messageOccurrenceSpecificationMoniker
+                Id="e1cbab97-298d-432a-8e80-b992db8a2f35"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="751c6ea2-37ed-4d9f-8f45-ee157215c950"
+                LastKnownName="ExecutionOccurrenceSpecification19"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="5d06293b-0482-46ad-97a2-427fc0507094"
+                LastKnownName="ExecutionOccurrenceSpecification20"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="ff63a450-cc3c-4c9e-ad8f-7a06a5c25b9d"
+                LastKnownName="ExecutionOccurrenceSpecification27"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="36db5a41-be6d-439a-aee3-3619a3f78cfe"
+                LastKnownName="ExecutionOccurrenceSpecification28"
+                LastKnownLocation="TransportEmulator.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="11f9edc2-c227-47b2-bf9d-a958a6bb63c6"
+            name="GUI Main Window"
+            isActor="false"
+            lifelineDisplayName="GUI Main Window">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="297ca278-e5ee-4fa9-8a20-6fbb50dd68df"
+                LastKnownName="ExecutionOccurrenceSpecification15"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="44c0f605-6aaf-46bd-af0c-27c1fdcb1ea2"
+                LastKnownName="ExecutionOccurrenceSpecification16"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="80eac372-cfa6-45ff-ab04-44cf317a4958"
+                LastKnownName="ExecutionOccurrenceSpecification29"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="b7c80a0a-2fe7-44c2-a78e-b0ec40914ad8"
+                LastKnownName="ExecutionOccurrenceSpecification30"
+                LastKnownLocation="TransportEmulator.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="e3aa2850-5f78-4a23-b277-0984b7d42bfa"
+            name="GUI Fuel Input"
+            isActor="false"
+            lifelineDisplayName="GUI Fuel Input">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="9fd708e8-2d99-4364-a734-0e73eda83d86"
+                LastKnownName="ExecutionOccurrenceSpecification17"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="2b8e3a1b-c6e1-4fae-b9ae-e0c380d963ea"
+                LastKnownName="ExecutionOccurrenceSpecification18"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="a877489d-fccb-4550-a28a-81957c11d072"
+                LastKnownName="ExecutionOccurrenceSpecification23"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="47369f5d-71a4-4cf3-a822-1228adedf17d"
+                LastKnownName="ExecutionOccurrenceSpecification24"
+                LastKnownLocation="TransportEmulator.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+          <lifeline
+            Id="f678b7fc-ee01-4bd4-8c51-4f62d719c9d3"
+            name="FuelList"
+            isActor="false"
+            lifelineDisplayName="FuelList">
+            <topLevelOccurrences>
+              <executionOccurrenceSpecificationMoniker
+                Id="ab17a2f2-04b0-4459-85b5-cb44278075ed"
+                LastKnownName="ExecutionOccurrenceSpecification25"
+                LastKnownLocation="TransportEmulator.uml" />
+              <executionOccurrenceSpecificationMoniker
+                Id="13053474-2840-4827-b4b4-5a721b600184"
+                LastKnownName="ExecutionOccurrenceSpecification26"
+                LastKnownLocation="TransportEmulator.uml" />
+            </topLevelOccurrences>
+          </lifeline>
+        </lifelines>
+        <messages>
+          <message
+            Id="082fd4ef-ca12-4882-a90a-5796ace6a50f"
+            name="Add Fuel"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="e1cbab97-298d-432a-8e80-b992db8a2f35"
+                LastKnownName="MessageOccurrenceSpecification19"
+                LastKnownLocation="TransportEmulator.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="68924620-5364-4305-b60a-95702983fc95"
+                LastKnownName="MessageOccurrenceSpecification20"
+                LastKnownLocation="TransportEmulator.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="c82cea99-b694-4068-8184-fe35408d72a0"
+            name="Show dialog"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c5451c6a-f5c2-4f29-96ba-3f98e310f57d"
+                LastKnownName="MessageOccurrenceSpecification21"
+                LastKnownLocation="TransportEmulator.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="b1da30c5-f83e-4419-ac03-125f008a34cd"
+                LastKnownName="MessageOccurrenceSpecification22"
+                LastKnownLocation="TransportEmulator.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5dac3aa8-4058-4060-ab11-1cb4a332951e"
+            name="What do you want to add?"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ce3ac854-ba6d-4fd2-9a2a-8f5976d1b4f3"
+                LastKnownName="MessageOccurrenceSpecification23"
+                LastKnownLocation="TransportEmulator.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="894009b4-db4b-43e6-8a64-da484def43a7"
+                LastKnownName="MessageOccurrenceSpecification24"
+                LastKnownLocation="TransportEmulator.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="5658990a-bf3e-43e3-80b4-2ee888839111"
+            name="Fuel Input"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="89d18f20-c314-4942-a3c2-50e0014bd2cf"
+                LastKnownName="MessageOccurrenceSpecification27"
+                LastKnownLocation="TransportEmulator.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="7b5895fc-333a-4e92-8ffc-3c2dd4d128f8"
+                LastKnownName="MessageOccurrenceSpecification28"
+                LastKnownLocation="TransportEmulator.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="4c40aa4c-688f-4a32-94e7-baf4c74c5da6"
+            name="Add info to list"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="a7b0443a-4fa5-4e1a-a549-3a445b6ca4ae"
+                LastKnownName="MessageOccurrenceSpecification29"
+                LastKnownLocation="TransportEmulator.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="fe1ffc53-1156-4aae-abec-664567dbdad3"
+                LastKnownName="MessageOccurrenceSpecification30"
+                LastKnownLocation="TransportEmulator.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="f9403926-0c59-4e46-aa98-80b24d37a05d"
+            name="Success"
+            messageKind="Complete"
+            messageSort="SynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="401db1cf-9491-4a96-ad08-fa8c62b87ada"
+                LastKnownName="MessageOccurrenceSpecification31"
+                LastKnownLocation="TransportEmulator.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="76d9ddd5-0868-4cb7-aaf4-de4f274a5ee8"
+                LastKnownName="MessageOccurrenceSpecification32"
+                LastKnownLocation="TransportEmulator.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="1cf41080-c615-4ed3-b3e5-999983fd1bfe"
+            name="Close"
+            messageKind="Complete"
+            messageSort="Reply"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="3cc311af-1efc-4860-854c-8f63dbc1e8d3"
+                LastKnownName="MessageOccurrenceSpecification33"
+                LastKnownLocation="TransportEmulator.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="2152bcba-fea1-4a29-a2e2-defdb63c6ef9"
+                LastKnownName="MessageOccurrenceSpecification34"
+                LastKnownLocation="TransportEmulator.uml" />
+            </receiveEvent>
+          </message>
+          <message
+            Id="e2442a5c-513c-4043-9091-45b95b847128"
+            name="Return to main widow"
+            messageKind="Complete"
+            messageSort="AsynchCall"
+            createSelfMessage="false">
+            <sendEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="c4da8742-5246-4d25-9ad4-db41fda3375d"
+                LastKnownName="MessageOccurrenceSpecification35"
+                LastKnownLocation="TransportEmulator.uml" />
+            </sendEvent>
+            <receiveEvent>
+              <messageOccurrenceSpecificationMoniker
+                Id="ed0f79e5-ad6b-49bc-89c6-12cded039d29"
+                LastKnownName="MessageOccurrenceSpecification36"
+                LastKnownLocation="TransportEmulator.uml" />
+            </receiveEvent>
+          </message>
+        </messages>
+        <ownedAttributesInternal>
+          <property
+            Id="b1ba9187-aa5a-4f3f-add2-3e546baf96a5"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="fcfde72a-f4d3-47e9-b3b4-79d6f72b0e34"
+                LastKnownName="Fuel"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </interaction>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <undefinedType
         Id="73c40f57-764c-4529-b18b-a04a59adb77b"
         name="double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="de768e2c-50cb-4e47-bf7c-3a8b78d6449c"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c5f5a426-0dec-47ef-a68b-c0f1e2931424"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a56e8489-90bf-43c0-9e0b-efa24950b128"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="954ccd67-dcbc-446f-93cc-e18b2c261b9a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="0da80014-37c1-4c9d-a835-067a7b48c68b"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="d8bc23e3-d8ae-4514-802c-a390a99565c9"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="a2d3d6a3-1b98-4b86-bf3a-c2254f1802d3"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="59df6d80-aae0-401c-9d7c-92d02b98389a"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="74b34186-87d3-4398-87b7-640e4a4d2fcd"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="183f352c-b1fa-4410-be04-d1dad579d301"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="2f31fd2b-e2b8-42ac-82cd-8b44792b5269"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="c4e8c9e8-1e2c-4a72-8d7b-2a47fdef6629"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="331a8635-95ab-4ff3-a15a-30ac265b656e"
+        name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <executionEvent
+        Id="bb252d86-c96f-408a-94cb-7d6c780c5673"
+        name="ExecutionEvent" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
