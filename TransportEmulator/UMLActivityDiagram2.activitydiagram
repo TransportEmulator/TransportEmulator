@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="0a01036b-d648-4391-b2f9-04646bb8f1da" name="Activity Add Fuel" linkedPackageId="0e503349-7393-4f55-924a-601ba49b5e75" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="05eb6f63-c56e-43a7-9ff3-7406ef37e15e">
+      <elementDefinition Id="db234867-2e04-4a24-bdcb-6571a8c6bb07" />
+      <body>User actions:</body>
+    </comment>
+    <comment Id="a690953c-4629-461d-a771-8de1d4c9f043">
+      <elementDefinition Id="b806a2cb-f72f-4b74-8710-ada9dbd52ddb" />
+      <body>GUI Main Window actions:</body>
+    </comment>
+    <comment Id="8cce6cc1-8d9b-4818-b1fd-143068589eae">
+      <elementDefinition Id="dff63244-86f1-4491-add4-a0cfcfc765f0" />
+      <body>GUI Add Fuel window actions:</body>
+    </comment>
+    <comment Id="6d4aa1d2-164b-458c-989d-6fef68309d60">
+      <elementDefinition Id="d2cf2f50-7377-41d3-9da0-ae3a9b80f6f8" />
+      <body>FuelList actions:</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="bb157ea3-f39a-425a-8f56-c4905570345a">
+      <profileInstance Id="2c28ab60-aaa6-4f62-865f-e980320f9759" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="637563dc-5dc1-4545-8e3c-0733b1a8b153">
+      <profileInstance Id="b5ca4cc5-aca1-4000-bc7c-eebdc6632e1a" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="9b8c26a0-8b4c-4ae1-a992-4eab27c604eb" name="Activity Add Fuel" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="b82185c6-fa6d-433d-bedc-291e634cbbea" />
+        <nodes>
+          <initialNode Id="167c482e-f42d-4bda-bd27-58675d629817" name="Initial1" isLeaf="false">
+            <elementDefinition Id="d61accea-b5de-44a8-a135-0e80ec70739c" />
+            <flowNodeTargets>
+              <controlFlow Id="b7debda5-3cde-4314-ad35-c23693f22d95" isLeaf="false">
+                <opaqueActionMoniker Id="a1bb2ef5-02b7-4663-9e59-28684b90ffe1" LastKnownName="Push button &#xD;&#xA;&quot;Add fuel&quot;" />
+                <elementDefinition Id="6923c107-28e5-455c-a1cc-f22e7cc95256" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="a1bb2ef5-02b7-4663-9e59-28684b90ffe1" name="Push button &#xD;&#xA;&quot;Add fuel&quot;" isLeaf="false">
+            <elementDefinition Id="cb4b77de-7396-417f-9c3d-3af21e78a9ef" />
+            <flowNodeTargets>
+              <controlFlow Id="d0fec0fa-e591-42f5-bbba-67415cb5c98a" isLeaf="false">
+                <opaqueActionMoniker Id="84623dae-9dee-4fdc-86c3-792c2864242f" LastKnownName="Create &quot;Add Fuel&quot; window " />
+                <elementDefinition Id="4a8399be-5980-4bcd-a483-a91f90860f09" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="84623dae-9dee-4fdc-86c3-792c2864242f" name="Create &quot;Add Fuel&quot; window " isLeaf="false">
+            <elementDefinition Id="39f73496-b280-4221-bed8-fe0e542f33ad" />
+            <flowNodeTargets>
+              <controlFlow Id="9065f3bc-79f4-45af-b94e-7978db26d0e5" isLeaf="false">
+                <opaqueActionMoniker Id="3124302c-a9b8-4d89-b7f0-1dcaf0cded5b" LastKnownName="Ask user about type and quantity" />
+                <elementDefinition Id="1914a5f4-8641-42c7-91f8-21ba97e62e43" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="3124302c-a9b8-4d89-b7f0-1dcaf0cded5b" name="Ask user about type and quantity" isLeaf="false">
+            <elementDefinition Id="1f194e6a-114e-4527-b33b-5fc34034d2cf" />
+            <flowNodeTargets>
+              <controlFlow Id="76f4873b-ab76-48a8-8b45-f949a8c19895" isLeaf="false">
+                <opaqueActionMoniker Id="4d542dd6-a760-4897-a01f-71bcc2acdef4" LastKnownName="Choose type and filled in necessary quantity" />
+                <elementDefinition Id="28fd569f-0977-461d-8a71-afd979736e0b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1bfa426f-45a0-432b-9ce0-9537bea68978" name="Update information " isLeaf="false">
+            <elementDefinition Id="3ba0fd2a-19b7-4443-9a7f-d5fd00f299b5" />
+            <flowNodeTargets>
+              <controlFlow Id="c8114583-8080-4350-9a1a-b4f6ddb9863d" isLeaf="false">
+                <opaqueActionMoniker Id="9fb94b22-f80e-4be5-9bd7-ffbd364ff1bc" LastKnownName="End" />
+                <elementDefinition Id="b1c46ee8-55f8-4953-a8ae-14fd262e5b81" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4d542dd6-a760-4897-a01f-71bcc2acdef4" name="Choose type and filled in necessary quantity" isLeaf="false">
+            <elementDefinition Id="42c6241e-c539-4720-8d5b-dca531382fd0" />
+            <flowNodeTargets>
+              <controlFlow Id="e4a8d661-5a32-4fff-863e-4e041b8e16ab" isLeaf="false">
+                <opaqueActionMoniker Id="c6c1032b-6a1e-45cb-b02a-ce57849c3fc2" LastKnownName="Confirm choice " />
+                <elementDefinition Id="1bd23007-c700-4120-a47b-fb58d589ca01" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c6c1032b-6a1e-45cb-b02a-ce57849c3fc2" name="Confirm choice " isLeaf="false">
+            <elementDefinition Id="49d0235c-7033-432d-9436-6a88f4584032" />
+            <flowNodeTargets>
+              <controlFlow Id="6de41eab-edef-46a3-bbe4-27d29531d957" isLeaf="false">
+                <opaqueActionMoniker Id="c40ffb39-7746-4cdd-b523-b82c5c65eae3" LastKnownName="Send information to FuelList" />
+                <elementDefinition Id="9e460a7e-972f-4191-b905-4af6664c5a5d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c40ffb39-7746-4cdd-b523-b82c5c65eae3" name="Send information to FuelList" isLeaf="false">
+            <elementDefinition Id="1199da43-416a-430a-ac4b-de82b097be6c" />
+            <flowNodeTargets>
+              <controlFlow Id="5f5e0966-7506-4afa-bb4d-45d0ef55a778" isLeaf="false">
+                <opaqueActionMoniker Id="1bfa426f-45a0-432b-9ce0-9537bea68978" LastKnownName="Update information " />
+                <elementDefinition Id="93f01df9-8e03-4b8e-979d-a3d9cc91f778" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9fb94b22-f80e-4be5-9bd7-ffbd364ff1bc" name="End" isLeaf="false">
+            <elementDefinition Id="c08be9fa-74a3-4895-8936-65e4b4b184f0" />
+            <flowNodeTargets>
+              <controlFlow Id="0ff0869d-39df-4c0d-812b-97210fe4d56c" isLeaf="false">
+                <opaqueActionMoniker Id="bdaedae9-782f-4dde-97e8-56297d9d8610" LastKnownName="Close &quot;Add Fuel&quot; window" />
+                <elementDefinition Id="c6c2d318-5a24-4d69-8fd8-7554d35c0714" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="bdaedae9-782f-4dde-97e8-56297d9d8610" name="Close &quot;Add Fuel&quot; window" isLeaf="false">
+            <elementDefinition Id="5999e3f7-0bdb-48ce-ad6d-3441783749b6" />
+            <flowNodeTargets>
+              <controlFlow Id="8835af8c-c95d-4129-8b2c-c100a74fbd53" isLeaf="false">
+                <activityFinalNodeMoniker Id="4b5a7f86-74c6-4b9f-9533-f4766651890d" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="93af71fc-caae-47ec-9ff0-f1c191666593" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="4b5a7f86-74c6-4b9f-9533-f4766651890d" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="1367535a-c550-4ad8-83a9-a7756dad6f47" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="0e503349-7393-4f55-924a-601ba49b5e75" name="TransportEmulator">
+    <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />
+  </package>
+</activityRootModel>
