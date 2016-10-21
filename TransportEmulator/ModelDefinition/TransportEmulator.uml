@@ -6,27 +6,26 @@
   <ownedCommentsInternal>
     <comment
       Id="6a7eda77-c4d6-441d-969a-60475b2b5f27">
-      <body>В соответсвии с ограничениями:
-*по полосе с трамвайными путями может двигаться только трамвай
-*трамвай не может двигаться без трамвайных путей
-*троллейбус может двигаться только по полосе, оборудованной троллейбусными проводами
-* по полосе, оборудованной троллейбусными проводами, может двигаться не только троллейбус
-*на гужевой повозке, велосипеде, самокате и танке можно двигаться только по крайним полосам
-</body>
+      <body>In accordance with restrictions:
+* Only a tram can move along the strip with tram tracks
+* Tram can not move without tramways
+* Trolley can move only along the strip, equipped trolleybus wires
+* Band-equipped trolleybus wires can move not only trolleybus
+* On a horse-drawn carriage, bicycle, scooter, and the tank can move only by extreme bands</body>
       <annotatedElements>
         <useCaseMoniker
           Id="6788a48b-dc1f-4e60-8dcb-057c61061df4"
-          LastKnownName="Разместить ТС на дороге"
+          LastKnownName="Place vehicle on the road"
           LastKnownLocation="TransportEmulator.uml" />
       </annotatedElements>
     </comment>
     <comment
       Id="14ae5a71-21ab-4a10-a00b-bc351e1fa290">
-      <body>Остановить симуляцию по требованию пользователя, после чего возобновить нажатием кнопки СТАРТ</body>
+      <body>Stop simulation of on-demand. Resume by pressing the START button</body>
       <annotatedElements>
         <useCaseMoniker
           Id="0f8c16b4-2bf9-4a81-a508-0fa11babcfe5"
-          LastKnownName="Остановить ТС"
+          LastKnownName="Stop vehicle"
           LastKnownLocation="TransportEmulator.uml" />
       </annotatedElements>
     </comment>
@@ -49,7 +48,7 @@
     <packageHasNamedElement>
       <actor
         Id="d2e6b1bb-e544-4433-a056-cd9b831b03c7"
-        name="Пользователь"
+        name="User"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -101,7 +100,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="f95f798c-b9f8-45c8-bd0f-57fc6c630972"
-              LastKnownName="Создать вид топлива"
+              LastKnownName="Create a type of fuel"
               LastKnownLocation="TransportEmulator.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -153,7 +152,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="d1b800b5-9afe-453a-904a-6b3a07147ffd"
-              LastKnownName="Провести симуляцию"
+              LastKnownName="Start simulation"
               LastKnownLocation="TransportEmulator.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -192,7 +191,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="efddb394-d890-4467-89a8-8b34fac49285"
-              LastKnownName="Вывести на экран или экспортировать журнал ТС"
+              LastKnownName="Display or export log"
               LastKnownLocation="TransportEmulator.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -231,7 +230,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="12f67b62-bd4f-4387-93fd-d93b600c8472"
-              LastKnownName="Создать ТС"
+              LastKnownName="Create vehicle"
               LastKnownLocation="TransportEmulator.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -280,14 +279,14 @@
     <packageHasNamedElement>
       <useCase
         Id="f95f798c-b9f8-45c8-bd0f-57fc6c630972"
-        name="Создать вид топлива"
+        name="Create a type of fuel"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="efddb394-d890-4467-89a8-8b34fac49285"
-        name="Вывести на экран или экспортировать журнал ТС"
+        name="Display or export log"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -300,7 +299,7 @@
             isAbstract="false">
             <actorMoniker
               Id="636571cf-da36-48bb-b3d5-167f20857207"
-              LastKnownName="Журнал"
+              LastKnownName="Log"
               LastKnownLocation="TransportEmulator.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -360,14 +359,14 @@
     <packageHasNamedElement>
       <actor
         Id="636571cf-da36-48bb-b3d5-167f20857207"
-        name="Журнал"
+        name="Log"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="a33448e4-bad2-4606-a844-a69a6b02977d"
-        name="Вести журнал"
+        name="Log state"
         isAbstract="false"
         isLeaf="false">
         <targetEnds>
@@ -380,7 +379,7 @@
             isAbstract="false">
             <actorMoniker
               Id="636571cf-da36-48bb-b3d5-167f20857207"
-              LastKnownName="Журнал"
+              LastKnownName="Log"
               LastKnownLocation="TransportEmulator.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -416,15 +415,22 @@
     <packageHasNamedElement>
       <useCase
         Id="d1b800b5-9afe-453a-904a-6b3a07147ffd"
-        name="Провести симуляцию"
+        name="Start simulation"
         isAbstract="false"
         isLeaf="false">
         <additions>
           <include
-            Id="37d9e3f7-79b2-4241-b5be-150ba98102ba">
+            Id="f0b00ecf-f43f-4525-a449-ad9de5e5ceae">
             <useCaseMoniker
               Id="a33448e4-bad2-4606-a844-a69a6b02977d"
-              LastKnownName="Вести журнал"
+              LastKnownName="Log state"
+              LastKnownLocation="TransportEmulator.uml" />
+          </include>
+          <include
+            Id="d1616382-cd72-4d79-b45d-440d20871ef2">
+            <useCaseMoniker
+              Id="1c32646d-a3ff-4158-8b14-c97593385a64"
+              LastKnownName="Display the road"
               LastKnownLocation="TransportEmulator.uml" />
           </include>
         </additions>
@@ -433,15 +439,15 @@
     <packageHasNamedElement>
       <useCase
         Id="2c9c1714-70d1-4e40-81dc-f3d9c5c02279"
-        name="Вывести сообщение об ошибке"
+        name="Display error message"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="67eeabb4-8e34-457a-921d-99f40f026198">
+            Id="32f70ab1-6617-4a04-bc1c-c528e04204df">
             <useCaseMoniker
               Id="12f67b62-bd4f-4387-93fd-d93b600c8472"
-              LastKnownName="Создать ТС"
+              LastKnownName="Create vehicle"
               LastKnownLocation="TransportEmulator.uml" />
           </extend>
         </extendedCases>
@@ -458,71 +464,29 @@
     <packageHasNamedElement>
       <useCase
         Id="12f67b62-bd4f-4387-93fd-d93b600c8472"
-        name="Создать ТС"
+        name="Create vehicle"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="1c32646d-a3ff-4158-8b14-c97593385a64"
-        name="Изобразить дорогу"
+        name="Display the road"
         isAbstract="false"
-        isLeaf="false">
-        <targetEnds>
-          <association
-            Id="d20bbd2d-2564-4915-9f47-aa8b8490dd20"
-            isDerived="false"
-            sourceEndRoleName="Изобразить дорогу"
-            targetEndRoleName="Пользователь"
-            isLeaf="false"
-            isAbstract="false">
-            <actorMoniker
-              Id="d2e6b1bb-e544-4433-a056-cd9b831b03c7"
-              LastKnownName="Пользователь"
-              LastKnownLocation="TransportEmulator.uml" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="95e404de-af1f-418d-93da-402cfcede39a"
-                  name="Изобразить дорогу"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false"
-                  isNavigableOwned="false" />
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd
-                  Id="97bb1610-d910-4224-8303-5cf9dd19dba0"
-                  name="Пользователь"
-                  isLeaf="false"
-                  isStatic="false"
-                  isReadOnly="false"
-                  isDerived="false"
-                  isDerivedUnion="false"
-                  aggregation="None"
-                  isComposite="false" />
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-          </association>
-        </targetEnds>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <useCase
         Id="6788a48b-dc1f-4e60-8dcb-057c61061df4"
-        name="Разместить ТС на дороге"
+        name="Place vehicle on the road"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="a6b700bb-b55b-4b56-9268-124315fedee6">
+            Id="36e323af-af93-40a2-9519-ddba2d4b8530">
             <useCaseMoniker
               Id="1c32646d-a3ff-4158-8b14-c97593385a64"
-              LastKnownName="Изобразить дорогу"
+              LastKnownName="Display the road"
               LastKnownLocation="TransportEmulator.uml" />
           </extend>
         </extendedCases>
@@ -539,7 +503,7 @@
             Id="2e933aaa-2475-4632-bda8-21712a336d51">
             <useCaseMoniker
               Id="1c32646d-a3ff-4158-8b14-c97593385a64"
-              LastKnownName="Изобразить дорогу"
+              LastKnownName="Display the road"
               LastKnownLocation="TransportEmulator.uml" />
           </include>
         </additions>
@@ -548,15 +512,15 @@
     <packageHasNamedElement>
       <useCase
         Id="0f8c16b4-2bf9-4a81-a508-0fa11babcfe5"
-        name="Остановить ТС"
+        name="Stop vehicle"
         isAbstract="false"
         isLeaf="false">
         <extendedCases>
           <extend
-            Id="9a2f0f8f-5f0e-43a3-950c-905b5fef0353">
+            Id="244c1981-f474-445b-9400-323eeba9ef5c">
             <useCaseMoniker
               Id="d1b800b5-9afe-453a-904a-6b3a07147ffd"
-              LastKnownName="Провести симуляцию"
+              LastKnownName="Start simulation"
               LastKnownLocation="TransportEmulator.uml" />
           </extend>
         </extendedCases>
@@ -583,9 +547,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
-                LastKnownName="int"
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
@@ -602,9 +566,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
-                LastKnownName="int"
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
@@ -621,9 +585,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
-                LastKnownName="int"
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
@@ -640,9 +604,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
-                LastKnownName="int"
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
@@ -659,9 +623,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
-                LastKnownName="int"
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
@@ -678,13 +642,41 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
-                LastKnownName="int"
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f54395b1-ac94-45c4-82be-fcfbdbaa14fe"
+            name="info"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ebaca05d-0970-4732-9dca-fc6c27ad6d91"
+            name="setSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7061cfb0-65d0-48b5-9d67-67efb61c5ef2"
+                  name="Integer"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -723,6 +715,27 @@
               LastKnownLocation="TransportEmulator.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="24aa8a6d-660b-45b7-a8a2-6fe9124f0714"
+            name="cargoWeight"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6647855e-01c9-4231-aee3-bbd684308ac2"
+                LastKnownName="Double"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -742,6 +755,27 @@
               LastKnownLocation="TransportEmulator.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="f406cdcc-7018-416b-b5c4-f20ee11fcf10"
+            name="electricPower"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6647855e-01c9-4231-aee3-bbd684308ac2"
+                LastKnownName="Double"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -772,11 +806,11 @@
         isActiveClass="false">
         <generalsInternal>
           <generalization
-            Id="3426e5b0-2577-4753-bb4a-279c369ad7a7"
+            Id="482b9dbd-a7ae-42fc-ab6d-9bfcce7c177f"
             isSubstitutable="false">
             <classMoniker
-              Id="b86cc625-3e4f-481d-a6f8-c632a17715cd"
-              LastKnownName="NonMotorizedVehicle"
+              Id="2840b83b-9272-41f3-a823-77a1e6011952"
+              LastKnownName="MotorizedVehicle"
               LastKnownLocation="TransportEmulator.uml" />
           </generalization>
         </generalsInternal>
@@ -799,6 +833,27 @@
               LastKnownLocation="TransportEmulator.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="bd02c39d-9609-4b2f-9de9-fabd2f870312"
+            name="horseNumber"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -906,6 +961,19 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="98bbb595-5c29-41c4-8bbb-a6ccccb92a15"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1000,8 +1068,8 @@
             isComposite="false">
             <type_NamedElement>
               <undefinedTypeMoniker
-                Id="73c40f57-764c-4529-b18b-a04a59adb77b"
-                LastKnownName="double"
+                Id="6647855e-01c9-4231-aee3-bbd684308ac2"
+                LastKnownName="Double"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
@@ -1089,13 +1157,76 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <undefinedTypeMoniker
-                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
-                LastKnownName="int"
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="47fafb9b-ed2e-4a44-ab39-688445bdaa42"
+            name="infrastructure"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="22663ba9-2150-4d2c-b2a9-2f7bcd400e0c"
+                name="Lower"
+                value="1" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="4fcee0e1-9c6c-4cab-ae90-170331167bbb"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fa8b0d5b-2c14-4e2c-b902-369347462cb3"
+            name="placeVehicle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6f6f4cbb-a7d9-43f4-a5e8-4c9bba70b2fa"
+                  name="Vehicle"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b6e43a07-81c2-46c2-88cc-d481f324b4a8"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="TransportEmulator.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1159,6 +1290,68 @@
             </relationshipOwnedElementsInternal>
           </association>
         </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="5833196f-d54f-4a9f-81dc-c4959514b0cd"
+            name="length"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="699f8fd4-e2cb-451a-b9d1-c966cb32b829"
+            name="lanes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="752a9e73-a5a5-4e15-b5f9-65d959bca072"
+                name="Lower"
+                value="5" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="529b3380-535d-4c2c-8abc-74a0fd3b5e10"
+                name="Upper"
+                value="5" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0b5d2959-6f86-47c6-85db-26621ac2f9e5"
+                LastKnownName="TrafficLane"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0fe90f36-d471-4801-aa9f-8af543ea3b51"
+            name="Road"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -1171,7 +1364,22 @@
         Id="3505b861-75c5-4ae3-ad55-2b5086da2655"
         name="FuelType"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="1b97d12f-2b07-4eec-8f04-55eb630113d6"
+            name="OCTANE_91" />
+          <enumerationLiteral
+            Id="9adfef4f-f2b9-405a-a82b-a1a7c002016c"
+            name="OCTANE_95" />
+          <enumerationLiteral
+            Id="026ca4bc-5edb-47c5-8623-3469d22eb511"
+            name="OCTANE_98" />
+          <enumerationLiteral
+            Id="be41b5f0-8be4-4075-ae93-e9855283338a"
+            name="DIESEL" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <interaction
@@ -3137,6 +3345,27 @@
       <executionEvent
         Id="f1225911-ceeb-462b-9b41-ed9df123f2f0"
         name="ExecutionEvent" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a099f807-72ec-4902-8873-31e87613a9e6"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6647855e-01c9-4231-aee3-bbd684308ac2"
+        name="Double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="5ff3119f-4e8e-4775-ba74-fc8062c445eb"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType

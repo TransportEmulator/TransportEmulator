@@ -1,34 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm5="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="1b88d00c-a329-4bd5-851b-3a1091aa9a6b" name="UMLUseCaseDiagram1" linkedPackageId="1e543102-3946-4e21-8ccf-4d08a481d3a5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="1b88d00c-a329-4bd5-851b-3a1091aa9a6b" name="UMLUseCaseDiagram1" linkedPackageId="1e543102-3946-4e21-8ccf-4d08a481d3a5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="0982fe60-7187-4881-b283-ade0fd80bb3d">
       <elementDefinition Id="6a7eda77-c4d6-441d-969a-60475b2b5f27" />
-      <body>В соответсвии с ограничениями:
-*по полосе с трамвайными путями может двигаться только трамвай
-*трамвай не может двигаться без трамвайных путей
-*троллейбус может двигаться только по полосе, оборудованной троллейбусными проводами
-* по полосе, оборудованной троллейбусными проводами, может двигаться не только троллейбус
-*на гужевой повозке, велосипеде, самокате и танке можно двигаться только по крайним полосам
-</body>
+      <body>In accordance with restrictions:
+* Only a tram can move along the strip with tram tracks
+* Tram can not move without tramways
+* Trolley can move only along the strip, equipped trolleybus wires
+* Band-equipped trolleybus wires can move not only trolleybus
+* On a horse-drawn carriage, bicycle, scooter, and the tank can move only by extreme bands</body>
       <annotatedElements>
-        <useCaseMoniker Id="350ad82e-6647-4a8e-837b-92e1d45cde49" LastKnownName="Разместить ТС на дороге" />
+        <useCaseMoniker Id="350ad82e-6647-4a8e-837b-92e1d45cde49" LastKnownName="Place vehicle on the road" />
       </annotatedElements>
     </comment>
     <comment Id="e410dc5c-81d2-4bd6-98a2-c72fec7b787f">
       <elementDefinition Id="14ae5a71-21ab-4a10-a00b-bc351e1fa290" />
-      <body>Остановить симуляцию по требованию пользователя, после чего возобновить нажатием кнопки СТАРТ</body>
+      <body>Stop simulation of on-demand. Resume by pressing the START button</body>
       <annotatedElements>
-        <useCaseMoniker Id="3e6d0792-9373-4ac5-9056-ba6e52d993bc" LastKnownName="Остановить ТС" />
+        <useCaseMoniker Id="3e6d0792-9373-4ac5-9056-ba6e52d993bc" LastKnownName="Stop vehicle" />
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
     <useCaseModelRootHasTypes>
-      <actor Id="0a2c201f-627a-405c-b494-066ca16a2b83" name="Пользователь" isAbstract="false" isLeaf="false">
+      <actor Id="0a2c201f-627a-405c-b494-066ca16a2b83" name="User" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d2e6b1bb-e544-4433-a056-cd9b831b03c7" />
         <targetEnds>
           <association Id="01e4d332-676b-4cd3-bb1c-777108d8376a" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="Создать список из видов топлива" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="8280357b-e3cf-4e59-ae96-92d11bc5827b" LastKnownName="Создать вид топлива" />
+            <useCaseMoniker Id="8280357b-e3cf-4e59-ae96-92d11bc5827b" LastKnownName="Create a type of fuel" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="2c77d686-5633-4fe9-a06e-8519230eba33" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -54,7 +53,7 @@
             <elementDefinition Id="158f3601-ca0a-4ab1-ac9a-b3f758848726" />
           </association>
           <association Id="375adcb9-2c88-481e-a045-353e6e2067bc" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="Запустить симуляцию" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="919b7943-00ce-45e1-8e7f-1f4efdceb871" LastKnownName="Провести симуляцию" />
+            <useCaseMoniker Id="919b7943-00ce-45e1-8e7f-1f4efdceb871" LastKnownName="Start simulation" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="2f6258ab-8d76-4bee-8184-1a0ab2a29ad1" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -70,7 +69,7 @@
             <elementDefinition Id="4c72b573-fc3a-4826-83d6-1d6e701564d7" />
           </association>
           <association Id="8cfbaf64-999f-4c70-afa5-2bd607a8c8b1" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="Вывести на экран журнал ТС" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="15fa4cb3-456a-4e26-814d-faa6f3b98b49" LastKnownName="Вывести на экран или экспортировать журнал ТС" />
+            <useCaseMoniker Id="15fa4cb3-456a-4e26-814d-faa6f3b98b49" LastKnownName="Display or export log" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="e00de726-ce0e-4384-a779-d08124095306" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -86,7 +85,7 @@
             <elementDefinition Id="03bd94af-9b8e-466c-b1cf-b000552aba3a" />
           </association>
           <association Id="de0dd6a5-9d86-4961-b762-23893f976513" isDerived="false" sourceEndRoleName="Пользователь" targetEndRoleName="Создать ТС" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="4fd8b04f-13ab-4c06-9d68-b751a6d37fce" LastKnownName="Создать ТС" />
+            <useCaseMoniker Id="4fd8b04f-13ab-4c06-9d68-b751a6d37fce" LastKnownName="Create vehicle" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="bf5c6ea7-c807-445f-9da3-e56223f03a25" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -115,16 +114,16 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="8280357b-e3cf-4e59-ae96-92d11bc5827b" name="Создать вид топлива" isAbstract="false" isLeaf="false">
+      <useCase Id="8280357b-e3cf-4e59-ae96-92d11bc5827b" name="Create a type of fuel" isAbstract="false" isLeaf="false">
         <elementDefinition Id="f95f798c-b9f8-45c8-bd0f-57fc6c630972" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="15fa4cb3-456a-4e26-814d-faa6f3b98b49" name="Вывести на экран или экспортировать журнал ТС" isAbstract="false" isLeaf="false">
+      <useCase Id="15fa4cb3-456a-4e26-814d-faa6f3b98b49" name="Display or export log" isAbstract="false" isLeaf="false">
         <elementDefinition Id="efddb394-d890-4467-89a8-8b34fac49285" />
         <targetEnds>
           <association Id="3074e5ba-b276-42b6-ab94-add52902ab68" isDerived="false" sourceEndRoleName="Вывести на экран журнал ТС" targetEndRoleName="Журнал" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="da890254-f72e-4e36-af9c-e5ecb8763fa8" LastKnownName="Журнал" />
+            <actorMoniker Id="da890254-f72e-4e36-af9c-e5ecb8763fa8" LastKnownName="Log" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="63041cf1-f6ff-4bee-9494-42e4f3bda14a" name="Вывести на экран журнал ТС" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -143,16 +142,16 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <actor Id="da890254-f72e-4e36-af9c-e5ecb8763fa8" name="Журнал" isAbstract="false" isLeaf="false">
+      <actor Id="da890254-f72e-4e36-af9c-e5ecb8763fa8" name="Log" isAbstract="false" isLeaf="false">
         <elementDefinition Id="636571cf-da36-48bb-b3d5-167f20857207" />
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="b15ee868-1d13-45dd-8b41-3acfe9d92793" name="Вести журнал" isAbstract="false" isLeaf="false">
+      <useCase Id="b15ee868-1d13-45dd-8b41-3acfe9d92793" name="Log state" isAbstract="false" isLeaf="false">
         <elementDefinition Id="a33448e4-bad2-4606-a844-a69a6b02977d" />
         <targetEnds>
           <association Id="a2e1962f-d636-444c-b8ad-9df0a430887c" isDerived="false" sourceEndRoleName="Вести журнал" targetEndRoleName="Журнал" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="da890254-f72e-4e36-af9c-e5ecb8763fa8" LastKnownName="Журнал" />
+            <actorMoniker Id="da890254-f72e-4e36-af9c-e5ecb8763fa8" LastKnownName="Log" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="ccc35d1f-43ec-4156-9469-5c840422433a" name="Вести журнал" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -171,73 +170,59 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="919b7943-00ce-45e1-8e7f-1f4efdceb871" name="Провести симуляцию" isAbstract="false" isLeaf="false">
+      <useCase Id="919b7943-00ce-45e1-8e7f-1f4efdceb871" name="Start simulation" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d1b800b5-9afe-453a-904a-6b3a07147ffd" />
         <additions>
-          <include Id="ca097bd4-29d3-4376-9e02-b4a2c637d607">
-            <useCaseMoniker Id="b15ee868-1d13-45dd-8b41-3acfe9d92793" LastKnownName="Вести журнал" />
-            <elementDefinition Id="37d9e3f7-79b2-4241-b5be-150ba98102ba" />
+          <include Id="4c913f4e-c86e-4176-9f6e-66c421237eb8">
+            <useCaseMoniker Id="b15ee868-1d13-45dd-8b41-3acfe9d92793" LastKnownName="Log state" />
+            <elementDefinition Id="f0b00ecf-f43f-4525-a449-ad9de5e5ceae" />
+          </include>
+          <include Id="0a562631-d86a-4fc5-b288-140c576b3989">
+            <useCaseMoniker Id="5828fae1-8f8e-4bb4-9844-57bfd9e8206c" LastKnownName="Display the road" />
+            <elementDefinition Id="d1616382-cd72-4d79-b45d-440d20871ef2" />
           </include>
         </additions>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="a0635217-f19a-4eee-b021-a8dae7d4edf1" name="Вывести сообщение об ошибке" isAbstract="false" isLeaf="false">
+      <useCase Id="a0635217-f19a-4eee-b021-a8dae7d4edf1" name="Display error message" isAbstract="false" isLeaf="false">
         <elementDefinition Id="2c9c1714-70d1-4e40-81dc-f3d9c5c02279" />
         <extendedCases>
-          <extend Id="13672f92-3f97-4101-9f09-074c24e6de6a">
-            <useCaseMoniker Id="4fd8b04f-13ab-4c06-9d68-b751a6d37fce" LastKnownName="Создать ТС" />
-            <elementDefinition Id="67eeabb4-8e34-457a-921d-99f40f026198" />
+          <extend Id="7066a398-8766-40fe-a960-9f9143f038a4">
+            <useCaseMoniker Id="4fd8b04f-13ab-4c06-9d68-b751a6d37fce" LastKnownName="Create vehicle" />
+            <elementDefinition Id="32f70ab1-6617-4a04-bc1c-c528e04204df" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="4fd8b04f-13ab-4c06-9d68-b751a6d37fce" name="Создать ТС" isAbstract="false" isLeaf="false">
+      <useCase Id="4fd8b04f-13ab-4c06-9d68-b751a6d37fce" name="Create vehicle" isAbstract="false" isLeaf="false">
         <elementDefinition Id="12f67b62-bd4f-4387-93fd-d93b600c8472" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="5828fae1-8f8e-4bb4-9844-57bfd9e8206c" name="Изобразить дорогу" isAbstract="false" isLeaf="false">
+      <useCase Id="5828fae1-8f8e-4bb4-9844-57bfd9e8206c" name="Display the road" isAbstract="false" isLeaf="false">
         <elementDefinition Id="1c32646d-a3ff-4158-8b14-c97593385a64" />
-        <targetEnds>
-          <association Id="7b79cf2d-cbb1-4ea1-99d6-559ef6b44997" isDerived="false" sourceEndRoleName="Изобразить дорогу" targetEndRoleName="Пользователь" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="0a2c201f-627a-405c-b494-066ca16a2b83" LastKnownName="Пользователь" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="6e7ac58e-98f1-4087-99f1-9ba26dcc993f" name="Изобразить дорогу" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="95e404de-af1f-418d-93da-402cfcede39a" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="fa172990-3fef-4c45-a3c6-68bd3c5c2e92" name="Пользователь" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="97bb1610-d910-4224-8303-5cf9dd19dba0" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="d20bbd2d-2564-4915-9f47-aa8b8490dd20" />
-          </association>
-        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="350ad82e-6647-4a8e-837b-92e1d45cde49" name="Разместить ТС на дороге" isAbstract="false" isLeaf="false">
+      <useCase Id="350ad82e-6647-4a8e-837b-92e1d45cde49" name="Place vehicle on the road" isAbstract="false" isLeaf="false">
         <elementDefinition Id="6788a48b-dc1f-4e60-8dcb-057c61061df4" />
         <extendedCases>
-          <extend Id="fe2d17dd-1986-40b0-9519-f6a6cc3cd581">
-            <useCaseMoniker Id="5828fae1-8f8e-4bb4-9844-57bfd9e8206c" LastKnownName="Изобразить дорогу" />
-            <elementDefinition Id="a6b700bb-b55b-4b56-9268-124315fedee6" />
+          <extend Id="a209e0cb-4b12-46df-af5e-a6d12558d9a5">
+            <useCaseMoniker Id="5828fae1-8f8e-4bb4-9844-57bfd9e8206c" LastKnownName="Display the road" />
+            <elementDefinition Id="36e323af-af93-40a2-9519-ddba2d4b8530" />
           </extend>
         </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="3e6d0792-9373-4ac5-9056-ba6e52d993bc" name="Остановить ТС" isAbstract="false" isLeaf="false">
+      <useCase Id="3e6d0792-9373-4ac5-9056-ba6e52d993bc" name="Stop vehicle" isAbstract="false" isLeaf="false">
         <elementDefinition Id="0f8c16b4-2bf9-4a81-a508-0fa11babcfe5" />
         <extendedCases>
-          <extend Id="f67a5de4-bdfa-4063-834e-fb6ce793a36f">
-            <useCaseMoniker Id="919b7943-00ce-45e1-8e7f-1f4efdceb871" LastKnownName="Провести симуляцию" />
-            <elementDefinition Id="9a2f0f8f-5f0e-43a3-950c-905b5fef0353" />
+          <extend Id="8ff7b5b9-f7ce-495d-be56-2cf2c5d20388">
+            <useCaseMoniker Id="919b7943-00ce-45e1-8e7f-1f4efdceb871" LastKnownName="Start simulation" />
+            <elementDefinition Id="244c1981-f474-445b-9400-323eeba9ef5c" />
           </extend>
         </extendedCases>
       </useCase>
