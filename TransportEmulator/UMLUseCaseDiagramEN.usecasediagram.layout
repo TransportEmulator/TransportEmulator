@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 10.5" name="UMLUseCaseDiagramEN">
+  <useCaseModelRootMoniker Id="b5be2a72-b510-43e6-b1c2-f600619fe606" />
+  <nestedChildShapes>
+    <actorShape Id="dfb4a2e2-169a-41cc-bab0-e2ba34d7e0f1" absoluteBounds="0.5, 7.5, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="e85c26de-9488-498b-a230-4cd022ab6906" LastKnownName="User1" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="61c6b3de-0362-438f-a1f3-d4c2ba0c9017" absoluteBounds="1.875, 8.25, 1.375, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d9e19aaf-390e-432a-89d8-636ba9126713" LastKnownName="Create a type of fuel1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1 : 7.85344827586207); (2.10867120718653 : 8.31220877538753)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+      <associationMoniker Id="c105a137-1184-4c1d-8b2d-aaf436529857" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="dfb4a2e2-169a-41cc-bab0-e2ba34d7e0f1" />
+        <useCaseShapeMoniker Id="61c6b3de-0362-438f-a1f3-d4c2ba0c9017" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="00095e76-1428-49b9-aa9d-eec1744177b7" absoluteBounds="2, 6.125, 1.625, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="db923c81-b834-4809-aa6f-35aa7e023a08" LastKnownName="Display or export log1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1 : 7.60606060606061); (2.25751749993325 : 6.88203537882631)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="34ad684a-809e-49b0-be9b-71831bdaf73c" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="dfb4a2e2-169a-41cc-bab0-e2ba34d7e0f1" />
+        <useCaseShapeMoniker Id="00095e76-1428-49b9-aa9d-eec1744177b7" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <actorShape Id="38ea062c-5627-456c-a469-405d97dd7aa9" absoluteBounds="5.5, 7, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="2e027e2e-bfae-4a7b-996c-979c9ff20cc8" LastKnownName="Log1" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseAssociationConnector edgePoints="[(3.55765542421294 : 6.73689807800728); (5.5 : 7.19148936170213)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="1a0d4496-3d73-46e9-9d7b-f76dfab9ca15" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="00095e76-1428-49b9-aa9d-eec1744177b7" />
+        <actorShapeMoniker Id="38ea062c-5627-456c-a469-405d97dd7aa9" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="0dc2ba73-bd0d-4164-a7ae-444e3da5137b" absoluteBounds="4, 7.375, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ee01feea-8783-4d48-a902-b6938217e6bb" LastKnownName="Log state1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.02103897964978 : 7.4801982169527); (5.5 : 7.32894736842105)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="1d800f33-882d-491f-8bed-e4a64fccd91d" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="0dc2ba73-bd0d-4164-a7ae-444e3da5137b" />
+        <actorShapeMoniker Id="38ea062c-5627-456c-a469-405d97dd7aa9" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="bcc8cb01-f3c5-4232-bdf8-c05f6f140392" absoluteBounds="1.5, 7.375, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="12096fc3-02a7-4c43-bac4-fc3d3aa8f542" LastKnownName="Start simulation1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(2.5 : 7.625); (4 : 7.625)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="ee1e978c-13da-41a2-9988-cdc7aae7894c" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="bcc8cb01-f3c5-4232-bdf8-c05f6f140392" />
+        <useCaseShapeMoniker Id="0dc2ba73-bd0d-4164-a7ae-444e3da5137b" />
+      </nodes>
+    </includeConnector>
+    <useCaseAssociationConnector edgePoints="[(1 : 7.725); (1.50970966215454 : 7.67402903378455)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="518c8407-14df-4931-bcbc-cf0ba03807b7" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="dfb4a2e2-169a-41cc-bab0-e2ba34d7e0f1" />
+        <useCaseShapeMoniker Id="bcc8cb01-f3c5-4232-bdf8-c05f6f140392" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="896831be-a42b-4c6f-b381-746206b7d9b9" absoluteBounds="2.625, 8.75, 1.125, 0.625" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="910857bd-974a-4bcd-9bed-08e8cbd7c39b" LastKnownName="Display error message1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="67c29ea3-275c-4383-8682-927d8b0673ee" absoluteBounds="0.625, 8.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="3ab51412-d9bd-4f8b-864e-5275a9ccd9a5" LastKnownName="Create vehicle1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(2.63238304712002 : 9.01203482246546); (1.61693495504995 : 8.91972135955)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="7a13d536-5f6b-47de-9038-7998f404c715" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="896831be-a42b-4c6f-b381-746206b7d9b9" />
+        <useCaseShapeMoniker Id="67c29ea3-275c-4383-8682-927d8b0673ee" />
+      </nodes>
+    </extendConnector>
+    <useCaseAssociationConnector edgePoints="[(0.833333333333333 : 8); (1.04280050634732 : 8.62840151904196)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="5">
+      <associationMoniker Id="e33b4149-5bcb-436f-9059-aca2cdda9971" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="dfb4a2e2-169a-41cc-bab0-e2ba34d7e0f1" />
+        <useCaseShapeMoniker Id="67c29ea3-275c-4383-8682-927d8b0673ee" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="59ee2563-93a4-40b2-9722-5f143bab3b07" absoluteBounds="3.25, 8, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="db940efc-5340-4a62-9628-6335d022cc3a" LastKnownName="Display the road1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <includeConnector edgePoints="[(2.40686673560337 : 7.77030954842977); (3.34313326439663 : 8.10469045157023)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+      <includeMoniker Id="fecf5927-73d0-4ead-abe9-0bb53ee8b82a" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="bcc8cb01-f3c5-4232-bdf8-c05f6f140392" />
+        <useCaseShapeMoniker Id="59ee2563-93a4-40b2-9722-5f143bab3b07" />
+      </nodes>
+    </includeConnector>
+    <useCaseShape Id="a0dac285-7fb4-4f23-b8b6-3628f25bedaa" absoluteBounds="4.875, 8, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="94cd2ea4-7206-4e39-b62b-cd24ef6a47fb" LastKnownName="Place vehicle on the road1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(4.875 : 8.25); (4.25 : 8.25)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="588e24a6-34e4-42ae-b277-98eff10f63dc" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="a0dac285-7fb4-4f23-b8b6-3628f25bedaa" />
+        <useCaseShapeMoniker Id="59ee2563-93a4-40b2-9722-5f143bab3b07" />
+      </nodes>
+    </extendConnector>
+    <commentShape Id="4cd80341-9148-4b93-9b4f-20ece75c6dc4" absoluteBounds="3.75, 8.75, 2.875, 1.5" customColor="251, 247, 200">
+      <commentMoniker Id="e1bb8555-45ad-4383-a3d7-3eae37423a9b" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentConnector edgePoints="[(5.5 : 8.75); (5.5 : 8.5)]" fixedFrom="Algorithm" fixedTo="Algorithm" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="4cd80341-9148-4b93-9b4f-20ece75c6dc4" />
+        <useCaseShapeMoniker Id="a0dac285-7fb4-4f23-b8b6-3628f25bedaa" />
+      </nodes>
+    </commentConnector>
+    <useCaseShape Id="46040efe-7b0c-493d-b883-3082489e7be5" absoluteBounds="2.875, 7, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="ffe34fe6-9e24-4061-ae1e-cf2ae74cbd0d" LastKnownName="Stop vehicle1" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <extendConnector edgePoints="[(2.97000105999682 : 7.38249973500079); (2.44721359549996 : 7.51319660112501)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+      <extendMoniker Id="53b7e2bb-025a-4927-a326-6503b71ed850" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="46040efe-7b0c-493d-b883-3082489e7be5" />
+        <useCaseShapeMoniker Id="bcc8cb01-f3c5-4232-bdf8-c05f6f140392" />
+      </nodes>
+    </extendConnector>
+    <commentShape Id="85b4fca3-b616-4413-a5ca-d9cace4210a3" absoluteBounds="4.375, 6.125, 1.25, 0.625" customColor="251, 247, 200">
+      <commentMoniker Id="2cf97e8a-8a87-4758-95d9-d471d0c2c0cf" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentConnector edgePoints="[(4.375 : 6.75); (4.01604034288791 : 7.10895965711209)]" fixedFrom="NotFixed" fixedTo="NotFixed" TargetRelationshipDomainClassId="217d6bd0-42ed-4e7f-ad2b-af3ef5142428" customColor="Black">
+      <relativeChildShapes />
+      <nodes>
+        <commentShapeMoniker Id="85b4fca3-b616-4413-a5ca-d9cace4210a3" />
+        <useCaseShapeMoniker Id="46040efe-7b0c-493d-b883-3082489e7be5" />
+      </nodes>
+    </commentConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,57 +1,127 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="95229ed3-be51-4470-bc12-81545390928b" name="UMLClassDiagram1" linkedPackageId="7b87a096-b286-44ec-8e43-3ed80376bca6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
+    <packageHasNamedElement>
+      <referencedType Id="7bdf1981-9ee0-4f5f-bdc0-bd74b8495ad0" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="e676627f-a59e-40fa-982b-e68c79071470" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="661c58e1-ffc8-4f0c-86cb-a947490bf476" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b711e9fe-869a-4728-b43e-904e994e4ac4" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="9b7e1b55-2b6a-47f1-822b-da8aed33a225" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="b72c8a74-b5d6-409a-9c3b-3cec8e57457b" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="6e225b13-9f10-4be7-b979-a2059232f1c2" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
+        <elementDefinition Id="e88d8f1a-509e-4f29-ba8b-ae6be38942f8" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="aa17f38d-7169-484b-88de-977bf5663b22" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="430ec2b5-098d-4b4a-8760-d7fe267154b9" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="775e15e4-a519-4345-b2a3-f41f74d7b00a" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="c8a3af3f-9ad6-4672-820d-c9f7dac8c073" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bbba7941-c674-4612-8fff-6624fed7a0a4" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0ae3df3d-746a-4f59-86a7-ec4f9dd8f1e1" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="d8b091ac-bbbc-41b0-9d4e-cc7fdb0f86ee" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="3bff3117-bc0b-44e7-8f48-f2cbebba7e55" name="TransportEmulator::TrafficLane" isAbstract="false" isLeaf="false" cachedFullName="TransportEmulator::TrafficLane">
+        <elementDefinition Id="0b5d2959-6f86-47c6-85db-26621ac2f9e5" />
+      </referencedType>
+    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <class Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" name="Vehicle" isAbstract="true" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="bb11d407-9d6a-46c9-bd96-430e8f134b3d" />
+      <class Id="84f4236d-4c04-4a69-9301-8d19e0941268" name="Vehicle1" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e0ef3a4a-901e-4ba0-8e48-6a7071bc612b" />
         <ownedAttributesInternal>
-          <property Id="b74c5d19-35c0-44f2-b557-50f05ddb22e8" name="maxDistance" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="89be37eb-7039-4f0a-9fdc-a9c8598d8e68" />
+          <property Id="99a4d92a-ffe7-43bc-ae40-dddcf3fcee64" name="maxDistance" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0fb802d7-c49d-4c18-a085-558a332fcb7a" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="767a49c3-6b37-495e-a325-ac1659f581f2" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="7bdf1981-9ee0-4f5f-bdc0-bd74b8495ad0" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="d27dab3b-a19f-4ef7-9447-2c135f3dc351" name="driverAge" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="a57b5bd9-f01b-4e4f-9746-1a2ffed1dfb5" />
+          <property Id="149ad7cc-e3cf-4070-88c6-4b9bc95ee7dc" name="driverAge" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6b5c940c-296e-42fb-b165-94a2a935fb7b" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="cffd3766-c464-479c-9979-9fff303fb2b6" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="e676627f-a59e-40fa-982b-e68c79071470" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="a0701cc7-a5e3-4cea-9d37-e4bfbf1a9333" name="curSpeed" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="464ce69e-d8df-45ba-985d-97522f051950" />
+          <property Id="a28b3bcb-475a-4f34-a906-1a1d07367e55" name="curSpeed" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8c06aa53-3945-466b-b7e4-2403701db0d5" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="eae65e2c-59bc-4ba3-a32c-2b4455a3cb0b" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="661c58e1-ffc8-4f0c-86cb-a947490bf476" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="4f5aab75-0789-4bdb-b81c-fdd3ac69ba54" name="maxSpeed" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="cb6d839d-d23b-4cb7-b83f-dfb30fc1fed3" />
+          <property Id="cfdee795-668e-448b-904d-766044c89ce6" name="maxSpeed" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="044a5d1b-9395-439d-868e-dd4ca23aa75d" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="d380e418-b918-4f1a-bc3c-a33b10e380bb" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="b711e9fe-869a-4728-b43e-904e994e4ac4" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="1937f684-5b1e-4e20-a121-5794eb4b99b9" name="weight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="04116cbe-0a3b-4931-9bc2-b380347d2963" />
+          <property Id="4eeb8ed9-8a35-4046-bb29-b333185f9940" name="weight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="61f144d5-b175-42f4-ac79-4cdc8a1af58f" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="a95a0a56-e1b5-4b8a-9b3e-857949110bdc" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="9b7e1b55-2b6a-47f1-822b-da8aed33a225" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="327ce219-0f74-4168-abac-66b95abeb2a2" name="color" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="c5268176-e75a-4c55-9269-4aedc1dce4b8" />
+          <property Id="dee90505-7bae-4c53-97f7-ad41f1370900" name="color" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8e5c1c70-88fd-4823-93bb-f8afa5ef91e4" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="39662aaf-d07a-41ec-a91c-0452d3a7a1aa" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="b72c8a74-b5d6-409a-9c3b-3cec8e57457b" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="3a7eb162-9238-4e84-8a5c-ac61b742fcf9" name="info" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="f54395b1-ac94-45c4-82be-fcfbdbaa14fe" />
+          <operation Id="cb3ca8e4-d129-48ed-bef2-547a95188976" name="info" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="190fd947-9e45-424d-a2b4-f8af6a77b75c" />
           </operation>
-          <operation Id="0a441675-6999-43b5-b73b-22de6c9e554c" name="setSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="ebaca05d-0970-4732-9dca-fc6c27ad6d91" />
+          <operation Id="5c045d3c-1dc9-4407-bf6a-85d8013d52d0" name="setSpeed" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5de45872-f420-41b2-8f01-dc4b9b7032b8" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="a649dde9-0b21-4a05-bb79-96786d59b2ea" name="Integer" direction="In" isUnique="false">
-                  <elementDefinition Id="7061cfb0-65d0-48b5-9d67-67efb61c5ef2" />
+                <parameter Id="73054225-f50e-476e-861b-2a13c2c22455" name="Integer" direction="In" isUnique="false">
+                  <elementDefinition Id="ddc360a3-4b7c-4779-a3b2-81f27ba04604" />
                 </parameter>
               </operationHasOwnedParameters>
             </ownedParameters>
@@ -60,269 +130,269 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="ab8df3f7-ffc1-49c3-a569-bc6a8a4b323f" name="Car" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="9639a209-9a5c-4199-8ddd-15295150855b" />
+      <class Id="f5336a4d-b2f5-4a14-b368-6ea61efee884" name="Car1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="889cf0dd-12f3-47ac-a3e4-f722ef89172b" />
         <generalsInternal>
-          <generalization Id="e81e944b-7df2-4c69-bcc5-3e5a2333f04f" isSubstitutable="false">
-            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
-            <elementDefinition Id="299ba57d-af56-4594-949a-a6e13344f9fc" />
+          <generalization Id="81e99948-e6f5-4b72-b7ca-5c631c734639" isSubstitutable="false">
+            <classMoniker Id="dfef1a31-ebb2-4d06-80b4-e644ce0126f1" LastKnownName="MotorizedVehicle1" />
+            <elementDefinition Id="84f9e1b0-565a-4fc8-a394-cfbdbd9cc877" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="9a685a38-76f2-4292-82f5-ec0f59dba6c2" name="Truck" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="d4aa1e7a-6bd1-43cf-ad69-76ca9b7c87f5" />
+      <class Id="676d2ac4-b75a-4cfc-b448-d7e51877a3ce" name="Truck1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="98812a0d-e1ea-4459-813a-090eaa7c9f9e" />
         <generalsInternal>
-          <generalization Id="82f098e6-4648-4f08-b08c-15a100f3a383" isSubstitutable="false">
-            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
-            <elementDefinition Id="5e0a7048-bc20-474e-a65c-c6b77ee90499" />
+          <generalization Id="363e2ca9-dcb9-4112-a6f2-3566628c4380" isSubstitutable="false">
+            <classMoniker Id="dfef1a31-ebb2-4d06-80b4-e644ce0126f1" LastKnownName="MotorizedVehicle1" />
+            <elementDefinition Id="7108917b-6765-4f1e-b5ea-c641bede81ad" />
           </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
-          <property Id="27e4f9fc-f681-4e32-84f5-f2d4619a3606" name="cargoWeight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="24aa8a6d-660b-45b7-a8a2-6fe9124f0714" />
+          <property Id="e3f1cfe8-5c85-4462-9748-5f8b10311709" name="cargoWeight" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5de69f11-5a73-4060-bc0a-3ba52e6b2564" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="9cd3315e-e0ca-461f-b497-8342ec3df7e6" LastKnownName="Double" />
+              <referencedTypeMoniker Id="6e225b13-9f10-4be7-b979-a2059232f1c2" LastKnownName="Double" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="fd4446a4-887e-47b0-b99f-6a93aa8df1f6" name="Trolleybus" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="5a9512c1-9c93-4cee-9cc9-0b03a938cb5c" />
+      <class Id="47ca86a6-9d66-4b1d-ad07-357158a5f101" name="Trolleybus1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3167d51e-0c1d-4830-af74-b66de4c117e0" />
         <generalsInternal>
-          <generalization Id="9bcdec0e-3088-4292-8076-cc783e024eb3" isSubstitutable="false">
-            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
-            <elementDefinition Id="a67c2717-6ab2-4a3d-95cf-a04bfd5ba2a7" />
+          <generalization Id="f1a7ad4a-389a-4df3-9e77-fa52c9a3c7d8" isSubstitutable="false">
+            <classMoniker Id="dfef1a31-ebb2-4d06-80b4-e644ce0126f1" LastKnownName="MotorizedVehicle1" />
+            <elementDefinition Id="6291f6b5-d007-472a-8578-9d6e5117c728" />
           </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
-          <property Id="066ea65b-297b-4140-9fd8-2a614ed588f0" name="electricPower" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="f406cdcc-7018-416b-b5c4-f20ee11fcf10" />
+          <property Id="e5a95fe3-5e9f-42c5-ab0d-0250aadb76aa" name="electricPower" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="54c4b494-1f55-4c9b-9d67-977265a9ac18" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="9cd3315e-e0ca-461f-b497-8342ec3df7e6" LastKnownName="Double" />
+              <referencedTypeMoniker Id="6e225b13-9f10-4be7-b979-a2059232f1c2" LastKnownName="Double" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="f3d7c38d-da92-4334-95f4-eb6e264ddb9b" name="Trum" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="db2f446b-fc5f-48c8-81cf-2e33486133d9" />
+      <class Id="b415203d-03a4-49c2-9a02-0aaf5e0c5e73" name="Trum1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99b14929-0d4e-4ada-9929-42c4ece22755" />
         <generalsInternal>
-          <generalization Id="7d57ca8e-3480-43f9-be32-dcdb92b43d90" isSubstitutable="false">
-            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
-            <elementDefinition Id="29645027-9b44-438e-8d24-4b8585398383" />
+          <generalization Id="0fc4535f-0432-447a-8734-9e984bc4130a" isSubstitutable="false">
+            <classMoniker Id="dfef1a31-ebb2-4d06-80b4-e644ce0126f1" LastKnownName="MotorizedVehicle1" />
+            <elementDefinition Id="890e2e04-67b9-4584-86b4-73f73f8efe58" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="df5c91e8-96eb-4962-a347-c7c412e2da53" name="Bike" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="667110ff-33d0-4b9e-bcf2-d9f9e29693a0" />
+      <class Id="8f1bac9b-4842-4f24-857d-52a567814743" name="Bike1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3a7f9ea4-15a0-43c5-9a27-94b5410971e2" />
         <generalsInternal>
-          <generalization Id="57bf6d27-8f1a-483f-badb-030586b5a27b" isSubstitutable="false">
-            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
-            <elementDefinition Id="482b9dbd-a7ae-42fc-ab6d-9bfcce7c177f" />
+          <generalization Id="582b53d7-562a-4683-bd73-85f0d4eea8ca" isSubstitutable="false">
+            <classMoniker Id="dfef1a31-ebb2-4d06-80b4-e644ce0126f1" LastKnownName="MotorizedVehicle1" />
+            <elementDefinition Id="96d805db-b1c4-4797-b258-499f3030538a" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="1bb921d6-5182-4ada-b0f8-1eee041374ed" name="HorseDrawnCarriage" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="1c80b208-257d-415f-97d7-79728b33b965" />
+      <class Id="ee4b4680-b7d4-40bd-ad94-ef9af24571b3" name="HorseDrawnCarriage1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="a45d6d41-7665-45a2-80f3-ffea5ef4c328" />
         <generalsInternal>
-          <generalization Id="4442cd28-c8cd-4817-8c1e-5ac6e72260f3" isSubstitutable="false">
-            <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
-            <elementDefinition Id="fde5b8ea-32e2-4ce6-8470-9c4d748eb114" />
+          <generalization Id="173f96fe-be51-4d4e-9051-0097e760d645" isSubstitutable="false">
+            <classMoniker Id="a59956ed-fe93-41d9-9d60-5c893a2fc960" LastKnownName="NonMotorizedVehicle1" />
+            <elementDefinition Id="41479a11-dc23-4a0f-b504-5505a86d7f85" />
           </generalization>
         </generalsInternal>
         <ownedAttributesInternal>
-          <property Id="5583847c-c882-4abd-9673-f79ff0dc7fea" name="horseNumber" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="bd02c39d-9609-4b2f-9de9-fabd2f870312" />
+          <property Id="0b6df00e-0a06-40ff-bdf2-31f80639cefe" name="horseNumber" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="320baa6b-f5a1-4ce7-8fb6-158b99a1f17e" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="aaf4cc17-cba3-49e0-803c-6ad6fdfde742" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="aa17f38d-7169-484b-88de-977bf5663b22" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d9db6e4b-a39f-4be0-986f-856998a99bd3" name="Bicycle" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="0cea4e43-1631-4b53-a0f3-e2f4b11533f5" />
+      <class Id="6203eafa-7f8b-49d4-9824-78b55de8591b" name="Bicycle1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="09ba3d25-61e4-4bd7-a9f8-80cda76dbcbf" />
         <generalsInternal>
-          <generalization Id="b7ec99c7-518c-484a-b6cc-0a6b04af9d87" isSubstitutable="false">
-            <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
-            <elementDefinition Id="7b82aa6d-c183-4f1c-8bcb-34ae94d4c23d" />
+          <generalization Id="84868ed0-ae23-4236-b064-0cfd9f1090c5" isSubstitutable="false">
+            <classMoniker Id="a59956ed-fe93-41d9-9d60-5c893a2fc960" LastKnownName="NonMotorizedVehicle1" />
+            <elementDefinition Id="8e801845-423a-4c9f-b4ff-207b16c33d7f" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="57c8ad28-b172-4768-9035-f9a891b44937" name="Scooter" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="a2193845-2580-4338-ba72-8068aba19055" />
+      <class Id="2041c3cc-bd99-42cf-bece-7344ebe07ed8" name="Scooter1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e9449d31-9e43-4d0c-a947-3053c962b81b" />
         <generalsInternal>
-          <generalization Id="7ab26053-9996-48e2-a2ca-eca0242cb039" isSubstitutable="false">
-            <classMoniker Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" LastKnownName="NonMotorizedVehicle" />
-            <elementDefinition Id="a5f4f191-ad60-43be-837f-c2b642f2c548" />
+          <generalization Id="dc774f97-1160-4024-b523-f248347f421d" isSubstitutable="false">
+            <classMoniker Id="a59956ed-fe93-41d9-9d60-5c893a2fc960" LastKnownName="NonMotorizedVehicle1" />
+            <elementDefinition Id="ea6b5bbd-b1b8-4727-8119-71d078bee937" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d413b5c4-234d-495c-9ff7-18b62a97ef7c" name="Tank" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="3b516466-0a69-4ab6-a754-74091e8b384e" />
+      <class Id="4eeadef1-7c75-4ed7-9b77-b70854107fe7" name="Tank1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2bd8faed-dca2-47be-9db4-6338c9100451" />
         <generalsInternal>
-          <generalization Id="8568855d-8eeb-4517-972e-eaa318ab8e6f" isSubstitutable="false">
-            <classMoniker Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" LastKnownName="MotorizedVehicle" />
-            <elementDefinition Id="7372edf7-14b5-4a1b-8f2c-5d875d0324b2" />
+          <generalization Id="3f496a65-6444-4fdb-8b0a-840ec4db3545" isSubstitutable="false">
+            <classMoniker Id="dfef1a31-ebb2-4d06-80b4-e644ce0126f1" LastKnownName="MotorizedVehicle1" />
+            <elementDefinition Id="08150498-aa09-4b71-98ba-f29a64d881b4" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="86e2130e-49c1-40bb-a128-c5e98d2ddc8f" name="Fuel" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="fcfde72a-f4d3-47e9-b3b4-79d6f72b0e34" />
+      <class Id="b4dc0f45-6c42-4154-a409-6267d98b365e" name="Fuel1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="26948e1e-257a-4139-b48a-594eb19e1bac" />
         <targetEnds>
-          <association Id="e49ead94-6e9e-4978-9af0-53e636c038dc" isDerived="false" sourceEndRoleName="Fuel" targetEndRoleName="FuelType" isLeaf="false" isAbstract="false">
-            <enumerationMoniker Id="3b1d1a8f-237b-4cc4-8a42-ef15c4e74813" LastKnownName="FuelType" />
+          <association Id="e3f0c27d-1624-48e0-8dec-f3fb4271b9bf" isDerived="false" sourceEndRoleName="Fuel" targetEndRoleName="FuelType" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="6a9489ea-02de-4b38-8ce8-72e093029cb2" LastKnownName="FuelType1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="a61b2c3d-a2a0-476f-8d94-0c8a8e200319" name="Fuel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="ff0d4394-04b1-4dd0-8a07-bde24b331f8b" />
+                <memberEnd Id="cd7423dc-537c-44bb-9889-b1bd45b696eb" name="Fuel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e8808ab3-313b-4229-96c0-d9f7961ac48e" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="a454d29d-97b8-4f21-a855-38970cb247cb" name="FuelType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="5eca5559-70ec-40e1-933e-79128bd95e12" />
+                <memberEnd Id="89879ddc-f643-4bde-bd5a-302fb37319e7" name="FuelType" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="64097aaf-d5d7-47bc-893d-215a0d4d5910" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="9b092f2c-c90d-4c1e-a4fd-7e18a861cc1d" />
+            <elementDefinition Id="7bfb7b8a-71cb-40a1-bf53-be7c1c6985aa" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="166bcc55-6a1c-4659-8146-523b2f943dd7" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="98bbb595-5c29-41c4-8bbb-a6ccccb92a15" />
+          <property Id="c9963445-7106-4f6c-a657-fd9344bd1b5a" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d6fe9017-b6a8-4c4d-b2bf-4fb86bd18b06" />
           </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="2357d75a-cb83-4fe8-83ab-9f4988d9dd83" name="MotorizedVehicle" isAbstract="true" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="2840b83b-9272-41f3-a823-77a1e6011952" />
+      <class Id="dfef1a31-ebb2-4d06-80b4-e644ce0126f1" name="MotorizedVehicle1" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="c50b8da5-7ad1-4f68-afd9-51b9ab500dbd" />
         <generalsInternal>
-          <generalization Id="91765478-9788-47d7-b870-f02e30ae402b" isSubstitutable="false">
-            <classMoniker Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" LastKnownName="Vehicle" />
-            <elementDefinition Id="3ea8282e-d4d2-4d8c-9513-393c40d7cdbf" />
+          <generalization Id="6dba4112-4661-4898-b4b8-1758698cc049" isSubstitutable="false">
+            <classMoniker Id="84f4236d-4c04-4a69-9301-8d19e0941268" LastKnownName="Vehicle1" />
+            <elementDefinition Id="2882fc8d-afa7-472f-991b-29b8de3cd4ff" />
           </generalization>
         </generalsInternal>
         <targetEnds>
-          <association Id="058ca15e-d942-4e7a-abdf-7ed1e22a46dc" isDerived="false" sourceEndRoleName="MotorizedVehicle" targetEndRoleName="Fuel" isLeaf="false" isAbstract="false">
-            <classMoniker Id="86e2130e-49c1-40bb-a128-c5e98d2ddc8f" LastKnownName="Fuel" />
+          <association Id="c1e08536-5b90-4391-adae-4113e406f451" isDerived="false" sourceEndRoleName="MotorizedVehicle" targetEndRoleName="Fuel" isLeaf="false" isAbstract="false">
+            <classMoniker Id="b4dc0f45-6c42-4154-a409-6267d98b365e" LastKnownName="Fuel1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="5d44016e-3911-49b0-8176-eee19aad3991" name="MotorizedVehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="e5f772d9-3945-409b-9398-ed5427e35b13" />
+                <memberEnd Id="43e75fd3-1999-4215-90c7-fcddf33d5370" name="MotorizedVehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="67b0f209-864d-4bbc-9a54-41c8d388ea81" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="957de2f6-5235-4cc1-ad45-9d323e395041" name="Fuel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
-                  <elementDefinition Id="751b1696-b181-49d4-9b02-9aa347bff532" />
+                <memberEnd Id="48da1625-6c35-4f7e-908f-3b74a962b530" name="Fuel" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <elementDefinition Id="42a1d105-d1f7-46ee-a3ba-37d2f061d5f4" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="7792b58f-9fe2-45af-a82e-76ef66185755" />
+            <elementDefinition Id="0215113c-86c6-43f6-ac30-21c693ad9e83" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="3b9608b1-c99c-48d8-82b6-5dc392987401" name="tankVolume" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="76ebf9cf-7457-428b-bd96-4c5c15b102a2" />
+          <property Id="3b006844-5127-411b-b3aa-3518c6333336" name="tankVolume" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ca023fbc-787c-408a-8060-8f3d57762734" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" LastKnownName="int" />
+              <referencedTypeMoniker Id="430ec2b5-098d-4b4a-8760-d7fe267154b9" LastKnownName="int" />
             </type_NamedElement>
           </property>
-          <property Id="a6ec4b56-0f24-4b63-811e-e9608957a773" name="consumption" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="b3bfd195-eb70-4d24-95fc-7ba275361f66" />
+          <property Id="5aced703-e0f6-4736-aee8-f520afca598e" name="consumption" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="76682aec-4330-4192-a68f-3cc10a3ca0a5" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="9cd3315e-e0ca-461f-b497-8342ec3df7e6" LastKnownName="Double" />
+              <referencedTypeMoniker Id="6e225b13-9f10-4be7-b979-a2059232f1c2" LastKnownName="Double" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8bc32dae-a1e2-43a8-b0f8-183c199f66ab" name="NonMotorizedVehicle" isAbstract="true" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="b86cc625-3e4f-481d-a6f8-c632a17715cd" />
+      <class Id="a59956ed-fe93-41d9-9d60-5c893a2fc960" name="NonMotorizedVehicle1" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fb23c033-6475-4366-a9bf-5d64e50c6a22" />
         <generalsInternal>
-          <generalization Id="94622343-be2c-4852-94cd-ee40a32e0c2f" isSubstitutable="false">
-            <classMoniker Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" LastKnownName="Vehicle" />
-            <elementDefinition Id="372c3f3e-a3a2-489f-a746-8dddaf62ab72" />
+          <generalization Id="40ce951f-ce16-4565-b9b9-25361766344b" isSubstitutable="false">
+            <classMoniker Id="84f4236d-4c04-4a69-9301-8d19e0941268" LastKnownName="Vehicle1" />
+            <elementDefinition Id="a10bf918-2aff-4e77-877f-84c6a6a552d0" />
           </generalization>
         </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="faa6a587-04e8-498d-8cdf-960bb57a8169" name="TrafficLane" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="0b5d2959-6f86-47c6-85db-26621ac2f9e5" />
+      <class Id="fc59349d-d54e-4836-87b1-0efcb3cac03c" name="TrafficLane1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ab91dae2-a23d-4eca-a1b7-b899c68a12a0" />
         <targetEnds>
-          <association Id="e20e7eff-48d8-477d-bcc4-c4268f773930" isDerived="false" sourceEndRoleName="TrafficLane" targetEndRoleName="Vehicle" isLeaf="false" isAbstract="false">
-            <classMoniker Id="3c243679-23b3-4b00-90f0-bc696d8f2e47" LastKnownName="Vehicle" />
+          <association Id="ebd4618c-8046-491b-a9e5-b20d5d5a9df7" isDerived="false" sourceEndRoleName="TrafficLane" targetEndRoleName="Vehicle" isLeaf="false" isAbstract="false">
+            <classMoniker Id="84f4236d-4c04-4a69-9301-8d19e0941268" LastKnownName="Vehicle1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="b70cb855-1d6d-4189-be63-14bca8976911" name="TrafficLane" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="15a0068d-e439-4187-8abf-6c551c6b8e1e" />
+                <memberEnd Id="caaeec02-f286-4871-a434-960df550044f" name="TrafficLane" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3dfa9aeb-011e-44e6-bf0f-b0d821569dcd" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="8f635e3a-f5cb-4d5d-9157-40de388b08eb" name="Vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="d702a429-2232-448e-bb31-64d8867f1c9e" />
+                <memberEnd Id="a3b414fc-4e95-409d-9fde-2b2712d3e732" name="Vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ab5bda0b-40de-4889-bb1f-8b7d43dfe109" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="b5784338-f12c-4306-94f8-b6b943f6c860" />
+            <elementDefinition Id="0d1c3e61-9138-42cf-a7cf-86620445196d" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="840ce10c-629b-4e49-bb23-51e6a6ef2e15" name="speedLimit" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="3e247995-8a48-43d9-b1d6-aa9bfd6819c9" />
+          <property Id="d41df8d6-4533-4119-8636-bb677281cf84" name="speedLimit" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8d70221d-b437-4c15-ba4d-facb5a7cf49f" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="ab846079-43e3-4639-8e00-7d710504c536" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="c8a3af3f-9ad6-4672-820d-c9f7dac8c073" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="66aeb02b-03cc-4992-b9a4-835382f43981" name="infrastructure" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="5886b136-9eef-4dcb-84f1-eee7c2530dfc" name="infrastructure" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <lowerValueInternal>
-              <literalString Id="38eb19e1-8dfe-45d3-bf50-8e61029297db" name="Lower" value="1">
-                <elementDefinition Id="22663ba9-2150-4d2c-b2a9-2f7bcd400e0c" />
+              <literalString Id="866ae2bf-6ee5-4432-b60f-e701dff1fc41" name="Lower" value="1">
+                <elementDefinition Id="7a60cc08-6cf3-4ac6-bd8c-ff69b8870fff" />
               </literalString>
             </lowerValueInternal>
             <upperValueInternal>
-              <literalString Id="ce006cae-8369-4534-8955-372e46c9e0f4" name="Upper" value="*">
-                <elementDefinition Id="4fcee0e1-9c6c-4cab-ae90-170331167bbb" />
+              <literalString Id="3ce0d1cb-cfe2-4ce2-b008-a2f9e0669101" name="Upper" value="*">
+                <elementDefinition Id="d50c1f16-12c1-423a-8c69-bf9e575796f0" />
               </literalString>
             </upperValueInternal>
-            <elementDefinition Id="47fafb9b-ed2e-4a44-ab39-688445bdaa42" />
+            <elementDefinition Id="5c0be95d-7194-449e-a002-ad4ef93dbdf7" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="8305cfdd-00da-40f3-bd0e-21146691d2b7" LastKnownName="Boolean" />
+              <referencedTypeMoniker Id="bbba7941-c674-4612-8fff-6624fed7a0a4" LastKnownName="Boolean" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="5d6e6e95-3a75-4220-8a47-8624562a758f" name="placeVehicle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="fa8b0d5b-2c14-4e2c-b902-369347462cb3" />
+          <operation Id="0af9e6a9-001e-4f36-84a7-fb4bc947a45b" name="placeVehicle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8bc73108-3abb-4e58-8937-87a54458deb8" />
             <ownedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="622844f2-bed4-4375-8462-3c9a31173445" name="Vehicle" direction="In" isUnique="false">
-                  <elementDefinition Id="6f6f4cbb-a7d9-43f4-a5e8-4c9bba70b2fa" />
+                <parameter Id="b0a9e091-c681-4189-96e4-840e2724929d" name="Vehicle" direction="In" isUnique="false">
+                  <elementDefinition Id="b4b4c590-17d5-4cc2-8ba5-e460edd69582" />
                 </parameter>
               </operationHasOwnedParameters>
               <operationHasOwnedParameters>
-                <parameter Id="2f4592c6-116c-437c-aebc-7d1798922b8b" direction="Return">
-                  <elementDefinition Id="b6e43a07-81c2-46c2-88cc-d481f324b4a8" />
+                <parameter Id="1ba80a78-3971-4872-be11-8be22b877b5e" direction="Return">
+                  <elementDefinition Id="a2d41e6f-705a-4afb-a0a8-82215f2437f1" />
                   <type_NamedElement>
-                    <referencedTypeMoniker Id="0e12536a-1b5b-468e-8ba3-bac8a108aa8e" LastKnownName="Boolean" />
+                    <referencedTypeMoniker Id="0ae3df3d-746a-4f59-86a7-ec4f9dd8f1e1" LastKnownName="Boolean" />
                   </type_NamedElement>
                 </parameter>
               </operationHasOwnedParameters>
@@ -332,156 +402,86 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="16315c61-a920-46b1-a17c-c94b5bfeb9d9" name="Road" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="a0aa7a6c-84ba-46b7-9304-bad07e26db62" />
+      <class Id="e341574b-a9e2-47c1-a42c-1627b95cea4c" name="Road1" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="53e6280e-f1e2-4bed-bfa3-a5c2572b8f92" />
         <targetEnds>
-          <association Id="c2cbe1b0-31da-40c8-916a-a23433c4394c" isDerived="false" sourceEndRoleName="Road" targetEndRoleName="TrafficLane" isLeaf="false" isAbstract="false">
-            <classMoniker Id="faa6a587-04e8-498d-8cdf-960bb57a8169" LastKnownName="TrafficLane" />
+          <association Id="29fa9e0b-8c98-4978-9daf-07b6f078afe5" isDerived="false" sourceEndRoleName="Road" targetEndRoleName="TrafficLane" isLeaf="false" isAbstract="false">
+            <classMoniker Id="fc59349d-d54e-4836-87b1-0efcb3cac03c" LastKnownName="TrafficLane1" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="eb23b413-cfd7-485c-9efe-8b578c0c3ba2" name="Road" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="722e121f-ac52-4a14-9ed7-a95842d69418" />
+                <memberEnd Id="3d46437d-4914-4896-bb77-a25f9fb2e29e" name="Road" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f9ca750f-82dc-433e-833b-069468596b00" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="1d878298-a593-49bd-932b-e324f7cdce11" name="TrafficLane" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                <memberEnd Id="34a459dc-a9e5-4bc3-810e-fe780f892853" name="TrafficLane" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
                   <lowerValueInternal>
-                    <literalString Id="8f20af5e-5e71-494d-99d5-67097ab024bd" name="Lower" value="5">
-                      <elementDefinition Id="eb53e005-f9fc-4dc2-a99e-87f145455fda" />
+                    <literalString Id="d2485640-4cae-4e41-ba71-2952ed05a83f" name="Lower" value="5">
+                      <elementDefinition Id="1c2bcde8-63a8-4307-8882-fb764f9bc238" />
                     </literalString>
                   </lowerValueInternal>
                   <upperValueInternal>
-                    <literalString Id="9c99eede-fe1d-46f0-8cd8-beedce93ef78" name="Upper" value="5">
-                      <elementDefinition Id="13633d19-2172-4559-8758-6388ea36a8e2" />
+                    <literalString Id="38ec7db0-a90e-4a39-9807-bbe59ff5157d" name="Upper" value="5">
+                      <elementDefinition Id="657fdee6-b0c2-4921-bc7f-ee7e6d7aa13d" />
                     </literalString>
                   </upperValueInternal>
-                  <elementDefinition Id="5482a79e-037d-47e1-a790-7493c5df26bb" />
+                  <elementDefinition Id="99362e88-68da-412a-bd02-17ebc0cba616" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="27d860cc-941c-4129-9d20-cf9f0a4d58b9" />
+            <elementDefinition Id="3c4bdebe-9c49-4fe6-87cd-4b6ced19806e" />
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="7f02836a-b8a0-4048-8b6d-7bdcc685f153" name="length" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-            <elementDefinition Id="5833196f-d54f-4a9f-81dc-c4959514b0cd" />
+          <property Id="ac1768cb-12bc-4126-9134-84e760cc23bf" name="length" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="075b1bda-0c70-4cfe-8dd5-587f000ce13c" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="ed067207-246f-4e5a-bf48-dd3b04769c37" LastKnownName="Integer" />
+              <referencedTypeMoniker Id="d8b091ac-bbbc-41b0-9d4e-cc7fdb0f86ee" LastKnownName="Integer" />
             </type_NamedElement>
           </property>
-          <property Id="2bdec493-e3ca-48df-bea2-63691329194c" name="lanes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="72224c08-0f94-4052-9f15-00e80e493ff9" name="lanes" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <lowerValueInternal>
-              <literalString Id="3d03fdf4-1fa7-49f9-bea4-2d5157c8fa5e" name="Lower" value="5">
-                <elementDefinition Id="752a9e73-a5a5-4e15-b5f9-65d959bca072" />
+              <literalString Id="be54c418-7cc0-4c17-823c-0ef236235fe8" name="Lower" value="5">
+                <elementDefinition Id="dcd86b8d-aae1-4c2b-89e0-26fa2dd32260" />
               </literalString>
             </lowerValueInternal>
             <upperValueInternal>
-              <literalString Id="44924af8-50b4-4eee-9c13-5e9d1a65da78" name="Upper" value="5">
-                <elementDefinition Id="529b3380-535d-4c2c-8abc-74a0fd3b5e10" />
+              <literalString Id="9ac63f9b-e9ac-4a45-a639-aaf6974177ae" name="Upper" value="5">
+                <elementDefinition Id="9972a95c-933b-4079-84f2-522fcc115347" />
               </literalString>
             </upperValueInternal>
-            <elementDefinition Id="699f8fd4-e2cb-451a-b9d1-c966cb32b829" />
+            <elementDefinition Id="df0d1c4b-f8f1-422e-a2f7-016a4fbf26ff" />
             <type_NamedElement>
-              <referencedTypeMoniker Id="56b2c416-c677-4f82-b494-e558c046acac" LastKnownName="TrafficLane" />
+              <referencedTypeMoniker Id="3bff3117-bc0b-44e7-8f48-f2cbebba7e55" LastKnownName="TransportEmulator::TrafficLane" />
             </type_NamedElement>
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="f185a978-a0a6-486d-89be-6f3f18c57866" name="Road" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="0fe90f36-d471-4801-aa9f-8af543ea3b51" />
+          <operation Id="1e102031-72e3-46ae-93d9-05b816e693cc" name="Road" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0d1a82bd-b905-4c5f-bafb-80a19862d596" />
           </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="56d24559-2d3b-4af8-860c-9c8900e83c4f" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
-        <elementDefinition Id="775e15e4-a519-4345-b2a3-f41f74d7b00a" />
-      </referencedType>
-    </packageHasNamedElement>
     <logicalClassDesignerModelHasTypes>
-      <enumeration Id="3b1d1a8f-237b-4cc4-8a42-ef15c4e74813" name="FuelType" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="3505b861-75c5-4ae3-ad55-2b5086da2655" />
+      <enumeration Id="6a9489ea-02de-4b38-8ce8-72e093029cb2" name="FuelType1" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4b71bc2f-08a2-4d95-9941-efd8519f85ff" />
         <ownedLiterals>
-          <enumerationLiteral Id="842cb1c6-0a1c-4bf5-a558-5f4a857148fa" name="OCTANE_91">
-            <elementDefinition Id="1b97d12f-2b07-4eec-8f04-55eb630113d6" />
+          <enumerationLiteral Id="d7315c14-e6a8-49df-b4f5-b8e718a1f92f" name="OCTANE_91">
+            <elementDefinition Id="ae140cfb-95db-4fc0-8999-ce22d9075761" />
           </enumerationLiteral>
-          <enumerationLiteral Id="1a58dc9f-f443-4447-955b-001623fed27a" name="OCTANE_95">
-            <elementDefinition Id="9adfef4f-f2b9-405a-a82b-a1a7c002016c" />
+          <enumerationLiteral Id="afb74f0c-0244-4f80-b3af-436d290ff7aa" name="OCTANE_95">
+            <elementDefinition Id="4ad0c3a6-034d-4f31-90d9-160498483c60" />
           </enumerationLiteral>
-          <enumerationLiteral Id="5d6132c7-aa46-45be-b53e-6db7020f1311" name="OCTANE_98">
-            <elementDefinition Id="026ca4bc-5edb-47c5-8623-3469d22eb511" />
+          <enumerationLiteral Id="9d9c5f05-2ae4-4d85-8f2b-656300df604e" name="OCTANE_98">
+            <elementDefinition Id="58b4df71-07b3-4c75-8e32-d60c5f54d0ee" />
           </enumerationLiteral>
-          <enumerationLiteral Id="6311d93d-ae4d-4afa-8310-582ded83a81c" name="DIESEL">
-            <elementDefinition Id="be41b5f0-8be4-4075-ae93-e9855283338a" />
+          <enumerationLiteral Id="4d87dd32-5125-46ee-8995-2a3478b34a49" name="DIESEL">
+            <elementDefinition Id="e9f27ef0-2b4c-4edf-9b0c-1ae79a6447b2" />
           </enumerationLiteral>
         </ownedLiterals>
       </enumeration>
     </logicalClassDesignerModelHasTypes>
-    <packageHasNamedElement>
-      <referencedType Id="8305cfdd-00da-40f3-bd0e-21146691d2b7" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
-        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="ab846079-43e3-4639-8e00-7d710504c536" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="39662aaf-d07a-41ec-a91c-0452d3a7a1aa" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="eae65e2c-59bc-4ba3-a32c-2b4455a3cb0b" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="cffd3766-c464-479c-9979-9fff303fb2b6" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="767a49c3-6b37-495e-a325-ac1659f581f2" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="d380e418-b918-4f1a-bc3c-a33b10e380bb" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="a95a0a56-e1b5-4b8a-9b3e-857949110bdc" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="9cd3315e-e0ca-461f-b497-8342ec3df7e6" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
-        <elementDefinition Id="6647855e-01c9-4231-aee3-bbd684308ac2" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="ed067207-246f-4e5a-bf48-dd3b04769c37" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="56b2c416-c677-4f82-b494-e558c046acac" name="TrafficLane" isAbstract="false" isLeaf="false" cachedFullName="TransportEmulator::TrafficLane">
-        <elementDefinition Id="0b5d2959-6f86-47c6-85db-26621ac2f9e5" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="aaf4cc17-cba3-49e0-803c-6ad6fdfde742" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
-        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
-      </referencedType>
-    </packageHasNamedElement>
-    <packageHasNamedElement>
-      <referencedType Id="0e12536a-1b5b-468e-8ba3-bac8a108aa8e" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
-        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
-      </referencedType>
-    </packageHasNamedElement>
   </packagedElements>
   <package Id="7b87a096-b286-44ec-8e43-3ed80376bca6" name="TransportEmulator">
     <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />

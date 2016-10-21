@@ -5,32 +5,6 @@
   name="TransportEmulator" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
   <ownedCommentsInternal>
     <comment
-      Id="6a7eda77-c4d6-441d-969a-60475b2b5f27">
-      <body>В соответсвии с ограничениями:
-*по полосе с трамвайными путями может двигаться только трамвай
-*трамвай не может двигаться без трамвайных путей
-*троллейбус может двигаться только по полосе, оборудованной троллейбусными проводами
-* по полосе, оборудованной троллейбусными проводами, может двигаться не только троллейбус
-*на гужевой повозке, велосипеде, самокате и танке можно двигаться только по крайним полосам
-</body>
-      <annotatedElements>
-        <useCaseMoniker
-          Id="6788a48b-dc1f-4e60-8dcb-057c61061df4"
-          LastKnownName="Разместить ТС на дороге"
-          LastKnownLocation="TransportEmulator.uml" />
-      </annotatedElements>
-    </comment>
-    <comment
-      Id="14ae5a71-21ab-4a10-a00b-bc351e1fa290">
-      <body>Остановить симуляцию по требованию пользователя, после чего возобновить нажатием кнопки СТАРТ</body>
-      <annotatedElements>
-        <useCaseMoniker
-          Id="0f8c16b4-2bf9-4a81-a508-0fa11babcfe5"
-          LastKnownName="Остановить ТС"
-          LastKnownLocation="TransportEmulator.uml" />
-      </annotatedElements>
-    </comment>
-    <comment
       Id="db234867-2e04-4a24-bdcb-6571a8c6bb07">
       <body>User actions:</body>
     </comment>
@@ -61,6 +35,31 @@
     <comment
       Id="0ca3bdaa-b782-4be4-a13a-013d53d62c6b">
       <body>VehicleList actions:</body>
+    </comment>
+    <comment
+      Id="50bd8995-0eda-44d5-bc16-8675cbf65761">
+      <body>In accordance with restrictions:
+* Only a tram can move along the strip with tram tracks
+* Tram can not move without tramways
+* Trolley can move only along the strip, equipped trolleybus wires
+* Band-equipped trolleybus wires can move not only trolleybus
+* On a horse-drawn carriage, bicycle, scooter, and the tank can move only by extreme bands</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="0f72961a-89f3-4998-a212-9b8c77d9b696"
+          LastKnownName="Place vehicle on the road"
+          LastKnownLocation="TransportEmulator.uml" />
+      </annotatedElements>
+    </comment>
+    <comment
+      Id="fda682b4-37be-480b-9501-bcc603ff2bd4">
+      <body>Stop simulation of on-demand. Resume by pressing the START button</body>
+      <annotatedElements>
+        <useCaseMoniker
+          Id="9700d138-d403-4678-9f54-ce17a962cb2b"
+          LastKnownName="Stop vehicle"
+          LastKnownLocation="TransportEmulator.uml" />
+      </annotatedElements>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -3505,6 +3504,1254 @@
             isLeaf="false" />
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="8175aa1b-f218-49b4-b23b-9d902819ca77"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="1237cd50-2dfc-44f0-92d5-3b4e043d198c"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Создать список из видов топлива"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="6399c420-03c9-43a3-bf4f-26741b323d82"
+              LastKnownName="Create a type of fuel"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d3fe128d-f2b6-4a5f-a012-41af3151c116"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ada86cf8-36d1-4c9f-b25b-856d74a00976"
+                  name="Создать список из видов топлива"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="7395be3d-ceb4-4325-8622-67174e358842"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="52e9c5e7-097e-4c21-9908-35b4079380e0"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="9623c901-43dc-4dfc-abe8-3272ec5d180a"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Запустить симуляцию"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="c3a9b154-ac0a-4578-bac8-eadb73414965"
+              LastKnownName="Start simulation"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="136ef144-8e89-4661-8f5f-224b43fbc9a5"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="33a03c4d-935c-422c-b3b0-5ad2c0ed4aef"
+                  name="Запустить симуляцию"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2b190286-4b35-4edf-8697-489a1532e38b"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Вывести на экран журнал ТС"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="0ce29dff-f8d0-455a-93bb-46a541ed4f3c"
+              LastKnownName="Display or export log"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9b3d16c4-7071-4566-b311-dbcae7398fd8"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a7ffda30-784b-47ed-a18d-4c10ba93c94b"
+                  name="Вывести на экран журнал ТС"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="cb615dbe-ba31-4d1f-9ceb-66f6e9c59930"
+            isDerived="false"
+            sourceEndRoleName="Пользователь"
+            targetEndRoleName="Создать ТС"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="46e3b868-a3dd-4514-ade7-0449440794cb"
+              LastKnownName="Create vehicle"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4ba388dd-1960-40a9-a02c-ef29953bccef"
+                  name="Пользователь"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a1cae011-32f4-48c5-bc13-eed6bfe57eab"
+                  name="Создать ТС"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e2555762-abcb-435c-9d1e-6b6b66254aa0"
+                      name="Lower"
+                      value="5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="22a13d7c-5c51-4ace-b0e1-daaed2e22842"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6399c420-03c9-43a3-bf4f-26741b323d82"
+        name="Create a type of fuel"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0ce29dff-f8d0-455a-93bb-46a541ed4f3c"
+        name="Display or export log"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="9fe2ebcc-8f11-4082-a9be-69e7fa5da824"
+            isDerived="false"
+            sourceEndRoleName="Вывести на экран журнал ТС"
+            targetEndRoleName="Журнал"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="6061aaa4-b9d3-4c2d-842a-8875ffa616f8"
+              LastKnownName="Log"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="15f432ce-c1f7-428b-ad08-512bfe3faf63"
+                  name="Вывести на экран журнал ТС"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1f7cfb87-b3ec-4f41-8119-8a2ed5fb482b"
+                  name="Журнал"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="6061aaa4-b9d3-4c2d-842a-8875ffa616f8"
+        name="Log"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="694ec5f1-3c41-42bc-bcc7-e254934c5425"
+        name="Log state"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="f286775f-c123-448f-b7cf-40260c0face7"
+            isDerived="false"
+            sourceEndRoleName="Вести журнал"
+            targetEndRoleName="Журнал"
+            isLeaf="false"
+            isAbstract="false">
+            <actorMoniker
+              Id="6061aaa4-b9d3-4c2d-842a-8875ffa616f8"
+              LastKnownName="Log"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="635e1d7a-5786-40cf-822e-198e8451ed49"
+                  name="Вести журнал"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ecddf887-f613-47c8-8f03-4fb1025e5eb6"
+                  name="Журнал"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="c3a9b154-ac0a-4578-bac8-eadb73414965"
+        name="Start simulation"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="0f82dd4b-ab2b-4c7d-958e-e2967da98081">
+            <useCaseMoniker
+              Id="694ec5f1-3c41-42bc-bcc7-e254934c5425"
+              LastKnownName="Log state"
+              LastKnownLocation="TransportEmulator.uml" />
+          </include>
+          <include
+            Id="00c9eb44-50b8-40f2-a70c-f50537d79441">
+            <useCaseMoniker
+              Id="6a535992-1cac-4001-a57a-d4ff08f3556a"
+              LastKnownName="Display the road"
+              LastKnownLocation="TransportEmulator.uml" />
+          </include>
+        </additions>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="74c3ec58-2c7d-456d-895e-89c7e5c8f854"
+        name="Display error message"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="c9a7d290-14d6-4a92-8b07-c24efc974903">
+            <useCaseMoniker
+              Id="46e3b868-a3dd-4514-ade7-0449440794cb"
+              LastKnownName="Create vehicle"
+              LastKnownLocation="TransportEmulator.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="46e3b868-a3dd-4514-ade7-0449440794cb"
+        name="Create vehicle"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6a535992-1cac-4001-a57a-d4ff08f3556a"
+        name="Display the road"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="0f72961a-89f3-4998-a212-9b8c77d9b696"
+        name="Place vehicle on the road"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="cacade95-b488-4df2-9a6f-c4516ac73c2b">
+            <useCaseMoniker
+              Id="6a535992-1cac-4001-a57a-d4ff08f3556a"
+              LastKnownName="Display the road"
+              LastKnownLocation="TransportEmulator.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9700d138-d403-4678-9f54-ce17a962cb2b"
+        name="Stop vehicle"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="1579ad90-3033-4b5d-83e8-a62866e3752a">
+            <useCaseMoniker
+              Id="c3a9b154-ac0a-4578-bac8-eadb73414965"
+              LastKnownName="Start simulation"
+              LastKnownLocation="TransportEmulator.uml" />
+          </extend>
+        </extendedCases>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="e88d8f1a-509e-4f29-ba8b-ae6be38942f8"
+        name="Double" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e0ef3a4a-901e-4ba0-8e48-6a7071bc612b"
+        name="Vehicle1"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="0fb802d7-c49d-4c18-a085-558a332fcb7a"
+            name="maxDistance"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="6b5c940c-296e-42fb-b165-94a2a935fb7b"
+            name="driverAge"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8c06aa53-3945-466b-b7e4-2403701db0d5"
+            name="curSpeed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="044a5d1b-9395-439d-868e-dd4ca23aa75d"
+            name="maxSpeed"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="61f144d5-b175-42f4-ac79-4cdc8a1af58f"
+            name="weight"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="8e5c1c70-88fd-4823-93bb-f8afa5ef91e4"
+            name="color"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="190fd947-9e45-424d-a2b4-f8af6a77b75c"
+            name="info"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5de45872-f420-41b2-8f01-dc4b9b7032b8"
+            name="setSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ddc360a3-4b7c-4779-a3b2-81f27ba04604"
+                  name="Integer"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="889cf0dd-12f3-47ac-a3e4-f722ef89172b"
+        name="Car1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="84f9e1b0-565a-4fc8-a394-cfbdbd9cc877"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c50b8da5-7ad1-4f68-afd9-51b9ab500dbd"
+              LastKnownName="MotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="98812a0d-e1ea-4459-813a-090eaa7c9f9e"
+        name="Truck1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="7108917b-6765-4f1e-b5ea-c641bede81ad"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c50b8da5-7ad1-4f68-afd9-51b9ab500dbd"
+              LastKnownName="MotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5de69f11-5a73-4060-bc0a-3ba52e6b2564"
+            name="cargoWeight"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e88d8f1a-509e-4f29-ba8b-ae6be38942f8"
+                LastKnownName="Double"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3167d51e-0c1d-4830-af74-b66de4c117e0"
+        name="Trolleybus1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="6291f6b5-d007-472a-8578-9d6e5117c728"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c50b8da5-7ad1-4f68-afd9-51b9ab500dbd"
+              LastKnownName="MotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="54c4b494-1f55-4c9b-9d67-977265a9ac18"
+            name="electricPower"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e88d8f1a-509e-4f29-ba8b-ae6be38942f8"
+                LastKnownName="Double"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="99b14929-0d4e-4ada-9929-42c4ece22755"
+        name="Trum1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="890e2e04-67b9-4584-86b4-73f73f8efe58"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c50b8da5-7ad1-4f68-afd9-51b9ab500dbd"
+              LastKnownName="MotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3a7f9ea4-15a0-43c5-9a27-94b5410971e2"
+        name="Bike1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="96d805db-b1c4-4797-b258-499f3030538a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c50b8da5-7ad1-4f68-afd9-51b9ab500dbd"
+              LastKnownName="MotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="a45d6d41-7665-45a2-80f3-ffea5ef4c328"
+        name="HorseDrawnCarriage1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="41479a11-dc23-4a0f-b504-5505a86d7f85"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fb23c033-6475-4366-a9bf-5d64e50c6a22"
+              LastKnownName="NonMotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="320baa6b-f5a1-4ce7-8fb6-158b99a1f17e"
+            name="horseNumber"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="09ba3d25-61e4-4bd7-a9f8-80cda76dbcbf"
+        name="Bicycle1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8e801845-423a-4c9f-b4ff-207b16c33d7f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fb23c033-6475-4366-a9bf-5d64e50c6a22"
+              LastKnownName="NonMotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="e9449d31-9e43-4d0c-a947-3053c962b81b"
+        name="Scooter1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="ea6b5bbd-b1b8-4727-8119-71d078bee937"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fb23c033-6475-4366-a9bf-5d64e50c6a22"
+              LastKnownName="NonMotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="2bd8faed-dca2-47be-9db4-6338c9100451"
+        name="Tank1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="08150498-aa09-4b71-98ba-f29a64d881b4"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c50b8da5-7ad1-4f68-afd9-51b9ab500dbd"
+              LastKnownName="MotorizedVehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="26948e1e-257a-4139-b48a-594eb19e1bac"
+        name="Fuel1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="7bfb7b8a-71cb-40a1-bf53-be7c1c6985aa"
+            isDerived="false"
+            sourceEndRoleName="Fuel"
+            targetEndRoleName="FuelType"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="4b71bc2f-08a2-4d95-9941-efd8519f85ff"
+              LastKnownName="FuelType1"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e8808ab3-313b-4229-96c0-d9f7961ac48e"
+                  name="Fuel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="64097aaf-d5d7-47bc-893d-215a0d4d5910"
+                  name="FuelType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="d6fe9017-b6a8-4c4d-b2bf-4fb86bd18b06"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="c50b8da5-7ad1-4f68-afd9-51b9ab500dbd"
+        name="MotorizedVehicle1"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2882fc8d-afa7-472f-991b-29b8de3cd4ff"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e0ef3a4a-901e-4ba0-8e48-6a7071bc612b"
+              LastKnownName="Vehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+        <targetEnds>
+          <association
+            Id="0215113c-86c6-43f6-ac30-21c693ad9e83"
+            isDerived="false"
+            sourceEndRoleName="MotorizedVehicle"
+            targetEndRoleName="Fuel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="26948e1e-257a-4139-b48a-594eb19e1bac"
+              LastKnownName="Fuel1"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="67b0f209-864d-4bbc-9a54-41c8d388ea81"
+                  name="MotorizedVehicle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42a1d105-d1f7-46ee-a3ba-37d2f061d5f4"
+                  name="Fuel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="ca023fbc-787c-408a-8060-8f3d57762734"
+            name="tankVolume"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="76682aec-4330-4192-a68f-3cc10a3ca0a5"
+            name="consumption"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="e88d8f1a-509e-4f29-ba8b-ae6be38942f8"
+                LastKnownName="Double"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fb23c033-6475-4366-a9bf-5d64e50c6a22"
+        name="NonMotorizedVehicle1"
+        isAbstract="true"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a10bf918-2aff-4e77-877f-84c6a6a552d0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="e0ef3a4a-901e-4ba0-8e48-6a7071bc612b"
+              LastKnownName="Vehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ab91dae2-a23d-4eca-a1b7-b899c68a12a0"
+        name="TrafficLane1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="0d1c3e61-9138-42cf-a7cf-86620445196d"
+            isDerived="false"
+            sourceEndRoleName="TrafficLane"
+            targetEndRoleName="Vehicle"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="e0ef3a4a-901e-4ba0-8e48-6a7071bc612b"
+              LastKnownName="Vehicle1"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3dfa9aeb-011e-44e6-bf0f-b0d821569dcd"
+                  name="TrafficLane"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ab5bda0b-40de-4889-bb1f-8b7d43dfe109"
+                  name="Vehicle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="8d70221d-b437-4c15-ba4d-facb5a7cf49f"
+            name="speedLimit"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="5c0be95d-7194-449e-a002-ad4ef93dbdf7"
+            name="infrastructure"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="7a60cc08-6cf3-4ac6-bd8c-ff69b8870fff"
+                name="Lower"
+                value="1" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="d50c1f16-12c1-423a-8c69-bf9e575796f0"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                LastKnownName="Boolean"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8bc73108-3abb-4e58-8937-87a54458deb8"
+            name="placeVehicle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b4b4c590-17d5-4cc2-8ba5-e460edd69582"
+                  name="Vehicle"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a2d41e6f-705a-4afb-a0a8-82215f2437f1"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="TransportEmulator.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="53e6280e-f1e2-4bed-bfa3-a5c2572b8f92"
+        name="Road1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="3c4bdebe-9c49-4fe6-87cd-4b6ced19806e"
+            isDerived="false"
+            sourceEndRoleName="Road"
+            targetEndRoleName="TrafficLane"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ab91dae2-a23d-4eca-a1b7-b899c68a12a0"
+              LastKnownName="TrafficLane1"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f9ca750f-82dc-433e-833b-069468596b00"
+                  name="Road"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="99362e88-68da-412a-bd02-17ebc0cba616"
+                  name="TrafficLane"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="1c2bcde8-63a8-4307-8882-fb764f9bc238"
+                      name="Lower"
+                      value="5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="657fdee6-b0c2-4921-bc7f-ee7e6d7aa13d"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="075b1bda-0c70-4cfe-8dd5-587f000ce13c"
+            name="length"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="df0d1c4b-f8f1-422e-a2f7-016a4fbf26ff"
+            name="lanes"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <lowerValueInternal>
+              <literalString
+                Id="dcd86b8d-aae1-4c2b-89e0-26fa2dd32260"
+                name="Lower"
+                value="5" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="9972a95c-933b-4079-84f2-522fcc115347"
+                name="Upper"
+                value="5" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="0b5d2959-6f86-47c6-85db-26621ac2f9e5"
+                LastKnownName="TrafficLane"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0d1a82bd-b905-4c5f-bafb-80a19862d596"
+            name="Road"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="4b71bc2f-08a2-4d95-9941-efd8519f85ff"
+        name="FuelType1"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="ae140cfb-95db-4fc0-8999-ce22d9075761"
+            name="OCTANE_91" />
+          <enumerationLiteral
+            Id="4ad0c3a6-034d-4f31-90d9-160498483c60"
+            name="OCTANE_95" />
+          <enumerationLiteral
+            Id="58b4df71-07b3-4c75-8e32-d60c5f54d0ee"
+            name="OCTANE_98" />
+          <enumerationLiteral
+            Id="e9f27ef0-2b4c-4edf-9b0c-1ae79a6447b2"
+            name="DIESEL" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
