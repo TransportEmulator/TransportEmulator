@@ -1,20 +1,140 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="730e4878-17a5-4570-a685-8218164a1f97" name="Activity1" linkedPackageId="3bdce9b9-7c0f-4d99-8923-19acbca4f2a1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="1beb65bd-644d-4297-9652-9cbfd82690a9">
-      <profileInstance Id="1948b9bc-619a-4d85-a2c4-d604a1516aae" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="b202f7f5-04c7-4d49-bf4b-3a7ade1a9383">
-      <profileInstance Id="1f356746-da0f-4e49-8c67-c48eea23f874" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="730e4878-17a5-4570-a685-8218164a1f97" name="Activity Create Vehicle" linkedPackageId="3bdce9b9-7c0f-4d99-8923-19acbca4f2a1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="de189923-dd50-4868-bfa2-8badec01d153">
+      <elementDefinition Id="58b360ca-1707-476a-87f3-5c64d66a0b36" />
+      <body>User actions:</body>
+    </comment>
+    <comment Id="29151ffd-88b7-4cd0-85dd-e28bca142362">
+      <elementDefinition Id="c423c185-0268-421a-9a8e-8a0b2f031a59" />
+      <body>GUI Main Window actions:</body>
+    </comment>
+    <comment Id="a6647071-301f-49e4-94c6-29eced2e8ddc">
+      <elementDefinition Id="f806291c-f8aa-4eea-be14-ba7dcea09372" />
+      <body>GUI Create Vehicle window actions:</body>
+    </comment>
+    <comment Id="17e48ae2-a92d-46e3-8fa6-51cb6d58f53e">
+      <elementDefinition Id="0ca3bdaa-b782-4be4-a13a-013d53d62c6b" />
+      <body>VehicleList actions:</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="0195ca05-abf5-4b67-85b4-de5b0a813b25" name="Activity Create Vehicle" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="fd9d1a0f-8cf2-4dd8-840d-85bee4b8da05" />
+        <nodes>
+          <initialNode Id="10e1f11e-8a37-4d81-86de-77ac31d62786" name="Initial1" isLeaf="false">
+            <elementDefinition Id="f63be764-fc09-4f1d-9d8d-991b1a495d36" />
+            <flowNodeTargets>
+              <controlFlow Id="9422996f-6045-4666-b1eb-6769d04038ad" isLeaf="false">
+                <opaqueActionMoniker Id="2e003cf7-6ad9-4a69-bc84-9fe4b9c41d8e" LastKnownName="Push button &#xD;&#xA;&quot;Create vehicle&quot;" />
+                <elementDefinition Id="40d55554-5272-416b-9794-b480acf033ba" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="2e003cf7-6ad9-4a69-bc84-9fe4b9c41d8e" name="Push button &#xD;&#xA;&quot;Create vehicle&quot;" isLeaf="false">
+            <elementDefinition Id="7f256bc9-cd4b-4260-baff-6d17e8d9e7e0" />
+            <flowNodeTargets>
+              <controlFlow Id="02f1672f-776b-40ea-9f58-586115b55fa2" isLeaf="false">
+                <opaqueActionMoniker Id="cd5a83ff-25df-4eb9-b15d-4ae189b35569" LastKnownName="Create &quot;Create Vehicle&quot; window " />
+                <elementDefinition Id="7a82d000-797c-4f74-af8d-4224fc002031" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="cd5a83ff-25df-4eb9-b15d-4ae189b35569" name="Create &quot;Create Vehicle&quot; window " isLeaf="false">
+            <elementDefinition Id="93ed8279-351f-4abb-9066-7d63e934360b" />
+            <flowNodeTargets>
+              <controlFlow Id="17269bfd-9269-4ad5-9b0b-f02023ad8ff1" isLeaf="false">
+                <opaqueActionMoniker Id="ecb5a306-8a6d-4ed3-93a1-9edb4191b948" LastKnownName="Ask user about type other parameters" />
+                <elementDefinition Id="3c4d0c96-abc6-42a7-938f-c725752ea6ff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="ecb5a306-8a6d-4ed3-93a1-9edb4191b948" name="Ask user about type other parameters" isLeaf="false">
+            <elementDefinition Id="eccb912a-943d-4349-a2b7-c1709984d149" />
+            <flowNodeTargets>
+              <controlFlow Id="1e1f5559-c6cc-4c37-b12a-509b293f4531" isLeaf="false">
+                <opaqueActionMoniker Id="c65c6694-64c5-4369-92dd-2e9b3a105da1" LastKnownName="Choose type and fill in necessary information" />
+                <elementDefinition Id="e73d5cf5-4324-4803-8226-5368e6cbd331" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f17f764a-b540-45e8-b3c7-c0f5ae500f62" name="Update information " isLeaf="false">
+            <elementDefinition Id="d6c21125-2978-4466-b6b9-b689c36950e0" />
+            <flowNodeTargets>
+              <controlFlow Id="d36c7b3d-f7fb-451f-9e8b-3a6a03bb490d" isLeaf="false">
+                <opaqueActionMoniker Id="b60a6a34-9ac2-4e1e-b785-7706d782aeef" LastKnownName="End" />
+                <elementDefinition Id="cf8fa4c8-1842-436a-848f-8a612a7c6883" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="c65c6694-64c5-4369-92dd-2e9b3a105da1" name="Choose type and fill in necessary information" isLeaf="false">
+            <elementDefinition Id="bab1d4b7-7c57-4589-b846-f1f19e6c3b57" />
+            <flowNodeTargets>
+              <controlFlow Id="59c05ff6-51e4-4530-a985-1aa232758236" isLeaf="false">
+                <opaqueActionMoniker Id="f080c0f1-50df-4182-9109-e2e1324a0a20" LastKnownName="Confirm choice " />
+                <elementDefinition Id="d6006e25-bb79-461f-96ee-994211cd6155" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f080c0f1-50df-4182-9109-e2e1324a0a20" name="Confirm choice " isLeaf="false">
+            <elementDefinition Id="f4382930-fc76-4b4a-918d-3b25de08ddf5" />
+            <flowNodeTargets>
+              <controlFlow Id="266ba535-df44-4ec7-ab8d-f8d917d88e4b" isLeaf="false">
+                <opaqueActionMoniker Id="b992ac97-b66c-44ba-9591-abb721eb1e66" LastKnownName="Send information to VehiclelList" />
+                <elementDefinition Id="565f20a9-907e-40ab-a98d-e2dbcef57129" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b992ac97-b66c-44ba-9591-abb721eb1e66" name="Send information to VehiclelList" isLeaf="false">
+            <elementDefinition Id="894734c4-c52d-4ea4-8856-8d206141432f" />
+            <flowNodeTargets>
+              <controlFlow Id="3a97b84c-1a1a-432f-8cf5-bf46b824b955" isLeaf="false">
+                <opaqueActionMoniker Id="f17f764a-b540-45e8-b3c7-c0f5ae500f62" LastKnownName="Update information " />
+                <elementDefinition Id="651e5a07-3ddd-495e-b831-3ab6bbd1fad9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b60a6a34-9ac2-4e1e-b785-7706d782aeef" name="End" isLeaf="false">
+            <elementDefinition Id="78654d6c-fd6c-4fd3-a233-e99b7c5b5e24" />
+            <flowNodeTargets>
+              <controlFlow Id="bdd7bf73-7175-43e0-b942-6c6909ab4f73" isLeaf="false">
+                <opaqueActionMoniker Id="1ce61571-9979-44fe-92fb-df2b0eeb1774" LastKnownName="Close &quot;Create Vehicle&quot; window" />
+                <elementDefinition Id="3023b067-5551-4a38-a49b-6517da411e9a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="1ce61571-9979-44fe-92fb-df2b0eeb1774" name="Close &quot;Create Vehicle&quot; window" isLeaf="false">
+            <elementDefinition Id="817946dc-a6f8-40de-b956-83ab4b935ef3" />
+            <flowNodeTargets>
+              <controlFlow Id="70510494-50bc-4d36-bcb2-3ce0590e17a0" isLeaf="false">
+                <activityFinalNodeMoniker Id="5e790d49-bd5f-42d6-b6b0-4571027f0628" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="264f58b2-ce84-4d77-93e3-2e2748622326" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="5e790d49-bd5f-42d6-b6b0-4571027f0628" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="251eb627-a432-40fb-a260-e15a74f70982" />
+          </activityFinalNode>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
   <package Id="3bdce9b9-7c0f-4d99-8923-19acbca4f2a1" name="TransportEmulator">
     <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />
+    <profileInstances>
+      <packageHasProfileInstances Id="1beb65bd-644d-4297-9652-9cbfd82690a9">
+        <profileInstance Id="1948b9bc-619a-4d85-a2c4-d604a1516aae" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="b202f7f5-04c7-4d49-bf4b-3a7ade1a9383">
+        <profileInstance Id="1f356746-da0f-4e49-8c67-c48eea23f874" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </activityRootModel>

@@ -68,7 +68,7 @@
             <elementDefinition Id="1f194e6a-114e-4527-b33b-5fc34034d2cf" />
             <flowNodeTargets>
               <controlFlow Id="76f4873b-ab76-48a8-8b45-f949a8c19895" isLeaf="false">
-                <opaqueActionMoniker Id="4d542dd6-a760-4897-a01f-71bcc2acdef4" LastKnownName="Choose type and filled in necessary quantity" />
+                <opaqueActionMoniker Id="4d542dd6-a760-4897-a01f-71bcc2acdef4" LastKnownName="Choose type and fill in necessary quantity" />
                 <elementDefinition Id="28fd569f-0977-461d-8a71-afd979736e0b" />
               </controlFlow>
             </flowNodeTargets>
@@ -82,7 +82,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="4d542dd6-a760-4897-a01f-71bcc2acdef4" name="Choose type and filled in necessary quantity" isLeaf="false">
+          <opaqueAction Id="4d542dd6-a760-4897-a01f-71bcc2acdef4" name="Choose type and fill in necessary quantity" isLeaf="false">
             <elementDefinition Id="42c6241e-c539-4720-8d5b-dca531382fd0" />
             <flowNodeTargets>
               <controlFlow Id="e4a8d661-5a32-4fff-863e-4e041b8e16ab" isLeaf="false">

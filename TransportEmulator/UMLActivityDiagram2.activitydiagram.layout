@@ -62,7 +62,7 @@
     <rectangleShape Id="c6defbe1-9b5b-41a8-ae20-83516e99dec0" absoluteBounds="5.125, 1, 1.875, 3.625" outlineColor="83, 134, 191" outlineThickness="0.03125" />
     <rectangleShape Id="5c5b9f2f-54c1-4876-b1d1-b01a98a64326" absoluteBounds="7.25, 1, 1.875, 3.625" outlineColor="83, 134, 191" outlineThickness="0.03125" />
     <actionShape Id="c4ce07f3-f95a-4852-83c0-975746418280" absoluteBounds="1.25, 2.125, 1.125, 0.625" customColor="161, 199, 231">
-      <opaqueActionMoniker Id="4d542dd6-a760-4897-a01f-71bcc2acdef4" LastKnownName="Choose type and filled in necessary quantity" />
+      <opaqueActionMoniker Id="4d542dd6-a760-4897-a01f-71bcc2acdef4" LastKnownName="Choose type and fill in necessary quantity" />
     </actionShape>
     <controlFlowConnector edgePoints="[(6.0625 : 2); (6.0625 : 2.4375); (2.375 : 2.4375)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
       <controlFlowMoniker Id="76f4873b-ab76-48a8-8b45-f949a8c19895" />
