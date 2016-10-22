@@ -61,6 +61,10 @@
           LastKnownLocation="TransportEmulator.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="22743fc6-e688-4f9f-90b9-c176134f5a49">
+      <body>FuelList actions:</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -3410,7 +3414,7 @@
           </opaqueAction>
           <opaqueAction
             Id="d6c21125-2978-4466-b6b9-b689c36950e0"
-            name="Update information "
+            name="Add vehicle to list"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
@@ -3448,22 +3452,22 @@
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="894734c4-c52d-4ea4-8856-8d206141432f"
-                  LastKnownName="Send information to VehiclelList"
+                  LastKnownName="Check availability of necessary fuel"
                   LastKnownLocation="TransportEmulator.uml" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction
             Id="894734c4-c52d-4ea4-8856-8d206141432f"
-            name="Send information to VehiclelList"
+            name="Check availability of necessary fuel"
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="651e5a07-3ddd-495e-b831-3ab6bbd1fad9"
+                Id="e8c2f309-7d48-4883-b3a1-fe0d18553d2f"
                 isLeaf="false">
-                <opaqueActionMoniker
-                  Id="d6c21125-2978-4466-b6b9-b689c36950e0"
-                  LastKnownName="Update information "
+                <decisionNodeMoniker
+                  Id="5bdc92b0-5f6a-43a2-ae6a-815da1765c28"
+                  LastKnownName="Decision1"
                   LastKnownLocation="TransportEmulator.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -3474,11 +3478,11 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="3023b067-5551-4a38-a49b-6517da411e9a"
+                Id="1f907ef2-6cf7-4a1b-914f-3e4350cc1bbc"
                 isLeaf="false">
-                <opaqueActionMoniker
-                  Id="817946dc-a6f8-40de-b956-83ab4b935ef3"
-                  LastKnownName="Close &quot;Create Vehicle&quot; window"
+                <mergeNodeMoniker
+                  Id="92b1a627-783c-4858-9030-f657cf83d06d"
+                  LastKnownName="Merge1"
                   LastKnownLocation="TransportEmulator.uml" />
               </controlFlow>
             </flowNodeTargets>
@@ -3489,7 +3493,7 @@
             isLeaf="false">
             <flowNodeTargets>
               <controlFlow
-                Id="264f58b2-ce84-4d77-93e3-2e2748622326"
+                Id="42f130b0-fef5-4e50-90c0-fbaa80cdc038"
                 isLeaf="false">
                 <activityFinalNodeMoniker
                   Id="251eb627-a432-40fb-a260-e15a74f70982"
@@ -3502,6 +3506,74 @@
             Id="251eb627-a432-40fb-a260-e15a74f70982"
             name="ActivityFinal1"
             isLeaf="false" />
+          <opaqueAction
+            Id="2934f3c4-6bd8-4f48-ae0e-eb369714bbf0"
+            name="Extract used fuel"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="234a4b64-bc25-4213-a48a-2b37c72c632e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="d6c21125-2978-4466-b6b9-b689c36950e0"
+                  LastKnownName="Add vehicle to list"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="5bdc92b0-5f6a-43a2-ae6a-815da1765c28"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0c289cb1-c68d-427f-bf00-cbbc58771de2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="2934f3c4-6bd8-4f48-ae0e-eb369714bbf0"
+                  LastKnownName="Extract used fuel"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="2955c2ef-0e37-4c2f-a708-eb88c3dbcea5"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="0e63981a-e425-43be-9062-02b4d4228a45"
+                  LastKnownName="Show error about lack of fuel"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="0e63981a-e425-43be-9062-02b4d4228a45"
+            name="Show error about lack of fuel"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="af88b93e-470c-4016-ae3d-999a6585ff33"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="92b1a627-783c-4858-9030-f657cf83d06d"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="92b1a627-783c-4858-9030-f657cf83d06d"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="34a41c0f-c38d-4eee-9b5e-6142de75215b"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="817946dc-a6f8-40de-b956-83ab4b935ef3"
+                  LastKnownName="Close &quot;Create Vehicle&quot; window"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
         </nodes>
       </activity>
     </packageHasNamedElement>

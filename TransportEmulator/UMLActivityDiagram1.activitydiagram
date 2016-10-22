@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" dslVersion="1.0.0.0" Id="730e4878-17a5-4570-a685-8218164a1f97" name="Activity Create Vehicle" linkedPackageId="3bdce9b9-7c0f-4d99-8923-19acbca4f2a1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="730e4878-17a5-4570-a685-8218164a1f97" name="Activity Create Vehicle" linkedPackageId="3bdce9b9-7c0f-4d99-8923-19acbca4f2a1" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
   <ownedCommentsInternal>
     <comment Id="de189923-dd50-4868-bfa2-8badec01d153">
       <elementDefinition Id="58b360ca-1707-476a-87f3-5c64d66a0b36" />
@@ -16,6 +16,10 @@
     <comment Id="17e48ae2-a92d-46e3-8fa6-51cb6d58f53e">
       <elementDefinition Id="0ca3bdaa-b782-4be4-a13a-013d53d62c6b" />
       <body>VehicleList actions:</body>
+    </comment>
+    <comment Id="d4797067-a833-455d-baea-15dc874d5f9d">
+      <elementDefinition Id="22743fc6-e688-4f9f-90b9-c176134f5a49" />
+      <body>FuelList actions:</body>
     </comment>
   </ownedCommentsInternal>
   <packagedElements>
@@ -59,7 +63,7 @@
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="f17f764a-b540-45e8-b3c7-c0f5ae500f62" name="Update information " isLeaf="false">
+          <opaqueAction Id="f17f764a-b540-45e8-b3c7-c0f5ae500f62" name="Add vehicle to list" isLeaf="false">
             <elementDefinition Id="d6c21125-2978-4466-b6b9-b689c36950e0" />
             <flowNodeTargets>
               <controlFlow Id="d36c7b3d-f7fb-451f-9e8b-3a6a03bb490d" isLeaf="false">
@@ -81,41 +85,81 @@
             <elementDefinition Id="f4382930-fc76-4b4a-918d-3b25de08ddf5" />
             <flowNodeTargets>
               <controlFlow Id="266ba535-df44-4ec7-ab8d-f8d917d88e4b" isLeaf="false">
-                <opaqueActionMoniker Id="b992ac97-b66c-44ba-9591-abb721eb1e66" LastKnownName="Send information to VehiclelList" />
+                <opaqueActionMoniker Id="b992ac97-b66c-44ba-9591-abb721eb1e66" LastKnownName="Check availability of necessary fuel" />
                 <elementDefinition Id="565f20a9-907e-40ab-a98d-e2dbcef57129" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
-          <opaqueAction Id="b992ac97-b66c-44ba-9591-abb721eb1e66" name="Send information to VehiclelList" isLeaf="false">
+          <opaqueAction Id="b992ac97-b66c-44ba-9591-abb721eb1e66" name="Check availability of necessary fuel" isLeaf="false">
             <elementDefinition Id="894734c4-c52d-4ea4-8856-8d206141432f" />
             <flowNodeTargets>
-              <controlFlow Id="3a97b84c-1a1a-432f-8cf5-bf46b824b955" isLeaf="false">
-                <opaqueActionMoniker Id="f17f764a-b540-45e8-b3c7-c0f5ae500f62" LastKnownName="Update information " />
-                <elementDefinition Id="651e5a07-3ddd-495e-b831-3ab6bbd1fad9" />
+              <controlFlow Id="8aa2dc56-eaa0-4ec3-a852-fc5697dac375" isLeaf="false">
+                <decisionNodeMoniker Id="ddfeacdf-8d77-4f03-bab3-e7ba6cadeb2a" LastKnownName="Decision1" />
+                <elementDefinition Id="e8c2f309-7d48-4883-b3a1-fe0d18553d2f" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="b60a6a34-9ac2-4e1e-b785-7706d782aeef" name="End" isLeaf="false">
             <elementDefinition Id="78654d6c-fd6c-4fd3-a233-e99b7c5b5e24" />
             <flowNodeTargets>
-              <controlFlow Id="bdd7bf73-7175-43e0-b942-6c6909ab4f73" isLeaf="false">
-                <opaqueActionMoniker Id="1ce61571-9979-44fe-92fb-df2b0eeb1774" LastKnownName="Close &quot;Create Vehicle&quot; window" />
-                <elementDefinition Id="3023b067-5551-4a38-a49b-6517da411e9a" />
+              <controlFlow Id="ee2c848c-d1bb-433e-bcb2-953019f843ae" isLeaf="false">
+                <mergeNodeMoniker Id="bfe8b337-602f-49e8-ad5c-5e58ceae841d" LastKnownName="Merge1" />
+                <elementDefinition Id="1f907ef2-6cf7-4a1b-914f-3e4350cc1bbc" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <opaqueAction Id="1ce61571-9979-44fe-92fb-df2b0eeb1774" name="Close &quot;Create Vehicle&quot; window" isLeaf="false">
             <elementDefinition Id="817946dc-a6f8-40de-b956-83ab4b935ef3" />
             <flowNodeTargets>
-              <controlFlow Id="70510494-50bc-4d36-bcb2-3ce0590e17a0" isLeaf="false">
+              <controlFlow Id="2c9c80d4-752c-4381-a019-f8805b431dc5" isLeaf="false">
                 <activityFinalNodeMoniker Id="5e790d49-bd5f-42d6-b6b0-4571027f0628" LastKnownName="ActivityFinal1" />
-                <elementDefinition Id="264f58b2-ce84-4d77-93e3-2e2748622326" />
+                <elementDefinition Id="42f130b0-fef5-4e50-90c0-fbaa80cdc038" />
               </controlFlow>
             </flowNodeTargets>
           </opaqueAction>
           <activityFinalNode Id="5e790d49-bd5f-42d6-b6b0-4571027f0628" name="ActivityFinal1" isLeaf="false">
             <elementDefinition Id="251eb627-a432-40fb-a260-e15a74f70982" />
           </activityFinalNode>
+          <opaqueAction Id="2382e611-2a50-4d51-9d64-fbb5cfda64a3" name="Extract used fuel" isLeaf="false">
+            <elementDefinition Id="2934f3c4-6bd8-4f48-ae0e-eb369714bbf0" />
+            <flowNodeTargets>
+              <controlFlow Id="47d4302c-81b7-4265-8a5d-513b617632b5" isLeaf="false">
+                <opaqueActionMoniker Id="f17f764a-b540-45e8-b3c7-c0f5ae500f62" LastKnownName="Add vehicle to list" />
+                <elementDefinition Id="234a4b64-bc25-4213-a48a-2b37c72c632e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="ddfeacdf-8d77-4f03-bab3-e7ba6cadeb2a" name="Decision1" isLeaf="false">
+            <elementDefinition Id="5bdc92b0-5f6a-43a2-ae6a-815da1765c28" />
+            <flowNodeTargets>
+              <controlFlow Id="a1b58797-154c-4449-b3ea-0704b94aed78" isLeaf="false">
+                <opaqueActionMoniker Id="2382e611-2a50-4d51-9d64-fbb5cfda64a3" LastKnownName="Extract used fuel" />
+                <elementDefinition Id="0c289cb1-c68d-427f-bf00-cbbc58771de2" />
+              </controlFlow>
+              <controlFlow Id="4b429a0f-8eab-4cdd-8e8a-5ab7fa12bb56" isLeaf="false">
+                <opaqueActionMoniker Id="ef39b874-2bc4-4c23-8eb1-410793d41719" LastKnownName="Show error about lack of fuel" />
+                <elementDefinition Id="2955c2ef-0e37-4c2f-a708-eb88c3dbcea5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="ef39b874-2bc4-4c23-8eb1-410793d41719" name="Show error about lack of fuel" isLeaf="false">
+            <elementDefinition Id="0e63981a-e425-43be-9062-02b4d4228a45" />
+            <flowNodeTargets>
+              <controlFlow Id="a2640bbf-7cf9-4e97-875c-5513e8b97f44" isLeaf="false">
+                <mergeNodeMoniker Id="bfe8b337-602f-49e8-ad5c-5e58ceae841d" LastKnownName="Merge1" />
+                <elementDefinition Id="af88b93e-470c-4016-ae3d-999a6585ff33" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="bfe8b337-602f-49e8-ad5c-5e58ceae841d" name="Merge1" isLeaf="false">
+            <elementDefinition Id="92b1a627-783c-4858-9030-f657cf83d06d" />
+            <flowNodeTargets>
+              <controlFlow Id="c7ff6e12-0bd7-4a2a-8914-9cc197a3e76d" isLeaf="false">
+                <opaqueActionMoniker Id="1ce61571-9979-44fe-92fb-df2b0eeb1774" LastKnownName="Close &quot;Create Vehicle&quot; window" />
+                <elementDefinition Id="34a41c0f-c38d-4eee-9b5e-6142de75215b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
         </nodes>
       </activity>
     </activityRootModelHasActivity>
