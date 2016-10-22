@@ -3528,6 +3528,7 @@
             <flowNodeTargets>
               <controlFlow
                 Id="0c289cb1-c68d-427f-bf00-cbbc58771de2"
+                guard="in stock"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="2934f3c4-6bd8-4f48-ae0e-eb369714bbf0"
@@ -3535,7 +3536,7 @@
                   LastKnownLocation="TransportEmulator.uml" />
               </controlFlow>
               <controlFlow
-                Id="2955c2ef-0e37-4c2f-a708-eb88c3dbcea5"
+                Id="e4dbbfca-96cd-47cc-b5b4-b75faa89634e"
                 isLeaf="false">
                 <opaqueActionMoniker
                   Id="0e63981a-e425-43be-9062-02b4d4228a45"
@@ -3766,6 +3767,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="4a9b4f53-72ff-48e7-9e08-42b633ecbb2b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Stop vehicle"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9700d138-d403-4678-9f54-ce17a962cb2b"
+              LastKnownName="Stop vehicle"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e351b462-c11d-43b2-b87b-59c2f71156f1"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3eb2f305-f38b-4078-a046-20a2b5c8dbd3"
+                  name="Stop vehicle"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -3958,17 +3998,7 @@
         Id="9700d138-d403-4678-9f54-ce17a962cb2b"
         name="Stop vehicle"
         isAbstract="false"
-        isLeaf="false">
-        <extendedCases>
-          <extend
-            Id="1579ad90-3033-4b5d-83e8-a62866e3752a">
-            <useCaseMoniker
-              Id="c3a9b154-ac0a-4578-bac8-eadb73414965"
-              LastKnownName="Start simulation"
-              LastKnownLocation="TransportEmulator.uml" />
-          </extend>
-        </extendedCases>
-      </useCase>
+        isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
       <undefinedType

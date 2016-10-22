@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="1b88d00c-a329-4bd5-851b-3a1091aa9a6b" name="UMLUseCaseDiagram1" linkedPackageId="1e543102-3946-4e21-8ccf-4d08a481d3a5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="1b88d00c-a329-4bd5-851b-3a1091aa9a6b" name="UMLUseCaseDiagram1" linkedPackageId="1e543102-3946-4e21-8ccf-4d08a481d3a5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
     <comment Id="51728bb0-6b10-4cc8-bd0f-345107d5318c">
       <elementDefinition Id="50bd8995-0eda-44d5-bc16-8675cbf65761" />
@@ -110,6 +110,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="cb615dbe-ba31-4d1f-9ceb-66f6e9c59930" />
           </association>
+          <association Id="4e4f31eb-f2ba-4a98-917c-8823b5dbda6e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Stop vehicle" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="f1413621-9049-4381-9f25-1538345c6290" LastKnownName="Stop vehicle" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d9bfc82c-affb-49c2-8015-3230c274d75c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e351b462-c11d-43b2-b87b-59c2f71156f1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8fac4830-652f-47d6-985c-6f86c97711ff" name="Stop vehicle" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3eb2f305-f38b-4078-a046-20a2b5c8dbd3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4a9b4f53-72ff-48e7-9e08-42b633ecbb2b" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -219,12 +235,6 @@
     <useCaseModelRootHasTypes>
       <useCase Id="f1413621-9049-4381-9f25-1538345c6290" name="Stop vehicle" isAbstract="false" isLeaf="false">
         <elementDefinition Id="9700d138-d403-4678-9f54-ce17a962cb2b" />
-        <extendedCases>
-          <extend Id="7674dc7f-a985-44a4-b5f9-b3312131484c">
-            <useCaseMoniker Id="29659f45-8c95-4782-b042-3eb92ed9528c" LastKnownName="Start simulation" />
-            <elementDefinition Id="1579ad90-3033-4b5d-83e8-a62866e3752a" />
-          </extend>
-        </extendedCases>
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>

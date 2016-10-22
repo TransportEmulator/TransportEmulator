@@ -132,13 +132,13 @@
           <decisionNode Id="ddfeacdf-8d77-4f03-bab3-e7ba6cadeb2a" name="Decision1" isLeaf="false">
             <elementDefinition Id="5bdc92b0-5f6a-43a2-ae6a-815da1765c28" />
             <flowNodeTargets>
-              <controlFlow Id="a1b58797-154c-4449-b3ea-0704b94aed78" isLeaf="false">
+              <controlFlow Id="a1b58797-154c-4449-b3ea-0704b94aed78" guard="in stock" isLeaf="false">
                 <opaqueActionMoniker Id="2382e611-2a50-4d51-9d64-fbb5cfda64a3" LastKnownName="Extract used fuel" />
                 <elementDefinition Id="0c289cb1-c68d-427f-bf00-cbbc58771de2" />
               </controlFlow>
-              <controlFlow Id="4b429a0f-8eab-4cdd-8e8a-5ab7fa12bb56" isLeaf="false">
+              <controlFlow Id="9e58a3c9-b6c6-44ea-a94d-c072aacd6ab2" isLeaf="false">
                 <opaqueActionMoniker Id="ef39b874-2bc4-4c23-8eb1-410793d41719" LastKnownName="Show error about lack of fuel" />
-                <elementDefinition Id="2955c2ef-0e37-4c2f-a708-eb88c3dbcea5" />
+                <elementDefinition Id="e4dbbfca-96cd-47cc-b5b4-b75faa89634e" />
               </controlFlow>
             </flowNodeTargets>
           </decisionNode>
