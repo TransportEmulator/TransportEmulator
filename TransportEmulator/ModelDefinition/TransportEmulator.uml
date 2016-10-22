@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner"
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm10="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner"
   dslVersion="1.0.0.0"
   Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa"
   name="TransportEmulator" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
@@ -4752,6 +4752,149 @@
             name="DIESEL" />
         </ownedLiterals>
       </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="15c4a405-1f68-41fb-a3c9-4146471be481"
+        name="TransportGUI"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <requiredInterface
+            Id="620817f8-078e-434b-808b-b5796eb57bc4"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="e423079a-e2fa-41a3-ab11-5c988af9ee64">
+                <providedInterfaceMoniker
+                  Id="ad9a7f9a-e2db-4760-b731-c978093c9d41"
+                  LastKnownName="Port1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="dabd00b4-40a5-403e-b119-3a484d8aa9f1"
+                LastKnownName="Interface2"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="78ce55fd-7960-4585-9672-90a83f09d06b"
+        name="Transport"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="f5277b72-ba0f-4a14-aa4a-6a5c0c24d5a1"
+        name="TansportMain"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="28682881-d1c5-4f5b-8039-1a81eab6da77">
+            <componentMoniker
+              Id="15c4a405-1f68-41fb-a3c9-4146471be481"
+              LastKnownName="TransportGUI"
+              LastKnownLocation="TransportEmulator.uml" />
+          </dependency>
+          <dependency
+            Id="a0946ac6-53d4-45dc-affe-a7714096d63b">
+            <componentMoniker
+              Id="78c3dac0-665f-4abf-bcac-55c3e188064d"
+              LastKnownName="EmulateProcesser"
+              LastKnownLocation="TransportEmulator.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="78c3dac0-665f-4abf-bcac-55c3e188064d"
+        name="EmulateProcesser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="59dff5a5-ece9-4bef-a486-4713709ae420">
+            <componentMoniker
+              Id="984aa5c0-e5dd-4d25-809f-8548eb2c4f0c"
+              LastKnownName="Road"
+              LastKnownLocation="TransportEmulator.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="ad9a7f9a-e2db-4760-b731-c978093c9d41"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="fef994a0-e27f-4b7b-9604-135393d0778f"
+                LastKnownName="Interface1"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="fef994a0-e27f-4b7b-9604-135393d0778f"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="dabd00b4-40a5-403e-b119-3a484d8aa9f1"
+        name="Interface2"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="984aa5c0-e5dd-4d25-809f-8548eb2c4f0c"
+        name="Road"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="18900e0b-0465-453e-a21b-fa01fefcd96e">
+            <componentMoniker
+              Id="78ce55fd-7960-4585-9672-90a83f09d06b"
+              LastKnownName="Transport"
+              LastKnownLocation="TransportEmulator.uml" />
+          </dependency>
+        </suppliersInternal>
+      </component>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
