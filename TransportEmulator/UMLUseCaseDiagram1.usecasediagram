@@ -1,18 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="1b88d00c-a329-4bd5-851b-3a1091aa9a6b" name="UMLUseCaseDiagram1" linkedPackageId="1e543102-3946-4e21-8ccf-4d08a481d3a5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
   <ownedCommentsInternal>
-    <comment Id="51728bb0-6b10-4cc8-bd0f-345107d5318c">
-      <elementDefinition Id="50bd8995-0eda-44d5-bc16-8675cbf65761" />
-      <body>In accordance with restrictions:
-* Only a tram can move along the strip with tram tracks
-* Tram can not move without tramways
-* Trolley can move only along the strip, equipped trolleybus wires
-* Band-equipped trolleybus wires can move not only trolleybus
-* On a horse-drawn carriage, bicycle, scooter, and the tank can move only by extreme bands</body>
-      <annotatedElements>
-        <useCaseMoniker Id="a8bb5b70-3462-4369-a4fa-028f5e47f066" LastKnownName="Place vehicle on the road" />
-      </annotatedElements>
-    </comment>
     <comment Id="fb064004-0eae-49ef-827d-87d0d474bd50">
       <elementDefinition Id="fda682b4-37be-480b-9501-bcc603ff2bd4" />
       <body>Stop simulation of on-demand. Resume by pressing the START button</body>
@@ -126,6 +114,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="4a9b4f53-72ff-48e7-9e08-42b633ecbb2b" />
           </association>
+          <association Id="14912701-de68-4fbc-b3f4-4e13ac8b837e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Log state" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fd36413c-3dd7-44a3-8739-e16c722c0f86" LastKnownName="Log state" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f4ff70f-2169-4918-aab4-6d4e66ebc578" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="4a79eb36-a575-4ee4-b30d-840e016eaefd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="445fe705-63ed-4d57-a90e-f24b127d6f15" name="Log state" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="df4d8504-4b95-483b-a07f-bfd253fb906d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0a11d3b5-6c84-4c84-a57f-56dd9daadd8f" />
+          </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
@@ -163,36 +167,9 @@
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="ebd260a7-8b10-4175-8c82-8a6582083322" name="Log state" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="694ec5f1-3c41-42bc-bcc7-e254934c5425" />
-        <targetEnds>
-          <association Id="86f183ca-44c5-4461-af32-79e6403e6de1" isDerived="false" sourceEndRoleName="Вести журнал" targetEndRoleName="Журнал" isLeaf="false" isAbstract="false">
-            <actorMoniker Id="22ffd056-3374-4a0c-aee2-10b98e0b49cf" LastKnownName="Log" />
-            <relationshipOwnedElementsInternal>
-              <associationHasOwnedEnds>
-                <memberEnd Id="d3243ecf-f121-4d71-85d0-a0629a9548fb" name="Вести журнал" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="635e1d7a-5786-40cf-822e-198e8451ed49" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-              <associationHasOwnedEnds>
-                <memberEnd Id="2048141b-99c4-4298-9996-9ad96367f3b3" name="Журнал" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="ecddf887-f613-47c8-8f03-4fb1025e5eb6" />
-                </memberEnd>
-              </associationHasOwnedEnds>
-            </relationshipOwnedElementsInternal>
-            <elementDefinition Id="f286775f-c123-448f-b7cf-40260c0face7" />
-          </association>
-        </targetEnds>
-      </useCase>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
       <useCase Id="29659f45-8c95-4782-b042-3eb92ed9528c" name="Start simulation" isAbstract="false" isLeaf="false">
         <elementDefinition Id="c3a9b154-ac0a-4578-bac8-eadb73414965" />
         <additions>
-          <include Id="85b20d7a-848d-4484-9d6d-3ddcd5c6cba6">
-            <useCaseMoniker Id="ebd260a7-8b10-4175-8c82-8a6582083322" LastKnownName="Log state" />
-            <elementDefinition Id="0f82dd4b-ab2b-4c7d-958e-e2967da98081" />
-          </include>
           <include Id="b528cb9c-12b8-4977-b889-a824b74c857a">
             <useCaseMoniker Id="7aa0a37f-b7e0-41eb-9d3f-48672b343996" LastKnownName="Display the road" />
             <elementDefinition Id="00c9eb44-50b8-40f2-a70c-f50537d79441" />
@@ -222,19 +199,13 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="a8bb5b70-3462-4369-a4fa-028f5e47f066" name="Place vehicle on the road" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="0f72961a-89f3-4998-a212-9b8c77d9b696" />
-        <extendedCases>
-          <extend Id="4fd81d78-2c37-464f-b1d3-070d57ab4c8b">
-            <useCaseMoniker Id="7aa0a37f-b7e0-41eb-9d3f-48672b343996" LastKnownName="Display the road" />
-            <elementDefinition Id="cacade95-b488-4df2-9a6f-c4516ac73c2b" />
-          </extend>
-        </extendedCases>
+      <useCase Id="f1413621-9049-4381-9f25-1538345c6290" name="Stop vehicle" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9700d138-d403-4678-9f54-ce17a962cb2b" />
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f1413621-9049-4381-9f25-1538345c6290" name="Stop vehicle" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="9700d138-d403-4678-9f54-ce17a962cb2b" />
+      <useCase Id="fd36413c-3dd7-44a3-8739-e16c722c0f86" name="Log state" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6b274a1f-24c3-4900-88cb-d6d8f613b712" />
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>

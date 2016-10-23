@@ -1,19 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="50318676-48f0-45fc-b9e9-9a0c213e0fe1" name="UMLComponentDiagram1" linkedPackageId="11fed107-a692-4af0-a8c0-bdf357a8ded9" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="55b51b99-cbf3-4674-8e90-8f0b9200ade1">
-      <profileInstance Id="c5f320ad-ece5-441c-8a1c-3982c34a1888" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="eb2bc4db-1caf-478c-b45e-5bdcec12f128">
-      <profileInstance Id="1588b6ed-1f21-4506-8b66-88acc7053aa4" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
+  <ownedCommentsInternal>
+    <comment Id="4d909293-8c87-45bf-ab08-2951d4ce9449">
+      <elementDefinition Id="3260556d-6878-4dad-989d-dd280157c8ea" />
+      <body>Main runnable part of the program
+</body>
+      <annotatedElements>
+        <componentMoniker Id="94b4e03b-454f-44c0-bcc9-3f6b652aebcc" LastKnownName="TransportGUI" />
+      </annotatedElements>
+    </comment>
+    <comment Id="68334a43-0640-411f-a4b1-2ad550ebb628">
+      <elementDefinition Id="fa8808b6-b843-42df-913e-fe9930ca0ca3" />
+      <body>Provide interface to access log information stored in database
+</body>
+      <annotatedElements>
+        <componentMoniker Id="d4a056b5-c994-4e6a-841f-eefc839a4e6e" LastKnownName="LogDAO" />
+      </annotatedElements>
+    </comment>
+  </ownedCommentsInternal>
   <packagedElements>
     <componentModelHasComponents>
       <component Id="94b4e03b-454f-44c0-bcc9-3f6b652aebcc" name="TransportGUI" isAbstract="false" isLeaf="false" isActiveClass="false">
@@ -28,38 +32,18 @@
               </dependency>
             </suppliersInternal>
             <type_NamedElement>
-              <interfaceMoniker Id="b5b6311b-bf64-4a13-a45b-1777bdcc16cd" LastKnownName="Interface2" />
+              <interfaceMoniker Id="b5b6311b-bf64-4a13-a45b-1777bdcc16cd" LastKnownName="Simulation" />
             </type_NamedElement>
           </requiredInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
-      <component Id="cb2e16fc-4fb0-47bf-9462-b40d258a45fe" name="Transport" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="78ce55fd-7960-4585-9672-90a83f09d06b" />
-      </component>
-    </componentModelHasComponents>
-    <componentModelHasComponents>
-      <component Id="9dcb9292-4d18-44b5-93fc-5611bc5b1db0" name="TansportMain" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="f5277b72-ba0f-4a14-aa4a-6a5c0c24d5a1" />
-        <suppliersInternal>
-          <dependency Id="06b5ad41-98d3-4457-b431-02ee542309c2">
-            <componentMoniker Id="94b4e03b-454f-44c0-bcc9-3f6b652aebcc" LastKnownName="TransportGUI" />
-            <elementDefinition Id="28682881-d1c5-4f5b-8039-1a81eab6da77" />
-          </dependency>
-          <dependency Id="2fcec5b6-711c-462a-918d-593401a76f57">
-            <componentMoniker Id="51a03629-fbe3-48c8-a51d-4214f61b53cc" LastKnownName="EmulateProcesser" />
-            <elementDefinition Id="a0946ac6-53d4-45dc-affe-a7714096d63b" />
-          </dependency>
-        </suppliersInternal>
-      </component>
-    </componentModelHasComponents>
-    <componentModelHasComponents>
-      <component Id="51a03629-fbe3-48c8-a51d-4214f61b53cc" name="EmulateProcesser" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <component Id="51a03629-fbe3-48c8-a51d-4214f61b53cc" name="SimulateProcessor" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="78c3dac0-665f-4abf-bcac-55c3e188064d" />
         <suppliersInternal>
           <dependency Id="f5f48c14-7a7b-47a6-8d8e-cb576f5b8ac6">
-            <componentMoniker Id="9c71429f-3e1e-4ee8-8df4-1d62aa1b5ba7" LastKnownName="Road" />
+            <componentMoniker Id="9c71429f-3e1e-4ee8-8df4-1d62aa1b5ba7" LastKnownName="Entities" />
             <elementDefinition Id="59dff5a5-ece9-4bef-a486-4713709ae420" />
           </dependency>
         </suppliersInternal>
@@ -67,35 +51,84 @@
           <providedInterface Id="d71c4812-ac07-4d39-aa60-7ed72ba6544a" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
             <elementDefinition Id="ad9a7f9a-e2db-4760-b731-c978093c9d41" />
             <type_NamedElement>
-              <interfaceMoniker Id="28b52de3-1661-4ba6-a025-1bcf29829937" LastKnownName="Interface1" />
+              <interfaceMoniker Id="28b52de3-1661-4ba6-a025-1bcf29829937" LastKnownName="Simulation" />
+            </type_NamedElement>
+          </providedInterface>
+          <requiredInterface Id="1a31e7a8-65fa-4e30-a2be-474083b65019" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="2ec4b341-79c8-4cd1-92f2-e9b7f91d1a67" />
+            <suppliersInternal>
+              <dependency Id="81826858-4c1b-4792-a0cd-fcd7aa471959">
+                <providedInterfaceMoniker Id="a13f6a66-b057-49f9-b398-f46fa0ba07c7" LastKnownName="Port1" />
+                <elementDefinition Id="55a07e32-76ec-4785-a81f-6c7d157f76bf" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="af7e1268-f8ae-4765-a64e-07db9225e882" LastKnownName="RequireLog" />
+            </type_NamedElement>
+          </requiredInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="28b52de3-1661-4ba6-a025-1bcf29829937" name="Simulation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fef994a0-e27f-4b7b-9604-135393d0778f" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="b5b6311b-bf64-4a13-a45b-1777bdcc16cd" name="Simulation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dabd00b4-40a5-403e-b119-3a484d8aa9f1" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="9c71429f-3e1e-4ee8-8df4-1d62aa1b5ba7" name="Entities" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="984aa5c0-e5dd-4d25-809f-8548eb2c4f0c" />
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="d4a056b5-c994-4e6a-841f-eefc839a4e6e" name="LogDAO" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="22d4a153-82e8-4d4f-807d-c4541d4ed791" />
+        <suppliersInternal>
+          <dependency Id="211412ad-1243-4811-bc14-9e1f1233e400">
+            <componentMoniker Id="9c71429f-3e1e-4ee8-8df4-1d62aa1b5ba7" LastKnownName="Entities" />
+            <elementDefinition Id="b4d144b5-80f1-440a-a133-5850a7238d40" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <providedInterface Id="a13f6a66-b057-49f9-b398-f46fa0ba07c7" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="13814b60-153a-44b6-8c4b-536c54b935d9" />
+            <type_NamedElement>
+              <interfaceMoniker Id="cda9e8f0-dc30-4ede-ab43-a51702b9f9b0" LastKnownName="Provide log form DB" />
             </type_NamedElement>
           </providedInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <modelContainsNamedElements>
-      <Interface Id="28b52de3-1661-4ba6-a025-1bcf29829937" name="Interface1" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="fef994a0-e27f-4b7b-9604-135393d0778f" />
+      <Interface Id="cda9e8f0-dc30-4ede-ab43-a51702b9f9b0" name="Provide log form DB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc53d238-d8c3-4af6-99c6-9cb188002896" />
       </Interface>
     </modelContainsNamedElements>
     <modelContainsNamedElements>
-      <Interface Id="b5b6311b-bf64-4a13-a45b-1777bdcc16cd" name="Interface2" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="dabd00b4-40a5-403e-b119-3a484d8aa9f1" />
+      <Interface Id="af7e1268-f8ae-4765-a64e-07db9225e882" name="RequireLog" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d46bdab2-888c-4220-8286-a4cdcc6d2cd3" />
       </Interface>
     </modelContainsNamedElements>
-    <componentModelHasComponents>
-      <component Id="9c71429f-3e1e-4ee8-8df4-1d62aa1b5ba7" name="Road" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="984aa5c0-e5dd-4d25-809f-8548eb2c4f0c" />
-        <suppliersInternal>
-          <dependency Id="5554669f-0c10-47ae-a7e6-2c923df62c51">
-            <componentMoniker Id="cb2e16fc-4fb0-47bf-9462-b40d258a45fe" LastKnownName="Transport" />
-            <elementDefinition Id="18900e0b-0465-453e-a21b-fa01fefcd96e" />
-          </dependency>
-        </suppliersInternal>
-      </component>
-    </componentModelHasComponents>
   </packagedElements>
   <package Id="11fed107-a692-4af0-a8c0-bdf357a8ded9" name="TransportEmulator">
     <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />
+    <profileInstances>
+      <packageHasProfileInstances Id="55b51b99-cbf3-4674-8e90-8f0b9200ade1">
+        <profileInstance Id="c5f320ad-ece5-441c-8a1c-3982c34a1888" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="eb2bc4db-1caf-478c-b45e-5bdcec12f128">
+        <profileInstance Id="1588b6ed-1f21-4506-8b66-88acc7053aa4" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </componentModel>
