@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="f1c58e35-0904-4085-ac5d-a45b9f4d694c" name="Activity Start Simulation" linkedPackageId="116b7486-4cfd-4a61-8180-393db702b866" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="e08e9b4c-e5c5-491b-a5a8-61b681dcf826">
+      <elementDefinition Id="a656363a-2123-4985-a56e-9bb55b7ab3a1" />
+      <body>User actions:</body>
+    </comment>
+    <comment Id="d6519865-197e-4ac1-98c5-7086ab8293e1">
+      <elementDefinition Id="9fa2de52-afa8-42b0-b723-6fc0fd0b377c" />
+      <body>GUI Main Window actions:</body>
+    </comment>
+    <comment Id="6968a586-da57-41a3-8641-b301f8bfdb48">
+      <elementDefinition Id="952ad886-ab3b-471b-8961-9f156329da94" />
+      <body>VehicleList actions:</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="05042af9-52dd-4638-98f0-b3cb90caff4c" name="Activity Start Simulation" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="e9587982-b23c-4ebf-8684-7e464de6cf5a" />
+        <nodes>
+          <initialNode Id="f3c2dc57-0818-4824-9ff5-c03ea26aa37a" name="Initial1" isLeaf="false">
+            <elementDefinition Id="e6c97408-c79f-43d7-be5e-d0848cdec8fa" />
+            <flowNodeTargets>
+              <controlFlow Id="3cc8552a-4fab-478e-80dd-5b5f3230001a" isLeaf="false">
+                <opaqueActionMoniker Id="ff100487-0a29-4b8a-9a72-fe7ca7cb7de5" LastKnownName="Push button &#xD;&#xA;&quot;Start Simulation&quot;" />
+                <elementDefinition Id="64bc6676-6293-410a-a52c-103f63b72f23" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="ff100487-0a29-4b8a-9a72-fe7ca7cb7de5" name="Push button &#xD;&#xA;&quot;Start Simulation&quot;" isLeaf="false">
+            <elementDefinition Id="bc36d601-f881-4abc-88f9-a263126621d7" />
+            <flowNodeTargets>
+              <controlFlow Id="b0827361-ea54-413c-905c-8815715d74bc" isLeaf="false">
+                <opaqueActionMoniker Id="a22be5a2-c976-4f27-921e-79ee376c2376" LastKnownName="Check Vehicle existance" />
+                <elementDefinition Id="8106f543-c4fa-44e4-9e68-5a28315c9e7c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a22be5a2-c976-4f27-921e-79ee376c2376" name="Check Vehicle existance" isLeaf="false">
+            <elementDefinition Id="57d79359-0fa6-4a34-825f-3ff6e3f436fd" />
+            <flowNodeTargets>
+              <controlFlow Id="400a0c43-9512-48d0-be75-9bdd60c6b692" isLeaf="false">
+                <decisionNodeMoniker Id="060188ee-8856-4528-a7d4-46e26de73c23" LastKnownName="Decision1" />
+                <elementDefinition Id="1e040af6-a273-497c-9a3c-3c94ec6d6de2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="4f9619e8-2577-4d1f-848f-4dd9fb94d048" name="Update Road frame every second" isLeaf="false">
+            <elementDefinition Id="28241a0e-0ee4-4657-bbc8-b22673390d3d" />
+            <flowNodeTargets>
+              <controlFlow Id="96bb1ecf-39b9-42f4-b73c-f59f97bbd932" isLeaf="false">
+                <opaqueActionMoniker Id="9747347f-320a-4cc5-b509-f6d7636ab08c" LastKnownName="Check Fuel existance in every Vehicle" />
+                <elementDefinition Id="0287dd16-f044-4706-9ed5-15070cebfa97" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="b9fee9a3-eb6d-45df-9945-9e7814f83967" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="7040462d-436c-47c9-862e-f38ff4acf2c7" />
+          </activityFinalNode>
+          <decisionNode Id="060188ee-8856-4528-a7d4-46e26de73c23" name="Decision1" isLeaf="false">
+            <elementDefinition Id="f4e26f06-12e4-4e32-981e-cd629ee3a9aa" />
+            <flowNodeTargets>
+              <controlFlow Id="879fe04c-5fd5-4581-ac48-3089a6cd486c" guard="List is empty" isLeaf="false">
+                <opaqueActionMoniker Id="78ff3798-bc85-4c6c-8857-d15c27a86959" LastKnownName="Show Error: &quot;VehicleList is empty" />
+                <elementDefinition Id="ebbcee37-de70-4009-9d2d-17607f91cfb1" />
+              </controlFlow>
+              <controlFlow Id="9bcc96d8-5abe-4c3c-ac6e-974ccd70590a" isLeaf="false">
+                <opaqueActionMoniker Id="9747347f-320a-4cc5-b509-f6d7636ab08c" LastKnownName="Check Fuel existance in every Vehicle" />
+                <elementDefinition Id="fd192d6b-238e-484a-bd87-cf6639b1f717" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="78ff3798-bc85-4c6c-8857-d15c27a86959" name="Show Error: &quot;VehicleList is empty" isLeaf="false">
+            <elementDefinition Id="4abfd055-18b8-4463-9ae9-2be7c608be10" />
+            <flowNodeTargets>
+              <controlFlow Id="1c44192c-84bb-455b-aa85-59fe69c737e7" isLeaf="false">
+                <mergeNodeMoniker Id="bebce817-daf7-4c3c-973c-3b4fd7a33021" LastKnownName="Merge1" />
+                <elementDefinition Id="fab45fd8-acc8-4145-b8cf-79054abba2e6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="bebce817-daf7-4c3c-973c-3b4fd7a33021" name="Merge1" isLeaf="false">
+            <elementDefinition Id="11744ac6-afc0-4547-a9fa-4022cf2010d4" />
+            <flowNodeTargets>
+              <controlFlow Id="9c02cf9b-19ad-4c17-9dc8-7e6c0db80ee7" isLeaf="false">
+                <activityFinalNodeMoniker Id="b9fee9a3-eb6d-45df-9945-9e7814f83967" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="4eb51bf8-7d06-4315-95b2-c821f820c252" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="966d0315-fc7e-4490-8bb1-c8e8d8410326" name="Start moving, decrease fuel level" isLeaf="false">
+            <elementDefinition Id="91b39b96-c874-4373-8e00-95ef03fe6250" />
+            <flowNodeTargets>
+              <controlFlow Id="7a45c898-7234-4d5f-8ad0-5c6b53126490" isLeaf="false">
+                <opaqueActionMoniker Id="4f9619e8-2577-4d1f-848f-4dd9fb94d048" LastKnownName="Update Road frame every second" />
+                <elementDefinition Id="b3df6fff-42bd-4766-9c7d-686f75b65ad6" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="018dcb71-35c7-4142-b892-5163ceec89ca" name="Decision2" isLeaf="false">
+            <elementDefinition Id="a3eb63ab-6779-4133-ac92-7e6b0150bdab" />
+            <flowNodeTargets>
+              <controlFlow Id="a7140a6d-e312-4d5c-ae63-707f17f0e4f8" guard="No more fuel in every vehicle" isLeaf="false">
+                <mergeNodeMoniker Id="bebce817-daf7-4c3c-973c-3b4fd7a33021" LastKnownName="Merge1" />
+                <elementDefinition Id="d4c71551-9afb-4253-9bd6-6f2d74cad383" />
+              </controlFlow>
+              <controlFlow Id="f21ea984-3a27-4377-a90b-c74561fe5caa" isLeaf="false">
+                <opaqueActionMoniker Id="966d0315-fc7e-4490-8bb1-c8e8d8410326" LastKnownName="Start moving, decrease fuel level" />
+                <elementDefinition Id="c7d5ebdd-07a2-45e0-9632-d722d26aa956" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="9747347f-320a-4cc5-b509-f6d7636ab08c" name="Check Fuel existance in every Vehicle" isLeaf="false">
+            <elementDefinition Id="3af197e0-1b30-4235-856e-82c9179730f7" />
+            <flowNodeTargets>
+              <controlFlow Id="c0cfa2ed-d2e0-4f98-b275-665c6e49c7d1" isLeaf="false">
+                <decisionNodeMoniker Id="018dcb71-35c7-4142-b892-5163ceec89ca" LastKnownName="Decision2" />
+                <elementDefinition Id="82b6c875-ed7d-48b2-978e-7a206f62a546" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="116b7486-4cfd-4a61-8180-393db702b866" name="TransportEmulator">
+    <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />
+    <profileInstances>
+      <packageHasProfileInstances Id="751cb403-095d-4bed-9a15-2961bb13ec7f">
+        <profileInstance Id="5b3a15b7-095a-46fc-ad53-0a97d395d2f7" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="16dc7482-82b3-4f1e-a4b0-8f0575a4f0e6">
+        <profileInstance Id="46a1027e-7246-4ac5-bc5b-5c05b1854fd7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

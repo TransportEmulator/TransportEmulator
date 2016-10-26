@@ -72,6 +72,18 @@
           LastKnownLocation="TransportEmulator.uml" />
       </annotatedElements>
     </comment>
+    <comment
+      Id="a656363a-2123-4985-a56e-9bb55b7ab3a1">
+      <body>User actions:</body>
+    </comment>
+    <comment
+      Id="9fa2de52-afa8-42b0-b723-6fc0fd0b377c">
+      <body>GUI Main Window actions:</body>
+    </comment>
+    <comment
+      Id="952ad886-ab3b-471b-8961-9f156329da94">
+      <body>VehicleList actions:</body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -5571,6 +5583,192 @@
       <undefinedType
         Id="b75eed24-acd4-4f26-baed-788cc2dd99b0"
         name="Timer" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="e9587982-b23c-4ebf-8684-7e464de6cf5a"
+        name="Activity Start Simulation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="e6c97408-c79f-43d7-be5e-d0848cdec8fa"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="64bc6676-6293-410a-a52c-103f63b72f23"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="bc36d601-f881-4abc-88f9-a263126621d7"
+                  LastKnownName="Push button &#xD;&#xA;&quot;Start Simulation&quot;"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="bc36d601-f881-4abc-88f9-a263126621d7"
+            name="Push button &#xD;&#xA;&quot;Start Simulation&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="8106f543-c4fa-44e4-9e68-5a28315c9e7c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="57d79359-0fa6-4a34-825f-3ff6e3f436fd"
+                  LastKnownName="Check Vehicle existance"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="57d79359-0fa6-4a34-825f-3ff6e3f436fd"
+            name="Check Vehicle existance"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="1e040af6-a273-497c-9a3c-3c94ec6d6de2"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="f4e26f06-12e4-4e32-981e-cd629ee3a9aa"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="28241a0e-0ee4-4657-bbc8-b22673390d3d"
+            name="Update Road frame every second"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0287dd16-f044-4706-9ed5-15070cebfa97"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3af197e0-1b30-4235-856e-82c9179730f7"
+                  LastKnownName="Check Fuel existance in every Vehicle"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="7040462d-436c-47c9-862e-f38ff4acf2c7"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="f4e26f06-12e4-4e32-981e-cd629ee3a9aa"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ebbcee37-de70-4009-9d2d-17607f91cfb1"
+                guard="List is empty"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="4abfd055-18b8-4463-9ae9-2be7c608be10"
+                  LastKnownName="Show Error: &quot;VehicleList is empty"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="fd192d6b-238e-484a-bd87-cf6639b1f717"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3af197e0-1b30-4235-856e-82c9179730f7"
+                  LastKnownName="Check Fuel existance in every Vehicle"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="4abfd055-18b8-4463-9ae9-2be7c608be10"
+            name="Show Error: &quot;VehicleList is empty"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fab45fd8-acc8-4145-b8cf-79054abba2e6"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="11744ac6-afc0-4547-a9fa-4022cf2010d4"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="11744ac6-afc0-4547-a9fa-4022cf2010d4"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4eb51bf8-7d06-4315-95b2-c821f820c252"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="7040462d-436c-47c9-862e-f38ff4acf2c7"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="91b39b96-c874-4373-8e00-95ef03fe6250"
+            name="Start moving, decrease fuel level"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b3df6fff-42bd-4766-9c7d-686f75b65ad6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="28241a0e-0ee4-4657-bbc8-b22673390d3d"
+                  LastKnownName="Update Road frame every second"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode
+            Id="a3eb63ab-6779-4133-ac92-7e6b0150bdab"
+            name="Decision2"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="d4c71551-9afb-4253-9bd6-6f2d74cad383"
+                guard="No more fuel in every vehicle"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="11744ac6-afc0-4547-a9fa-4022cf2010d4"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="c7d5ebdd-07a2-45e0-9632-d722d26aa956"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="91b39b96-c874-4373-8e00-95ef03fe6250"
+                  LastKnownName="Start moving, decrease fuel level"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="3af197e0-1b30-4235-856e-82c9179730f7"
+            name="Check Fuel existance in every Vehicle"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="82b6c875-ed7d-48b2-978e-7a206f62a546"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="a3eb63ab-6779-4133-ac92-7e6b0150bdab"
+                  LastKnownName="Decision2"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
