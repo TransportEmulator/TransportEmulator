@@ -10,7 +10,7 @@
       <useCaseMoniker Id="eb0a30b5-8d57-45fc-84eb-1ff3bc42991f" LastKnownName="Create a type of fuel" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(1.125 : 2.11428571428571); (2.63451504849769 : 2.80434973645609)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
+    <useCaseAssociationConnector edgePoints="[(1.125 : 2.11428571428571); (2.63451504849769 : 2.80434973645609)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="*">
       <associationMoniker Id="b86440f7-5646-4e25-8142-8625ab74d56f" />
       <relativeChildShapes />
       <nodes>
@@ -22,7 +22,7 @@
       <useCaseMoniker Id="185ebce3-f190-469d-b174-11a21fe8ee2a" LastKnownName="Display or export log" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(1.125 : 1.99528301886792); (3.37549834780969 : 1.95282078589038)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.125 : 1.99528301886792); (3.37549834780969 : 1.95282078589038)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="42f27237-57b1-4ea3-9af1-85c6da20a082" />
       <relativeChildShapes />
       <nodes>
@@ -34,7 +34,7 @@
       <actorMoniker Id="22ffd056-3374-4a0c-aee2-10b98e0b49cf" LastKnownName="Log" />
       <relativeChildShapes />
     </actorShape>
-    <useCaseAssociationConnector edgePoints="[(4.99736420877327 : 1.97271148733797); (5.375 : 1.98913043478261)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(4.99736420877327 : 1.97271148733797); (5.375 : 1.98913043478261)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="95ff77a9-eb71-46f9-b4ba-7c81b57c2026" />
       <relativeChildShapes />
       <nodes>
@@ -46,7 +46,7 @@
       <useCaseMoniker Id="29659f45-8c95-4782-b042-3eb92ed9528c" LastKnownName="Start simulation" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(1.125 : 2.03571428571429); (2.14423802617959 : 2.18131971802566)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.125 : 2.03571428571429); (2.14423802617959 : 2.18131971802566)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="d13e8935-385a-4b5b-b738-e2f97c7570df" />
       <relativeChildShapes />
       <nodes>
@@ -62,7 +62,7 @@
       <useCaseMoniker Id="0cf4a011-8811-4a8f-8c4d-121284116cda" LastKnownName="Create vehicle" />
       <relativeChildShapes />
     </useCaseShape>
-    <extendConnector edgePoints="[(3.39272272541427 : 3.35967467505918); (2.23076197382041 : 3.19368028197434)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«extend»">
+    <extendConnector edgePoints="[(3.39272272541427 : 3.35967467505918); (2.23076197382041 : 3.19368028197434)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«extend»">
       <extendMoniker Id="e0a57708-3a8d-43d7-93a4-d22eb58da466" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
@@ -73,7 +73,7 @@
         <useCaseShapeMoniker Id="0f96cf4f-2820-40c6-b23c-0b4d70af3bc5" />
       </nodes>
     </extendConnector>
-    <useCaseAssociationConnector edgePoints="[(1.06944444444444 : 2.25); (1.56877686942253 : 2.89199883211468)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="5">
+    <useCaseAssociationConnector edgePoints="[(1.06944444444444 : 2.25); (1.56877686942253 : 2.89199883211468)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="1" targetMultiplicity="5">
       <associationMoniker Id="dcd1939c-4380-4531-bf6f-ae31e384ce4d" />
       <relativeChildShapes />
       <nodes>
@@ -85,7 +85,7 @@
       <useCaseMoniker Id="7aa0a37f-b7e0-41eb-9d3f-48672b343996" LastKnownName="Display the road" />
       <relativeChildShapes />
     </useCaseShape>
-    <includeConnector edgePoints="[(3.08457251500903 : 2.34847982464479); (3.91542748499097 : 2.52652017535521)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black" useCaseStereotype="«include»">
+    <includeConnector edgePoints="[(3.08457251500903 : 2.34847982464479); (3.91542748499097 : 2.52652017535521)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="Black" useCaseStereotype="«include»">
       <includeMoniker Id="b528cb9c-12b8-4977-b889-a824b74c857a" />
       <relativeChildShapes />
       <moveableDecoratorHostShapes>
@@ -97,10 +97,10 @@
       </nodes>
     </includeConnector>
     <useCaseShape Id="b5a172cf-ec16-461b-83d2-5711d3703b01" absoluteBounds="2, 1.375, 1.25, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="f1413621-9049-4381-9f25-1538345c6290" LastKnownName="Stop vehicle" />
+      <useCaseMoniker Id="f1413621-9049-4381-9f25-1538345c6290" LastKnownName="Stop simulation" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(1.125 : 1.94642857142857); (2.07407501873201 : 1.74305535312885)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.125 : 1.94642857142857); (2.07407501873201 : 1.74305535312885)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="4e4f31eb-f2ba-4a98-917c-8823b5dbda6e" />
       <relativeChildShapes />
       <nodes>
@@ -123,7 +123,7 @@
       <useCaseMoniker Id="fd36413c-3dd7-44a3-8739-e16c722c0f86" LastKnownName="Log state" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(1.125 : 1.87096774193548); (2.44545573636007 : 1.18944220058835)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(1.125 : 1.87096774193548); (2.44545573636007 : 1.18944220058835)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="14912701-de68-4fbc-b3f4-4e13ac8b837e" />
       <relativeChildShapes />
       <nodes>

@@ -5,7 +5,7 @@
       <elementDefinition Id="fda682b4-37be-480b-9501-bcc603ff2bd4" />
       <body>Stop simulation of on-demand. Resume by pressing the START button</body>
       <annotatedElements>
-        <useCaseMoniker Id="f1413621-9049-4381-9f25-1538345c6290" LastKnownName="Stop vehicle" />
+        <useCaseMoniker Id="f1413621-9049-4381-9f25-1538345c6290" LastKnownName="Stop simulation" />
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
@@ -99,7 +99,7 @@
             <elementDefinition Id="cb615dbe-ba31-4d1f-9ceb-66f6e9c59930" />
           </association>
           <association Id="4e4f31eb-f2ba-4a98-917c-8823b5dbda6e" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Stop vehicle" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="f1413621-9049-4381-9f25-1538345c6290" LastKnownName="Stop vehicle" />
+            <useCaseMoniker Id="f1413621-9049-4381-9f25-1538345c6290" LastKnownName="Stop simulation" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
                 <memberEnd Id="d9bfc82c-affb-49c2-8015-3230c274d75c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
@@ -199,7 +199,7 @@
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="f1413621-9049-4381-9f25-1538345c6290" name="Stop vehicle" isAbstract="false" isLeaf="false">
+      <useCase Id="f1413621-9049-4381-9f25-1538345c6290" name="Stop simulation" isAbstract="false" isLeaf="false">
         <elementDefinition Id="9700d138-d403-4678-9f54-ce17a962cb2b" />
       </useCase>
     </useCaseModelRootHasTypes>

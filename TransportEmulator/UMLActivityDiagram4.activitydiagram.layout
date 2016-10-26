@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="UMLActivityDiagram4">
+  <activityRootModelMoniker Id="bcefa872-fae3-4793-ae41-c4e06be095f6" />
+  <nestedChildShapes>
+    <initialNodeShape Id="44d22898-8074-4e1e-ad30-86fc4b18b35e" absoluteBounds="1.875, 1.625, 0.125, 0.125" customColor="89, 89, 89">
+      <initialNodeMoniker Id="e3cf344a-e227-4d31-a0a0-65370b0db09f" LastKnownName="Initial1" />
+    </initialNodeShape>
+    <commentShape Id="9c2426c8-46c2-415c-94ef-1f7e72f4d027" absoluteBounds="1.375, 0.875, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="94ed1aef-37f3-4870-8b05-cc38c9b10bb7" />
+      <relativeChildShapes />
+    </commentShape>
+    <actionShape Id="8735c230-1b88-444a-ad58-f5dcf6a6587e" absoluteBounds="1.375, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="528da1d5-b2e2-4d65-af02-b1e504ea18b0" LastKnownName="Push button &#xD;&#xA;&quot;Stop Simulation&quot;" />
+    </actionShape>
+    <actionShape Id="4904fa5f-bb24-49e2-aff3-4fea244ffdb5" absoluteBounds="3.5, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="7300faef-374e-486d-8efa-83c26b4847ee" LastKnownName="Send &quot;Stop All Vehicles&quot;" />
+    </actionShape>
+    <commentShape Id="87233997-5ef1-4607-a874-f67c69df1764" absoluteBounds="3.5, 0.875, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="9f976b4d-d81e-47c3-8ee1-32f45aaba79c" />
+      <relativeChildShapes />
+    </commentShape>
+    <commentShape Id="5f99f1cd-3a57-40d0-8abc-2f75787ac628" absoluteBounds="5.625, 0.875, 1.25, 0.375" customColor="251, 247, 200">
+      <commentMoniker Id="7afe7e21-c202-4d0a-9011-8ef68d8e8813" />
+      <relativeChildShapes />
+    </commentShape>
+    <activityFinalNodeShape Id="728ca72f-dd65-4513-8345-3fd2869c16cb" absoluteBounds="4, 3.125, 0.125, 0.125" customColor="89, 89, 89">
+      <activityFinalNodeMoniker Id="4f1a5ac2-a5e9-4535-8fac-74f513e1c59b" LastKnownName="ActivityFinal1" />
+    </activityFinalNodeShape>
+    <actionShape Id="56f7caa5-b81f-414f-90bc-a630b88abb77" absoluteBounds="3.5, 2.5, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="415818fa-1066-4b1d-ac9a-2353bff058f9" LastKnownName="Show: &quot;Simulation had been stopped&quot;" />
+    </actionShape>
+    <actionShape Id="75d19a1e-53a0-4d50-a8bc-300ae7acbd80" absoluteBounds="5.625, 2, 1.125, 0.375" customColor="161, 199, 231">
+      <opaqueActionMoniker Id="7acc6149-c080-4794-a66b-d0448e0c2fac" LastKnownName="Stop all vehicles" />
+    </actionShape>
+    <controlFlowConnector edgePoints="[(1.9375 : 1.75); (1.9375 : 2)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="59590cb6-0dfe-43cd-9011-feead76ac6d9" />
+      <relativeChildShapes />
+      <nodes>
+        <initialNodeShapeMoniker Id="44d22898-8074-4e1e-ad30-86fc4b18b35e" />
+        <actionShapeMoniker Id="8735c230-1b88-444a-ad58-f5dcf6a6587e" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(2.5 : 2.1875); (3.5 : 2.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="c70e7462-0778-4f42-af23-0473d8fb18ef" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="8735c230-1b88-444a-ad58-f5dcf6a6587e" />
+        <actionShapeMoniker Id="4904fa5f-bb24-49e2-aff3-4fea244ffdb5" />
+      </nodes>
+    </controlFlowConnector>
+    <rectangleShape Id="bb7d732c-b939-4833-be47-3e883159a2f4" absoluteBounds="1.125, 1.375, 1.625, 2.25" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+    <rectangleShape Id="ce762c27-b891-4d47-acac-d2b8d943dd35" absoluteBounds="3.25, 1.375, 1.625, 2.25" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+    <rectangleShape Id="ecd24427-8239-403e-8283-b13838332a12" absoluteBounds="5.375, 1.375, 1.625, 2.25" outlineColor="83, 134, 191" outlineThickness="0.03125" />
+    <controlFlowConnector edgePoints="[(4.625 : 2.1875); (5.625 : 2.1875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="a3cd8d5f-8358-44dd-8d61-19d0a2fecb96" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="4904fa5f-bb24-49e2-aff3-4fea244ffdb5" />
+        <actionShapeMoniker Id="75d19a1e-53a0-4d50-a8bc-300ae7acbd80" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(6.1875 : 2.375); (6.1875 : 2.6875); (4.625 : 2.6875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <controlFlowMoniker Id="99c6d768-2ed3-4617-b0ec-1093e2b07c63" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="75d19a1e-53a0-4d50-a8bc-300ae7acbd80" />
+        <actionShapeMoniker Id="56f7caa5-b81f-414f-90bc-a630b88abb77" />
+      </nodes>
+    </controlFlowConnector>
+    <controlFlowConnector edgePoints="[(4.0625 : 2.875); (4.0625 : 3.125)]" fixedFrom="Algorithm" fixedTo="Caller" customColor="Black">
+      <controlFlowMoniker Id="d20f288d-1338-47de-a7c8-45af3641dbab" />
+      <relativeChildShapes />
+      <nodes>
+        <actionShapeMoniker Id="56f7caa5-b81f-414f-90bc-a630b88abb77" />
+        <activityFinalNodeShapeMoniker Id="728ca72f-dd65-4513-8345-3fd2869c16cb" />
+      </nodes>
+    </controlFlowConnector>
+  </nestedChildShapes>
+</activityDiagram>

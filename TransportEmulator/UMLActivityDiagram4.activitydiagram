@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="bcefa872-fae3-4793-ae41-c4e06be095f6" name="Activity Stop Simulation" linkedPackageId="c21cb770-2013-4317-8bb6-4eb5e974b781" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="94ed1aef-37f3-4870-8b05-cc38c9b10bb7">
+      <elementDefinition Id="187ba717-01c7-4a61-9a77-c4c1bd9d8073" />
+      <body>User actions:</body>
+    </comment>
+    <comment Id="9f976b4d-d81e-47c3-8ee1-32f45aaba79c">
+      <elementDefinition Id="77433150-a5dd-48cb-97e3-2bf67b1ec354" />
+      <body>GUI Main Window actions:</body>
+    </comment>
+    <comment Id="7afe7e21-c202-4d0a-9011-8ef68d8e8813">
+      <elementDefinition Id="c0f5bad6-94b3-4264-a420-12ff8e26ea16" />
+      <body>VehicleList actions:</body>
+    </comment>
+  </ownedCommentsInternal>
+  <profileInstances>
+    <packageHasProfileInstances Id="df07cb54-469a-4b83-9d12-8cb2a783d186">
+      <profileInstance Id="f442fc9c-a360-48f4-b924-ff0ecf95e075" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="f3d9103f-1e66-47cd-af26-1b4f3f9f9c30">
+      <profileInstance Id="aa5ea8d9-f219-44f0-9165-d518fb90a01b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="cdadbf71-ccf1-40b9-b7d9-bbda5de2caf6" name="Activity Stop Simulation" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="dcee2c16-8466-4203-a39a-bb8fe091ebd3" />
+        <nodes>
+          <initialNode Id="e3cf344a-e227-4d31-a0a0-65370b0db09f" name="Initial1" isLeaf="false">
+            <elementDefinition Id="8ac948c7-7e92-4376-8722-438bc69df183" />
+            <flowNodeTargets>
+              <controlFlow Id="59590cb6-0dfe-43cd-9011-feead76ac6d9" isLeaf="false">
+                <opaqueActionMoniker Id="528da1d5-b2e2-4d65-af02-b1e504ea18b0" LastKnownName="Push button &#xD;&#xA;&quot;Stop Simulation&quot;" />
+                <elementDefinition Id="6b75028e-ed9d-458a-8c19-ac6f5b31dc8e" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="528da1d5-b2e2-4d65-af02-b1e504ea18b0" name="Push button &#xD;&#xA;&quot;Stop Simulation&quot;" isLeaf="false">
+            <elementDefinition Id="a4631afd-6a18-412d-989a-97fa4bb8d587" />
+            <flowNodeTargets>
+              <controlFlow Id="c70e7462-0778-4f42-af23-0473d8fb18ef" isLeaf="false">
+                <opaqueActionMoniker Id="7300faef-374e-486d-8efa-83c26b4847ee" LastKnownName="Send &quot;Stop All Vehicles&quot;" />
+                <elementDefinition Id="ef911da8-7ec4-4905-936a-b80e0bfc7540" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7300faef-374e-486d-8efa-83c26b4847ee" name="Send &quot;Stop All Vehicles&quot;" isLeaf="false">
+            <elementDefinition Id="ad8b8bee-7185-4295-b21c-00c51bb7e5f3" />
+            <flowNodeTargets>
+              <controlFlow Id="a3cd8d5f-8358-44dd-8d61-19d0a2fecb96" isLeaf="false">
+                <opaqueActionMoniker Id="7acc6149-c080-4794-a66b-d0448e0c2fac" LastKnownName="Stop all vehicles" />
+                <elementDefinition Id="06b2615f-9839-4e90-bed2-6c406c0bf7b2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="4f1a5ac2-a5e9-4535-8fac-74f513e1c59b" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="9e9c2669-db3d-475e-9a2b-9f1fa84799be" />
+          </activityFinalNode>
+          <opaqueAction Id="415818fa-1066-4b1d-ac9a-2353bff058f9" name="Show: &quot;Simulation had been stopped&quot;" isLeaf="false">
+            <elementDefinition Id="3c7169d6-7dc6-4297-81fd-f7f3ed2da1a2" />
+            <flowNodeTargets>
+              <controlFlow Id="d20f288d-1338-47de-a7c8-45af3641dbab" isLeaf="false">
+                <activityFinalNodeMoniker Id="4f1a5ac2-a5e9-4535-8fac-74f513e1c59b" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="78436bbc-c84f-401f-921b-c21de9a9cd7d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="7acc6149-c080-4794-a66b-d0448e0c2fac" name="Stop all vehicles" isLeaf="false">
+            <elementDefinition Id="029e693d-28bc-4860-bfec-26c84463ff05" />
+            <flowNodeTargets>
+              <controlFlow Id="99c6d768-2ed3-4617-b0ec-1093e2b07c63" isLeaf="false">
+                <opaqueActionMoniker Id="415818fa-1066-4b1d-ac9a-2353bff058f9" LastKnownName="Show: &quot;Simulation had been stopped&quot;" />
+                <elementDefinition Id="0852c64e-4388-4ffe-a133-7f08c142f9c2" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c21cb770-2013-4317-8bb6-4eb5e974b781" name="TransportEmulator">
+    <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />
+  </package>
+</activityRootModel>

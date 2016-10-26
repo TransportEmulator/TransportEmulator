@@ -42,7 +42,7 @@
       <annotatedElements>
         <useCaseMoniker
           Id="9700d138-d403-4678-9f54-ce17a962cb2b"
-          LastKnownName="Stop vehicle"
+          LastKnownName="Stop simulation"
           LastKnownLocation="TransportEmulator.uml" />
       </annotatedElements>
     </comment>
@@ -82,6 +82,18 @@
     </comment>
     <comment
       Id="952ad886-ab3b-471b-8961-9f156329da94">
+      <body>VehicleList actions:</body>
+    </comment>
+    <comment
+      Id="187ba717-01c7-4a61-9a77-c4c1bd9d8073">
+      <body>User actions:</body>
+    </comment>
+    <comment
+      Id="77433150-a5dd-48cb-97e3-2bf67b1ec354">
+      <body>GUI Main Window actions:</body>
+    </comment>
+    <comment
+      Id="c0f5bad6-94b3-4264-a420-12ff8e26ea16">
       <body>VehicleList actions:</body>
     </comment>
   </ownedCommentsInternal>
@@ -3795,7 +3807,7 @@
             isAbstract="false">
             <useCaseMoniker
               Id="9700d138-d403-4678-9f54-ce17a962cb2b"
-              LastKnownName="Stop vehicle"
+              LastKnownName="Stop simulation"
               LastKnownLocation="TransportEmulator.uml" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
@@ -4054,7 +4066,7 @@
     <packageHasNamedElement>
       <useCase
         Id="9700d138-d403-4678-9f54-ce17a962cb2b"
-        name="Stop vehicle"
+        name="Stop simulation"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
@@ -5763,6 +5775,99 @@
                 <decisionNodeMoniker
                   Id="a3eb63ab-6779-4133-ac92-7e6b0150bdab"
                   LastKnownName="Decision2"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="dcee2c16-8466-4203-a39a-bb8fe091ebd3"
+        name="Activity Stop Simulation"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="8ac948c7-7e92-4376-8722-438bc69df183"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="6b75028e-ed9d-458a-8c19-ac6f5b31dc8e"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="a4631afd-6a18-412d-989a-97fa4bb8d587"
+                  LastKnownName="Push button &#xD;&#xA;&quot;Stop Simulation&quot;"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="a4631afd-6a18-412d-989a-97fa4bb8d587"
+            name="Push button &#xD;&#xA;&quot;Stop Simulation&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="ef911da8-7ec4-4905-936a-b80e0bfc7540"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="ad8b8bee-7185-4295-b21c-00c51bb7e5f3"
+                  LastKnownName="Send &quot;Stop All Vehicles&quot;"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="ad8b8bee-7185-4295-b21c-00c51bb7e5f3"
+            name="Send &quot;Stop All Vehicles&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="06b2615f-9839-4e90-bed2-6c406c0bf7b2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="029e693d-28bc-4860-bfec-26c84463ff05"
+                  LastKnownName="Stop all vehicles"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="9e9c2669-db3d-475e-9a2b-9f1fa84799be"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <opaqueAction
+            Id="3c7169d6-7dc6-4297-81fd-f7f3ed2da1a2"
+            name="Show: &quot;Simulation had been stopped&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="78436bbc-c84f-401f-921b-c21de9a9cd7d"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="9e9c2669-db3d-475e-9a2b-9f1fa84799be"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="029e693d-28bc-4860-bfec-26c84463ff05"
+            name="Stop all vehicles"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="0852c64e-4388-4ffe-a133-7f08c142f9c2"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="3c7169d6-7dc6-4297-81fd-f7f3ed2da1a2"
+                  LastKnownName="Show: &quot;Simulation had been stopped&quot;"
                   LastKnownLocation="TransportEmulator.uml" />
               </controlFlow>
             </flowNodeTargets>
