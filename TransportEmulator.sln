@@ -5,6 +5,8 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "TransportEmulator", "TransportEmulator\TransportEmulator.modelproj", "{D3EF3B26-6D98-41C0-A1FC-462D000A46B2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportSimulatorGUI", "TransportSimulatorGUI\TransportSimulatorGUI.csproj", "{6613429F-3214-4868-9AA2-C15767A735ED}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D3EF3B26-6D98-41C0-A1FC-462D000A46B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3EF3B26-6D98-41C0-A1FC-462D000A46B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3EF3B26-6D98-41C0-A1FC-462D000A46B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6613429F-3214-4868-9AA2-C15767A735ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6613429F-3214-4868-9AA2-C15767A735ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6613429F-3214-4868-9AA2-C15767A735ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6613429F-3214-4868-9AA2-C15767A735ED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
