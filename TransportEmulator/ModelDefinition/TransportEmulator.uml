@@ -14,7 +14,7 @@
     </comment>
     <comment
       Id="dff63244-86f1-4491-add4-a0cfcfc765f0">
-      <body>GUI Add Fuel window actions:</body>
+      <body>GUI Add Fuel Window actions:</body>
     </comment>
     <comment
       Id="d2cf2f50-7377-41d3-9da0-ae3a9b80f6f8">
@@ -95,6 +95,22 @@
     <comment
       Id="c0f5bad6-94b3-4264-a420-12ff8e26ea16">
       <body>VehicleList actions:</body>
+    </comment>
+    <comment
+      Id="addde6bf-1f31-47b9-b7db-0779dac5bb6b">
+      <body>User actions:</body>
+    </comment>
+    <comment
+      Id="0bf2b4ff-f0af-41e2-93e4-2b574db00643">
+      <body>GUI Main Window actions:</body>
+    </comment>
+    <comment
+      Id="235cab4b-b9f4-4e31-91db-131cf3b2401f">
+      <body>GUI Log Tab actions:</body>
+    </comment>
+    <comment
+      Id="9bce2eaa-d7db-464a-880a-d58fe50bdbf5">
+      <body>Log handler actions:</body>
     </comment>
   </ownedCommentsInternal>
   <profileInstances>
@@ -5868,6 +5884,222 @@
                 <opaqueActionMoniker
                   Id="3c7169d6-7dc6-4297-81fd-f7f3ed2da1a2"
                   LastKnownName="Show: &quot;Simulation had been stopped&quot;"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <activity
+        Id="443a93ab-6524-41c2-9661-921fbc4244be"
+        name="Activity Display or Export Log"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false"
+        isReentrant="false"
+        isReadOnly="false"
+        isSingleExecution="false">
+        <nodes>
+          <initialNode
+            Id="674ef713-5f61-45d2-a067-aa3800ce3c09"
+            name="Initial1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a76bb6fe-6d41-42e1-bbb2-98c810ace49c"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="61937963-3535-4eb6-b7d4-b8f475328be1"
+                  LastKnownName="Choose tab &#xD;&#xA;&quot;Log&quot;"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction
+            Id="61937963-3535-4eb6-b7d4-b8f475328be1"
+            name="Choose tab &#xD;&#xA;&quot;Log&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="5757490a-7a90-4916-be2c-38cae774a7f3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="e14781b7-3147-4c67-8c82-ad9ac4859192"
+                  LastKnownName="Switch to &quot;Log&quot; tab "
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="e14781b7-3147-4c67-8c82-ad9ac4859192"
+            name="Switch to &quot;Log&quot; tab "
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="367efcd4-8294-43ef-9656-378a6c11e7b9"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="03d01a15-7981-43fb-a791-f86d30277c90"
+                  LastKnownName="Show current log"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="180eaa89-aa35-41f8-abc9-d59a3b21ddeb"
+            name="Ask user what he wants to do"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="b0ebd903-7e32-4119-8bac-89d86f0c1851"
+                isLeaf="false">
+                <decisionNodeMoniker
+                  Id="1ee8cc68-3961-480b-916b-46ad2a7e4c81"
+                  LastKnownName="Decision1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="b8395fa8-4b75-42f3-9ae4-f8947a341bf5"
+            name="Export log"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7bb8b8c9-37c9-4706-b7b0-87670fd39ffc"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="8a48a0ae-3642-4671-8c61-90a0bb344b80"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="f1cee418-0712-46a5-8021-0c61a72beea5"
+            name="Choose type of export file"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="865bd1a6-6ec7-485e-b808-2e1a00f7359a"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="b8395fa8-4b75-42f3-9ae4-f8947a341bf5"
+                  LastKnownName="Export log"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode
+            Id="668e56db-1dc1-4b46-99f5-b084d569485f"
+            name="ActivityFinal1"
+            isLeaf="false" />
+          <decisionNode
+            Id="1ee8cc68-3961-480b-916b-46ad2a7e4c81"
+            name="Decision1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="48b67854-ec3e-4225-8c3b-ae6b5993cce6"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f1cee418-0712-46a5-8021-0c61a72beea5"
+                  LastKnownName="Choose type of export file"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="4d4f3d92-2b46-40f6-a708-d98872e8286b"
+                guard="Show log of selected vehicles"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="f860099c-f32c-48e3-9454-7a28f561593a"
+                  LastKnownName="Modify information to show"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+              <controlFlow
+                Id="b1c512dc-3251-4cc7-86b0-45ca835e807d"
+                guard="Nothing"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="57d11576-17bd-46aa-bfd5-85e0fe2e80fc"
+                  LastKnownName="Choose tab &#xD;&#xA;&quot;Simulation&quot;"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction
+            Id="f860099c-f32c-48e3-9454-7a28f561593a"
+            name="Modify information to show"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="a8eca17d-dd66-4fc0-940e-560ea66431ed"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="8a48a0ae-3642-4671-8c61-90a0bb344b80"
+                  LastKnownName="Merge1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode
+            Id="8a48a0ae-3642-4671-8c61-90a0bb344b80"
+            name="Merge1"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="fd28b14b-2b6f-496c-9999-407cbb7b2037"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="808cacd3-4a14-4add-ba89-c2de5485eb59"
+                  LastKnownName="Switch to &quot;Simulation&quot; tab"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction
+            Id="808cacd3-4a14-4add-ba89-c2de5485eb59"
+            name="Switch to &quot;Simulation&quot; tab"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="7369687e-84aa-4be0-82a9-1cd06ed3850a"
+                isLeaf="false">
+                <activityFinalNodeMoniker
+                  Id="668e56db-1dc1-4b46-99f5-b084d569485f"
+                  LastKnownName="ActivityFinal1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="03d01a15-7981-43fb-a791-f86d30277c90"
+            name="Show current log"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="711f2470-8d93-40d0-82de-3953b42213c3"
+                isLeaf="false">
+                <opaqueActionMoniker
+                  Id="180eaa89-aa35-41f8-abc9-d59a3b21ddeb"
+                  LastKnownName="Ask user what he wants to do"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction
+            Id="57d11576-17bd-46aa-bfd5-85e0fe2e80fc"
+            name="Choose tab &#xD;&#xA;&quot;Simulation&quot;"
+            isLeaf="false">
+            <flowNodeTargets>
+              <controlFlow
+                Id="4ee82512-ad1c-4a33-a0f1-e3878bae64ef"
+                isLeaf="false">
+                <mergeNodeMoniker
+                  Id="8a48a0ae-3642-4671-8c61-90a0bb344b80"
+                  LastKnownName="Merge1"
                   LastKnownLocation="TransportEmulator.uml" />
               </controlFlow>
             </flowNodeTargets>

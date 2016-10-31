@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" xmlns:dm12="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm13="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" dslVersion="1.0.0.0" Id="cf7f8d8f-d2b2-4d83-bf71-c6b35d2d196c" name="Activity Display or Export Log" linkedPackageId="e0fd2da6-3454-4360-89fd-44cfdb3929d2" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="6bfe5381-92e2-4efb-817a-9ad87ffdf46e">
+      <elementDefinition Id="addde6bf-1f31-47b9-b7db-0779dac5bb6b" />
+      <body>User actions:</body>
+    </comment>
+    <comment Id="b33b49ab-20ce-445e-8315-63d4f1bbe135">
+      <elementDefinition Id="0bf2b4ff-f0af-41e2-93e4-2b574db00643" />
+      <body>GUI Main Window actions:</body>
+    </comment>
+    <comment Id="00aeca0b-25cc-4a61-976e-9b7516cf1f4d">
+      <elementDefinition Id="235cab4b-b9f4-4e31-91db-131cf3b2401f" />
+      <body>GUI Log Tab actions:</body>
+    </comment>
+    <comment Id="93007ec6-75b9-47a5-9a48-4dc9e0823d3e">
+      <elementDefinition Id="9bce2eaa-d7db-464a-880a-d58fe50bdbf5" />
+      <body>Log handler actions:</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="cbabd830-d036-4cfc-9478-1fc4a92fc74d" name="Activity Display or Export Log" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="443a93ab-6524-41c2-9661-921fbc4244be" />
+        <nodes>
+          <initialNode Id="b4bfb078-f438-47e7-8a98-2052a5b378f7" name="Initial1" isLeaf="false">
+            <elementDefinition Id="674ef713-5f61-45d2-a067-aa3800ce3c09" />
+            <flowNodeTargets>
+              <controlFlow Id="4dab61a7-25eb-487a-979b-0e8b1f547159" isLeaf="false">
+                <opaqueActionMoniker Id="60e66239-bcd2-4c37-8c2f-e61b5fc38a02" LastKnownName="Choose tab &#xD;&#xA;&quot;Log&quot;" />
+                <elementDefinition Id="a76bb6fe-6d41-42e1-bbb2-98c810ace49c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="60e66239-bcd2-4c37-8c2f-e61b5fc38a02" name="Choose tab &#xD;&#xA;&quot;Log&quot;" isLeaf="false">
+            <elementDefinition Id="61937963-3535-4eb6-b7d4-b8f475328be1" />
+            <flowNodeTargets>
+              <controlFlow Id="1e3c2484-5c3b-433c-8108-c9afb40bcbd1" isLeaf="false">
+                <opaqueActionMoniker Id="63adad07-7f73-48a7-8ffc-e6f83e7925fb" LastKnownName="Switch to &quot;Log&quot; tab " />
+                <elementDefinition Id="5757490a-7a90-4916-be2c-38cae774a7f3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="63adad07-7f73-48a7-8ffc-e6f83e7925fb" name="Switch to &quot;Log&quot; tab " isLeaf="false">
+            <elementDefinition Id="e14781b7-3147-4c67-8c82-ad9ac4859192" />
+            <flowNodeTargets>
+              <controlFlow Id="eb86e92a-d18a-4dfc-a137-603697c0e7a5" isLeaf="false">
+                <opaqueActionMoniker Id="a73fd81d-25b2-4db6-bd54-b43f1b424f70" LastKnownName="Show current log" />
+                <elementDefinition Id="367efcd4-8294-43ef-9656-378a6c11e7b9" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="f1c59c3e-2400-462b-a383-2535a2d0f5b8" name="Ask user what he wants to do" isLeaf="false">
+            <elementDefinition Id="180eaa89-aa35-41f8-abc9-d59a3b21ddeb" />
+            <flowNodeTargets>
+              <controlFlow Id="9c353332-fca3-4413-86ed-821e5fa1179a" isLeaf="false">
+                <decisionNodeMoniker Id="1cc00903-b4c9-4cab-a3b4-5dbda7731fbc" LastKnownName="Decision1" />
+                <elementDefinition Id="b0ebd903-7e32-4119-8bac-89d86f0c1851" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="15555c8c-d632-4ab1-b154-ec631941ad3e" name="Export log" isLeaf="false">
+            <elementDefinition Id="b8395fa8-4b75-42f3-9ae4-f8947a341bf5" />
+            <flowNodeTargets>
+              <controlFlow Id="d8c1744f-8e93-43c0-aff4-64f6993baacd" isLeaf="false">
+                <mergeNodeMoniker Id="3b9f759f-9781-460b-a854-b1d3cc26ba0a" LastKnownName="Merge1" />
+                <elementDefinition Id="7bb8b8c9-37c9-4706-b7b0-87670fd39ffc" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="72b81078-3a87-407c-bd2d-b32f4f3974eb" name="Choose type of export file" isLeaf="false">
+            <elementDefinition Id="f1cee418-0712-46a5-8021-0c61a72beea5" />
+            <flowNodeTargets>
+              <controlFlow Id="82308bd6-9a33-471c-a619-017149947c76" isLeaf="false">
+                <opaqueActionMoniker Id="15555c8c-d632-4ab1-b154-ec631941ad3e" LastKnownName="Export log" />
+                <elementDefinition Id="865bd1a6-6ec7-485e-b808-2e1a00f7359a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="4cbb4b76-4ad2-47a1-9131-ec705243e485" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="668e56db-1dc1-4b46-99f5-b084d569485f" />
+          </activityFinalNode>
+          <decisionNode Id="1cc00903-b4c9-4cab-a3b4-5dbda7731fbc" name="Decision1" isLeaf="false">
+            <elementDefinition Id="1ee8cc68-3961-480b-916b-46ad2a7e4c81" />
+            <flowNodeTargets>
+              <controlFlow Id="cf41017c-6ac2-4640-906c-5d2a685adfef" isLeaf="false">
+                <opaqueActionMoniker Id="72b81078-3a87-407c-bd2d-b32f4f3974eb" LastKnownName="Choose type of export file" />
+                <elementDefinition Id="48b67854-ec3e-4225-8c3b-ae6b5993cce6" />
+              </controlFlow>
+              <controlFlow Id="b53ef990-3d3e-43fd-a8a1-ef35a737f8bd" guard="Show log of selected vehicles" isLeaf="false">
+                <opaqueActionMoniker Id="30cc3398-ccdf-4129-a5d5-be85d6ef1f19" LastKnownName="Modify information to show" />
+                <elementDefinition Id="4d4f3d92-2b46-40f6-a708-d98872e8286b" />
+              </controlFlow>
+              <controlFlow Id="8c94f9aa-5138-4a01-85f4-d2c608604ceb" guard="Nothing" isLeaf="false">
+                <opaqueActionMoniker Id="d0479573-1ae2-41b3-a8d0-485287759f98" LastKnownName="Choose tab &#xD;&#xA;&quot;Simulation&quot;" />
+                <elementDefinition Id="b1c512dc-3251-4cc7-86b0-45ca835e807d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="30cc3398-ccdf-4129-a5d5-be85d6ef1f19" name="Modify information to show" isLeaf="false">
+            <elementDefinition Id="f860099c-f32c-48e3-9454-7a28f561593a" />
+            <flowNodeTargets>
+              <controlFlow Id="7981a61b-a1a2-4dae-af72-d17fcdf48688" isLeaf="false">
+                <mergeNodeMoniker Id="3b9f759f-9781-460b-a854-b1d3cc26ba0a" LastKnownName="Merge1" />
+                <elementDefinition Id="a8eca17d-dd66-4fc0-940e-560ea66431ed" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="3b9f759f-9781-460b-a854-b1d3cc26ba0a" name="Merge1" isLeaf="false">
+            <elementDefinition Id="8a48a0ae-3642-4671-8c61-90a0bb344b80" />
+            <flowNodeTargets>
+              <controlFlow Id="fccd9a67-b5e0-479e-99ef-897a075cf6cd" isLeaf="false">
+                <opaqueActionMoniker Id="99f5207c-ea92-457f-9059-fdfc164474a8" LastKnownName="Switch to &quot;Simulation&quot; tab" />
+                <elementDefinition Id="fd28b14b-2b6f-496c-9999-407cbb7b2037" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <opaqueAction Id="99f5207c-ea92-457f-9059-fdfc164474a8" name="Switch to &quot;Simulation&quot; tab" isLeaf="false">
+            <elementDefinition Id="808cacd3-4a14-4add-ba89-c2de5485eb59" />
+            <flowNodeTargets>
+              <controlFlow Id="ff78ebda-2d63-488b-a887-24c4360b106d" isLeaf="false">
+                <activityFinalNodeMoniker Id="4cbb4b76-4ad2-47a1-9131-ec705243e485" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="7369687e-84aa-4be0-82a9-1cd06ed3850a" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="a73fd81d-25b2-4db6-bd54-b43f1b424f70" name="Show current log" isLeaf="false">
+            <elementDefinition Id="03d01a15-7981-43fb-a791-f86d30277c90" />
+            <flowNodeTargets>
+              <controlFlow Id="2087b4ad-e165-446d-ad7e-bdf524b36661" isLeaf="false">
+                <opaqueActionMoniker Id="f1c59c3e-2400-462b-a383-2535a2d0f5b8" LastKnownName="Ask user what he wants to do" />
+                <elementDefinition Id="711f2470-8d93-40d0-82de-3953b42213c3" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="d0479573-1ae2-41b3-a8d0-485287759f98" name="Choose tab &#xD;&#xA;&quot;Simulation&quot;" isLeaf="false">
+            <elementDefinition Id="57d11576-17bd-46aa-bfd5-85e0fe2e80fc" />
+            <flowNodeTargets>
+              <controlFlow Id="387de595-81a8-4891-83f1-d7f0b75f1e83" isLeaf="false">
+                <mergeNodeMoniker Id="3b9f759f-9781-460b-a854-b1d3cc26ba0a" LastKnownName="Merge1" />
+                <elementDefinition Id="4ee82512-ad1c-4a33-a0f1-e3878bae64ef" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="e0fd2da6-3454-4360-89fd-44cfdb3929d2" name="TransportEmulator">
+    <elementDefinition Id="3f6f4c3c-6caf-4d80-b5f0-7173ddb6e4fa" />
+    <profileInstances>
+      <packageHasProfileInstances Id="58d3034b-6514-4ebc-85bd-6d6e6fc8f01a">
+        <profileInstance Id="81977acb-80d6-4fdf-8793-08eb3de93d7c" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="1cd39a5f-3ba7-416d-a154-68fc00cd1adf">
+        <profileInstance Id="f6719ebe-d30b-4ad5-b4d2-7f66d1786729" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>
