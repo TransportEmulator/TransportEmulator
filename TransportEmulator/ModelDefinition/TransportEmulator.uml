@@ -68,7 +68,7 @@
       <annotatedElements>
         <componentMoniker
           Id="22d4a153-82e8-4d4f-807d-c4541d4ed791"
-          LastKnownName="LogDAO"
+          LastKnownName="LogService"
           LastKnownLocation="TransportEmulator.uml" />
       </annotatedElements>
     </comment>
@@ -5330,7 +5330,7 @@
     <packageHasNamedElement>
       <component
         Id="22d4a153-82e8-4d4f-807d-c4541d4ed791"
-        name="LogDAO"
+        name="LogService"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -5363,6 +5363,34 @@
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </providedInterface>
+          <requiredInterface
+            Id="9760caa7-a976-4e44-b9c9-148a200a01e3"
+            name="Port2"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <suppliersInternal>
+              <dependency
+                Id="cc63895e-6db4-4c01-916b-355058b3b3e4">
+                <providedInterfaceMoniker
+                  Id="4753594d-f878-47d2-96f2-4072d4654b04"
+                  LastKnownName="Port1"
+                  LastKnownLocation="TransportEmulator.uml" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="fb450f24-1aa3-49bd-b332-16610398c9b1"
+                LastKnownName="Require info from DB"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </requiredInterface>
         </ownedAttributesInternal>
       </component>
     </packageHasNamedElement>
@@ -6106,6 +6134,50 @@
           </opaqueAction>
         </nodes>
       </activity>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <component
+        Id="9d7cc8d2-44b7-4780-9246-aef239499c3e"
+        name="LogDAO"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <providedInterface
+            Id="4753594d-f878-47d2-96f2-4072d4654b04"
+            name="Port1"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false"
+            isService="false"
+            isBehavior="false">
+            <type_NamedElement>
+              <interfaceMoniker
+                Id="aeac4f8a-bf9d-4590-90c6-606806cc4734"
+                LastKnownName="Provide DB info"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="aeac4f8a-bf9d-4590-90c6-606806cc4734"
+        name="Provide DB info"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="fb450f24-1aa3-49bd-b332-16610398c9b1"
+        name="Require info from DB"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
