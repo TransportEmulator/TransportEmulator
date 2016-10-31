@@ -14,7 +14,7 @@
       <body>Provide interface to access log information stored in database
 </body>
       <annotatedElements>
-        <componentMoniker Id="d4a056b5-c994-4e6a-841f-eefc839a4e6e" LastKnownName="LogDAO" />
+        <componentMoniker Id="d4a056b5-c994-4e6a-841f-eefc839a4e6e" LastKnownName="LogService" />
       </annotatedElements>
     </comment>
   </ownedCommentsInternal>
@@ -85,7 +85,7 @@
       </component>
     </componentModelHasComponents>
     <componentModelHasComponents>
-      <component Id="d4a056b5-c994-4e6a-841f-eefc839a4e6e" name="LogDAO" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <component Id="d4a056b5-c994-4e6a-841f-eefc839a4e6e" name="LogService" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="22d4a153-82e8-4d4f-807d-c4541d4ed791" />
         <suppliersInternal>
           <dependency Id="211412ad-1243-4811-bc14-9e1f1233e400">
@@ -97,20 +97,55 @@
           <providedInterface Id="a13f6a66-b057-49f9-b398-f46fa0ba07c7" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
             <elementDefinition Id="13814b60-153a-44b6-8c4b-536c54b935d9" />
             <type_NamedElement>
-              <interfaceMoniker Id="cda9e8f0-dc30-4ede-ab43-a51702b9f9b0" LastKnownName="Provide log form DB" />
+              <interfaceMoniker Id="cda9e8f0-dc30-4ede-ab43-a51702b9f9b0" LastKnownName="Provide service to get log" />
             </type_NamedElement>
           </providedInterface>
+          <requiredInterface Id="3b67d0b8-a3ad-487a-b47c-378c578e5ed6" name="Port2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="2550ac99-9d25-4990-b2c6-d474348f0aa3" />
+            <suppliersInternal>
+              <dependency Id="94eae3d5-7463-4894-8ee7-64fa28d48d2e">
+                <providedInterfaceMoniker Id="7cb34160-aa77-4d08-8304-cd741830b30a" LastKnownName="Port1" />
+                <elementDefinition Id="61a39bd1-6ae6-4858-81b8-1f2e4f2a00ef" />
+              </dependency>
+            </suppliersInternal>
+            <type_NamedElement>
+              <interfaceMoniker Id="7dc2fbf8-a9c7-4f77-8ad1-d1805fab837c" LastKnownName="Require log from DB" />
+            </type_NamedElement>
+          </requiredInterface>
         </ownedAttributesInternal>
       </component>
     </componentModelHasComponents>
     <modelContainsNamedElements>
-      <Interface Id="cda9e8f0-dc30-4ede-ab43-a51702b9f9b0" name="Provide log form DB" isAbstract="false" isLeaf="false">
+      <Interface Id="cda9e8f0-dc30-4ede-ab43-a51702b9f9b0" name="Provide service to get log" isAbstract="false" isLeaf="false">
         <elementDefinition Id="bc53d238-d8c3-4af6-99c6-9cb188002896" />
       </Interface>
     </modelContainsNamedElements>
     <modelContainsNamedElements>
       <Interface Id="af7e1268-f8ae-4765-a64e-07db9225e882" name="RequireLog" isAbstract="false" isLeaf="false">
         <elementDefinition Id="d46bdab2-888c-4220-8286-a4cdcc6d2cd3" />
+      </Interface>
+    </modelContainsNamedElements>
+    <componentModelHasComponents>
+      <component Id="e657d4b0-ca70-4a03-a15d-5119c5fbd321" name="LogDAO" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="99ca92a3-e74c-40ba-9dbf-2576093a30d6" />
+        <ownedAttributesInternal>
+          <providedInterface Id="7cb34160-aa77-4d08-8304-cd741830b30a" name="Port1" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isService="false" isBehavior="false">
+            <elementDefinition Id="7bb56251-90a6-438d-b52a-c1df58f08cc6" />
+            <type_NamedElement>
+              <interfaceMoniker Id="e5589c68-9b71-48ee-965b-32f044a2bd51" LastKnownName="Provide service to get log" />
+            </type_NamedElement>
+          </providedInterface>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <modelContainsNamedElements>
+      <Interface Id="e5589c68-9b71-48ee-965b-32f044a2bd51" name="Provide service to get log" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bc53d238-d8c3-4af6-99c6-9cb188002896" />
+      </Interface>
+    </modelContainsNamedElements>
+    <modelContainsNamedElements>
+      <Interface Id="7dc2fbf8-a9c7-4f77-8ad1-d1805fab837c" name="Require log from DB" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6aaf47ab-5a0e-4e5e-8e57-bcd82593665c" />
       </Interface>
     </modelContainsNamedElements>
   </packagedElements>
