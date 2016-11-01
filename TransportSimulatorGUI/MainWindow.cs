@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace TransportSimulatorGUI
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
-        public Form1()
+        private FuelControlWindow fuelControlWindow = new FuelControlWindow();
+        public MainWindow()
         {
             InitializeComponent();
+            AddOwnedForm(fuelControlWindow);
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
@@ -45,6 +47,11 @@ namespace TransportSimulatorGUI
         private void toolStripStatusLabel2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripButton3_Click(object sender, EventArgs e)
+        {
+            fuelControlWindow.ShowDialog();
         }
     }
 }
