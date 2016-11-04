@@ -76,5 +76,10 @@ namespace TransportSimulatorGUI
         {
             informationWindow.ShowDialog();
         }
+
+        private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
     }
 }
