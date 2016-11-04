@@ -47,6 +47,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="InformationWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InformationWindow.Designer.cs">
+      <DependentUpon>InformationWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="FuelControlWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,12 +67,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="VehicleControlWindow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="VehicleControlWindow.Designer.cs">
       <DependentUpon>VehicleControlWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="InformationWindow.resx">
+      <DependentUpon>InformationWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FuelControlWindow.resx">
       <DependentUpon>FuelControlWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -75,14 +89,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="VehicleControlWindow.resx">
       <DependentUpon>VehicleControlWindow.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,6 +113,15 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\TramVehicleWhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TramTransparent013.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lyceumLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bsuLogo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

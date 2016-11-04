@@ -13,10 +13,12 @@ namespace TransportSimulatorGUI
     public partial class MainWindow : Form
     {
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
+        private InformationWindow informationWindow = new InformationWindow();
         public MainWindow()
         {
             InitializeComponent();
             AddOwnedForm(fuelControlWindow);
+            AddOwnedForm(informationWindow);
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
@@ -52,6 +54,26 @@ namespace TransportSimulatorGUI
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             fuelControlWindow.ShowDialog();
+        }
+
+        private void toolStripButton5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStripButton6_Click(object sender, EventArgs e)
+        {
+            informationWindow.ShowDialog();
         }
     }
 }
