@@ -72,6 +72,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SelectVehicleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SelectVehicleWindow.Designer.cs">
+      <DependentUpon>SelectVehicleWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="VehicleControlWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -91,6 +97,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SelectVehicleWindow.resx">
+      <DependentUpon>SelectVehicleWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VehicleControlWindow.resx">
       <DependentUpon>VehicleControlWindow.cs</DependentUpon>

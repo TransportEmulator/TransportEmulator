@@ -15,11 +15,14 @@ namespace TransportSimulatorGUI
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
+        private SelectVehicleWindow selectVehicleWindow = new SelectVehicleWindow();
         public MainWindow()
         {
             InitializeComponent();
             AddOwnedForm(fuelControlWindow);
             AddOwnedForm(informationWindow);
+            AddOwnedForm(vehicleControlWindow);
+            AddOwnedForm(selectVehicleWindow);
         }
 
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
@@ -78,6 +81,41 @@ namespace TransportSimulatorGUI
         }
 
         private void toolStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        private void toolStripButton10_Click(object sender, EventArgs e)
+        {
+            informationWindow.ShowDialog();
+        }
+
+        private void toolStripButton9_Click(object sender, EventArgs e)
+        {
+            selectVehicleWindow.ShowDialog();
+        }
+
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void toolStripButton11_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
         }
