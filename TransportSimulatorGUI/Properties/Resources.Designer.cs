@@ -109,5 +109,25 @@ namespace TransportSimulatorGUI.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TrolleybusVehicleWhite {
+            get {
+                object obj = ResourceManager.GetObject("TrolleybusVehicleWhite", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap TrolleyTransparent {
+            get {
+                object obj = ResourceManager.GetObject("TrolleyTransparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }
