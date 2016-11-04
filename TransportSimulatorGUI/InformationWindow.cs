@@ -36,5 +36,20 @@ namespace TransportSimulatorGUI
         {
 
         }
+
+        private void linkLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("mailto:drozdps@gmail.com");
+        }
+
+        private void linkLabel2_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("mailto:niklive103@gmail.com");
+        }
     }
 }
