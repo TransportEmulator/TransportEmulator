@@ -67,6 +67,12 @@
     <Compile Include="VehicleControlWindow.Designer.cs">
       <DependentUpon>VehicleControlWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="VehicleControlWindow_.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VehicleControlWindow_.Designer.cs">
+      <DependentUpon>VehicleControlWindow_.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="FuelControlWindow.resx">
       <DependentUpon>FuelControlWindow.cs</DependentUpon>
     </EmbeddedResource>

@@ -13,6 +13,7 @@ namespace TransportSimulatorGUI
     public partial class MainWindow : Form
     {
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
+        private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
         public MainWindow()
         {
             InitializeComponent();
@@ -52,6 +53,11 @@ namespace TransportSimulatorGUI
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             fuelControlWindow.ShowDialog();
+        }
+
+        private void toolStripButton2_Click(object sender, EventArgs e)
+        {
+            vehicleControlWindow.ShowDialog();
         }
     }
 }
