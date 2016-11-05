@@ -95,11 +95,6 @@ namespace TransportSimulatorGUI
             selectVehicleWindow.ShowDialog();
         }
 
-        private void toolStripButton7_Click(object sender, EventArgs e)
-        {
-            openFileDialog1.ShowDialog();
-        }
-
         private void toolStripButton11_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -122,7 +117,13 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton3_Click_1(object sender, EventArgs e)
         {
-            openFileDialog1.ShowDialog();
+            saveFileDialog1.Filter = "Excel xlsx file (*.xlsx)|*.xlsx|Excel xls file (*.xls)|*.xls";
+            saveFileDialog1.ShowDialog();
+        }
+        private void toolStripButton7_Click(object sender, EventArgs e)
+        {
+            saveFileDialog1.Filter = "Word doc file (*.docx)|*.docx|Word docx file(*.doc)|*.doc";
+            saveFileDialog1.ShowDialog();
         }
     }
 }

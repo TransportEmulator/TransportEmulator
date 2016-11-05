@@ -60,7 +60,7 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             this.statusStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -83,23 +83,24 @@
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.toolStripStatusLabel2});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 289);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 696);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(511, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(3, 0, 37, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1363, 46);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             // 
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(79, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(199, 41);
             this.toolStripStatusLabel1.Text = "status_label_1";
             this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // toolStripStatusLabel2
             // 
             this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(79, 17);
+            this.toolStripStatusLabel2.Size = new System.Drawing.Size(199, 41);
             this.toolStripStatusLabel2.Text = "status_label_2";
             this.toolStripStatusLabel2.Click += new System.EventHandler(this.toolStripStatusLabel2_Click);
             // 
@@ -107,10 +108,11 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, -2);
+            this.tabControl1.Location = new System.Drawing.Point(0, -5);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(864, 377);
+            this.tabControl1.Size = new System.Drawing.Size(2304, 899);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 1;
             // 
@@ -118,10 +120,11 @@
             // 
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.toolStrip1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(10, 48);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage1.Size = new System.Drawing.Size(856, 351);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tabPage1.Size = new System.Drawing.Size(2284, 841);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simulate";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -134,9 +137,10 @@
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Controls.Add(this.panel2);
-            this.panel1.Location = new System.Drawing.Point(44, 3);
+            this.panel1.Location = new System.Drawing.Point(117, 7);
+            this.panel1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(812, 352);
+            this.panel1.Size = new System.Drawing.Size(2166, 839);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -145,20 +149,20 @@
             this.panel4.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TrolleyTransparent;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Location = new System.Drawing.Point(1, 74);
-            this.panel4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel4.Location = new System.Drawing.Point(3, 176);
+            this.panel4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(810, 62);
+            this.panel4.Size = new System.Drawing.Size(2160, 148);
             this.panel4.TabIndex = 1;
             // 
             // panel5
             // 
             this.panel5.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TrolleybusVehicleWhite;
             this.panel5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel5.Location = new System.Drawing.Point(1, 1);
-            this.panel5.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel5.Location = new System.Drawing.Point(3, 2);
+            this.panel5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(116, 60);
+            this.panel5.Size = new System.Drawing.Size(309, 143);
             this.panel5.TabIndex = 0;
             // 
             // panel2
@@ -166,20 +170,20 @@
             this.panel2.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramTransparent013;
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Controls.Add(this.panel6);
-            this.panel2.Location = new System.Drawing.Point(1, 1);
-            this.panel2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel2.Location = new System.Drawing.Point(3, 2);
+            this.panel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(810, 65);
+            this.panel2.Size = new System.Drawing.Size(2160, 155);
             this.panel2.TabIndex = 0;
             // 
             // panel6
             // 
             this.panel6.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
             this.panel6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel6.Location = new System.Drawing.Point(1, 6);
-            this.panel6.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel6.Location = new System.Drawing.Point(3, 14);
+            this.panel6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(116, 47);
+            this.panel6.Size = new System.Drawing.Size(309, 112);
             this.panel6.TabIndex = 1;
             // 
             // toolStrip1
@@ -194,9 +198,10 @@
             this.toolStripButton2,
             this.toolStripButton6,
             this.toolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 3);
+            this.toolStrip1.Location = new System.Drawing.Point(8, 7);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(38, 345);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(101, 827);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -208,7 +213,7 @@
             this.toolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton5.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton5.Text = "Start simulation";
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
@@ -220,7 +225,7 @@
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripButton4.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton4.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton4.Text = "toolStripButton4";
             this.toolStripButton4.ToolTipText = "Stop simulation";
             // 
@@ -234,7 +239,7 @@
             this.fuelContolButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.fuelContolButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.fuelContolButton.Name = "fuelContolButton";
-            this.fuelContolButton.Size = new System.Drawing.Size(36, 36);
+            this.fuelContolButton.Size = new System.Drawing.Size(97, 36);
             this.fuelContolButton.Text = "fuelControlButton";
             this.fuelContolButton.ToolTipText = "Open Fuel Control Window";
             this.fuelContolButton.Click += new System.EventHandler(this.toolStripButton3_Click);
@@ -246,7 +251,7 @@
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton2.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton2.Text = "Vehicles on tracks";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -257,7 +262,7 @@
             this.toolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton6.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton6.Text = "toolStripButton1";
             this.toolStripButton6.ToolTipText = "Contact developers";
             this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
@@ -269,7 +274,7 @@
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton1.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.ToolTipText = "Exit";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
@@ -277,10 +282,11 @@
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.splitContainer1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(10, 48);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.tabPage2.Size = new System.Drawing.Size(856, 351);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tabPage2.Size = new System.Drawing.Size(2284, 841);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Logger";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -288,8 +294,8 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.splitContainer1.Location = new System.Drawing.Point(8, 7);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -299,9 +305,9 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Size = new System.Drawing.Size(850, 345);
-            this.splitContainer1.SplitterDistance = 38;
-            this.splitContainer1.SplitterWidth = 2;
+            this.splitContainer1.Size = new System.Drawing.Size(2268, 827);
+            this.splitContainer1.SplitterDistance = 101;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // toolStrip2
@@ -317,7 +323,8 @@
             this.toolStripButton11});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(38, 345);
+            this.toolStrip2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolStrip2.Size = new System.Drawing.Size(101, 827);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -328,7 +335,7 @@
             this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Linen;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton3.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton3.Text = "Import to Excel";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click_1);
             // 
@@ -340,7 +347,7 @@
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripButton7.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton7.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton7.Text = "Import to Doc";
             this.toolStripButton7.ToolTipText = "Import to Doc";
             this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
@@ -352,7 +359,7 @@
             this.toolStripButton9.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton9.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton9.Text = "Vehicles in log";
             this.toolStripButton9.Click += new System.EventHandler(this.toolStripButton9_Click);
             // 
@@ -363,7 +370,7 @@
             this.toolStripButton10.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton10.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton10.Text = "toolStripButton1";
             this.toolStripButton10.ToolTipText = "Contact developers";
             this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
@@ -375,7 +382,7 @@
             this.toolStripButton11.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton11.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton11.Name = "toolStripButton11";
-            this.toolStripButton11.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton11.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton11.Text = "toolStripButton1";
             this.toolStripButton11.ToolTipText = "Exit";
             this.toolStripButton11.Click += new System.EventHandler(this.toolStripButton11_Click);
@@ -389,54 +396,54 @@
             this.tableLayoutPanel1.Controls.Add(this.textBox3, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.textBox1, 1, 1);
             this.tableLayoutPanel1.Controls.Add(this.textBox2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(1, 1);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 2);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 83.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(810, 344);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(2160, 820);
             this.tableLayoutPanel1.TabIndex = 0;
             this.tableLayoutPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.tableLayoutPanel1_Paint);
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(1, 58);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox4.Location = new System.Drawing.Point(3, 138);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(152, 20);
+            this.textBox4.Size = new System.Drawing.Size(399, 38);
             this.textBox4.TabIndex = 3;
             this.textBox4.Text = "Name [Tank]";
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(1, 1);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox3.Location = new System.Drawing.Point(3, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(152, 20);
+            this.textBox3.Size = new System.Drawing.Size(399, 38);
             this.textBox3.TabIndex = 2;
             this.textBox3.Text = "Vehicle";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(155, 58);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox1.Location = new System.Drawing.Point(414, 138);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(654, 20);
+            this.textBox1.Size = new System.Drawing.Size(1737, 38);
             this.textBox1.TabIndex = 0;
             this.textBox1.Text = "Reached top speed!";
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(155, 1);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.textBox2.Location = new System.Drawing.Point(414, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(654, 20);
+            this.textBox2.Size = new System.Drawing.Size(1737, 38);
             this.textBox2.TabIndex = 1;
             this.textBox2.Text = "List of events";
             // 
@@ -447,20 +454,17 @@
             this.panel3.Size = new System.Drawing.Size(200, 100);
             this.panel3.TabIndex = 0;
             // 
-            // openFileDialog1
-            // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(511, 311);
+            this.ClientSize = new System.Drawing.Size(1363, 742);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "MainWindow";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -523,7 +527,7 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
     }
 }
 
