@@ -38,10 +38,9 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(21, 25);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Location = new System.Drawing.Point(56, 60);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
+            this.label1.Size = new System.Drawing.Size(158, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Contact us:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -49,10 +48,9 @@
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
-            this.linkLabel1.Location = new System.Drawing.Point(21, 55);
-            this.linkLabel1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.linkLabel1.Location = new System.Drawing.Point(56, 131);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(65, 13);
+            this.linkLabel1.Size = new System.Drawing.Size(169, 32);
             this.linkLabel1.TabIndex = 5;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Drozd Pavel";
@@ -62,10 +60,9 @@
             // linkLabel2
             // 
             this.linkLabel2.AutoSize = true;
-            this.linkLabel2.Location = new System.Drawing.Point(21, 72);
-            this.linkLabel2.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.linkLabel2.Location = new System.Drawing.Point(56, 172);
             this.linkLabel2.Name = "linkLabel2";
-            this.linkLabel2.Size = new System.Drawing.Size(95, 13);
+            this.linkLabel2.Size = new System.Drawing.Size(246, 32);
             this.linkLabel2.TabIndex = 6;
             this.linkLabel2.TabStop = true;
             this.linkLabel2.Text = "Nikita Mishchanka";
@@ -75,22 +72,23 @@
             // 
             this.panel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel1.BackgroundImage")));
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(237, 13);
-            this.panel1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.panel1.Location = new System.Drawing.Point(632, 31);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(58, 97);
+            this.panel1.Size = new System.Drawing.Size(155, 231);
             this.panel1.TabIndex = 4;
             // 
             // InformationWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 115);
+            this.ClientSize = new System.Drawing.Size(840, 274);
             this.Controls.Add(this.linkLabel2);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.label1);
-            this.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "InformationWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Information Window";

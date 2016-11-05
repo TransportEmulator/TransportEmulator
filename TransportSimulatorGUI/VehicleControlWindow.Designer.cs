@@ -252,7 +252,7 @@
             // 
             this.splitContainer3.Panel2.Controls.Add(this.button1);
             this.splitContainer3.Size = new System.Drawing.Size(667, 467);
-            this.splitContainer3.SplitterDistance = 418;
+            this.splitContainer3.SplitterDistance = 412;
             this.splitContainer3.SplitterWidth = 10;
             this.splitContainer3.TabIndex = 0;
             // 
@@ -347,7 +347,7 @@
             this.button1.Location = new System.Drawing.Point(0, 0);
             this.button1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(667, 39);
+            this.button1.Size = new System.Drawing.Size(667, 45);
             this.button1.TabIndex = 1;
             this.button1.Text = "Add vehicle";
             this.button1.UseVisualStyleBackColor = true;
@@ -1207,11 +1207,11 @@
             this.ClientSize = new System.Drawing.Size(1208, 832);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "VehicleControlWindow";
-            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VehicleControlWindow";
             this.Load += new System.EventHandler(this.VehicleControlWindow_Load);
