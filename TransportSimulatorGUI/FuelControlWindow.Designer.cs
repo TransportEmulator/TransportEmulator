@@ -54,12 +54,11 @@
             // 
             this.dieselTrackBar.AccessibleDescription = "dieselTrackBar";
             this.dieselTrackBar.AccessibleName = "dieselTrackBar";
-            this.dieselTrackBar.Location = new System.Drawing.Point(59, 86);
-            this.dieselTrackBar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.dieselTrackBar.Location = new System.Drawing.Point(22, 36);
             this.dieselTrackBar.Maximum = 100;
             this.dieselTrackBar.Name = "dieselTrackBar";
             this.dieselTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.dieselTrackBar.Size = new System.Drawing.Size(114, 439);
+            this.dieselTrackBar.Size = new System.Drawing.Size(45, 184);
             this.dieselTrackBar.SmallChange = 5;
             this.dieselTrackBar.TabIndex = 0;
             this.dieselTrackBar.TickStyle = System.Windows.Forms.TickStyle.None;
@@ -71,10 +70,9 @@
             this.label1.AccessibleName = "dieselLabel";
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.label1.Location = new System.Drawing.Point(13, 21);
-            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.label1.Location = new System.Drawing.Point(5, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(157, 55);
+            this.label1.Size = new System.Drawing.Size(62, 24);
             this.label1.TabIndex = 1;
             this.label1.Text = "Diesel";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -85,10 +83,9 @@
             this.dieselAmountLabel.AccessibleName = "dieselAmount";
             this.dieselAmountLabel.AutoSize = true;
             this.dieselAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.dieselAmountLabel.Location = new System.Drawing.Point(56, 524);
-            this.dieselAmountLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.dieselAmountLabel.Location = new System.Drawing.Point(21, 220);
             this.dieselAmountLabel.Name = "dieselAmountLabel";
-            this.dieselAmountLabel.Size = new System.Drawing.Size(51, 55);
+            this.dieselAmountLabel.Size = new System.Drawing.Size(20, 24);
             this.dieselAmountLabel.TabIndex = 2;
             this.dieselAmountLabel.Text = "0";
             // 
@@ -98,10 +95,9 @@
             this.ron92AmountLabel.AccessibleName = "ron92Amount";
             this.ron92AmountLabel.AutoSize = true;
             this.ron92AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.ron92AmountLabel.Location = new System.Drawing.Point(246, 523);
-            this.ron92AmountLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.ron92AmountLabel.Location = new System.Drawing.Point(92, 219);
             this.ron92AmountLabel.Name = "ron92AmountLabel";
-            this.ron92AmountLabel.Size = new System.Drawing.Size(51, 55);
+            this.ron92AmountLabel.Size = new System.Drawing.Size(20, 24);
             this.ron92AmountLabel.TabIndex = 5;
             this.ron92AmountLabel.Text = "0";
             // 
@@ -111,10 +107,9 @@
             this.ron92Label.AccessibleName = "ron92Label";
             this.ron92Label.AutoSize = true;
             this.ron92Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.ron92Label.Location = new System.Drawing.Point(195, 21);
-            this.ron92Label.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.ron92Label.Location = new System.Drawing.Point(73, 9);
             this.ron92Label.Name = "ron92Label";
-            this.ron92Label.Size = new System.Drawing.Size(185, 55);
+            this.ron92Label.Size = new System.Drawing.Size(72, 24);
             this.ron92Label.TabIndex = 4;
             this.ron92Label.Text = "RON92";
             this.ron92Label.Click += new System.EventHandler(this.label3_Click);
@@ -123,12 +118,11 @@
             // 
             this.ron92TrackBar.AccessibleDescription = "ron92TrackBar";
             this.ron92TrackBar.AccessibleName = "ron92TrackBar";
-            this.ron92TrackBar.Location = new System.Drawing.Point(247, 86);
-            this.ron92TrackBar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.ron92TrackBar.Location = new System.Drawing.Point(93, 36);
             this.ron92TrackBar.Maximum = 100;
             this.ron92TrackBar.Name = "ron92TrackBar";
             this.ron92TrackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.ron92TrackBar.Size = new System.Drawing.Size(114, 439);
+            this.ron92TrackBar.Size = new System.Drawing.Size(45, 184);
             this.ron92TrackBar.SmallChange = 5;
             this.ron92TrackBar.TabIndex = 3;
             this.ron92TrackBar.TickStyle = System.Windows.Forms.TickStyle.None;
@@ -140,10 +134,9 @@
             this.ron95AmountLabel.AccessibleName = "ron95Amount";
             this.ron95AmountLabel.AutoSize = true;
             this.ron95AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.ron95AmountLabel.Location = new System.Drawing.Point(456, 524);
-            this.ron95AmountLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.ron95AmountLabel.Location = new System.Drawing.Point(171, 220);
             this.ron95AmountLabel.Name = "ron95AmountLabel";
-            this.ron95AmountLabel.Size = new System.Drawing.Size(51, 55);
+            this.ron95AmountLabel.Size = new System.Drawing.Size(20, 24);
             this.ron95AmountLabel.TabIndex = 8;
             this.ron95AmountLabel.Text = "0";
             // 
@@ -153,10 +146,9 @@
             this.ron95Label.AccessibleName = "ron95Label";
             this.ron95Label.AutoSize = true;
             this.ron95Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.ron95Label.Location = new System.Drawing.Point(405, 21);
-            this.ron95Label.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.ron95Label.Location = new System.Drawing.Point(152, 9);
             this.ron95Label.Name = "ron95Label";
-            this.ron95Label.Size = new System.Drawing.Size(185, 55);
+            this.ron95Label.Size = new System.Drawing.Size(72, 24);
             this.ron95Label.TabIndex = 7;
             this.ron95Label.Text = "RON95";
             // 
@@ -164,12 +156,11 @@
             // 
             this.ron95TrackBar.AccessibleDescription = "ron95TrackBar";
             this.ron95TrackBar.AccessibleName = "ron95TrackBar";
-            this.ron95TrackBar.Location = new System.Drawing.Point(455, 86);
-            this.ron95TrackBar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.ron95TrackBar.Location = new System.Drawing.Point(171, 36);
             this.ron95TrackBar.Maximum = 100;
             this.ron95TrackBar.Name = "ron95TrackBar";
             this.ron95TrackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.ron95TrackBar.Size = new System.Drawing.Size(114, 439);
+            this.ron95TrackBar.Size = new System.Drawing.Size(45, 184);
             this.ron95TrackBar.SmallChange = 5;
             this.ron95TrackBar.TabIndex = 6;
             this.ron95TrackBar.TickStyle = System.Windows.Forms.TickStyle.None;
@@ -181,10 +172,9 @@
             this.ron98AmountLabel.AccessibleName = "ron98Amount";
             this.ron98AmountLabel.AutoSize = true;
             this.ron98AmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.ron98AmountLabel.Location = new System.Drawing.Point(645, 524);
-            this.ron98AmountLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.ron98AmountLabel.Location = new System.Drawing.Point(242, 220);
             this.ron98AmountLabel.Name = "ron98AmountLabel";
-            this.ron98AmountLabel.Size = new System.Drawing.Size(51, 55);
+            this.ron98AmountLabel.Size = new System.Drawing.Size(20, 24);
             this.ron98AmountLabel.TabIndex = 11;
             this.ron98AmountLabel.Text = "0";
             // 
@@ -194,10 +184,9 @@
             this.ron98Label.AccessibleName = "ron98Label";
             this.ron98Label.AutoSize = true;
             this.ron98Label.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.ron98Label.Location = new System.Drawing.Point(594, 21);
-            this.ron98Label.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.ron98Label.Location = new System.Drawing.Point(223, 9);
             this.ron98Label.Name = "ron98Label";
-            this.ron98Label.Size = new System.Drawing.Size(185, 55);
+            this.ron98Label.Size = new System.Drawing.Size(72, 24);
             this.ron98Label.TabIndex = 10;
             this.ron98Label.Text = "RON98";
             // 
@@ -205,12 +194,11 @@
             // 
             this.ron98TrackBar.AccessibleDescription = "ron98TrackBar";
             this.ron98TrackBar.AccessibleName = "ron98TrackBar";
-            this.ron98TrackBar.Location = new System.Drawing.Point(644, 86);
-            this.ron98TrackBar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.ron98TrackBar.Location = new System.Drawing.Point(242, 36);
             this.ron98TrackBar.Maximum = 100;
             this.ron98TrackBar.Name = "ron98TrackBar";
             this.ron98TrackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.ron98TrackBar.Size = new System.Drawing.Size(114, 439);
+            this.ron98TrackBar.Size = new System.Drawing.Size(45, 184);
             this.ron98TrackBar.SmallChange = 5;
             this.ron98TrackBar.TabIndex = 9;
             this.ron98TrackBar.TickStyle = System.Windows.Forms.TickStyle.None;
@@ -222,10 +210,9 @@
             this.gasAmountLabel.AccessibleName = "gasAmount";
             this.gasAmountLabel.AutoSize = true;
             this.gasAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.gasAmountLabel.Location = new System.Drawing.Point(824, 523);
-            this.gasAmountLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.gasAmountLabel.Location = new System.Drawing.Point(309, 219);
             this.gasAmountLabel.Name = "gasAmountLabel";
-            this.gasAmountLabel.Size = new System.Drawing.Size(51, 55);
+            this.gasAmountLabel.Size = new System.Drawing.Size(20, 24);
             this.gasAmountLabel.TabIndex = 14;
             this.gasAmountLabel.Text = "0";
             // 
@@ -235,10 +222,9 @@
             this.gasLabel.AccessibleName = "gasLabel";
             this.gasLabel.AutoSize = true;
             this.gasLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F);
-            this.gasLabel.Location = new System.Drawing.Point(805, 21);
-            this.gasLabel.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
+            this.gasLabel.Location = new System.Drawing.Point(302, 9);
             this.gasLabel.Name = "gasLabel";
-            this.gasLabel.Size = new System.Drawing.Size(112, 55);
+            this.gasLabel.Size = new System.Drawing.Size(43, 24);
             this.gasLabel.TabIndex = 13;
             this.gasLabel.Text = "Gas";
             // 
@@ -246,12 +232,11 @@
             // 
             this.gasTrackBar.AccessibleDescription = "gasTrackBar";
             this.gasTrackBar.AccessibleName = "gasTrackBar";
-            this.gasTrackBar.Location = new System.Drawing.Point(823, 86);
-            this.gasTrackBar.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.gasTrackBar.Location = new System.Drawing.Point(309, 36);
             this.gasTrackBar.Maximum = 100;
             this.gasTrackBar.Name = "gasTrackBar";
             this.gasTrackBar.Orientation = System.Windows.Forms.Orientation.Vertical;
-            this.gasTrackBar.Size = new System.Drawing.Size(114, 439);
+            this.gasTrackBar.Size = new System.Drawing.Size(45, 184);
             this.gasTrackBar.SmallChange = 5;
             this.gasTrackBar.TabIndex = 12;
             this.gasTrackBar.TickStyle = System.Windows.Forms.TickStyle.None;
@@ -259,9 +244,9 @@
             // 
             // FuelControlWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(960, 584);
+            this.ClientSize = new System.Drawing.Size(360, 245);
             this.Controls.Add(this.gasAmountLabel);
             this.Controls.Add(this.gasLabel);
             this.Controls.Add(this.gasTrackBar);
@@ -277,8 +262,8 @@
             this.Controls.Add(this.dieselAmountLabel);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dieselTrackBar);
-            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "FuelControlWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FuelControlWindow";
             ((System.ComponentModel.ISupportInitialize)(this.dieselTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ron92TrackBar)).EndInit();

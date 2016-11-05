@@ -97,7 +97,7 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
-            
+            openFileDialog1.ShowDialog();
         }
 
         private void toolStripButton11_Click(object sender, EventArgs e)
@@ -118,6 +118,11 @@ namespace TransportSimulatorGUI
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void toolStripButton3_Click_1(object sender, EventArgs e)
+        {
+            openFileDialog1.ShowDialog();
         }
     }
 }
