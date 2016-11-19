@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 14.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/CodeGenLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="High" Text="Code generation or text transformation started." />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="Diagnostic" Text="Name = ClassTemplate" />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="Diagnostic" Text="ProjectPath = ..\TransportEmulatorLib\TransportEmulatorLib.csproj" />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\ClassTemplate.t4" />
+  <Message Timestamp="2016-11-19T18:31:55" Importance="Medium" Text="TransportEmulator's Text Template Binding: 'ClassTemplate' will apply ClassTemplate.t4 to: 'TransportEmulator::Fuel' -  (Class), 'TransportEmulator::MotorizedVehicle' -  (Class), 'TransportEmulator::Car' -  (Class), 'TransportEmulator::Truck' -  (Class), 'TransportEmulator::Trolleybus' -  (Class), 'TransportEmulator::Bike' -  (Class), 'TransportEmulator::Tank' -  (Class), 'TransportEmulator::Trum' -  (Class), 'TransportEmulator::Scooter' -  (Class), 'TransportEmulator::HorseDrawnCarriage' -  (Class), 'TransportEmulator::Bicycle' -  (Class), 'TransportEmulator::NonMotorizedVehicle' -  (Class), 'TransportEmulator::Vehicle' -  (Class) " />
+  <Message Timestamp="2016-11-19T18:33:23" Importance="Medium" Text="Project Added: C:\project\emulator\TransportEmulatorLib\TransportEmulatorLib.csproj" />
+  <Message Timestamp="2016-11-19T18:33:24" Importance="Medium" Text="'TransportEmulator::Fuel' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Fuel.cs" />
+  <Message Timestamp="2016-11-19T18:33:26" Importance="Medium" Text="'TransportEmulator::MotorizedVehicle' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\MotorizedVehicle.cs" />
+  <Message Timestamp="2016-11-19T18:33:27" Importance="Medium" Text="'TransportEmulator::Car' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Car.cs" />
+  <Message Timestamp="2016-11-19T18:33:29" Importance="Medium" Text="'TransportEmulator::Truck' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Truck.cs" />
+  <Message Timestamp="2016-11-19T18:33:30" Importance="Medium" Text="'TransportEmulator::Trolleybus' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Trolleybus.cs" />
+  <Message Timestamp="2016-11-19T18:33:31" Importance="Medium" Text="'TransportEmulator::Bike' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Bike.cs" />
+  <Message Timestamp="2016-11-19T18:33:32" Importance="Medium" Text="'TransportEmulator::Tank' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Tank.cs" />
+  <Message Timestamp="2016-11-19T18:33:33" Importance="Medium" Text="'TransportEmulator::Trum' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Trum.cs" />
+  <Message Timestamp="2016-11-19T18:33:34" Importance="Medium" Text="'TransportEmulator::Scooter' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Scooter.cs" />
+  <Message Timestamp="2016-11-19T18:33:35" Importance="Medium" Text="'TransportEmulator::HorseDrawnCarriage' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\HorseDrawnCarriage.cs" />
+  <Message Timestamp="2016-11-19T18:33:36" Importance="Medium" Text="'TransportEmulator::Bicycle' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Bicycle.cs" />
+  <Message Timestamp="2016-11-19T18:33:37" Importance="Medium" Text="'TransportEmulator::NonMotorizedVehicle' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\NonMotorizedVehicle.cs" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Medium" Text="'TransportEmulator::Vehicle' -  (Class) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\Vehicle.cs" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Diagnostic" Text="Name = EnumTemplate" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Diagnostic" Text="ProjectPath = ..\TransportEmulatorLib\TransportEmulatorLib.csproj" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\EnumTemplate.t4" />
+  <Message Timestamp="2016-11-19T18:33:41" Importance="Medium" Text="TransportEmulator's Text Template Binding: 'EnumTemplate' will apply EnumTemplate.t4 to: 'TransportEmulator::FuelType' -  (Enumeration) " />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Medium" Text="'TransportEmulator::FuelType' -  (Enumeration) : success (file created) - C:\project\emulator\TransportEmulatorLib\GeneratedCode\FuelType.cs" />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Diagnostic" Text="Name = StructTemplate" />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Diagnostic" Text="Overwrite = True" />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Diagnostic" Text="ProjectPath = ..\TransportEmulatorLib\TransportEmulatorLib.csproj" />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Diagnostic" Text="TargetDirectory = GeneratedCode\{PackageStructure}" />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Diagnostic" Text="TargetName = {Name}" />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Diagnostic" Text="TemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Diagnostic" Text="ResolvedTemplateFilePath = C:\PROGRAM FILES (X86)\MICROSOFT VISUAL STUDIO 14.0\COMMON7\IDE\EXTENSIONS\MICROSOFT\ARCHITECTURE TOOLS\EXTENSIBILITY\Templates\Text\StructTemplate.t4" />
+  <Message Timestamp="2016-11-19T18:33:42" Importance="Medium" Text="TransportEmulator's Text Template Binding: 'StructTemplate' will apply StructTemplate.t4 to: 'TransportEmulator::Fuel' -  (Class), 'TransportEmulator::MotorizedVehicle' -  (Class), 'TransportEmulator::Car' -  (Class), 'TransportEmulator::Truck' -  (Class), 'TransportEmulator::Trolleybus' -  (Class), 'TransportEmulator::Bike' -  (Class), 'TransportEmulator::Tank' -  (Class), 'TransportEmulator::Trum' -  (Class), 'TransportEmulator::Scooter' -  (Class), 'TransportEmulator::HorseDrawnCarriage' -  (Class), 'TransportEmulator::Bicycle' -  (Class), 'TransportEmulator::NonMotorizedVehicle' -  (Class), 'TransportEmulator::Vehicle' -  (Class) " />
+  <Message Timestamp="2016-11-19T18:33:43" Importance="Diagnostic" Text="'TransportEmulator::Fuel' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:43" Importance="Diagnostic" Text="'TransportEmulator::MotorizedVehicle' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:43" Importance="Diagnostic" Text="'TransportEmulator::Car' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:43" Importance="Diagnostic" Text="'TransportEmulator::Truck' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:43" Importance="Diagnostic" Text="'TransportEmulator::Trolleybus' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:43" Importance="Diagnostic" Text="'TransportEmulator::Bike' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:44" Importance="Diagnostic" Text="'TransportEmulator::Tank' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:44" Importance="Diagnostic" Text="'TransportEmulator::Trum' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:44" Importance="Diagnostic" Text="'TransportEmulator::Scooter' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:44" Importance="Diagnostic" Text="'TransportEmulator::HorseDrawnCarriage' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:44" Importance="Diagnostic" Text="'TransportEmulator::Bicycle' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:45" Importance="Diagnostic" Text="'TransportEmulator::NonMotorizedVehicle' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:45" Importance="Diagnostic" Text="'TransportEmulator::Vehicle' -  (Class): no file generated because the 'AppliesToElement' method of the template 'StructTemplate.t4' evaluated to false." />
+  <Message Timestamp="2016-11-19T18:33:45" Importance="High" Text="Code generation complete. Errors: 0. Warnings: 0." />
+</Log>
