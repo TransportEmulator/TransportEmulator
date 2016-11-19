@@ -7,11 +7,57 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TransportSimulatorController;
+
 
 namespace TransportSimulatorGUI
 {
-    public partial class FuelControlWindow : Form
+    public partial class FuelControlWindow : Form,IFuelView
     {
+        private FuelController fuelController;
+
+        public int dieselQuantity
+        {
+            get{ return dieselTrackBar.Value;}
+            set { dieselTrackBar.Value= value;
+                dieselAmountLabel.Text = value.ToString(); 
+            }
+        }
+
+        public int octane92Quantity
+        {
+            get{ return ron92TrackBar.Value; }
+            set{ ron92TrackBar.Value = value;
+               ron92AmountLabel.Text = value.ToString();
+            }
+        }
+
+        public int octane95Quantity
+        {
+            get{ return ron95TrackBar.Value; }
+            set{ ron95TrackBar.Value = value;
+                ron95AmountLabel.Text = value.ToString();
+            }
+        }
+
+        public int octane98Quantity
+        {
+            get { return ron98TrackBar.Value; }
+            set{ ron98TrackBar.Value = value;
+                ron98AmountLabel.Text = value.ToString();
+            }
+        }
+
+        public int gasQuantity
+        {  get{ return gasTrackBar.Value; }
+            set{gasTrackBar.Value = value;
+                gasAmountLabel.Text = value.ToString(); }
+        }
+
+        public void SetController(FuelController controller)
+        {
+            this.fuelController = controller;
+        }
         public FuelControlWindow()
         {
             InitializeComponent();
@@ -52,7 +98,18 @@ namespace TransportSimulatorGUI
             gasAmountLabel.Text =gasTrackBar.Value.ToString();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void updateFuelButton_Click(object sender, EventArgs e)
+        {
+            this.fuelController.updateFuelAmount();
+            this.Close();
+        }
+
+        public void setController(FuelController fuelController)
+        {
+            this.fuelController = fuelController;
+        }
+
+        private void dieselAmountLabel_Click(object sender, EventArgs e)
         {
 
         }

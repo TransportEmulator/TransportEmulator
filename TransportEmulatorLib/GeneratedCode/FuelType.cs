@@ -11,8 +11,9 @@ using System.Text;
 
 public enum FuelType
 {
-	OCTANE_91,
+	OCTANE_92,
 	OCTANE_95,
 	OCTANE_98,
 	DIESEL,
+    GAS,
 }

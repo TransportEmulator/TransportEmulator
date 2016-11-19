@@ -7,11 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TransportSimulatorController;
 
 namespace TransportSimulatorGUI
 {
-    public partial class MainWindow : Form
+    public partial class MainWindow : Form,IMainActions
     {
+        MainController mainController;
+
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
@@ -23,8 +26,12 @@ namespace TransportSimulatorGUI
             AddOwnedForm(informationWindow);
             AddOwnedForm(vehicleControlWindow);
             AddOwnedForm(selectVehicleWindow);
-        }
 
+        }
+        public void setController(MainController mainController)
+        {
+            this.mainController = mainController;
+          }
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
 
@@ -124,6 +131,11 @@ namespace TransportSimulatorGUI
         {
             saveFileDialog1.Filter = "Word doc file (*.docx)|*.docx|Word docx file(*.doc)|*.doc";
             saveFileDialog1.ShowDialog();
+        }
+
+        public IFuelView getFuelView()
+        {
+            return fuelControlWindow;
         }
     }
 }

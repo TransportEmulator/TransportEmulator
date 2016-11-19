@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TransportSimulatorController;
 
 namespace TransportSimulatorGUI
 {
@@ -14,9 +15,12 @@ namespace TransportSimulatorGUI
         [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new MainWindow());
+            MainWindow mainWindow = new MainWindow();
+            MainController mainController = new MainController(mainWindow);
+            // Application.EnableVisualStyles();
+            // Application.SetCompatibleTextRenderingDefault(false);
+            // Application.Run(mainWindow);
+            mainWindow.ShowDialog();
         }
     }
 }

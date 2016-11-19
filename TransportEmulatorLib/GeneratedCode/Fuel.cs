@@ -11,26 +11,15 @@ using System.Text;
 
 public class Fuel
 {
-	private FuelType type
-	{
-		get;
-		set;
-	}
+    private FuelType _type;
+	public FuelType type{ get { return _type; } set {_type=value; } }
+    private int _quantity;
+    public int quantity{ get { return _quantity; } set { _quantity = value; } }
 
-	private Double quantity
+	public Fuel(FuelType type,int quantity)
 	{
-		get;
-		set;
-	}
-
-	public virtual FuelType FuelType
-	{
-		get;
-		set;
-	}
-
-	public Fuel()
-	{
+        this.type = type;
+        this.quantity = quantity;
 	}
 
 }

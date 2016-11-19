@@ -138,6 +138,16 @@
   <ItemGroup>
     <None Include="Resources\TrolleybusVehicleWhite.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TransportEmulatorLib\TransportEmulatorModel.csproj">
+      <Project>{222fbfe2-b880-402d-813d-9c33036a06ee}</Project>
+      <Name>TransportEmulatorModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TransportSimulatorController\TransportSimulatorController.csproj">
+      <Project>{194d52b9-cc2f-4598-8098-5cf73f9518d0}</Project>
+      <Name>TransportSimulatorController</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
