@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VehicleControlWindow));
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.vehicleListView = new System.Windows.Forms.ListView();
             this.deleteButton = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
@@ -53,7 +53,7 @@
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.trolleybusTab = new System.Windows.Forms.TabPage();
             this.carTab = new System.Windows.Forms.TabPage();
-            this.loaderTab = new System.Windows.Forms.TabPage();
+            this.truckTab = new System.Windows.Forms.TabPage();
             this.busTab = new System.Windows.Forms.TabPage();
             this.numericUpDown19 = new System.Windows.Forms.NumericUpDown();
             this.label25 = new System.Windows.Forms.Label();
@@ -65,7 +65,7 @@
             this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.motorcycleTab = new System.Windows.Forms.TabPage();
+            this.bikeTab = new System.Windows.Forms.TabPage();
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.label6 = new System.Windows.Forms.Label();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
@@ -75,12 +75,12 @@
             this.numericUpDown20 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.label7 = new System.Windows.Forms.Label();
-            this.tramTab = new System.Windows.Forms.TabPage();
+            this.trumTab = new System.Windows.Forms.TabPage();
             this.numericUpDown14 = new System.Windows.Forms.NumericUpDown();
             this.label16 = new System.Windows.Forms.Label();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.label8 = new System.Windows.Forms.Label();
-            this.wagonTab = new System.Windows.Forms.TabPage();
+            this.horseDrawnCarriageTab = new System.Windows.Forms.TabPage();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.tabImages = new System.Windows.Forms.ImageList(this.components);
             this.consumptionUpDown = new System.Windows.Forms.NumericUpDown();
@@ -108,16 +108,16 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
             this.scooterTab.SuspendLayout();
-            this.motorcycleTab.SuspendLayout();
+            this.bikeTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.tankTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
-            this.tramTab.SuspendLayout();
+            this.trumTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
-            this.wagonTab.SuspendLayout();
+            this.horseDrawnCarriageTab.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.consumptionUpDown)).BeginInit();
             this.SuspendLayout();
             // 
@@ -136,8 +136,8 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(341, 323);
-            this.splitContainer1.SplitterDistance = 88;
+            this.splitContainer1.Size = new System.Drawing.Size(361, 323);
+            this.splitContainer1.SplitterDistance = 68;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
@@ -149,24 +149,29 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.Controls.Add(this.listView1);
+            this.splitContainer2.Panel1.Controls.Add(this.vehicleListView);
             // 
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.deleteButton);
-            this.splitContainer2.Size = new System.Drawing.Size(88, 323);
+            this.splitContainer2.Size = new System.Drawing.Size(68, 323);
             this.splitContainer2.SplitterDistance = 287;
             this.splitContainer2.TabIndex = 0;
             // 
-            // listView1
+            // vehicleListView
             // 
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.Location = new System.Drawing.Point(0, 0);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(88, 287);
-            this.listView1.TabIndex = 0;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
+            this.vehicleListView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.vehicleListView.LargeImageList = this.tabImages;
+            this.vehicleListView.Location = new System.Drawing.Point(0, 0);
+            this.vehicleListView.MultiSelect = false;
+            this.vehicleListView.Name = "vehicleListView";
+            this.vehicleListView.Scrollable = false;
+            this.vehicleListView.Size = new System.Drawing.Size(68, 287);
+            this.vehicleListView.SmallImageList = this.tabImages;
+            this.vehicleListView.TabIndex = 0;
+            this.vehicleListView.UseCompatibleStateImageBehavior = false;
+            this.vehicleListView.View = System.Windows.Forms.View.SmallIcon;
+            this.vehicleListView.SelectedIndexChanged += new System.EventHandler(this.listView1_SelectedIndexChanged);
             // 
             // deleteButton
             // 
@@ -174,7 +179,7 @@
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Location = new System.Drawing.Point(0, 0);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(88, 32);
+            this.deleteButton.Size = new System.Drawing.Size(68, 32);
             this.deleteButton.TabIndex = 0;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -185,7 +190,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 66);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(249, 257);
+            this.panel1.Size = new System.Drawing.Size(289, 257);
             this.panel1.TabIndex = 1;
             // 
             // splitContainer3
@@ -221,7 +226,7 @@
             this.splitContainer3.Panel2.Controls.Add(this.submitVehiclesButton);
             this.splitContainer3.Panel2.Controls.Add(this.addVehicleButton);
             this.splitContainer3.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer3_Panel2_Paint);
-            this.splitContainer3.Size = new System.Drawing.Size(249, 257);
+            this.splitContainer3.Size = new System.Drawing.Size(289, 257);
             this.splitContainer3.SplitterDistance = 222;
             this.splitContainer3.TabIndex = 0;
             // 
@@ -338,7 +343,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.nameTextField.Location = new System.Drawing.Point(141, 13);
             this.nameTextField.Name = "nameTextField";
-            this.nameTextField.Size = new System.Drawing.Size(75, 20);
+            this.nameTextField.Size = new System.Drawing.Size(115, 20);
             this.nameTextField.TabIndex = 1;
             this.nameTextField.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -360,7 +365,7 @@
             this.submitVehiclesButton.Dock = System.Windows.Forms.DockStyle.Right;
             this.submitVehiclesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitVehiclesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.submitVehiclesButton.Location = new System.Drawing.Point(125, 0);
+            this.submitVehiclesButton.Location = new System.Drawing.Point(165, 0);
             this.submitVehiclesButton.Name = "submitVehiclesButton";
             this.submitVehiclesButton.Size = new System.Drawing.Size(124, 31);
             this.submitVehiclesButton.TabIndex = 2;
@@ -385,13 +390,13 @@
             // 
             this.tabControl1.Controls.Add(this.trolleybusTab);
             this.tabControl1.Controls.Add(this.carTab);
-            this.tabControl1.Controls.Add(this.loaderTab);
+            this.tabControl1.Controls.Add(this.truckTab);
             this.tabControl1.Controls.Add(this.busTab);
             this.tabControl1.Controls.Add(this.scooterTab);
-            this.tabControl1.Controls.Add(this.motorcycleTab);
+            this.tabControl1.Controls.Add(this.bikeTab);
             this.tabControl1.Controls.Add(this.tankTab);
-            this.tabControl1.Controls.Add(this.tramTab);
-            this.tabControl1.Controls.Add(this.wagonTab);
+            this.tabControl1.Controls.Add(this.trumTab);
+            this.tabControl1.Controls.Add(this.horseDrawnCarriageTab);
             this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
             this.tabControl1.ImageList = this.tabImages;
             this.tabControl1.ItemSize = new System.Drawing.Size(30, 30);
@@ -399,7 +404,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(249, 66);
+            this.tabControl1.Size = new System.Drawing.Size(289, 66);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 0;
             this.tabControl1.Click += new System.EventHandler(this.motorizedTab_Click);
@@ -410,28 +415,28 @@
             this.trolleybusTab.Location = new System.Drawing.Point(4, 64);
             this.trolleybusTab.Name = "trolleybusTab";
             this.trolleybusTab.Padding = new System.Windows.Forms.Padding(3);
-            this.trolleybusTab.Size = new System.Drawing.Size(241, 0);
+            this.trolleybusTab.Size = new System.Drawing.Size(281, 0);
             this.trolleybusTab.TabIndex = 0;
             this.trolleybusTab.UseVisualStyleBackColor = true;
             // 
             // carTab
             // 
             this.carTab.ImageIndex = 1;
-            this.carTab.Location = new System.Drawing.Point(4, 64);
+            this.carTab.Location = new System.Drawing.Point(4, 34);
             this.carTab.Name = "carTab";
             this.carTab.Padding = new System.Windows.Forms.Padding(3);
-            this.carTab.Size = new System.Drawing.Size(241, 0);
+            this.carTab.Size = new System.Drawing.Size(281, 28);
             this.carTab.TabIndex = 1;
             this.carTab.UseVisualStyleBackColor = true;
             // 
-            // loaderTab
+            // truckTab
             // 
-            this.loaderTab.ImageIndex = 2;
-            this.loaderTab.Location = new System.Drawing.Point(4, 64);
-            this.loaderTab.Name = "loaderTab";
-            this.loaderTab.Size = new System.Drawing.Size(241, 0);
-            this.loaderTab.TabIndex = 2;
-            this.loaderTab.UseVisualStyleBackColor = true;
+            this.truckTab.ImageIndex = 2;
+            this.truckTab.Location = new System.Drawing.Point(4, 34);
+            this.truckTab.Name = "truckTab";
+            this.truckTab.Size = new System.Drawing.Size(281, 28);
+            this.truckTab.TabIndex = 2;
+            this.truckTab.UseVisualStyleBackColor = true;
             // 
             // busTab
             // 
@@ -442,9 +447,9 @@
             this.busTab.Controls.Add(this.numericUpDown12);
             this.busTab.Controls.Add(this.label14);
             this.busTab.ImageIndex = 3;
-            this.busTab.Location = new System.Drawing.Point(4, 64);
+            this.busTab.Location = new System.Drawing.Point(4, 34);
             this.busTab.Name = "busTab";
-            this.busTab.Size = new System.Drawing.Size(241, 0);
+            this.busTab.Size = new System.Drawing.Size(281, 28);
             this.busTab.TabIndex = 3;
             this.busTab.UseVisualStyleBackColor = true;
             // 
@@ -525,9 +530,9 @@
             this.scooterTab.Controls.Add(this.checkBox3);
             this.scooterTab.Controls.Add(this.checkBox2);
             this.scooterTab.ImageIndex = 5;
-            this.scooterTab.Location = new System.Drawing.Point(4, 64);
+            this.scooterTab.Location = new System.Drawing.Point(4, 34);
             this.scooterTab.Name = "scooterTab";
-            this.scooterTab.Size = new System.Drawing.Size(241, 0);
+            this.scooterTab.Size = new System.Drawing.Size(281, 28);
             this.scooterTab.TabIndex = 5;
             this.scooterTab.UseVisualStyleBackColor = true;
             // 
@@ -566,18 +571,18 @@
             this.checkBox2.Text = "Disk brakers";
             this.checkBox2.UseVisualStyleBackColor = true;
             // 
-            // motorcycleTab
+            // bikeTab
             // 
-            this.motorcycleTab.Controls.Add(this.numericUpDown4);
-            this.motorcycleTab.Controls.Add(this.label6);
-            this.motorcycleTab.Controls.Add(this.numericUpDown3);
-            this.motorcycleTab.Controls.Add(this.label5);
-            this.motorcycleTab.ImageIndex = 6;
-            this.motorcycleTab.Location = new System.Drawing.Point(4, 64);
-            this.motorcycleTab.Name = "motorcycleTab";
-            this.motorcycleTab.Size = new System.Drawing.Size(241, 0);
-            this.motorcycleTab.TabIndex = 6;
-            this.motorcycleTab.UseVisualStyleBackColor = true;
+            this.bikeTab.Controls.Add(this.numericUpDown4);
+            this.bikeTab.Controls.Add(this.label6);
+            this.bikeTab.Controls.Add(this.numericUpDown3);
+            this.bikeTab.Controls.Add(this.label5);
+            this.bikeTab.ImageIndex = 6;
+            this.bikeTab.Location = new System.Drawing.Point(4, 64);
+            this.bikeTab.Name = "bikeTab";
+            this.bikeTab.Size = new System.Drawing.Size(281, 0);
+            this.bikeTab.TabIndex = 6;
+            this.bikeTab.UseVisualStyleBackColor = true;
             // 
             // numericUpDown4
             // 
@@ -649,7 +654,7 @@
             this.tankTab.ImageIndex = 7;
             this.tankTab.Location = new System.Drawing.Point(4, 64);
             this.tankTab.Name = "tankTab";
-            this.tankTab.Size = new System.Drawing.Size(241, 0);
+            this.tankTab.Size = new System.Drawing.Size(281, 0);
             this.tankTab.TabIndex = 7;
             this.tankTab.UseVisualStyleBackColor = true;
             // 
@@ -702,18 +707,18 @@
             this.label7.TabIndex = 6;
             this.label7.Text = "Cons/100 km:";
             // 
-            // tramTab
+            // trumTab
             // 
-            this.tramTab.Controls.Add(this.numericUpDown14);
-            this.tramTab.Controls.Add(this.label16);
-            this.tramTab.Controls.Add(this.numericUpDown6);
-            this.tramTab.Controls.Add(this.label8);
-            this.tramTab.ImageIndex = 8;
-            this.tramTab.Location = new System.Drawing.Point(4, 64);
-            this.tramTab.Name = "tramTab";
-            this.tramTab.Size = new System.Drawing.Size(241, 0);
-            this.tramTab.TabIndex = 8;
-            this.tramTab.UseVisualStyleBackColor = true;
+            this.trumTab.Controls.Add(this.numericUpDown14);
+            this.trumTab.Controls.Add(this.label16);
+            this.trumTab.Controls.Add(this.numericUpDown6);
+            this.trumTab.Controls.Add(this.label8);
+            this.trumTab.ImageIndex = 8;
+            this.trumTab.Location = new System.Drawing.Point(4, 64);
+            this.trumTab.Name = "trumTab";
+            this.trumTab.Size = new System.Drawing.Size(281, 0);
+            this.trumTab.TabIndex = 8;
+            this.trumTab.UseVisualStyleBackColor = true;
             // 
             // numericUpDown14
             // 
@@ -759,15 +764,15 @@
             this.label8.TabIndex = 13;
             this.label8.Text = "Rated power:";
             // 
-            // wagonTab
+            // horseDrawnCarriageTab
             // 
-            this.wagonTab.Controls.Add(this.checkBox4);
-            this.wagonTab.ImageIndex = 9;
-            this.wagonTab.Location = new System.Drawing.Point(4, 64);
-            this.wagonTab.Name = "wagonTab";
-            this.wagonTab.Size = new System.Drawing.Size(241, 0);
-            this.wagonTab.TabIndex = 9;
-            this.wagonTab.UseVisualStyleBackColor = true;
+            this.horseDrawnCarriageTab.Controls.Add(this.checkBox4);
+            this.horseDrawnCarriageTab.ImageIndex = 9;
+            this.horseDrawnCarriageTab.Location = new System.Drawing.Point(4, 64);
+            this.horseDrawnCarriageTab.Name = "horseDrawnCarriageTab";
+            this.horseDrawnCarriageTab.Size = new System.Drawing.Size(281, 0);
+            this.horseDrawnCarriageTab.TabIndex = 9;
+            this.horseDrawnCarriageTab.UseVisualStyleBackColor = true;
             // 
             // checkBox4
             // 
@@ -818,7 +823,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(341, 323);
+            this.ClientSize = new System.Drawing.Size(361, 323);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -854,20 +859,20 @@
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
             this.scooterTab.ResumeLayout(false);
             this.scooterTab.PerformLayout();
-            this.motorcycleTab.ResumeLayout(false);
-            this.motorcycleTab.PerformLayout();
+            this.bikeTab.ResumeLayout(false);
+            this.bikeTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
             this.tankTab.ResumeLayout(false);
             this.tankTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown20)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
-            this.tramTab.ResumeLayout(false);
-            this.tramTab.PerformLayout();
+            this.trumTab.ResumeLayout(false);
+            this.trumTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown14)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
-            this.wagonTab.ResumeLayout(false);
-            this.wagonTab.PerformLayout();
+            this.horseDrawnCarriageTab.ResumeLayout(false);
+            this.horseDrawnCarriageTab.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.consumptionUpDown)).EndInit();
             this.ResumeLayout(false);
 
@@ -880,7 +885,7 @@
         private System.Windows.Forms.ImageList tabImages;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.SplitContainer splitContainer3;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView vehicleListView;
         private System.Windows.Forms.Button addVehicleButton;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button submitVehiclesButton;
@@ -899,7 +904,7 @@
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage trolleybusTab;
         private System.Windows.Forms.TabPage carTab;
-        private System.Windows.Forms.TabPage loaderTab;
+        private System.Windows.Forms.TabPage truckTab;
         private System.Windows.Forms.TabPage busTab;
         private System.Windows.Forms.NumericUpDown numericUpDown19;
         private System.Windows.Forms.Label label25;
@@ -911,7 +916,7 @@
         private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.TabPage motorcycleTab;
+        private System.Windows.Forms.TabPage bikeTab;
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
@@ -921,12 +926,12 @@
         private System.Windows.Forms.NumericUpDown numericUpDown20;
         private System.Windows.Forms.NumericUpDown numericUpDown5;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TabPage tramTab;
+        private System.Windows.Forms.TabPage trumTab;
         private System.Windows.Forms.NumericUpDown numericUpDown14;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TabPage wagonTab;
+        private System.Windows.Forms.TabPage horseDrawnCarriageTab;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.NumericUpDown consumptionUpDown;
         private System.Windows.Forms.Label label10;

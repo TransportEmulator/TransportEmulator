@@ -17,7 +17,7 @@ namespace TransportSimulatorController
             this.fuelController = fuelController;
         }
 
-        public bool addVehicle()
+        public Vehicle addVehicle()
         {
             String type = vehicleView.chosenVehicle.Substring(0, vehicleView.chosenVehicle.Length - 3);
             type = char.ToUpper(type[0]) + type.Substring(1);
@@ -28,21 +28,28 @@ namespace TransportSimulatorController
             newVehicle.name = vehicleView.name;
             newVehicle.weight = vehicleView.weight;
             newVehicle.driverAge = vehicleView.driverAge;
-            vehicleList.Add(newVehicle);
+            
             Fuel fuel = new Fuel(FuelType.ELECTRICITY,-1);
-            if ((newVehicle is Bike) || (newVehicle is Car)|| (newVehicle is Tank)|| (newVehicle is Truck)) {
+            if ((newVehicle is Bike) || (newVehicle is Car) || (newVehicle is Tank) || (newVehicle is Truck))
+            {
+                Console.WriteLine("NEW VEHICLE!");
                 Fuel availableFuel = fuelController.fuelList.FindLast(x => x.type == vehicleView.fuelType);
                 int availableFuelQuantity = availableFuel.quantity;
                 if (availableFuelQuantity <= vehicleView.fuelQuantity)
-                    return false;
+                    return null;
                 ((MotorizedVehicle)newVehicle).consumption = vehicleView.consumption;
-                ((MotorizedVehicle)newVehicle).Fuel.type = vehicleView.fuelType;
-                ((MotorizedVehicle)newVehicle).Fuel.quantity = vehicleView.fuelQuantity;
-                availableFuel.quantity -= vehicleView.fuelQuantity;
+                ((MotorizedVehicle)newVehicle).Fuel = new Fuel(vehicleView.fuelType, vehicleView.fuelQuantity);
+               //((MotorizedVehicle)newVehicle).Fuel.type = vehicleView.fuelType;
+               // ((MotorizedVehicle)newVehicle).Fuel.quantity = vehicleView.fuelQuantity;
+                fuelController.fuelList[fuelController.fuelList.IndexOf(availableFuel)].quantity -= vehicleView.fuelQuantity;
+
             }
-            else
-            Console.WriteLine(newVehicle is MotorizedVehicle);
-            return true;
+            else if ((newVehicle is Trolleybus) || (newVehicle is Trum))
+            {
+                ((MotorizedVehicle)newVehicle).Fuel = new Fuel(FuelType.ELECTRICITY, -1);
+            }
+            vehicleList.Add(newVehicle);
+            return newVehicle;
         }
     }
 }

@@ -87,7 +87,7 @@ namespace TransportSimulatorGUI
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             vehicleControlWindow.ShowDialog();
-           
+            mainController.updateFuelStatus();
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)

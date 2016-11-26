@@ -16,8 +16,13 @@ namespace TransportSimulatorGUI
         public VehicleControlWindow()
         {
             InitializeComponent();
-            
+
         }
+        public ListView vehicleList {
+            get { return vehicleListView; }
+            set { vehicleListView = value; }
+        }
+         
         public int consumption
         {
             get { return (int)consumptionUpDown.Value; }
@@ -108,7 +113,7 @@ namespace TransportSimulatorGUI
 
         private void motorizedTab_Click(object sender, EventArgs e)
         {
-            if (tabControl1.SelectedTab == tramTab || tabControl1.SelectedTab == scooterTab || tabControl1.SelectedTab == wagonTab || tabControl1.SelectedTab == trolleybusTab)
+            if (tabControl1.SelectedTab == trumTab || tabControl1.SelectedTab == scooterTab || tabControl1.SelectedTab == horseDrawnCarriageTab || tabControl1.SelectedTab == trolleybusTab)
                 enableFuelChose(false);
             else enableFuelChose(true);
         }
@@ -183,13 +188,28 @@ namespace TransportSimulatorGUI
 
         private void addVehicleButton_Click(object sender, EventArgs e)
         {
-            Boolean validationResult = false;
-            String name = nameTextField.Text;
-            Decimal driverAge = ageUpDown.Value;
-            Decimal weight = weightUpDown.Value;
-            Decimal maxSpeed = maxSpeedUpDown.Value;
-            
-            validationResult = this.vehicleController.addVehicle();
+            Vehicle newVehicle = null;
+            newVehicle = this.vehicleController.addVehicle();
+            if (newVehicle==null)
+                MessageBox.Show("No enough fuel quantity", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            else {
+                int imgNum;
+                switch (newVehicle.GetType().Name) {
+                    case "Trolleybus":imgNum =0;break;
+                    case "Car": imgNum =1; break;
+                    case "Truck": imgNum =2; break;
+                    case "Bus": imgNum =3; break;
+                    case "Bicycle": imgNum =4; break;
+                    case "Scooter": imgNum =5; break;
+                    case "Bike": imgNum =6; break;
+                    case "Tank": imgNum =7; break;
+                    case "Trum:": imgNum =8; break;
+                    case "HorseDrawnCarriage": imgNum =9; break;
+                    default: imgNum =1;break;
+
+                }
+                vehicleListView.Items.Add(newVehicle.name,imgNum);
+            }
             Console.WriteLine("SELECTED:"+tabControl1.SelectedTab.Name+","+
                 name+","+driverAge+","+weight+","+maxSpeed);
             //  vehicleController

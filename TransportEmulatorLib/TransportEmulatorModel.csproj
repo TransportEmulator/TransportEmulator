@@ -42,6 +42,7 @@
   <ItemGroup>
     <Compile Include="GeneratedCode\Bicycle.cs" />
     <Compile Include="GeneratedCode\Bike.cs" />
+    <Compile Include="GeneratedCode\Bus.cs" />
     <Compile Include="GeneratedCode\Car.cs" />
     <Compile Include="GeneratedCode\Fuel.cs" />
     <Compile Include="GeneratedCode\FuelType.cs" />
