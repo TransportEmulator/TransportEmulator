@@ -16,4 +16,5 @@ public enum FuelType
 	OCTANE_98,
 	DIESEL,
     GAS,
+    ELECTRICITY
 }

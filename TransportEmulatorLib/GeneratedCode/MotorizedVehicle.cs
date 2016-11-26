@@ -16,14 +16,11 @@ public abstract class MotorizedVehicle : Vehicle
 		get;
 		set;
 	}
+    private Double _consumption;
 
-	private Double consumption
-	{
-		get;
-		set;
-	}
+    public Double consumption { get { return _consumption; } set { _consumption = value; } }
 
-	public virtual Fuel Fuel
+	public Fuel Fuel
 	{
 		get;
 		set;

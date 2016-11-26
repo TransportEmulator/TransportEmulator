@@ -10,5 +10,7 @@ namespace TransportSimulatorController
     {
         void setController(MainController mainController);
         IFuelView getFuelView();
+        IVehicleControlView getVehicleControlView();
+        string fuelStatusLabel { get; set; }
     }
 }

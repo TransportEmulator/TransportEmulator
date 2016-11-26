@@ -11,45 +11,47 @@ using System.Text;
 
 public abstract class Vehicle
 {
-	private int maxDistance
+    private int _maxDistance;
+    public int maxDistance {
+        get { return _maxDistance; }
+        set { _maxDistance = value; }
+    }
+    private int _driverAge;
+    public int driverAge
+    {
+        get { return _driverAge; }
+        set {_driverAge=value; }
+    }
+
+    private int curSpeed
+    {
+        get;
+        set;
+    }
+
+    private int _maxSpeed;
+    public int maxSpeed
 	{
-		get;
-		set;
+		get{return _maxSpeed;}
+		set { _maxSpeed = value; }
 	}
 
-	private int driverAge
-	{
-		get;
-		set;
+    private int _weight;
+    public int weight
+    {
+		get {return _weight; }
+		set { _weight = value; }
 	}
+    private String _name;
+    public String name
+    {
+        get { return _name; }
+        set { _name = value; }
+    }
 
-	private int curSpeed
+    public virtual String info()
 	{
-		get;
-		set;
-	}
-
-	private int maxSpeed
-	{
-		get;
-		set;
-	}
-
-	private int weight
-	{
-		get;
-		set;
-	}
-
-	private int color
-	{
-		get;
-		set;
-	}
-
-	public virtual void info()
-	{
-		throw new System.NotImplementedException();
+        return ">" + _name + "," + _weight + "kg," + _maxSpeed + "kph,";
 	}
 
 	public virtual void setSpeed(object Integer)

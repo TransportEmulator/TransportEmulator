@@ -7,14 +7,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using TransportSimulatorController;
 namespace TransportSimulatorGUI
 {
-    public partial class VehicleControlWindow : Form
+    public partial class VehicleControlWindow : Form,IVehicleControlView
     {
+        VehicleController vehicleController;
         public VehicleControlWindow()
         {
             InitializeComponent();
+            
+        }
+        public int consumption
+        {
+            get { return (int)consumptionUpDown.Value; }
+        }
+        public int fuelQuantity {
+            get { return (int)fuelUpDown.Value; }
+        }
+        public FuelType fuelType {
+            get {
+                switch (fuelTypeCombo.Text) {
+                    case "DIESEL": return FuelType.DIESEL;
+                    case "RON92": return FuelType.OCTANE_92;
+                    case "RON95": return FuelType.OCTANE_95;
+                    case "RON98": return FuelType.OCTANE_98;
+                    case "GAS": return FuelType.GAS;
+                    default: return FuelType.DIESEL;
+                }
+            }
+        } 
+        public string chosenVehicle {
+            get { return tabControl1.SelectedTab.Name; }
+        }
+
+        public int maxSpeed
+        {
+            get{ return (int)maxSpeedUpDown.Value; }
+        }
+
+        public int driverAge
+        {
+            get{ return (int)ageUpDown.Value; }
+        }
+
+        public int weight
+        {
+            get { return (int)weightUpDown.Value; }
+        }
+
+        public string name
+        {
+            get { return nameTextField.Text; }
         }
 
         private void splitContainer1_Panel2_Paint(object sender, PaintEventArgs e)
@@ -62,11 +106,20 @@ namespace TransportSimulatorGUI
 
         }
 
-        private void motorcycleTab_Click(object sender, EventArgs e)
+        private void motorizedTab_Click(object sender, EventArgs e)
         {
-
+            if (tabControl1.SelectedTab == tramTab || tabControl1.SelectedTab == scooterTab || tabControl1.SelectedTab == wagonTab || tabControl1.SelectedTab == trolleybusTab)
+                enableFuelChose(false);
+            else enableFuelChose(true);
         }
-
+        private void enableFuelChose(Boolean b) {
+            label4.Visible = b;
+            label9.Visible = b;
+            label10.Visible = b;
+            fuelUpDown.Visible = b;
+            fuelTypeCombo.Visible = b;
+            consumptionUpDown.Visible = b;
+        }
         private void tableLayoutPanel1_Paint_2(object sender, PaintEventArgs e)
         {
 
@@ -107,10 +160,6 @@ namespace TransportSimulatorGUI
 
         }
 
-        private void tramTab_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void splitContainer3_Panel1_Paint(object sender, PaintEventArgs e)
         {
@@ -118,6 +167,50 @@ namespace TransportSimulatorGUI
         }
 
         private void label12_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void splitContainer3_Panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        public void setController(VehicleController vehicleController)
+        {
+            this.vehicleController = vehicleController;
+        }
+
+        private void addVehicleButton_Click(object sender, EventArgs e)
+        {
+            Boolean validationResult = false;
+            String name = nameTextField.Text;
+            Decimal driverAge = ageUpDown.Value;
+            Decimal weight = weightUpDown.Value;
+            Decimal maxSpeed = maxSpeedUpDown.Value;
+            
+            validationResult = this.vehicleController.addVehicle();
+            Console.WriteLine("SELECTED:"+tabControl1.SelectedTab.Name+","+
+                name+","+driverAge+","+weight+","+maxSpeed);
+            //  vehicleController
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

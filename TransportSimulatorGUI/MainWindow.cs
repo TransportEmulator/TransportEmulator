@@ -19,6 +19,11 @@ namespace TransportSimulatorGUI
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
         private SelectVehicleWindow selectVehicleWindow = new SelectVehicleWindow();
+         string IMainActions.fuelStatusLabel
+        {
+            get{ return fuelStatusLabel.Text; }
+            set{ fuelStatusLabel.Text = value; }
+        }
         public MainWindow()
         {
             InitializeComponent();
@@ -26,6 +31,7 @@ namespace TransportSimulatorGUI
             AddOwnedForm(informationWindow);
             AddOwnedForm(vehicleControlWindow);
             AddOwnedForm(selectVehicleWindow);
+           
 
         }
         public void setController(MainController mainController)
@@ -65,6 +71,7 @@ namespace TransportSimulatorGUI
         private void toolStripButton3_Click(object sender, EventArgs e)
         {
             fuelControlWindow.ShowDialog();
+            mainController.updateFuelStatus();
         }
 
         private void toolStripButton5_Click(object sender, EventArgs e)
@@ -80,6 +87,7 @@ namespace TransportSimulatorGUI
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             vehicleControlWindow.ShowDialog();
+           
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
@@ -136,6 +144,16 @@ namespace TransportSimulatorGUI
         public IFuelView getFuelView()
         {
             return fuelControlWindow;
+        }
+
+        private void statusStrip1_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+
+        }
+
+        public IVehicleControlView getVehicleControlView()
+        {
+            return vehicleControlWindow;
         }
     }
 }

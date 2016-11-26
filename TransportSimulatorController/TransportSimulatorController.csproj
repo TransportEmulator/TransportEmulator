@@ -49,8 +49,10 @@
     <Compile Include="IFuelView.cs" />
     <Compile Include="IMainActions.cs" />
     <Compile Include="FuelController.cs" />
+    <Compile Include="IVehicleControlView.cs" />
     <Compile Include="MainController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VehicleController.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\TransportEmulatorLib\TransportEmulatorModel.csproj">
