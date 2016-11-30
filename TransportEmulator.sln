@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportEmulatorModel", "T
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportSimulatorController", "TransportSimulatorController\TransportSimulatorController.csproj", "{194D52B9-CC2F-4598-8098-5CF73F9518D0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TransportSimulatorLogger", "TransportSimulatorLogger\TransportSimulatorLogger.csproj", "{A4525D46-7673-472B-B782-1DDC7B39F890}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,22 @@ Global
 		{194D52B9-CC2F-4598-8098-5CF73F9518D0}.Release|x64.Build.0 = Release|Any CPU
 		{194D52B9-CC2F-4598-8098-5CF73F9518D0}.Release|x86.ActiveCfg = Release|Any CPU
 		{194D52B9-CC2F-4598-8098-5CF73F9518D0}.Release|x86.Build.0 = Release|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Debug|ARM.ActiveCfg = Debug|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Debug|ARM.Build.0 = Debug|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Debug|x64.Build.0 = Debug|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Debug|x86.Build.0 = Debug|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Release|ARM.ActiveCfg = Release|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Release|ARM.Build.0 = Release|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Release|x64.ActiveCfg = Release|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Release|x64.Build.0 = Release|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Release|x86.ActiveCfg = Release|Any CPU
+		{A4525D46-7673-472B-B782-1DDC7B39F890}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
