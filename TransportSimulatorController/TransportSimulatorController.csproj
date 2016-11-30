@@ -59,6 +59,13 @@
       <Project>{222fbfe2-b880-402d-813d-9c33036a06ee}</Project>
       <Name>TransportEmulatorModel</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TransportSimulatorLogger\TransportSimulatorLogger.csproj">
+      <Project>{a4525d46-7673-472b-b782-1ddc7b39f890}</Project>
+      <Name>TransportSimulatorLogger</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
