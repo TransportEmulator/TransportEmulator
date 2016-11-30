@@ -8,6 +8,7 @@ namespace TransportSimulatorController
 {
     public class VehicleController
     {
+        public const int MAX_VEHCILES_NUMBER = 5;
         FuelController fuelController;
         IVehicleControlView vehicleView;
         private List<Vehicle> vehicleList = new List<Vehicle>();
@@ -32,7 +33,6 @@ namespace TransportSimulatorController
             Fuel fuel = new Fuel(FuelType.ELECTRICITY,-1);
             if ((newVehicle is Bike) || (newVehicle is Car) || (newVehicle is Tank) || (newVehicle is Truck))
             {
-                Console.WriteLine("NEW VEHICLE!");
                 Fuel availableFuel = fuelController.fuelList.FindLast(x => x.type == vehicleView.fuelType);
                 int availableFuelQuantity = availableFuel.quantity;
                 if (availableFuelQuantity <= vehicleView.fuelQuantity)
@@ -50,6 +50,16 @@ namespace TransportSimulatorController
             }
             vehicleList.Add(newVehicle);
             return newVehicle;
+        }
+
+        public void deleteVehicle(string nameToDelete)
+        {
+            foreach (Vehicle v in vehicleList) {
+                if (v.name.Equals(nameToDelete)) {
+                    vehicleList.Remove(v);
+                    break;
+                }
+            }
         }
     }
 }

@@ -234,5 +234,11 @@ namespace TransportSimulatorGUI
         {
 
         }
+
+        private void deleteButton_Click(object sender, EventArgs e)
+        {
+            vehicleController.deleteVehicle(vehicleListView.SelectedItems[0].Text);
+            vehicleListView.SelectedItems[0].Remove();
+        }
     }
 }
