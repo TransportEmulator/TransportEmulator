@@ -9,6 +9,6 @@ namespace TransportSimulatorLogger
     public abstract class LogBase
     {
         protected readonly object lockObj = new object();
-        public abstract void Log(string message);
+        public abstract void Log(string source,string message);
     }
 }

@@ -9,7 +9,7 @@ namespace TransportSimulatorLogger
 {
     public class EventLogger : LogBase
     {
-        public override void Log(string message)
+        public override void Log(string source,string message)
         {
             lock (lockObj)
             {

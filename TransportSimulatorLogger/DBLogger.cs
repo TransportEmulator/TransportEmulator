@@ -11,7 +11,7 @@ namespace TransportSimulatorLogger
     {
 
         string connectionString = string.Empty;
-        public override void Log(string message)
+        public override void Log(string source,string message)
         {
             lock(lockObj){
                 //MISCHANKA MUST IMPLEMENT IT LATER

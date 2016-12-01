@@ -9,14 +9,14 @@ namespace TransportSimulatorLogger
 {
     public class FileLogger : LogBase
     {
-        public string filePath = @".\\TransportLog.txt";
-        public override void Log(string message)
+        public string filePath = @"..\\TransportLog.csv";
+        public override void Log(string source,string message)
         {
             lock (lockObj)
             {
-                using (StreamWriter streamWriter = new StreamWriter(filePath))
-                {
-                    streamWriter.WriteLine(message);
+                using (StreamWriter streamWriter = new StreamWriter(filePath,true))
+                {                   
+                    streamWriter.WriteLine(string.Format("{0},{1}", source, message));
                     streamWriter.Close();
                 }
             }
