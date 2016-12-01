@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TransportSimulatorLogger;
 
 namespace TransportSimulatorController
 {
@@ -30,7 +31,11 @@ namespace TransportSimulatorController
             _fuelList[2].quantity = fuelView.octane95Quantity;
             _fuelList[3].quantity = fuelView.octane98Quantity;
             _fuelList[4].quantity = fuelView.gasQuantity;
-
+            StringBuilder logMessage = new StringBuilder("*********FUEL*********"+Environment.NewLine);
+            foreach (Fuel f in _fuelList)
+                logMessage.Append(f.type.ToString()+" - "+f.quantity+" liters"+ Environment.NewLine);
+            logMessage.Append("**********************");
+            LogHelper.Log(LogTarget.File,logMessage.ToString());
         }
        
     }
