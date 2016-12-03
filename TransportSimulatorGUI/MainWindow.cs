@@ -77,10 +77,8 @@ namespace TransportSimulatorGUI
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
             //lane_1.Visible = true;
-            while (1 == 1)
-            {
-                vehicle_1.Left = vehicle_1.Left + lane_1.Width / 500;
-            }
+            //vehicle_1.Left = vehicle_1.Left + lane_1.Width / 500;
+            //System.Threading.Thread.Sleep(1);
             //vehicle_1.BackgroundImage = Properties.Resources.TrolleybusVehicleWhite;
         }
 
@@ -163,14 +161,14 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            Random RandomNumber1 = new Random();
+            /*Random RandomNumber1 = new Random();
             int x = RandomNumber1.Next(0, 3);
             if (x == 0)
                 lane_1.BackgroundImage = (Image)null;
             if (x == 1)
                 lane_1.BackgroundImage = (Image)Properties.Resources.TramTransparent013;
             if (x == 2)
-                lane_1.BackgroundImage = (Image)Properties.Resources.TrolleyTransparent;
+                lane_1.BackgroundImage = (Image)Properties.Resources.TrolleyTransparent;*/
         }
     }
 }
