@@ -77,7 +77,10 @@ namespace TransportSimulatorGUI
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
             //lane_1.Visible = true;
-            vehicle_1.Left = vehicle_1.Left+lane_1.Width/500;
+            while (1 == 1)
+            {
+                vehicle_1.Left = vehicle_1.Left + lane_1.Width / 500;
+            }
             //vehicle_1.BackgroundImage = Properties.Resources.TrolleybusVehicleWhite;
         }
 
