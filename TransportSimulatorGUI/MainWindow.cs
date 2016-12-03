@@ -76,7 +76,9 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
-
+            //lane_1.Visible = true;
+            vehicle_1.Left = vehicle_1.Left+lane_1.Width/500;
+            //vehicle_1.BackgroundImage = Properties.Resources.TrolleybusVehicleWhite;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -154,6 +156,11 @@ namespace TransportSimulatorGUI
         public IVehicleControlView getVehicleControlView()
         {
             return vehicleControlWindow;
+        }
+
+        private void toolStripButton4_Click(object sender, EventArgs e)
+        {
+            lane_1.BackgroundImage = (Image)null;
         }
     }
 }
