@@ -241,7 +241,7 @@
             // 
             // vehicle_3
             // 
-            this.vehicle_3.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
+            this.vehicle_3.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.bicycle;
             this.vehicle_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vehicle_3.Location = new System.Drawing.Point(5, 24);
             this.vehicle_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
