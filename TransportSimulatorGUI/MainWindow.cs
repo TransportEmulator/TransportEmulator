@@ -160,7 +160,14 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            lane_1.BackgroundImage = (Image)null;
+            Random RandomNumber1 = new Random();
+            int x = RandomNumber1.Next(0, 3);
+            if (x == 0)
+                lane_1.BackgroundImage = (Image)null;
+            if (x == 1)
+                lane_1.BackgroundImage = (Image)Properties.Resources.TramTransparent013;
+            if (x == 2)
+                lane_1.BackgroundImage = (Image)Properties.Resources.TrolleyTransparent;
         }
     }
 }
