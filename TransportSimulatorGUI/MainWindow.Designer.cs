@@ -129,7 +129,7 @@
             this.tabPage1.Controls.Add(this.toolStrip1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(856, 351);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simulate";
@@ -159,20 +159,22 @@
             this.lane_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_1.Controls.Add(this.vehicle_1);
             this.lane_1.Location = new System.Drawing.Point(2, 1);
-            this.lane_1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_1.Margin = new System.Windows.Forms.Padding(1);
             this.lane_1.Name = "lane_1";
             this.lane_1.Size = new System.Drawing.Size(812, 65);
             this.lane_1.TabIndex = 4;
+            this.lane_1.Visible = false;
             // 
             // vehicle_1
             // 
             this.vehicle_1.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
             this.vehicle_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vehicle_1.Location = new System.Drawing.Point(1, 5);
-            this.vehicle_1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.vehicle_1.Margin = new System.Windows.Forms.Padding(1);
             this.vehicle_1.Name = "vehicle_1";
             this.vehicle_1.Size = new System.Drawing.Size(122, 48);
             this.vehicle_1.TabIndex = 0;
+            this.vehicle_1.Visible = false;
             // 
             // lane_5
             // 
@@ -181,7 +183,7 @@
             this.lane_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_5.Controls.Add(this.vehicle_5);
             this.lane_5.Location = new System.Drawing.Point(1, 285);
-            this.lane_5.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_5.Margin = new System.Windows.Forms.Padding(1);
             this.lane_5.Name = "lane_5";
             this.lane_5.Size = new System.Drawing.Size(812, 65);
             this.lane_5.TabIndex = 5;
@@ -191,7 +193,7 @@
             this.vehicle_5.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
             this.vehicle_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vehicle_5.Location = new System.Drawing.Point(2, 7);
-            this.vehicle_5.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.vehicle_5.Margin = new System.Windows.Forms.Padding(1);
             this.vehicle_5.Name = "vehicle_5";
             this.vehicle_5.Size = new System.Drawing.Size(122, 48);
             this.vehicle_5.TabIndex = 4;
@@ -203,20 +205,22 @@
             this.lane_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_4.Controls.Add(this.vehicle_4);
             this.lane_4.Location = new System.Drawing.Point(1, 213);
-            this.lane_4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_4.Margin = new System.Windows.Forms.Padding(1);
             this.lane_4.Name = "lane_4";
             this.lane_4.Size = new System.Drawing.Size(812, 65);
             this.lane_4.TabIndex = 4;
+            this.lane_4.Visible = false;
             // 
             // vehicle_4
             // 
             this.vehicle_4.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
             this.vehicle_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vehicle_4.Location = new System.Drawing.Point(1, 5);
-            this.vehicle_4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.vehicle_4.Margin = new System.Windows.Forms.Padding(1);
             this.vehicle_4.Name = "vehicle_4";
             this.vehicle_4.Size = new System.Drawing.Size(122, 48);
             this.vehicle_4.TabIndex = 3;
+            this.vehicle_4.Visible = false;
             // 
             // lane_3
             // 
@@ -225,20 +229,22 @@
             this.lane_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_3.Controls.Add(this.vehicle_3);
             this.lane_3.Location = new System.Drawing.Point(0, 139);
-            this.lane_3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_3.Margin = new System.Windows.Forms.Padding(1);
             this.lane_3.Name = "lane_3";
             this.lane_3.Size = new System.Drawing.Size(812, 65);
             this.lane_3.TabIndex = 3;
+            this.lane_3.Visible = false;
             // 
             // vehicle_3
             // 
             this.vehicle_3.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
             this.vehicle_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vehicle_3.Location = new System.Drawing.Point(2, 6);
-            this.vehicle_3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.vehicle_3.Margin = new System.Windows.Forms.Padding(1);
             this.vehicle_3.Name = "vehicle_3";
             this.vehicle_3.Size = new System.Drawing.Size(122, 48);
             this.vehicle_3.TabIndex = 2;
+            this.vehicle_3.Visible = false;
             // 
             // lane_2
             // 
@@ -247,20 +253,22 @@
             this.lane_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_2.Controls.Add(this.vehicle_2);
             this.lane_2.Location = new System.Drawing.Point(1, 72);
-            this.lane_2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_2.Margin = new System.Windows.Forms.Padding(1);
             this.lane_2.Name = "lane_2";
             this.lane_2.Size = new System.Drawing.Size(812, 65);
             this.lane_2.TabIndex = 2;
+            this.lane_2.Visible = false;
             // 
             // vehicle_2
             // 
             this.vehicle_2.BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
             this.vehicle_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.vehicle_2.Location = new System.Drawing.Point(2, 6);
-            this.vehicle_2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.vehicle_2.Margin = new System.Windows.Forms.Padding(1);
             this.vehicle_2.Name = "vehicle_2";
             this.vehicle_2.Size = new System.Drawing.Size(122, 48);
             this.vehicle_2.TabIndex = 1;
+            this.vehicle_2.Visible = false;
             // 
             // toolStrip1
             // 
@@ -362,7 +370,7 @@
             this.tabPage2.Controls.Add(this.splitContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(856, 351);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Logger";
@@ -372,7 +380,7 @@
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(1);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
