@@ -73,6 +73,16 @@ namespace TransportSimulatorGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bike {
+            get {
+                object obj = ResourceManager.GetObject("bike", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bsuLogo {
             get {
                 object obj = ResourceManager.GetObject("bsuLogo", resourceCulture);
@@ -143,6 +153,16 @@ namespace TransportSimulatorGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap horsedrawncarriage {
+            get {
+                object obj = ResourceManager.GetObject("horsedrawncarriage", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap lyceumLogo {
             get {
                 object obj = ResourceManager.GetObject("lyceumLogo", resourceCulture);
@@ -153,9 +173,29 @@ namespace TransportSimulatorGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap scooter {
+            get {
+                object obj = ResourceManager.GetObject("scooter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tank {
             get {
                 object obj = ResourceManager.GetObject("tank", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap tank1 {
+            get {
+                object obj = ResourceManager.GetObject("tank1", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -193,6 +233,16 @@ namespace TransportSimulatorGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap trolleybus {
+            get {
+                object obj = ResourceManager.GetObject("trolleybus", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TrolleybusVehicleWhite {
             get {
                 object obj = ResourceManager.GetObject("TrolleybusVehicleWhite", resourceCulture);
@@ -206,6 +256,26 @@ namespace TransportSimulatorGUI.Properties {
         internal static System.Drawing.Bitmap TrolleyTransparent {
             get {
                 object obj = ResourceManager.GetObject("TrolleyTransparent", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap truck {
+            get {
+                object obj = ResourceManager.GetObject("truck", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap trum {
+            get {
+                object obj = ResourceManager.GetObject("trum", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
