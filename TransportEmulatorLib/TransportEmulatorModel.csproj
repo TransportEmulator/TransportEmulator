@@ -49,8 +49,10 @@
     <Compile Include="GeneratedCode\HorseDrawnCarriage.cs" />
     <Compile Include="GeneratedCode\MotorizedVehicle.cs" />
     <Compile Include="GeneratedCode\NonMotorizedVehicle.cs" />
+    <Compile Include="GeneratedCode\Road.cs" />
     <Compile Include="GeneratedCode\Scooter.cs" />
     <Compile Include="GeneratedCode\Tank.cs" />
+    <Compile Include="GeneratedCode\TrafficLane.cs" />
     <Compile Include="GeneratedCode\Trolleybus.cs" />
     <Compile Include="GeneratedCode\Truck.cs" />
     <Compile Include="GeneratedCode\Trum.cs" />

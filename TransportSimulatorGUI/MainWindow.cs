@@ -19,14 +19,59 @@ namespace TransportSimulatorGUI
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
         private SelectVehicleWindow selectVehicleWindow = new SelectVehicleWindow();
-         string IMainActions.fuelStatusLabel
+        public void showPlacement(Road road) {
+            List<PictureBox> pb = new List<PictureBox>();
+            pb.Add(vehiclePicture1);
+            pb.Add(vehiclePicture2);
+            pb.Add(vehiclePicture3);
+            pb.Add(vehiclePicture4);
+            pb.Add(vehiclePicture5);
+            for(int i =0; i< road.lanes.Count; i++) {
+                if (road.lanes[i].vehicle != null)
+                {
+                    Console.WriteLine("Car "+road.lanes[i].vehicle);
+                    switch (road.lanes[i].vehicle.GetType().Name)
+                    {
+                        case "Trolleybus": pb[i].Image = images[0]; break;
+                        case "Car": pb[i].Image = images[1];  break;
+                        case "Truck": pb[i].Image = images[2];break;
+                        case "Bus": pb[i].Image = images[3];  break;
+                        case "Bicycle": pb[i].Image = images[4];  break;
+                        case "Scooter": pb[i].Image = images[5]; break;
+                        case "Bike": pb[i].Image = images[6];  break;
+                        case "Tank": pb[i].Image = images[7];  break;
+                        case "Trum:": pb[i].Image = images[8]; break;
+                        case "HorseDrawnCarriage": pb[i].Image = images[9]; break;
+                        default: pb[i].Image = images[9];  break;
+                    }
+                    pb[i].Visible = true;
+                   }
+                }
+            vehiclePicture1 = pb[0];
+            vehiclePicture2 = pb[1];
+            vehiclePicture3 = pb[2];
+            vehiclePicture4 = pb[3];
+            vehiclePicture5 = pb[4];
+        }
+        string IMainActions.fuelStatusLabel
         {
             get{ return fuelStatusLabel.Text; }
             set{ fuelStatusLabel.Text = value; }
         }
         public MainWindow()
-        {
+        {          
+
             InitializeComponent();
+            images[0] = global::TransportSimulatorGUI.Properties.Resources.trolleybusPicture;
+            images[1] = global::TransportSimulatorGUI.Properties.Resources.carPicture;
+            images[2] = global::TransportSimulatorGUI.Properties.Resources.truckPicture;
+            images[3] = global::TransportSimulatorGUI.Properties.Resources.busPicture;
+            images[4] = global::TransportSimulatorGUI.Properties.Resources.bikePicture;
+            images[5] = global::TransportSimulatorGUI.Properties.Resources.scooterPicture;
+            images[6] = global::TransportSimulatorGUI.Properties.Resources.bikePicture;
+            images[7] = global::TransportSimulatorGUI.Properties.Resources.tankPicture;
+            images[8] = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
+            images[9] = global::TransportSimulatorGUI.Properties.Resources.wagonPicture;
             AddOwnedForm(fuelControlWindow);
             AddOwnedForm(informationWindow);
             AddOwnedForm(vehicleControlWindow);
@@ -91,6 +136,8 @@ namespace TransportSimulatorGUI
         {
             vehicleControlWindow.ShowDialog();
             mainController.updateFuelStatus();
+            mainController.placeVehicles();
+            showPlacement(mainController.road);
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
@@ -169,6 +216,16 @@ namespace TransportSimulatorGUI
                 lane_1.BackgroundImage = (Image)Properties.Resources.TramTransparent013;
             if (x == 2)
                 lane_1.BackgroundImage = (Image)Properties.Resources.TrolleyTransparent;*/
+        }
+
+        private void vehicle_1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void vehilcePicture1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

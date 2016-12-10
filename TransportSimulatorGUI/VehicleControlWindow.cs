@@ -10,7 +10,8 @@ using System.Windows.Forms;
 using TransportSimulatorController;
 namespace TransportSimulatorGUI
 {
-    public partial class VehicleControlWindow : Form,IVehicleControlView
+    public partial class 
+        VehicleControlWindow : Form,IVehicleControlView
     {
         VehicleController vehicleController;
         public VehicleControlWindow()
@@ -217,7 +218,7 @@ namespace TransportSimulatorGUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            this.Close();           
         }
 
         private void label4_Click(object sender, EventArgs e)

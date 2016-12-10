@@ -11,8 +11,9 @@ namespace TransportSimulatorController
         public const int MAX_VEHCILES_NUMBER = 5;
         FuelController fuelController;
         IVehicleControlView vehicleView;
-        private List<Vehicle> vehicleList = new List<Vehicle>();
-        public VehicleController(IVehicleControlView vehicleView,FuelController fuelController) {
+        private List<Vehicle> vehicleList;
+        public VehicleController(IVehicleControlView vehicleView,FuelController fuelController,List<Vehicle> vehicleList) {
+            this.vehicleList = vehicleList;
             this.vehicleView = vehicleView;
             vehicleView.setController(this);
             this.fuelController = fuelController;
