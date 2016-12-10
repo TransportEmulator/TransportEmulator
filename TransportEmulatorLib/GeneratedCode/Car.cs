@@ -11,5 +11,8 @@ using System.Text;
 
 public class Car : MotorizedVehicle
 {
+    public Car() {
+        ID = 1;
+    }
 }
 

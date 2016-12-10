@@ -11,6 +11,9 @@ using System.Text;
 
 public class HorseDrawnCarriage : NonMotorizedVehicle
 {
+    public HorseDrawnCarriage() {
+        ID = 9;
+    }
 	private int horseNumber
 	{
 		get;

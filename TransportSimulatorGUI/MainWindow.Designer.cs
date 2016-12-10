@@ -162,7 +162,6 @@ namespace TransportSimulatorGUI
             // lane_1
             // 
             this.lane_1.BackColor = System.Drawing.Color.Transparent;
-            this.lane_1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lane_1.BackgroundImage")));
             this.lane_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_1.Controls.Add(this.vehiclePicture1);
             this.lane_1.Location = new System.Drawing.Point(2, 1);
@@ -175,7 +174,7 @@ namespace TransportSimulatorGUI
             // 
             this.vehiclePicture1.Location = new System.Drawing.Point(3, 3);
             this.vehiclePicture1.Name = "vehiclePicture1";
-            this.vehiclePicture1.Size = new System.Drawing.Size(63, 59);
+            this.vehiclePicture1.Size = new System.Drawing.Size(70, 59);
             this.vehiclePicture1.TabIndex = 0;
             this.vehiclePicture1.TabStop = false;
             this.vehiclePicture1.Click += new System.EventHandler(this.vehilcePicture1_Click);
@@ -183,7 +182,6 @@ namespace TransportSimulatorGUI
             // lane_5
             // 
             this.lane_5.BackColor = System.Drawing.Color.Transparent;
-            this.lane_5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lane_5.BackgroundImage")));
             this.lane_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_5.Controls.Add(this.vehiclePicture5);
             this.lane_5.Location = new System.Drawing.Point(1, 285);
@@ -196,14 +194,13 @@ namespace TransportSimulatorGUI
             // 
             this.vehiclePicture5.Location = new System.Drawing.Point(4, 4);
             this.vehiclePicture5.Name = "vehiclePicture5";
-            this.vehiclePicture5.Size = new System.Drawing.Size(63, 59);
+            this.vehiclePicture5.Size = new System.Drawing.Size(70, 59);
             this.vehiclePicture5.TabIndex = 4;
             this.vehiclePicture5.TabStop = false;
             // 
             // lane_4
             // 
             this.lane_4.BackColor = System.Drawing.Color.Transparent;
-            this.lane_4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lane_4.BackgroundImage")));
             this.lane_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_4.Controls.Add(this.vehiclePicture4);
             this.lane_4.Location = new System.Drawing.Point(1, 213);
@@ -216,14 +213,13 @@ namespace TransportSimulatorGUI
             // 
             this.vehiclePicture4.Location = new System.Drawing.Point(4, 3);
             this.vehiclePicture4.Name = "vehiclePicture4";
-            this.vehiclePicture4.Size = new System.Drawing.Size(63, 59);
+            this.vehiclePicture4.Size = new System.Drawing.Size(70, 59);
             this.vehiclePicture4.TabIndex = 3;
             this.vehiclePicture4.TabStop = false;
             // 
             // lane_3
             // 
             this.lane_3.BackColor = System.Drawing.Color.Transparent;
-            this.lane_3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lane_3.BackgroundImage")));
             this.lane_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_3.Controls.Add(this.vehiclePicture3);
             this.lane_3.Location = new System.Drawing.Point(0, 139);
@@ -236,14 +232,13 @@ namespace TransportSimulatorGUI
             // 
             this.vehiclePicture3.Location = new System.Drawing.Point(5, 11);
             this.vehiclePicture3.Name = "vehiclePicture3";
-            this.vehiclePicture3.Size = new System.Drawing.Size(63, 59);
+            this.vehiclePicture3.Size = new System.Drawing.Size(70, 59);
             this.vehiclePicture3.TabIndex = 2;
             this.vehiclePicture3.TabStop = false;
             // 
             // lane_2
             // 
             this.lane_2.BackColor = System.Drawing.Color.Transparent;
-            this.lane_2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("lane_2.BackgroundImage")));
             this.lane_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_2.Controls.Add(this.vehiclePicture2);
             this.lane_2.Location = new System.Drawing.Point(1, 72);
@@ -256,7 +251,7 @@ namespace TransportSimulatorGUI
             // 
             this.vehiclePicture2.Location = new System.Drawing.Point(4, 4);
             this.vehiclePicture2.Name = "vehiclePicture2";
-            this.vehiclePicture2.Size = new System.Drawing.Size(63, 59);
+            this.vehiclePicture2.Size = new System.Drawing.Size(70, 59);
             this.vehiclePicture2.TabIndex = 1;
             this.vehiclePicture2.TabStop = false;
             // 

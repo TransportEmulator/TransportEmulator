@@ -11,6 +11,9 @@ using System.Text;
 
 public class Bicycle : NonMotorizedVehicle
 {
+    public Bicycle() {
+        ID = 4;
+    }
     
 }
 

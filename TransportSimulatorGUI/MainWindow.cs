@@ -21,37 +21,33 @@ namespace TransportSimulatorGUI
         private SelectVehicleWindow selectVehicleWindow = new SelectVehicleWindow();
         public void showPlacement(Road road) {
             List<PictureBox> pb = new List<PictureBox>();
+            List<Panel> lanes = new List<Panel>();
             pb.Add(vehiclePicture1);
             pb.Add(vehiclePicture2);
             pb.Add(vehiclePicture3);
             pb.Add(vehiclePicture4);
             pb.Add(vehiclePicture5);
-            for(int i =0; i< road.lanes.Count; i++) {
+            lanes.Add(lane_1);
+            lanes.Add(lane_2);
+            lanes.Add(lane_3);
+            lanes.Add(lane_4);
+            lanes.Add(lane_5);
+            for (int i =0; i< road.lanes.Count; i++) {
                 if (road.lanes[i].vehicle != null)
                 {
                     Console.WriteLine("Car "+road.lanes[i].vehicle);
-                    switch (road.lanes[i].vehicle.GetType().Name)
-                    {
-                        case "Trolleybus": pb[i].Image = images[0]; break;
-                        case "Car": pb[i].Image = images[1];  break;
-                        case "Truck": pb[i].Image = images[2];break;
-                        case "Bus": pb[i].Image = images[3];  break;
-                        case "Bicycle": pb[i].Image = images[4];  break;
-                        case "Scooter": pb[i].Image = images[5]; break;
-                        case "Bike": pb[i].Image = images[6];  break;
-                        case "Tank": pb[i].Image = images[7];  break;
-                        case "Trum:": pb[i].Image = images[8]; break;
-                        case "HorseDrawnCarriage": pb[i].Image = images[9]; break;
-                        default: pb[i].Image = images[9];  break;
-                    }
+                    pb[i].Image = images[road.lanes[i].vehicle.ID];                    
                     pb[i].Visible = true;
-                   }
                 }
-            vehiclePicture1 = pb[0];
+                if (road.lanes[i].hasRails)
+                    lanes[i].BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramTransparent013;
+
+            }
+           /* vehiclePicture1 = pb[0];
             vehiclePicture2 = pb[1];
             vehiclePicture3 = pb[2];
             vehiclePicture4 = pb[3];
-            vehiclePicture5 = pb[4];
+            vehiclePicture5 = pb[4];*/
         }
         string IMainActions.fuelStatusLabel
         {
@@ -70,7 +66,7 @@ namespace TransportSimulatorGUI
             images[5] = global::TransportSimulatorGUI.Properties.Resources.scooterPicture;
             images[6] = global::TransportSimulatorGUI.Properties.Resources.bikePicture;
             images[7] = global::TransportSimulatorGUI.Properties.Resources.tankPicture;
-            images[8] = global::TransportSimulatorGUI.Properties.Resources.TramVehicleWhite;
+            images[8] = global::TransportSimulatorGUI.Properties.Resources.tramPicture;
             images[9] = global::TransportSimulatorGUI.Properties.Resources.wagonPicture;
             AddOwnedForm(fuelControlWindow);
             AddOwnedForm(informationWindow);

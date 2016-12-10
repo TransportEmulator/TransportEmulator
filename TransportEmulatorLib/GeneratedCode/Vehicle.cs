@@ -10,6 +10,7 @@ using System.Linq;
 using System.Text;
 public abstract class Vehicle
 {
+    public int ID;
     private int _maxDistance;
     public int maxDistance {
         get { return _maxDistance; }
@@ -56,8 +57,7 @@ public abstract class Vehicle
 	public virtual void setSpeed(object Integer)
 	{
 		throw new System.NotImplementedException();
-	}
-
+	}    
 	public Vehicle()
 	{
 	}

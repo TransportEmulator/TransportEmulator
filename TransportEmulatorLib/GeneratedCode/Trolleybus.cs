@@ -11,11 +11,14 @@ using System.Text;
 
 public class Trolleybus : MotorizedVehicle
 {
-	private Double electricPower
+    private Double electricPower
 	{
 		get;
 		set;
 	}
+    public Trolleybus() {
+        ID = 0;
+    }
 
 }
 

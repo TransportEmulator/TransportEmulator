@@ -11,6 +11,9 @@ using System.Text;
 
 public class Truck : MotorizedVehicle
 {
+    public Truck() {
+        ID = 2;
+    }
 	private Double cargoWeight
 	{
 		get;

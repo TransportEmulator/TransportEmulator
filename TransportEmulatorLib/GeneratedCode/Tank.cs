@@ -11,5 +11,8 @@ using System.Text;
 
 public class Tank : MotorizedVehicle
 {
+    public Tank() {
+        ID = 7;
+    }
 }
 

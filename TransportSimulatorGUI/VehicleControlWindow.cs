@@ -195,7 +195,8 @@ namespace TransportSimulatorGUI
                 MessageBox.Show("No enough fuel quantity", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else {
                 int imgNum;
-                switch (newVehicle.GetType().Name) {
+                imgNum = newVehicle.ID;
+                /*switch (newVehicle.GetType().Name) { // very bad code
                     case "Trolleybus":imgNum =0;break;
                     case "Car": imgNum =1; break;
                     case "Truck": imgNum =2; break;
@@ -208,7 +209,7 @@ namespace TransportSimulatorGUI
                     case "HorseDrawnCarriage": imgNum =9; break;
                     default: imgNum =1;break;
 
-                }
+                }*/
                 vehicleListView.Items.Add(newVehicle.name,imgNum);
             }
             Console.WriteLine("SELECTED:"+tabControl1.SelectedTab.Name+","+

@@ -7,5 +7,8 @@ using System.Threading.Tasks;
 
     class Bus : MotorizedVehicle
     {
+        public Bus() {
+        ID = 3;
+        }
     }
 

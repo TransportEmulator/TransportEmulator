@@ -11,5 +11,8 @@ using System.Text;
 
 public class Trum : MotorizedVehicle
 {
+    public Trum() {
+        ID = 8;
+    }
 }
 

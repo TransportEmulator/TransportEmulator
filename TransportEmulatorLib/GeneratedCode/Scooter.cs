@@ -11,5 +11,8 @@ using System.Text;
 
 public class Scooter : NonMotorizedVehicle
 {
+    public Scooter() {
+        ID = 5;
+    }
 }
 
