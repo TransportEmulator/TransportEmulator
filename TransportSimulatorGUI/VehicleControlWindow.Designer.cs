@@ -127,6 +127,7 @@
             this.splitContainer1.FixedPanel = System.Windows.Forms.FixedPanel.Panel1;
             this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -138,14 +139,16 @@
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(361, 335);
+            this.splitContainer1.Size = new System.Drawing.Size(963, 799);
             this.splitContainer1.SplitterDistance = 66;
+            this.splitContainer1.SplitterWidth = 11;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
             // 
             this.splitContainer2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer2.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.splitContainer2.Name = "splitContainer2";
             this.splitContainer2.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -156,8 +159,9 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.deleteButton);
-            this.splitContainer2.Size = new System.Drawing.Size(66, 335);
-            this.splitContainer2.SplitterDistance = 300;
+            this.splitContainer2.Size = new System.Drawing.Size(66, 799);
+            this.splitContainer2.SplitterDistance = 715;
+            this.splitContainer2.SplitterWidth = 10;
             this.splitContainer2.TabIndex = 0;
             // 
             // vehicleListView
@@ -167,10 +171,11 @@
             this.vehicleListView.GridLines = true;
             this.vehicleListView.LargeImageList = this.tabImages;
             this.vehicleListView.Location = new System.Drawing.Point(0, 0);
+            this.vehicleListView.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.vehicleListView.MultiSelect = false;
             this.vehicleListView.Name = "vehicleListView";
             this.vehicleListView.Scrollable = false;
-            this.vehicleListView.Size = new System.Drawing.Size(66, 300);
+            this.vehicleListView.Size = new System.Drawing.Size(66, 715);
             this.vehicleListView.SmallImageList = this.tabImages;
             this.vehicleListView.TabIndex = 0;
             this.vehicleListView.UseCompatibleStateImageBehavior = false;
@@ -196,8 +201,9 @@
             this.deleteButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Location = new System.Drawing.Point(0, 0);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(66, 31);
+            this.deleteButton.Size = new System.Drawing.Size(66, 74);
             this.deleteButton.TabIndex = 0;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -207,9 +213,10 @@
             // 
             this.panel1.Controls.Add(this.splitContainer3);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 66);
+            this.panel1.Location = new System.Drawing.Point(0, 157);
+            this.panel1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(291, 269);
+            this.panel1.Size = new System.Drawing.Size(886, 642);
             this.panel1.TabIndex = 1;
             // 
             // splitContainer3
@@ -218,6 +225,7 @@
             this.splitContainer3.FixedPanel = System.Windows.Forms.FixedPanel.Panel2;
             this.splitContainer3.IsSplitterFixed = true;
             this.splitContainer3.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.splitContainer3.Name = "splitContainer3";
             this.splitContainer3.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -245,15 +253,17 @@
             this.splitContainer3.Panel2.Controls.Add(this.submitVehiclesButton);
             this.splitContainer3.Panel2.Controls.Add(this.addVehicleButton);
             this.splitContainer3.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer3_Panel2_Paint);
-            this.splitContainer3.Size = new System.Drawing.Size(291, 269);
-            this.splitContainer3.SplitterDistance = 228;
+            this.splitContainer3.Size = new System.Drawing.Size(886, 642);
+            this.splitContainer3.SplitterDistance = 595;
+            this.splitContainer3.SplitterWidth = 10;
             this.splitContainer3.TabIndex = 0;
             // 
             // consumptionUpDown
             // 
-            this.consumptionUpDown.Location = new System.Drawing.Point(141, 196);
+            this.consumptionUpDown.Location = new System.Drawing.Point(376, 467);
+            this.consumptionUpDown.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.consumptionUpDown.Name = "consumptionUpDown";
-            this.consumptionUpDown.Size = new System.Drawing.Size(60, 20);
+            this.consumptionUpDown.Size = new System.Drawing.Size(160, 38);
             this.consumptionUpDown.TabIndex = 25;
             this.consumptionUpDown.Visible = false;
             // 
@@ -261,9 +271,10 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(3, 196);
+            this.label10.Location = new System.Drawing.Point(8, 467);
+            this.label10.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(130, 16);
+            this.label10.Size = new System.Drawing.Size(296, 38);
             this.label10.TabIndex = 24;
             this.label10.Text = "Consumption, lph:";
             this.label10.Visible = false;
@@ -272,9 +283,10 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(57, 167);
+            this.label9.Location = new System.Drawing.Point(152, 398);
+            this.label9.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(76, 16);
+            this.label9.Size = new System.Drawing.Size(170, 38);
             this.label9.TabIndex = 23;
             this.label9.Text = "Fuel type:";
             this.label9.Visible = false;
@@ -288,18 +300,20 @@
             "RON95",
             "RON98",
             "GAS"});
-            this.fuelTypeCombo.Location = new System.Drawing.Point(141, 167);
+            this.fuelTypeCombo.Location = new System.Drawing.Point(376, 398);
+            this.fuelTypeCombo.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.fuelTypeCombo.Name = "fuelTypeCombo";
-            this.fuelTypeCombo.Size = new System.Drawing.Size(96, 21);
+            this.fuelTypeCombo.Size = new System.Drawing.Size(249, 39);
             this.fuelTypeCombo.TabIndex = 22;
             this.fuelTypeCombo.Visible = false;
             this.fuelTypeCombo.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // fuelUpDown
             // 
-            this.fuelUpDown.Location = new System.Drawing.Point(141, 136);
+            this.fuelUpDown.Location = new System.Drawing.Point(376, 324);
+            this.fuelUpDown.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.fuelUpDown.Name = "fuelUpDown";
-            this.fuelUpDown.Size = new System.Drawing.Size(60, 20);
+            this.fuelUpDown.Size = new System.Drawing.Size(160, 38);
             this.fuelUpDown.TabIndex = 21;
             this.fuelUpDown.Value = new decimal(new int[] {
             5,
@@ -313,9 +327,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(49, 140);
+            this.label4.Location = new System.Drawing.Point(131, 334);
+            this.label4.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(84, 16);
+            this.label4.Size = new System.Drawing.Size(189, 38);
             this.label4.TabIndex = 20;
             this.label4.Text = "Fuel, liters:";
             this.label4.Visible = false;
@@ -328,9 +343,10 @@
             0,
             0,
             0});
-            this.maxSpeedUpDown.Location = new System.Drawing.Point(141, 102);
+            this.maxSpeedUpDown.Location = new System.Drawing.Point(376, 243);
+            this.maxSpeedUpDown.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.maxSpeedUpDown.Name = "maxSpeedUpDown";
-            this.maxSpeedUpDown.Size = new System.Drawing.Size(60, 20);
+            this.maxSpeedUpDown.Size = new System.Drawing.Size(160, 38);
             this.maxSpeedUpDown.TabIndex = 19;
             this.maxSpeedUpDown.Value = new decimal(new int[] {
             20,
@@ -342,44 +358,49 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(45, 106);
+            this.label13.Location = new System.Drawing.Point(120, 253);
+            this.label13.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(88, 16);
+            this.label13.Size = new System.Drawing.Size(196, 38);
             this.label13.TabIndex = 18;
             this.label13.Text = "Max speed:";
             // 
             // weightUpDown
             // 
-            this.weightUpDown.Location = new System.Drawing.Point(141, 76);
+            this.weightUpDown.Location = new System.Drawing.Point(376, 181);
+            this.weightUpDown.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.weightUpDown.Name = "weightUpDown";
-            this.weightUpDown.Size = new System.Drawing.Size(60, 20);
+            this.weightUpDown.Size = new System.Drawing.Size(160, 38);
             this.weightUpDown.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(45, 76);
+            this.label3.Location = new System.Drawing.Point(120, 181);
+            this.label3.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(85, 16);
+            this.label3.Size = new System.Drawing.Size(191, 38);
             this.label3.TabIndex = 4;
             this.label3.Text = "Weight, kg:";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // ageUpDown
             // 
-            this.ageUpDown.Location = new System.Drawing.Point(141, 44);
+            this.ageUpDown.Location = new System.Drawing.Point(376, 105);
+            this.ageUpDown.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.ageUpDown.Name = "ageUpDown";
-            this.ageUpDown.Size = new System.Drawing.Size(60, 20);
+            this.ageUpDown.Size = new System.Drawing.Size(160, 38);
             this.ageUpDown.TabIndex = 3;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(33, 44);
+            this.label2.Location = new System.Drawing.Point(88, 105);
+            this.label2.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(97, 16);
+            this.label2.Size = new System.Drawing.Size(213, 38);
             this.label2.TabIndex = 2;
             this.label2.Text = "Driver\'s age:";
             this.label2.Click += new System.EventHandler(this.label2_Click_1);
@@ -389,9 +410,10 @@
             this.nameTextField.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.nameTextField.Location = new System.Drawing.Point(141, 13);
+            this.nameTextField.Location = new System.Drawing.Point(376, 31);
+            this.nameTextField.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.nameTextField.Name = "nameTextField";
-            this.nameTextField.Size = new System.Drawing.Size(95, 20);
+            this.nameTextField.Size = new System.Drawing.Size(357, 38);
             this.nameTextField.TabIndex = 1;
             this.nameTextField.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -402,9 +424,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 17);
+            this.label1.Location = new System.Drawing.Point(213, 41);
+            this.label1.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(53, 16);
+            this.label1.Size = new System.Drawing.Size(118, 38);
             this.label1.TabIndex = 0;
             this.label1.Text = "Name:";
             // 
@@ -413,9 +436,10 @@
             this.submitVehiclesButton.Dock = System.Windows.Forms.DockStyle.Fill;
             this.submitVehiclesButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.submitVehiclesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
-            this.submitVehiclesButton.Location = new System.Drawing.Point(148, 0);
+            this.submitVehiclesButton.Location = new System.Drawing.Point(395, 0);
+            this.submitVehiclesButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.submitVehiclesButton.Name = "submitVehiclesButton";
-            this.submitVehiclesButton.Size = new System.Drawing.Size(143, 37);
+            this.submitVehiclesButton.Size = new System.Drawing.Size(491, 37);
             this.submitVehiclesButton.TabIndex = 2;
             this.submitVehiclesButton.Text = "Submit";
             this.submitVehiclesButton.UseVisualStyleBackColor = true;
@@ -427,8 +451,9 @@
             this.addVehicleButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.addVehicleButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
             this.addVehicleButton.Location = new System.Drawing.Point(0, 0);
+            this.addVehicleButton.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.addVehicleButton.Name = "addVehicleButton";
-            this.addVehicleButton.Size = new System.Drawing.Size(148, 37);
+            this.addVehicleButton.Size = new System.Drawing.Size(395, 37);
             this.addVehicleButton.TabIndex = 1;
             this.addVehicleButton.Text = "Add vehicle";
             this.addVehicleButton.UseVisualStyleBackColor = true;
@@ -449,10 +474,11 @@
             this.tabControl1.ImageList = this.tabImages;
             this.tabControl1.ItemSize = new System.Drawing.Size(30, 30);
             this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(291, 66);
+            this.tabControl1.Size = new System.Drawing.Size(886, 157);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 0;
             this.tabControl1.Click += new System.EventHandler(this.motorizedTab_Click);
@@ -460,29 +486,32 @@
             // trolleybusTab
             // 
             this.trolleybusTab.ImageIndex = 0;
-            this.trolleybusTab.Location = new System.Drawing.Point(4, 64);
+            this.trolleybusTab.Location = new System.Drawing.Point(10, 40);
+            this.trolleybusTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.trolleybusTab.Name = "trolleybusTab";
-            this.trolleybusTab.Padding = new System.Windows.Forms.Padding(3);
-            this.trolleybusTab.Size = new System.Drawing.Size(283, 0);
+            this.trolleybusTab.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.trolleybusTab.Size = new System.Drawing.Size(866, 107);
             this.trolleybusTab.TabIndex = 0;
             this.trolleybusTab.UseVisualStyleBackColor = true;
             // 
             // carTab
             // 
             this.carTab.ImageIndex = 1;
-            this.carTab.Location = new System.Drawing.Point(4, 64);
+            this.carTab.Location = new System.Drawing.Point(10, 40);
+            this.carTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.carTab.Name = "carTab";
-            this.carTab.Padding = new System.Windows.Forms.Padding(3);
-            this.carTab.Size = new System.Drawing.Size(283, 0);
+            this.carTab.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.carTab.Size = new System.Drawing.Size(756, 107);
             this.carTab.TabIndex = 1;
             this.carTab.UseVisualStyleBackColor = true;
             // 
             // truckTab
             // 
             this.truckTab.ImageIndex = 2;
-            this.truckTab.Location = new System.Drawing.Point(4, 64);
+            this.truckTab.Location = new System.Drawing.Point(10, 40);
+            this.truckTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.truckTab.Name = "truckTab";
-            this.truckTab.Size = new System.Drawing.Size(283, 0);
+            this.truckTab.Size = new System.Drawing.Size(756, 107);
             this.truckTab.TabIndex = 2;
             this.truckTab.UseVisualStyleBackColor = true;
             // 
@@ -495,15 +524,17 @@
             this.busTab.Controls.Add(this.numericUpDown12);
             this.busTab.Controls.Add(this.label14);
             this.busTab.ImageIndex = 3;
-            this.busTab.Location = new System.Drawing.Point(4, 64);
+            this.busTab.Location = new System.Drawing.Point(10, 40);
+            this.busTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.busTab.Name = "busTab";
-            this.busTab.Size = new System.Drawing.Size(283, 0);
+            this.busTab.Size = new System.Drawing.Size(756, 107);
             this.busTab.TabIndex = 3;
             this.busTab.UseVisualStyleBackColor = true;
             // 
             // numericUpDown19
             // 
-            this.numericUpDown19.Location = new System.Drawing.Point(137, 63);
+            this.numericUpDown19.Location = new System.Drawing.Point(365, 150);
+            this.numericUpDown19.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown19.Maximum = new decimal(new int[] {
             16,
             0,
@@ -515,7 +546,7 @@
             0,
             0});
             this.numericUpDown19.Name = "numericUpDown19";
-            this.numericUpDown19.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown19.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown19.TabIndex = 22;
             this.numericUpDown19.Value = new decimal(new int[] {
             1,
@@ -527,48 +558,53 @@
             // 
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(36, 63);
+            this.label25.Location = new System.Drawing.Point(96, 150);
+            this.label25.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(85, 16);
+            this.label25.Size = new System.Drawing.Size(189, 38);
             this.label25.TabIndex = 21;
             this.label25.Text = "Tank,liters:";
             // 
             // numericUpDown13
             // 
-            this.numericUpDown13.Location = new System.Drawing.Point(137, 36);
+            this.numericUpDown13.Location = new System.Drawing.Point(365, 86);
+            this.numericUpDown13.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown13.Maximum = new decimal(new int[] {
             60,
             0,
             0,
             0});
             this.numericUpDown13.Name = "numericUpDown13";
-            this.numericUpDown13.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown13.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown13.TabIndex = 19;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(36, 36);
+            this.label15.Location = new System.Drawing.Point(96, 86);
+            this.label15.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(95, 16);
+            this.label15.Size = new System.Drawing.Size(211, 38);
             this.label15.TabIndex = 18;
             this.label15.Text = "Passengers:";
             // 
             // numericUpDown12
             // 
-            this.numericUpDown12.Location = new System.Drawing.Point(137, 10);
+            this.numericUpDown12.Location = new System.Drawing.Point(365, 24);
+            this.numericUpDown12.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown12.Name = "numericUpDown12";
-            this.numericUpDown12.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown12.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown12.TabIndex = 15;
             // 
             // label14
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(31, 10);
+            this.label14.Location = new System.Drawing.Point(83, 24);
+            this.label14.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(100, 16);
+            this.label14.Size = new System.Drawing.Size(231, 38);
             this.label14.TabIndex = 14;
             this.label14.Text = "Cons/100 km:";
             // 
@@ -578,9 +614,10 @@
             this.scooterTab.Controls.Add(this.checkBox3);
             this.scooterTab.Controls.Add(this.checkBox2);
             this.scooterTab.ImageIndex = 5;
-            this.scooterTab.Location = new System.Drawing.Point(4, 64);
+            this.scooterTab.Location = new System.Drawing.Point(10, 40);
+            this.scooterTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.scooterTab.Name = "scooterTab";
-            this.scooterTab.Size = new System.Drawing.Size(283, 0);
+            this.scooterTab.Size = new System.Drawing.Size(756, 107);
             this.scooterTab.TabIndex = 5;
             this.scooterTab.UseVisualStyleBackColor = true;
             // 
@@ -591,9 +628,10 @@
             "High",
             "Medium",
             "Low"});
-            this.comboBox1.Location = new System.Drawing.Point(61, 94);
+            this.comboBox1.Location = new System.Drawing.Point(163, 224);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
+            this.comboBox1.Size = new System.Drawing.Size(316, 39);
             this.comboBox1.TabIndex = 3;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -601,9 +639,10 @@
             // 
             this.checkBox3.AutoSize = true;
             this.checkBox3.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold);
-            this.checkBox3.Location = new System.Drawing.Point(42, 62);
+            this.checkBox3.Location = new System.Drawing.Point(112, 148);
+            this.checkBox3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(174, 20);
+            this.checkBox3.Size = new System.Drawing.Size(430, 47);
             this.checkBox3.TabIndex = 2;
             this.checkBox3.Text = "Reinforced construction";
             this.checkBox3.UseVisualStyleBackColor = true;
@@ -612,9 +651,10 @@
             // 
             this.checkBox2.AutoSize = true;
             this.checkBox2.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold);
-            this.checkBox2.Location = new System.Drawing.Point(42, 40);
+            this.checkBox2.Location = new System.Drawing.Point(112, 95);
+            this.checkBox2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(103, 20);
+            this.checkBox2.Size = new System.Drawing.Size(247, 47);
             this.checkBox2.TabIndex = 1;
             this.checkBox2.Text = "Disk brakers";
             this.checkBox2.UseVisualStyleBackColor = true;
@@ -626,9 +666,10 @@
             this.bikeTab.Controls.Add(this.numericUpDown3);
             this.bikeTab.Controls.Add(this.label5);
             this.bikeTab.ImageIndex = 6;
-            this.bikeTab.Location = new System.Drawing.Point(4, 64);
+            this.bikeTab.Location = new System.Drawing.Point(10, 40);
+            this.bikeTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.bikeTab.Name = "bikeTab";
-            this.bikeTab.Size = new System.Drawing.Size(283, 0);
+            this.bikeTab.Size = new System.Drawing.Size(756, 107);
             this.bikeTab.TabIndex = 6;
             this.bikeTab.UseVisualStyleBackColor = true;
             // 
@@ -639,29 +680,32 @@
             0,
             0,
             0});
-            this.numericUpDown4.Location = new System.Drawing.Point(137, 56);
+            this.numericUpDown4.Location = new System.Drawing.Point(365, 134);
+            this.numericUpDown4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown4.Maximum = new decimal(new int[] {
             2000,
             0,
             0,
             0});
             this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown4.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown4.TabIndex = 7;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 56);
+            this.label6.Location = new System.Drawing.Point(16, 134);
+            this.label6.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 16);
+            this.label6.Size = new System.Drawing.Size(255, 38);
             this.label6.TabIndex = 6;
             this.label6.Text = "Engine volume:";
             // 
             // numericUpDown3
             // 
-            this.numericUpDown3.Location = new System.Drawing.Point(137, 22);
+            this.numericUpDown3.Location = new System.Drawing.Point(365, 52);
+            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             16,
             0,
@@ -673,7 +717,7 @@
             0,
             0});
             this.numericUpDown3.Name = "numericUpDown3";
-            this.numericUpDown3.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown3.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown3.TabIndex = 5;
             this.numericUpDown3.Value = new decimal(new int[] {
             1,
@@ -686,9 +730,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(41, 22);
+            this.label5.Location = new System.Drawing.Point(109, 52);
+            this.label5.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(77, 16);
+            this.label5.Size = new System.Drawing.Size(173, 38);
             this.label5.TabIndex = 4;
             this.label5.Text = "Cylinders:";
             this.label5.Click += new System.EventHandler(this.label5_Click);
@@ -700,9 +745,10 @@
             this.tankTab.Controls.Add(this.numericUpDown5);
             this.tankTab.Controls.Add(this.label7);
             this.tankTab.ImageIndex = 7;
-            this.tankTab.Location = new System.Drawing.Point(4, 64);
+            this.tankTab.Location = new System.Drawing.Point(10, 40);
+            this.tankTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tankTab.Name = "tankTab";
-            this.tankTab.Size = new System.Drawing.Size(283, 0);
+            this.tankTab.Size = new System.Drawing.Size(756, 107);
             this.tankTab.TabIndex = 7;
             this.tankTab.UseVisualStyleBackColor = true;
             // 
@@ -710,15 +756,17 @@
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(30, 52);
+            this.label26.Location = new System.Drawing.Point(80, 124);
+            this.label26.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(85, 16);
+            this.label26.Size = new System.Drawing.Size(189, 38);
             this.label26.TabIndex = 23;
             this.label26.Text = "Tank,liters:";
             // 
             // numericUpDown20
             // 
-            this.numericUpDown20.Location = new System.Drawing.Point(137, 52);
+            this.numericUpDown20.Location = new System.Drawing.Point(365, 124);
+            this.numericUpDown20.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown20.Maximum = new decimal(new int[] {
             16,
             0,
@@ -730,7 +778,7 @@
             0,
             0});
             this.numericUpDown20.Name = "numericUpDown20";
-            this.numericUpDown20.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown20.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown20.TabIndex = 22;
             this.numericUpDown20.Value = new decimal(new int[] {
             1,
@@ -740,18 +788,20 @@
             // 
             // numericUpDown5
             // 
-            this.numericUpDown5.Location = new System.Drawing.Point(137, 16);
+            this.numericUpDown5.Location = new System.Drawing.Point(365, 38);
+            this.numericUpDown5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown5.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown5.TabIndex = 7;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(18, 16);
+            this.label7.Location = new System.Drawing.Point(48, 38);
+            this.label7.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(100, 16);
+            this.label7.Size = new System.Drawing.Size(231, 38);
             this.label7.TabIndex = 6;
             this.label7.Text = "Cons/100 km:";
             // 
@@ -762,9 +812,10 @@
             this.trumTab.Controls.Add(this.numericUpDown6);
             this.trumTab.Controls.Add(this.label8);
             this.trumTab.ImageIndex = 8;
-            this.trumTab.Location = new System.Drawing.Point(4, 64);
+            this.trumTab.Location = new System.Drawing.Point(10, 40);
+            this.trumTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.trumTab.Name = "trumTab";
-            this.trumTab.Size = new System.Drawing.Size(283, 0);
+            this.trumTab.Size = new System.Drawing.Size(756, 107);
             this.trumTab.TabIndex = 8;
             this.trumTab.UseVisualStyleBackColor = true;
             // 
@@ -775,18 +826,20 @@
             0,
             0,
             0});
-            this.numericUpDown14.Location = new System.Drawing.Point(137, 49);
+            this.numericUpDown14.Location = new System.Drawing.Point(365, 117);
+            this.numericUpDown14.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown14.Name = "numericUpDown14";
-            this.numericUpDown14.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown14.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown14.TabIndex = 16;
             // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(8, 49);
+            this.label16.Location = new System.Drawing.Point(21, 117);
+            this.label16.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(110, 16);
+            this.label16.Size = new System.Drawing.Size(241, 38);
             this.label16.TabIndex = 15;
             this.label16.Text = "Rated voltage:";
             // 
@@ -797,18 +850,20 @@
             0,
             0,
             0});
-            this.numericUpDown6.Location = new System.Drawing.Point(137, 13);
+            this.numericUpDown6.Location = new System.Drawing.Point(365, 31);
+            this.numericUpDown6.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.numericUpDown6.Name = "numericUpDown6";
-            this.numericUpDown6.Size = new System.Drawing.Size(54, 20);
+            this.numericUpDown6.Size = new System.Drawing.Size(144, 38);
             this.numericUpDown6.TabIndex = 14;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(18, 13);
+            this.label8.Location = new System.Drawing.Point(48, 31);
+            this.label8.Margin = new System.Windows.Forms.Padding(8, 0, 8, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(100, 16);
+            this.label8.Size = new System.Drawing.Size(223, 38);
             this.label8.TabIndex = 13;
             this.label8.Text = "Rated power:";
             // 
@@ -816,9 +871,10 @@
             // 
             this.horseDrawnCarriageTab.Controls.Add(this.checkBox4);
             this.horseDrawnCarriageTab.ImageIndex = 9;
-            this.horseDrawnCarriageTab.Location = new System.Drawing.Point(4, 64);
+            this.horseDrawnCarriageTab.Location = new System.Drawing.Point(10, 40);
+            this.horseDrawnCarriageTab.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.horseDrawnCarriageTab.Name = "horseDrawnCarriageTab";
-            this.horseDrawnCarriageTab.Size = new System.Drawing.Size(283, 0);
+            this.horseDrawnCarriageTab.Size = new System.Drawing.Size(756, 107);
             this.horseDrawnCarriageTab.TabIndex = 9;
             this.horseDrawnCarriageTab.UseVisualStyleBackColor = true;
             // 
@@ -826,9 +882,10 @@
             // 
             this.checkBox4.AutoSize = true;
             this.checkBox4.Font = new System.Drawing.Font("Microsoft Tai Le", 9.75F, System.Drawing.FontStyle.Bold);
-            this.checkBox4.Location = new System.Drawing.Point(59, 20);
+            this.checkBox4.Location = new System.Drawing.Point(157, 48);
+            this.checkBox4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(132, 20);
+            this.checkBox4.Size = new System.Drawing.Size(320, 47);
             this.checkBox4.TabIndex = 6;
             this.checkBox4.Text = "Inflatable wheels";
             this.checkBox4.UseVisualStyleBackColor = true;
@@ -836,12 +893,13 @@
             // VehicleControlWindow
             // 
             this.AcceptButton = this.submitVehiclesButton;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(361, 335);
+            this.ClientSize = new System.Drawing.Size(963, 799);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "VehicleControlWindow";
