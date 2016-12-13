@@ -23,10 +23,11 @@ public abstract class Vehicle
         set {_driverAge=value; }
     }
 
-    private int curSpeed
+    private int _curSpeed;
+    public int curSpeed
     {
-        get;
-        set;
+        get {return _curSpeed; }
+        set {_curSpeed=value; }
     }
 
     private int _maxSpeed;

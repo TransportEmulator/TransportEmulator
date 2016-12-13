@@ -114,24 +114,45 @@ namespace TransportSimulatorController
                 Stopwatch sw = new Stopwatch();
                 sw.Start();
                 List<TrafficLane> runLanes = new List<TrafficLane>(road.lanes);
+                Random random = new Random();
                 while (runLanes.Count!=0)
                 {
-                    //Thread.Sleep(20);
-                    int previousMin = 0;
-
+                    changeVehicleSpeed(road.lanes);
+                    int minSpeed = getMinSpeedOnRoad(road.lanes);
                     foreach (TrafficLane tl in road.lanes)
                     {
-                    if (tl.vehicle != null)
-                    {
-                        Thread.Sleep(10);
-                        if (tl.position >= 500 || tl.vehicle.maxDistance <= tl.position)
-                            runLanes.Remove(tl);
-                        else if (runLanes.Contains(tl)) tl.position++;//= tl.vehicle.maxSpeed/10;                   
+                        if (tl.vehicle != null)
+                        {
+                            
+                             Thread.Sleep(10);
+                             if (tl.position >= 500 || tl.vehicle.maxDistance <= tl.position)
+                                runLanes.Remove(tl);
+                            else if (runLanes.Contains(tl)) tl.position += tl.vehicle.curSpeed/minSpeed;                   
                     }
                     }
                 }
                sw.Stop();
             }
-        
+
+        private int getMinSpeedOnRoad(List<TrafficLane> lanes)
+        {
+            int minSpeed = 5000;
+            foreach (TrafficLane tl in lanes)
+                minSpeed = (tl.vehicle.curSpeed < minSpeed) ? tl.vehicle.curSpeed : minSpeed;
+            return minSpeed;
+        }
+
+        private void changeVehicleSpeed(List<TrafficLane> lanes)
+        {
+            Random random = new Random();
+            foreach (TrafficLane tl in lanes)
+                if (tl.vehicle != null)
+                {
+                    if (tl.position > tl.vehicle.maxDistance / 2)
+                        tl.vehicle.curSpeed = tl.vehicle.maxSpeed;
+                    else
+                        tl.vehicle.curSpeed = tl.vehicle.maxSpeed - random.Next(1, tl.vehicle.maxSpeed);
+                }
+        }
     }
 }
