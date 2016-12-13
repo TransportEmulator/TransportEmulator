@@ -301,6 +301,11 @@
             this.fuelUpDown.Name = "fuelUpDown";
             this.fuelUpDown.Size = new System.Drawing.Size(60, 20);
             this.fuelUpDown.TabIndex = 21;
+            this.fuelUpDown.Value = new decimal(new int[] {
+            5,
+            0,
+            0,
+            0});
             this.fuelUpDown.Visible = false;
             this.fuelUpDown.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
@@ -327,6 +332,11 @@
             this.maxSpeedUpDown.Name = "maxSpeedUpDown";
             this.maxSpeedUpDown.Size = new System.Drawing.Size(60, 20);
             this.maxSpeedUpDown.TabIndex = 19;
+            this.maxSpeedUpDown.Value = new decimal(new int[] {
+            20,
+            0,
+            0,
+            0});
             // 
             // label13
             // 

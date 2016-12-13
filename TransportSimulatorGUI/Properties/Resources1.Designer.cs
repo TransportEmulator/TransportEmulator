@@ -353,6 +353,16 @@ namespace TransportSimulatorGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap truckPic {
+            get {
+                object obj = ResourceManager.GetObject("truckPic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap truckPicture {
             get {
                 object obj = ResourceManager.GetObject("truckPicture", resourceCulture);

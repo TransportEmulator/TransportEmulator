@@ -17,6 +17,8 @@ namespace TransportSimulatorGUI
         public VehicleControlWindow()
         {
             InitializeComponent();
+            ageUpDown.Value = 18;
+            fuelTypeCombo.SelectedIndex = 0;
 
         }
         public ListView vehicleList {

@@ -172,9 +172,9 @@ namespace TransportSimulatorGUI
             // 
             // vehiclePicture1
             // 
-            this.vehiclePicture1.Location = new System.Drawing.Point(3, 3);
+            this.vehiclePicture1.Location = new System.Drawing.Point(3, 0);
             this.vehiclePicture1.Name = "vehiclePicture1";
-            this.vehiclePicture1.Size = new System.Drawing.Size(70, 59);
+            this.vehiclePicture1.Size = new System.Drawing.Size(70, 62);
             this.vehiclePicture1.TabIndex = 0;
             this.vehiclePicture1.TabStop = false;
             this.vehiclePicture1.Click += new System.EventHandler(this.vehilcePicture1_Click);
@@ -211,7 +211,7 @@ namespace TransportSimulatorGUI
             // 
             // vehiclePicture4
             // 
-            this.vehiclePicture4.Location = new System.Drawing.Point(4, 3);
+            this.vehiclePicture4.Location = new System.Drawing.Point(1, 6);
             this.vehiclePicture4.Name = "vehiclePicture4";
             this.vehiclePicture4.Size = new System.Drawing.Size(70, 59);
             this.vehiclePicture4.TabIndex = 3;
@@ -230,9 +230,9 @@ namespace TransportSimulatorGUI
             // 
             // vehiclePicture3
             // 
-            this.vehiclePicture3.Location = new System.Drawing.Point(5, 11);
+            this.vehiclePicture3.Location = new System.Drawing.Point(5, 9);
             this.vehiclePicture3.Name = "vehiclePicture3";
-            this.vehiclePicture3.Size = new System.Drawing.Size(70, 59);
+            this.vehiclePicture3.Size = new System.Drawing.Size(67, 56);
             this.vehiclePicture3.TabIndex = 2;
             this.vehiclePicture3.TabStop = false;
             // 
@@ -249,9 +249,9 @@ namespace TransportSimulatorGUI
             // 
             // vehiclePicture2
             // 
-            this.vehiclePicture2.Location = new System.Drawing.Point(4, 4);
+            this.vehiclePicture2.Location = new System.Drawing.Point(4, 13);
             this.vehiclePicture2.Name = "vehiclePicture2";
-            this.vehiclePicture2.Size = new System.Drawing.Size(70, 59);
+            this.vehiclePicture2.Size = new System.Drawing.Size(70, 50);
             this.vehiclePicture2.TabIndex = 1;
             this.vehiclePicture2.TabStop = false;
             // 

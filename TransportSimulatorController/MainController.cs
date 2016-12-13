@@ -1,13 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TransportSimulatorController
 {
     public class MainController
     {
+        private System.Timers.Timer startDelay;
+        private static int HUNDRET_KM = 100;
         private List<Vehicle> vehicleList = new List<Vehicle>();
         public Road road;
         IMainActions mainView;
@@ -20,6 +24,13 @@ namespace TransportSimulatorController
             fuelController = new FuelController(mainView.getFuelView());
             vehicleController = new VehicleController(mainView.getVehicleControlView(),fuelController,vehicleList);
             updateFuelStatus();
+            startDelay = new System.Timers.Timer();
+            startDelay.Interval = 1000;
+            startDelay.Elapsed += startDelay_Elapsed;         
+        }
+        private Boolean start = false;
+        private void startDelay_Elapsed(object sender, System.Timers.ElapsedEventArgs e) {
+            start = true;
         }
         public void updateFuelStatus() {
             mainView.fuelStatusLabel = "| Diesel " + fuelController.fuelList[0].quantity + " | Octane92 " +
@@ -29,8 +40,10 @@ namespace TransportSimulatorController
 
         public void placeVehicles()
         {
+           /* for (int i = 0; i < vehicleList.Count; i++)
+                if (vehicleList[i] == null)
+                    vehicleList.RemoveAt(i);*/
             List<Vehicle> vehiclesToPlace = new List<Vehicle>(vehicleList);
-            Console.WriteLine("Size="+road.lanes.Count);
             for (int j = 0; j < vehicleList.Count; j++)
             {
                 Vehicle v = vehicleList[j];
@@ -43,18 +56,82 @@ namespace TransportSimulatorController
                     vehiclesToPlace.Remove(v);
                 }
             }
-
             foreach (TrafficLane tl in road.lanes) {
-                if (tl.vehicle == null && vehiclesToPlace.Count!=0) {
+                if (tl.vehicle == null && vehiclesToPlace.Count != 0)
+                {
                     tl.vehicle = vehiclesToPlace[0];
                     vehiclesToPlace.RemoveAt(0);
-                }
+                }                
             }
             /*foreach (TrafficLane tl in road.lanes) {
                 Console.WriteLine("Lane "+tl.vehicle);
             }*/
-            
-            }
 
+        }
+
+        public void calculateMaxDistance()
+        {
+            int maxDistance = 0;
+            foreach (Vehicle v in vehicleList) {
+                if (v.driverAge < 18)
+                    v.maxDistance = 0;
+                else if (v is Trolleybus || v is Trum)
+                    v.maxDistance = 501;
+                else v.maxDistance = (v is MotorizedVehicle) ?
+                        (((Double)((MotorizedVehicle)v).consumption) == 0 ? 0 :
+                    (int)(HUNDRET_KM * ((Double)((MotorizedVehicle)v).Fuel.quantity) / ((Double)((MotorizedVehicle)v).consumption)))
+                    : (v is HorseDrawnCarriage) ? 250
+                    : (v is Bicycle) ? 30:10;
+                Console.WriteLine(v.name+" MaxDistance="+v.maxDistance);
+            }
+        }
+
+        public void startSimulation()
+        {
+            ThreadPool.QueueUserWorkItem(delegate { simulate(); });
+           
+        }
+        private void simulate(TrafficLane tl)
+        {
+            while (!start) { }
+            for (int i = 0; i < 500; i++) {
+                Thread.Sleep(8);
+                tl.position++;
+                Thread.Sleep(0);
+                Thread.Yield();
+            }
+        }
+        private void simulate() {
+            startDelay.Start();
+           /* for (int i = 0; i < road.lanes.Count; i++)
+                if (road.lanes[i] == null || road.lanes[i].vehicle == null || road.lanes[i].vehicle.Equals(""))
+                    road.lanes.RemoveAt(i);
+            foreach (TrafficLane tl in road.lanes)
+                Console.WriteLine("> "+tl+"  > '"+tl.vehicle+"'");*/
+           // foreach (TrafficLane tl in road.lanes)
+           //     ThreadPool.QueueUserWorkItem(delegate { simulate(tl); });
+                int stopCounter = 5;
+                Stopwatch sw = new Stopwatch();
+                sw.Start();
+                List<TrafficLane> runLanes = new List<TrafficLane>(road.lanes);
+                while (runLanes.Count!=0)
+                {
+                    //Thread.Sleep(20);
+                    int previousMin = 0;
+
+                    foreach (TrafficLane tl in road.lanes)
+                    {
+                    if (tl.vehicle != null)
+                    {
+                        Thread.Sleep(10);
+                        if (tl.position >= 500 || tl.vehicle.maxDistance <= tl.position)
+                            runLanes.Remove(tl);
+                        else if (runLanes.Contains(tl)) tl.position++;//= tl.vehicle.maxSpeed/10;                   
+                    }
+                    }
+                }
+               sw.Stop();
+            }
+        
     }
 }

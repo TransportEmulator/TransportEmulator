@@ -14,12 +14,20 @@ namespace TransportSimulatorGUI
     public partial class MainWindow : Form,IMainActions
     {
         MainController mainController;
-
+        Timer simulationTimer = new Timer();
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
         private SelectVehicleWindow selectVehicleWindow = new SelectVehicleWindow();
+        private void reinitializePictureBox() {
+            this.vehiclePicture1.Location = new System.Drawing.Point(3, 0);
+            this.vehiclePicture2.Location = new System.Drawing.Point(4, 13);
+            this.vehiclePicture5.Location = new System.Drawing.Point(4, 4);
+            this.vehiclePicture4.Location = new System.Drawing.Point(1, 6);
+            this.vehiclePicture3.Location = new System.Drawing.Point(5, 9);           
+        }
         public void showPlacement(Road road) {
+            reinitializePictureBox();
             List<PictureBox> pb = new List<PictureBox>();
             List<Panel> lanes = new List<Panel>();
             pb.Add(vehiclePicture1);
@@ -42,12 +50,7 @@ namespace TransportSimulatorGUI
                 if (road.lanes[i].hasRails)
                     lanes[i].BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramTransparent013;
 
-            }
-           /* vehiclePicture1 = pb[0];
-            vehiclePicture2 = pb[1];
-            vehiclePicture3 = pb[2];
-            vehiclePicture4 = pb[3];
-            vehiclePicture5 = pb[4];*/
+            }           
         }
         string IMainActions.fuelStatusLabel
         {
@@ -58,9 +61,10 @@ namespace TransportSimulatorGUI
         {          
 
             InitializeComponent();
+            simulationTimer.Tick += new EventHandler(simulationTimer_Tick);
             images[0] = global::TransportSimulatorGUI.Properties.Resources.trolleybusPicture;
             images[1] = global::TransportSimulatorGUI.Properties.Resources.carPicture;
-            images[2] = global::TransportSimulatorGUI.Properties.Resources.truckPicture;
+            images[2] = global::TransportSimulatorGUI.Properties.Resources.truckPic;
             images[3] = global::TransportSimulatorGUI.Properties.Resources.busPicture;
             images[4] = global::TransportSimulatorGUI.Properties.Resources.bikePicture;
             images[5] = global::TransportSimulatorGUI.Properties.Resources.scooterPicture;
@@ -75,6 +79,27 @@ namespace TransportSimulatorGUI
            
 
         }
+        private void simulationTimer_Tick(Object sender, EventArgs e) {
+            this.UpdatePositions();           
+        }
+        List<int> positionToPixels(List<int> positions) {
+            List<int> pixels = new List<int>();
+            foreach (int pos in positions)
+                pixels.Add((int) (1.5 * pos));
+            return pixels;
+        }
+        private void UpdatePositions() {
+            List<int> positions = new List<int>();            
+            foreach (TrafficLane tl in mainController.road.lanes)
+                if(tl!=null)
+                    positions.Add(tl.position);
+            List<int> pixels = positionToPixels(positions);
+            vehiclePicture1.Left = pixels[0];
+            vehiclePicture2.Left = pixels[1];
+            vehiclePicture3.Left = pixels[2];
+            vehiclePicture4.Left = pixels[3];
+            vehiclePicture5.Left = pixels[4];
+        }        
         public void setController(MainController mainController)
         {
             this.mainController = mainController;
@@ -117,6 +142,9 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
+            mainController.startSimulation();
+            simulationTimer.Interval = 10;
+            simulationTimer.Enabled = true;
             //lane_1.Visible = true;
             //vehicle_1.Left = vehicle_1.Left + lane_1.Width / 500;
             //System.Threading.Thread.Sleep(1);
@@ -130,9 +158,11 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
+            mainController.road = new Road();
             vehicleControlWindow.ShowDialog();
             mainController.updateFuelStatus();
-            mainController.placeVehicles();
+            mainController.calculateMaxDistance();
+            mainController.placeVehicles();            
             showPlacement(mainController.road);
         }
 

@@ -14,6 +14,7 @@ public class TrafficLane
     }
     private Boolean[] _infrastructure;
     private Vehicle _vehicle;
+    public int position = 0;
     public Vehicle vehicle {
         get { return _vehicle; }
         set {
