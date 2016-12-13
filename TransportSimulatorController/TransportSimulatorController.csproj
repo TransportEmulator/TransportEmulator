@@ -52,6 +52,7 @@
     <Compile Include="IVehicleControlView.cs" />
     <Compile Include="MainController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SimulationTime.cs" />
     <Compile Include="VehicleController.cs" />
   </ItemGroup>
   <ItemGroup>
