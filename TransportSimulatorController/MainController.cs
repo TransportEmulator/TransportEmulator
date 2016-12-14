@@ -11,7 +11,7 @@ namespace TransportSimulatorController
     public class MainController
     {
         private System.Timers.Timer startDelay;
-        private static int HUNDRET_KM = 100;
+        private static int HUNDRED_KM = 100;
         private List<Vehicle> vehicleList = new List<Vehicle>();
         public Road road;
         IMainActions mainView;
@@ -71,7 +71,6 @@ namespace TransportSimulatorController
 
         public void calculateMaxDistance()
         {
-            int maxDistance = 0;
             foreach (Vehicle v in vehicleList) {
                 if (v.driverAge < 18)
                     v.maxDistance = 0;
@@ -79,7 +78,7 @@ namespace TransportSimulatorController
                     v.maxDistance = 501;
                 else v.maxDistance = (v is MotorizedVehicle) ?
                         (((Double)((MotorizedVehicle)v).consumption) == 0 ? 0 :
-                    (int)(HUNDRET_KM * ((Double)((MotorizedVehicle)v).Fuel.quantity) / ((Double)((MotorizedVehicle)v).consumption)))
+                    (int)(HUNDRED_KM * ((Double)((MotorizedVehicle)v).Fuel.quantity) / ((Double)((MotorizedVehicle)v).consumption)))
                     : (v is HorseDrawnCarriage) ? 250
                     : (v is Bicycle) ? 30:10;
                 Console.WriteLine(v.name+" MaxDistance="+v.maxDistance);
