@@ -39,6 +39,10 @@ namespace TransportSimulatorController
                 if (availableFuelQuantity <= vehicleView.fuelQuantity)
                     return null;
                 ((MotorizedVehicle)newVehicle).consumption = vehicleView.consumption;
+                if (vehicleView.consumption == 0)
+                {
+                    return null;
+                }
                 ((MotorizedVehicle)newVehicle).Fuel = new Fuel(vehicleView.fuelType, vehicleView.fuelQuantity);
                //((MotorizedVehicle)newVehicle).Fuel.type = vehicleView.fuelType;
                // ((MotorizedVehicle)newVehicle).Fuel.quantity = vehicleView.fuelQuantity;

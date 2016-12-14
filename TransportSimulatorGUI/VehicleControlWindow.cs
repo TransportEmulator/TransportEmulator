@@ -219,21 +219,29 @@ namespace TransportSimulatorGUI
         private void addVehicleButton_Click(object sender, EventArgs e)
         {
             Vehicle newVehicle = null;
-            ListViewItem lv = vehicleListView.SelectedItems[0];
-            newVehicle = this.vehicleController.addVehicle();
-            if (newVehicle==null)
-                MessageBox.Show("No enough fuel quantity", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            else {
-                int imgNum;
-                imgNum = newVehicle.ID;
-                lv.ImageIndex = imgNum;
-                lv.Name = newVehicle.name.Equals("") ? newVehicle.GetType().Name : newVehicle.name;
-                //vehicleListView.Items.Add(newVehicle.name,imgNum);
+            try
+            {
+                ListViewItem lv = vehicleListView.SelectedItems[0];
+                newVehicle = this.vehicleController.addVehicle();
+                if (newVehicle == null)
+                    MessageBox.Show("No enough fuel quantity or fuel consumption is zero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                else
+                {
+                    int imgNum;
+                    imgNum = newVehicle.ID;
+                    lv.ImageIndex = imgNum;
+                    lv.Name = newVehicle.name.Equals("") ? newVehicle.GetType().Name : newVehicle.name;
+                    //vehicleListView.Items.Add(newVehicle.name,imgNum);
+                }
+                Console.WriteLine("SELECTED:" + tabControl1.SelectedTab.Name + "," +
+                    name + "," + driverAge + "," + weight + "," + maxSpeed);
+                //  vehicleController
             }
-            Console.WriteLine("SELECTED:"+tabControl1.SelectedTab.Name+","+
-                name+","+driverAge+","+weight+","+maxSpeed);
-            //  vehicleController
-        }
+            catch (Exception)
+            {
+                MessageBox.Show("Something went wrong, try to choose slot", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+         }
 
         private void button2_Click(object sender, EventArgs e)
         {

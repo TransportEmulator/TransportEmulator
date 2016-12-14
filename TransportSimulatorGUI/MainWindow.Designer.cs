@@ -8,7 +8,7 @@ namespace TransportSimulatorGUI
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
-
+       
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -578,10 +578,11 @@ namespace TransportSimulatorGUI
         private System.Windows.Forms.DataGridViewTextBoxColumn Event;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel lane_1;
-        private System.Windows.Forms.Panel lane_5;
-        private System.Windows.Forms.Panel lane_4;
-        private System.Windows.Forms.Panel lane_3;
         private System.Windows.Forms.Panel lane_2;
+        private System.Windows.Forms.Panel lane_3;
+        private System.Windows.Forms.Panel lane_4;
+        private System.Windows.Forms.Panel lane_5;
+        
         private System.Windows.Forms.PictureBox vehiclePicture1;
         Image[] images = new Image[10];
         private System.Windows.Forms.PictureBox vehiclePicture5;
