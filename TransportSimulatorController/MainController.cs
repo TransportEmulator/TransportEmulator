@@ -138,6 +138,7 @@ namespace TransportSimulatorController
         {
             int minSpeed = 5000;
             foreach (TrafficLane tl in lanes)
+                if(tl.vehicle!=null)
                 minSpeed = (tl.vehicle.curSpeed < minSpeed) ? tl.vehicle.curSpeed : minSpeed;
             return minSpeed;
         }
@@ -151,7 +152,7 @@ namespace TransportSimulatorController
                     if (tl.position > tl.vehicle.maxDistance / 2)
                         tl.vehicle.curSpeed = tl.vehicle.maxSpeed;
                     else
-                        tl.vehicle.curSpeed = tl.vehicle.maxSpeed - random.Next(1, tl.vehicle.maxSpeed);
+                        tl.vehicle.curSpeed++; //tl.vehicle.maxSpeed - random.Next(1, tl.vehicle.maxSpeed);
                 }
         }
     }

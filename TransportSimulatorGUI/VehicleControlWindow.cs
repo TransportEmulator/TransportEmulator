@@ -7,19 +7,39 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 using TransportSimulatorController;
 namespace TransportSimulatorGUI
 {
-    public partial class 
-        VehicleControlWindow : Form,IVehicleControlView
+    public partial class VehicleControlWindow : Form,IVehicleControlView
     {
+        [DllImport("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam);
         VehicleController vehicleController;
         public VehicleControlWindow()
         {
             InitializeComponent();
             ageUpDown.Value = 18;
             fuelTypeCombo.SelectedIndex = 0;
+            vehicleListView.Items.Add("", 10);
+            vehicleListView.Items.Add("", 10);
+            vehicleListView.Items.Add("", 10);
+            vehicleListView.Items.Add("", 10);
+            vehicleListView.Items.Add("", 10);
+            vehicleListView.Width = 40;
+            ListViewItem_SetSpacing(vehicleListView, 40,32);
 
+        }
+        public int MakeLong(short lowPart, short highPart)
+        {
+            return (int)(((ushort)lowPart) | (uint)(highPart << 16));
+        }
+
+        public void ListViewItem_SetSpacing(ListView listview, short leftPadding, short topPadding)
+        {
+            const int LVM_FIRST = 0x1000;
+            const int LVM_SETICONSPACING = LVM_FIRST + 53;
+            SendMessage(listview.Handle, LVM_SETICONSPACING, IntPtr.Zero, (IntPtr)MakeLong(leftPadding, topPadding));
         }
         public ListView vehicleList {
             get { return vehicleListView; }
@@ -86,7 +106,14 @@ namespace TransportSimulatorGUI
 
         private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            foreach (ListViewItem item in vehicleListView.Items) {
+                if (item.ImageIndex == 11)
+                    item.ImageIndex = 10;
+                if(item.Selected && item.ImageIndex ==10)
+                    item.ImageIndex = 11;
+            }
+           // if (vehicleListView.SelectedItems[0].ImageIndex==10)
+           //     vehicleListView.SelectedItems[0].ImageIndex = 11;
         }
 
         private void tableLayoutPanel1_Paint(object sender, PaintEventArgs e)
@@ -192,27 +219,16 @@ namespace TransportSimulatorGUI
         private void addVehicleButton_Click(object sender, EventArgs e)
         {
             Vehicle newVehicle = null;
+            ListViewItem lv = vehicleListView.SelectedItems[0];
             newVehicle = this.vehicleController.addVehicle();
             if (newVehicle==null)
                 MessageBox.Show("No enough fuel quantity", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             else {
                 int imgNum;
                 imgNum = newVehicle.ID;
-                /*switch (newVehicle.GetType().Name) { // very bad code
-                    case "Trolleybus":imgNum =0;break;
-                    case "Car": imgNum =1; break;
-                    case "Truck": imgNum =2; break;
-                    case "Bus": imgNum =3; break;
-                    case "Bicycle": imgNum =4; break;
-                    case "Scooter": imgNum =5; break;
-                    case "Bike": imgNum =6; break;
-                    case "Tank": imgNum =7; break;
-                    case "Trum:": imgNum =8; break;
-                    case "HorseDrawnCarriage": imgNum =9; break;
-                    default: imgNum =1;break;
-
-                }*/
-                vehicleListView.Items.Add(newVehicle.name,imgNum);
+                lv.ImageIndex = imgNum;
+                lv.Name = newVehicle.name.Equals("") ? newVehicle.GetType().Name : newVehicle.name;
+                //vehicleListView.Items.Add(newVehicle.name,imgNum);
             }
             Console.WriteLine("SELECTED:"+tabControl1.SelectedTab.Name+","+
                 name+","+driverAge+","+weight+","+maxSpeed);
@@ -242,7 +258,12 @@ namespace TransportSimulatorGUI
         private void deleteButton_Click(object sender, EventArgs e)
         {
             vehicleController.deleteVehicle(vehicleListView.SelectedItems[0].Text);
-            vehicleListView.SelectedItems[0].Remove();
+            vehicleListView.SelectedItems[0].ImageIndex = 11;
+        }
+
+        private void consumptionUpDown_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
