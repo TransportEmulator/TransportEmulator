@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace TransportSimulatorLogger
@@ -10,15 +11,15 @@ namespace TransportSimulatorLogger
 
     {
 
-        private static LogBase logger = null;
-
+        private static LogBase logger = new ExcelLogger();
+        
         public static void Log(LogTarget target,string source, string message)
         {
             switch (target)
             {
                 case LogTarget.File:
                     logger = new FileLogger();
-                    logger.Log(source,message);
+                    ThreadPool.QueueUserWorkItem(delegate { logger.Log(source, message); });
                     break;
                 case LogTarget.Database:
                     logger = new DBLogger();
@@ -27,6 +28,10 @@ namespace TransportSimulatorLogger
                 case LogTarget.EventLog:
                     logger = new EventLogger();
                     logger.Log(source,message);
+                    break;
+                case LogTarget.ExcelLogger:
+                   // logger = new DataGridLogger();
+                    ThreadPool.QueueUserWorkItem(delegate { logger.Log(source, message); } );
                     break;
                 default:
                     return;

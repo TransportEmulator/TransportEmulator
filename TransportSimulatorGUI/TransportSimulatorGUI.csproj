@@ -165,6 +165,10 @@
       <Project>{194d52b9-cc2f-4598-8098-5cf73f9518d0}</Project>
       <Name>TransportSimulatorController</Name>
     </ProjectReference>
+    <ProjectReference Include="..\TransportSimulatorLogger\TransportSimulatorLogger.csproj">
+      <Project>{A4525D46-7673-472B-B782-1DDC7B39F890}</Project>
+      <Name>TransportSimulatorLogger</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\export_excel.png" />

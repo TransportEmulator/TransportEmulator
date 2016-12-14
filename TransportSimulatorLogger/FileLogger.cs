@@ -9,7 +9,7 @@ namespace TransportSimulatorLogger
 {
     public class FileLogger : LogBase
     {
-        public string filePath = @"..\\TransportLog.csv";
+        public string filePath = @"C:\\Users\\drozd_000\\Documents\\TransportLog.csv";
         public override void Log(string source,string message)
         {
             lock (lockObj)

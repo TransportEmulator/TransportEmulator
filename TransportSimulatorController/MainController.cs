@@ -36,6 +36,8 @@ namespace TransportSimulatorController
             mainView.fuelStatusLabel = "| Diesel " + fuelController.fuelList[0].quantity + " | Octane92 " +
                fuelController.fuelList[1].quantity + " | Octane95 " + fuelController.fuelList[2].quantity + " | Octane98 " +
                fuelController.fuelList[3].quantity + " | Gas " + fuelController.fuelList[4].quantity;
+            foreach (Fuel f in fuelController.fuelList)
+                mainView.addToDataGridView(f.type.ToString(),"Updated: "+ f.quantity);
         }
 
         public void placeVehicles()
@@ -63,9 +65,9 @@ namespace TransportSimulatorController
                     vehiclesToPlace.RemoveAt(0);
                 }                
             }
-            /*foreach (TrafficLane tl in road.lanes) {
-                Console.WriteLine("Lane "+tl.vehicle);
-            }*/
+            foreach (TrafficLane tl in road.lanes) {
+                
+            }
 
         }
 

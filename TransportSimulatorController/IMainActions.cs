@@ -8,6 +8,7 @@ namespace TransportSimulatorController
 {
     public interface IMainActions
     {
+        void addToDataGridView(string source, string message);
         void setController(MainController mainController);
         IFuelView getFuelView();
         IVehicleControlView getVehicleControlView();

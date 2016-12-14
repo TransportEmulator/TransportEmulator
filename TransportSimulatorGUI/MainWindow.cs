@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Windows.Forms;
 using TransportSimulatorController;
+using TransportSimulatorLogger;
 
 namespace TransportSimulatorGUI
 {
@@ -167,9 +168,16 @@ namespace TransportSimulatorGUI
         {
 
         }
-
+        public void addToDataGridView(string source,string message) {
+            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+            row.Cells[0].Value = source;
+            row.Cells[1].Value = message;
+            dataGridView1.Rows.Add(row);
+        }
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
+            addToDataGridView("User","Open vehicle control dialog");
+            //LogHelper.Log(LogTarget.File,"User","Show vehicle control dialog");
             mainController.road = new Road();
             vehicleControlWindow.ShowDialog();
             mainController.updateFuelStatus();
