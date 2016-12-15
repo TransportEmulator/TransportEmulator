@@ -128,14 +128,7 @@ namespace TransportSimulatorController
         }
         private void simulate() {
             startDelay.Start();
-           /* for (int i = 0; i < road.lanes.Count; i++)
-                if (road.lanes[i] == null || road.lanes[i].vehicle == null || road.lanes[i].vehicle.Equals(""))
-                    road.lanes.RemoveAt(i);
-            foreach (TrafficLane tl in road.lanes)
-                Console.WriteLine("> "+tl+"  > '"+tl.vehicle+"'");*/
-           // foreach (TrafficLane tl in road.lanes)
-           //     ThreadPool.QueueUserWorkItem(delegate { simulate(tl); });
-                int stopCounter = 5;
+           int stopCounter = 5;
                 Stopwatch sw = new Stopwatch();
                 sw.Start();
                 List<TrafficLane> runLanes = new List<TrafficLane>(road.lanes);

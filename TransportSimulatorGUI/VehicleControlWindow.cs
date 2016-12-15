@@ -226,6 +226,8 @@ namespace TransportSimulatorGUI
             try
             {
                 ListViewItem lv = vehicleListView.SelectedItems[0];
+                if(lv.ImageIndex!=11)
+                    vehicleController.deleteVehicle(vehicleListView.SelectedItems[0].Text);
                 newVehicle = this.vehicleController.addVehicle();
                 if (newVehicle == null)
                     MessageBox.Show("No enough fuel quantity or fuel consumption is zero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
