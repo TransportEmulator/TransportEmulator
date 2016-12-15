@@ -20,7 +20,6 @@ namespace TransportSimulatorGUI
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
-        private SelectVehicleWindow selectVehicleWindow = new SelectVehicleWindow();
         private void reinitializePictureBox() {
             this.vehiclePicture1.Location = new System.Drawing.Point(3, 0);
             this.vehiclePicture2.Location = new System.Drawing.Point(4, 13);
@@ -70,10 +69,25 @@ namespace TransportSimulatorGUI
             get{ return fuelStatusLabel.Text; }
             set{ fuelStatusLabel.Text = value; }
         }
+
+        public ComboBox filteringComb
+        {
+            get
+            {
+                return comboBox1;
+            }
+
+            set
+            {
+                comboBox1 = value;
+            }
+        }
+
         public MainWindow()
         {          
 
             InitializeComponent();
+            comboBox1.SelectedIndex = 0;
             simulationTimer.Tick += new EventHandler(simulationTimer_Tick);
             images[0] = global::TransportSimulatorGUI.Properties.Resources.trolleybusPicture;
             images[1] = global::TransportSimulatorGUI.Properties.Resources.carPicture;
@@ -88,7 +102,6 @@ namespace TransportSimulatorGUI
             AddOwnedForm(fuelControlWindow);
             AddOwnedForm(informationWindow);
             AddOwnedForm(vehicleControlWindow);
-            AddOwnedForm(selectVehicleWindow);
            
 
         }
@@ -185,6 +198,13 @@ namespace TransportSimulatorGUI
             mainController.calculateAcceleration();
             mainController.placeVehicles();            
             showPlacement(mainController.road);
+            HashSet<String> vehicleNames = new HashSet<String>();
+            foreach (TrafficLane tl in mainController.road.lanes)
+                if (tl.vehicle != null)
+                    vehicleNames.Add(tl.vehicle.name);
+            foreach (String name in vehicleNames)
+                if(!comboBox1.Items.Contains(name))
+                    comboBox1.Items.Add(name);
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
@@ -204,7 +224,7 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton9_Click(object sender, EventArgs e)
         {
-            selectVehicleWindow.ShowDialog();
+
         }
 
         private void toolStripButton11_Click(object sender, EventArgs e)
@@ -296,5 +316,31 @@ namespace TransportSimulatorGUI
         {
 
         }
+        List<DataGridViewRow> filterBackup = new List<DataGridViewRow>(); 
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (comboBox1.SelectedItem.Equals("--Any--"))
+            {
+                dataGridView1.Rows.Clear();
+               // dataGridView1.Refresh();
+                foreach(DataGridViewRow row in filterBackup)
+                    if(!dataGridView1.Rows.Contains(row))
+                        dataGridView1.Rows.Add(row);
+            }
+            else
+            {
+                List<DataGridViewRow> rowsToDelete = new List<DataGridViewRow>();
+                Console.WriteLine("Filter:" + comboBox1.SelectedValue + "," + comboBox1.SelectedText + "," + comboBox1.SelectedItem);
+
+                for (int i = 0; i < dataGridView1.RowCount; i++) {
+                    if(!filterBackup.Contains(dataGridView1.Rows[i]) && i!=dataGridView1.RowCount-1)
+                        filterBackup.Add(dataGridView1.Rows[i]);
+                    if (i != dataGridView1.RowCount - 1 && !dataGridView1.Rows[i].Cells[0].Equals(comboBox1.SelectedItem))
+                        rowsToDelete.Add(dataGridView1.Rows[i]);
+                }
+                foreach (DataGridViewRow i in rowsToDelete)
+                    dataGridView1.Rows.Remove(i);
+            }
+            }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace TransportSimulatorController
 {
@@ -13,5 +14,6 @@ namespace TransportSimulatorController
         IFuelView getFuelView();
         IVehicleControlView getVehicleControlView();
         string fuelStatusLabel { get; set; }
+        ComboBox filteringComb { get; set; }
     }
 }

@@ -31,6 +31,7 @@ namespace TransportSimulatorGUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.fuelStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -59,9 +60,9 @@ namespace TransportSimulatorGUI
             this.toolStrip2 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton7 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton9 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton10 = new System.Windows.Forms.ToolStripButton();
             this.toolStripButton11 = new System.Windows.Forms.ToolStripButton();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Object = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Event = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -136,7 +137,7 @@ namespace TransportSimulatorGUI
             this.tabPage1.Controls.Add(this.toolStrip1);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage1.Size = new System.Drawing.Size(856, 351);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simulate";
@@ -165,7 +166,7 @@ namespace TransportSimulatorGUI
             this.lane_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_1.Controls.Add(this.vehiclePicture1);
             this.lane_1.Location = new System.Drawing.Point(2, 1);
-            this.lane_1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_1.Margin = new System.Windows.Forms.Padding(1);
             this.lane_1.Name = "lane_1";
             this.lane_1.Size = new System.Drawing.Size(812, 65);
             this.lane_1.TabIndex = 4;
@@ -185,7 +186,7 @@ namespace TransportSimulatorGUI
             this.lane_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_5.Controls.Add(this.vehiclePicture5);
             this.lane_5.Location = new System.Drawing.Point(1, 285);
-            this.lane_5.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_5.Margin = new System.Windows.Forms.Padding(1);
             this.lane_5.Name = "lane_5";
             this.lane_5.Size = new System.Drawing.Size(812, 65);
             this.lane_5.TabIndex = 5;
@@ -204,7 +205,7 @@ namespace TransportSimulatorGUI
             this.lane_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_4.Controls.Add(this.vehiclePicture4);
             this.lane_4.Location = new System.Drawing.Point(1, 213);
-            this.lane_4.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_4.Margin = new System.Windows.Forms.Padding(1);
             this.lane_4.Name = "lane_4";
             this.lane_4.Size = new System.Drawing.Size(812, 65);
             this.lane_4.TabIndex = 4;
@@ -223,7 +224,7 @@ namespace TransportSimulatorGUI
             this.lane_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_3.Controls.Add(this.vehiclePicture3);
             this.lane_3.Location = new System.Drawing.Point(0, 139);
-            this.lane_3.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_3.Margin = new System.Windows.Forms.Padding(1);
             this.lane_3.Name = "lane_3";
             this.lane_3.Size = new System.Drawing.Size(812, 65);
             this.lane_3.TabIndex = 3;
@@ -242,7 +243,7 @@ namespace TransportSimulatorGUI
             this.lane_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_2.Controls.Add(this.vehiclePicture2);
             this.lane_2.Location = new System.Drawing.Point(1, 72);
-            this.lane_2.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.lane_2.Margin = new System.Windows.Forms.Padding(1);
             this.lane_2.Name = "lane_2";
             this.lane_2.Size = new System.Drawing.Size(812, 65);
             this.lane_2.TabIndex = 2;
@@ -355,7 +356,7 @@ namespace TransportSimulatorGUI
             this.tabPage2.Controls.Add(this.splitContainer1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage2.Size = new System.Drawing.Size(856, 351);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Logger";
@@ -365,7 +366,7 @@ namespace TransportSimulatorGUI
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(1, 1, 1, 1);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(1);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -374,6 +375,7 @@ namespace TransportSimulatorGUI
             // 
             // splitContainer1.Panel2
             // 
+            this.splitContainer1.Panel2.Controls.Add(this.comboBox1);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
             this.splitContainer1.Size = new System.Drawing.Size(850, 345);
             this.splitContainer1.SplitterDistance = 34;
@@ -388,7 +390,6 @@ namespace TransportSimulatorGUI
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton3,
             this.toolStripButton7,
-            this.toolStripButton9,
             this.toolStripButton10,
             this.toolStripButton11});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
@@ -422,17 +423,6 @@ namespace TransportSimulatorGUI
             this.toolStripButton7.ToolTipText = "Import to Doc";
             this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
             // 
-            // toolStripButton9
-            // 
-            this.toolStripButton9.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton9.Image = global::TransportSimulatorGUI.Properties.Resources.filter_vehicle;
-            this.toolStripButton9.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripButton9.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton9.Name = "toolStripButton9";
-            this.toolStripButton9.Size = new System.Drawing.Size(36, 36);
-            this.toolStripButton9.Text = "Vehicles in log";
-            this.toolStripButton9.Click += new System.EventHandler(this.toolStripButton9_Click);
-            // 
             // toolStripButton10
             // 
             this.toolStripButton10.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
@@ -457,9 +447,32 @@ namespace TransportSimulatorGUI
             this.toolStripButton11.ToolTipText = "Exit";
             this.toolStripButton11.Click += new System.EventHandler(this.toolStripButton11_Click);
             // 
+            // comboBox1
+            // 
+            this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.ItemHeight = 13;
+            this.comboBox1.Items.AddRange(new object[] {
+            "--Any--"});
+            this.comboBox1.Location = new System.Drawing.Point(104, 3);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(105, 21);
+            this.comboBox1.TabIndex = 2;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Object,
@@ -570,7 +583,6 @@ namespace TransportSimulatorGUI
         private System.Windows.Forms.ToolStrip toolStrip2;
         private System.Windows.Forms.ToolStripButton toolStripButton3;
         private System.Windows.Forms.ToolStripButton toolStripButton7;
-        private System.Windows.Forms.ToolStripButton toolStripButton9;
         private System.Windows.Forms.ToolStripButton toolStripButton10;
         private System.Windows.Forms.ToolStripButton toolStripButton11;
         private System.Windows.Forms.SaveFileDialog saveFileDialog1;
@@ -591,6 +603,7 @@ namespace TransportSimulatorGUI
         private System.Windows.Forms.PictureBox vehiclePicture4;
         private System.Windows.Forms.PictureBox vehiclePicture3;
         private System.Windows.Forms.PictureBox vehiclePicture2;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
 
