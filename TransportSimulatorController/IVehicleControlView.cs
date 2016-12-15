@@ -13,6 +13,7 @@ namespace TransportSimulatorController
         FuelType fuelType { get; }
         string chosenVehicle { get; }
         string name { get; }
+        int startSpeed { get; }
         int maxSpeed { get; }
         int driverAge { get; }
         int weight { get; }

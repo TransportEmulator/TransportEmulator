@@ -23,19 +23,33 @@ public abstract class Vehicle
         set {_driverAge=value; }
     }
 
+    private int _startSpeed;
+    public int startSpeed
+    {
+        get { return _startSpeed; }
+        set { _startSpeed = value; }
+    }
+
+    private int _Acceleration;
+    public int Acceleration
+    {
+        get { return _Acceleration; }
+        set { _Acceleration = value; }
+    }
+
+    private int _maxSpeed;
+    public int maxSpeed
+    {
+        get { return _maxSpeed; }
+        set { _maxSpeed = value; }
+    }
+
     private int _curSpeed;
     public int curSpeed
     {
         get {return _curSpeed; }
         set {_curSpeed=value; }
     }
-
-    private int _maxSpeed;
-    public int maxSpeed
-	{
-		get{return _maxSpeed;}
-		set { _maxSpeed = value; }
-	}
 
     private int _weight;
     public int weight

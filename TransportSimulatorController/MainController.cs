@@ -70,7 +70,6 @@ namespace TransportSimulatorController
             }
 
         }
-
         public void calculateMaxDistance()
         {
             foreach (Vehicle v in vehicleList) {
@@ -83,10 +82,35 @@ namespace TransportSimulatorController
                     (int)(HUNDRED_KM * ((Double)((MotorizedVehicle)v).Fuel.quantity) / ((Double)((MotorizedVehicle)v).consumption)))
                     : (v is HorseDrawnCarriage) ? 250
                     : (v is Bicycle) ? 30:10;
+                if (v.maxDistance >= 501)
+                {
+                    v.maxDistance = 501;
+                }
                 Console.WriteLine(v.name+" MaxDistance="+v.maxDistance);
             }
         }
-
+        public void calculateAcceleration()
+        {
+            foreach (Vehicle v in vehicleList)
+            {
+                if (v.driverAge < 18)
+                {
+                    v.Acceleration = 0;                   
+                }
+                else
+                {
+                    if (v.maxDistance != 0)
+                    {
+                        v.Acceleration = (v.maxSpeed - v.startSpeed) * (v.maxSpeed + v.startSpeed) / v.maxDistance;
+                    }
+                    else
+                    {
+                        v.Acceleration = (v.maxSpeed - v.startSpeed) * (v.maxSpeed + v.startSpeed) / 10;
+                    }
+                }
+                Console.WriteLine(v.name + " Acceleration" + v.Acceleration);
+            }
+        }
         public void startSimulation()
         {
             ThreadPool.QueueUserWorkItem(delegate { simulate(); });
@@ -146,14 +170,15 @@ namespace TransportSimulatorController
 
         private void changeVehicleSpeed(List<TrafficLane> lanes)
         {
-            Random random = new Random();
             foreach (TrafficLane tl in lanes)
                 if (tl.vehicle != null)
                 {
-                    if (tl.position > tl.vehicle.maxDistance / 2)
-                        tl.vehicle.curSpeed = tl.vehicle.maxSpeed;
-                    else
-                        tl.vehicle.curSpeed++; //tl.vehicle.maxSpeed - random.Next(1, tl.vehicle.maxSpeed);
+                    if (tl.vehicle.curSpeed == 0)
+                    {
+                        tl.vehicle.curSpeed = tl.vehicle.startSpeed;
+                    }
+                    else if (tl.vehicle.curSpeed< tl.vehicle.maxSpeed)
+                        tl.vehicle.curSpeed+= tl.vehicle.Acceleration;
                 }
         }
     }

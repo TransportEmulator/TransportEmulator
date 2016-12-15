@@ -182,6 +182,7 @@ namespace TransportSimulatorGUI
             vehicleControlWindow.ShowDialog();
             mainController.updateFuelStatus();
             mainController.calculateMaxDistance();
+            mainController.calculateAcceleration();
             mainController.placeVehicles();            
             showPlacement(mainController.road);
         }

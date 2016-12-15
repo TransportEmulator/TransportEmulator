@@ -68,6 +68,10 @@ namespace TransportSimulatorGUI
         public string chosenVehicle {
             get { return tabControl1.SelectedTab.Name; }
         }
+        public int startSpeed
+        {
+            get { return (int)startSpeedUpDown.Value; }
+        }
 
         public int maxSpeed
         {
