@@ -231,11 +231,28 @@ namespace TransportSimulatorGUI
         {
             saveFileDialog1.Filter = "Excel xlsx file (*.xlsx)|*.xlsx|Excel xls file (*.xls)|*.xls";
             saveFileDialog1.ShowDialog();
+            if (saveFileDialog1.FileName != "") {
+                ExcelFile export = new ExcelFile();
+                export.ExcelFilePath = saveFileDialog1.FileName;
+                export.openExcel();
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                    export.addDataToExcel((string)row.Cells[0].Value,(string)row.Cells[1].Value);
+                export.closeExcel();
+            }
         }
         private void toolStripButton7_Click(object sender, EventArgs e)
         {
             saveFileDialog1.Filter = "Word doc file (*.docx)|*.docx|Word docx file(*.doc)|*.doc";
             saveFileDialog1.ShowDialog();
+            if (saveFileDialog1.FileName != "")
+            {
+                WordFile export = new WordFile();
+                export.WordFilePath = saveFileDialog1.FileName;
+                export.openWord();
+                foreach (DataGridViewRow row in dataGridView1.Rows)
+                    export.addDataToWord((string)row.Cells[0].Value, (string)row.Cells[1].Value);
+                export.closeWord();
+            }
         }
 
         public IFuelView getFuelView()
@@ -271,6 +288,11 @@ namespace TransportSimulatorGUI
         }
 
         private void vehilcePicture1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void toolStrip2_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
 
         }

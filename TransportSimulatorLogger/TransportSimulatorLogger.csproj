@@ -49,6 +49,7 @@
     <Compile Include="DataGridLogger.cs" />
     <Compile Include="DBLogger.cs" />
     <Compile Include="EventLogger.cs" />
+    <Compile Include="WordFile.cs" />
     <Compile Include="ExcelFile.cs" />
     <Compile Include="ExcelLogger.cs" />
     <Compile Include="FileLogger.cs" />
@@ -74,6 +75,15 @@
       <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
       <VersionMajor>1</VersionMajor>
       <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Word">
+      <Guid>{00020905-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>8</VersionMajor>
+      <VersionMinor>7</VersionMinor>
       <Lcid>0</Lcid>
       <WrapperTool>primary</WrapperTool>
       <Isolated>False</Isolated>
