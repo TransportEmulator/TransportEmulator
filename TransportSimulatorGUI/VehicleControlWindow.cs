@@ -27,8 +27,8 @@ namespace TransportSimulatorGUI
             vehicleListView.Items.Add("", 10);
             vehicleListView.Items.Add("", 10);
             vehicleListView.Width = 40;
-            ListViewItem_SetSpacing(vehicleListView, 32,32);
-
+            ListViewItem_SetSpacing(vehicleListView, 40,32);
+            vehicleListView.Items[0].Selected = true;
         }
         public int MakeLong(short lowPart, short highPart)
         {
@@ -237,7 +237,15 @@ namespace TransportSimulatorGUI
                     imgNum = newVehicle.ID;
                     lv.ImageIndex = imgNum;
                     lv.Name = newVehicle.name.Equals("") ? newVehicle.GetType().Name : newVehicle.name;
-                    //vehicleListView.Items.Add(newVehicle.name,imgNum);
+                    if ( vehicleListView.Items.IndexOf(lv) < 4 )
+                    {
+                        vehicleListView.Items[vehicleListView.Items.IndexOf(lv) + 1].Selected = true;
+                    }
+                    else
+                    {
+                        vehicleListView.Items[0].Selected = true;
+                    }
+                    //vehicleListView.Items.Add(newVehicle.name,imgNum);                 
                 }
                 Console.WriteLine("SELECTED:" + tabControl1.SelectedTab.Name + "," +
                     name + "," + driverAge + "," + weight + "," + maxSpeed);
