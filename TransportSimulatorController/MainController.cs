@@ -58,22 +58,31 @@ namespace TransportSimulatorController
                     if (road.lanes[0].vehicle == null)
                     {
                         road.lanes[0].vehicle = v;
+                        mainView.addToDataGridView("ID=" + v.ID + ", " + v.name, "is placed to 1 lane");
                     }
                     else
                     {
                         if (road.lanes[4].vehicle == null)
                         {
                             road.lanes[4].vehicle = v;
+                            mainView.addToDataGridView("ID=" + v.ID + ", " + v.name, "is placed to 5 lane");
+                        }
+                        else
+                        {
+                            mainView.addToDataGridView("ID=" + v.ID + ", " + v.name, "is not placed because all side lanes are busy");
                         }
                     }
                     vehiclesToPlace.Remove(v);
                 }
             }
+            int counter = 0;
             foreach (TrafficLane tl in road.lanes)
             {
+                counter++;
                 if (tl.vehicle == null && vehiclesToPlace.Count != 0)
                 {
                     tl.vehicle = vehiclesToPlace[0];
+                    mainView.addToDataGridView("ID=" + tl.vehicle.ID + ", " + tl.vehicle.name, "is placed to "+counter+" lane");
                     vehiclesToPlace.RemoveAt(0);
                 }
             }
