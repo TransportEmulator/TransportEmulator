@@ -31,7 +31,7 @@ namespace TransportSimulatorGUI
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.fuelStatusLabel = new System.Windows.Forms.ToolStripStatusLabel();
@@ -99,9 +99,10 @@ namespace TransportSimulatorGUI
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1,
             this.fuelStatusLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 289);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 885);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(511, 22);
+            this.statusStrip1.Padding = new System.Windows.Forms.Padding(3, 0, 37, 0);
+            this.statusStrip1.Size = new System.Drawing.Size(1363, 46);
             this.statusStrip1.TabIndex = 0;
             this.statusStrip1.Text = "statusStrip1";
             this.statusStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.statusStrip1_ItemClicked);
@@ -109,14 +110,14 @@ namespace TransportSimulatorGUI
             // toolStripStatusLabel1
             // 
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(79, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(199, 41);
             this.toolStripStatusLabel1.Text = "status_label_1";
             this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
             // 
             // fuelStatusLabel
             // 
             this.fuelStatusLabel.Name = "fuelStatusLabel";
-            this.fuelStatusLabel.Size = new System.Drawing.Size(79, 17);
+            this.fuelStatusLabel.Size = new System.Drawing.Size(199, 41);
             this.fuelStatusLabel.Text = "status_label_2";
             this.fuelStatusLabel.Click += new System.EventHandler(this.toolStripStatusLabel2_Click);
             // 
@@ -124,10 +125,11 @@ namespace TransportSimulatorGUI
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(0, -2);
+            this.tabControl1.Location = new System.Drawing.Point(0, -5);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(864, 377);
+            this.tabControl1.Size = new System.Drawing.Size(2304, 899);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 1;
             // 
@@ -135,10 +137,11 @@ namespace TransportSimulatorGUI
             // 
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Controls.Add(this.toolStrip1);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(10, 48);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(856, 351);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tabPage1.Size = new System.Drawing.Size(2284, 841);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Simulate";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -154,9 +157,10 @@ namespace TransportSimulatorGUI
             this.panel1.Controls.Add(this.lane_4);
             this.panel1.Controls.Add(this.lane_3);
             this.panel1.Controls.Add(this.lane_2);
-            this.panel1.Location = new System.Drawing.Point(44, 3);
+            this.panel1.Location = new System.Drawing.Point(117, 7);
+            this.panel1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(825, 352);
+            this.panel1.Size = new System.Drawing.Size(2200, 839);
             this.panel1.TabIndex = 1;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -165,17 +169,18 @@ namespace TransportSimulatorGUI
             this.lane_1.BackColor = System.Drawing.Color.Transparent;
             this.lane_1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_1.Controls.Add(this.vehiclePicture1);
-            this.lane_1.Location = new System.Drawing.Point(2, 1);
-            this.lane_1.Margin = new System.Windows.Forms.Padding(1);
+            this.lane_1.Location = new System.Drawing.Point(5, 2);
+            this.lane_1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lane_1.Name = "lane_1";
-            this.lane_1.Size = new System.Drawing.Size(812, 65);
+            this.lane_1.Size = new System.Drawing.Size(2165, 155);
             this.lane_1.TabIndex = 4;
             // 
             // vehiclePicture1
             // 
-            this.vehiclePicture1.Location = new System.Drawing.Point(3, 0);
+            this.vehiclePicture1.Location = new System.Drawing.Point(8, 0);
+            this.vehiclePicture1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.vehiclePicture1.Name = "vehiclePicture1";
-            this.vehiclePicture1.Size = new System.Drawing.Size(70, 62);
+            this.vehiclePicture1.Size = new System.Drawing.Size(187, 148);
             this.vehiclePicture1.TabIndex = 0;
             this.vehiclePicture1.TabStop = false;
             this.vehiclePicture1.Click += new System.EventHandler(this.vehilcePicture1_Click);
@@ -185,17 +190,18 @@ namespace TransportSimulatorGUI
             this.lane_5.BackColor = System.Drawing.Color.Transparent;
             this.lane_5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_5.Controls.Add(this.vehiclePicture5);
-            this.lane_5.Location = new System.Drawing.Point(1, 285);
-            this.lane_5.Margin = new System.Windows.Forms.Padding(1);
+            this.lane_5.Location = new System.Drawing.Point(3, 680);
+            this.lane_5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lane_5.Name = "lane_5";
-            this.lane_5.Size = new System.Drawing.Size(812, 65);
+            this.lane_5.Size = new System.Drawing.Size(2165, 155);
             this.lane_5.TabIndex = 5;
             // 
             // vehiclePicture5
             // 
-            this.vehiclePicture5.Location = new System.Drawing.Point(4, 4);
+            this.vehiclePicture5.Location = new System.Drawing.Point(8, 10);
+            this.vehiclePicture5.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.vehiclePicture5.Name = "vehiclePicture5";
-            this.vehiclePicture5.Size = new System.Drawing.Size(70, 59);
+            this.vehiclePicture5.Size = new System.Drawing.Size(187, 148);
             this.vehiclePicture5.TabIndex = 4;
             this.vehiclePicture5.TabStop = false;
             // 
@@ -204,17 +210,18 @@ namespace TransportSimulatorGUI
             this.lane_4.BackColor = System.Drawing.Color.Transparent;
             this.lane_4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_4.Controls.Add(this.vehiclePicture4);
-            this.lane_4.Location = new System.Drawing.Point(1, 213);
-            this.lane_4.Margin = new System.Windows.Forms.Padding(1);
+            this.lane_4.Location = new System.Drawing.Point(3, 508);
+            this.lane_4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lane_4.Name = "lane_4";
-            this.lane_4.Size = new System.Drawing.Size(812, 65);
+            this.lane_4.Size = new System.Drawing.Size(2165, 155);
             this.lane_4.TabIndex = 4;
             // 
             // vehiclePicture4
             // 
-            this.vehiclePicture4.Location = new System.Drawing.Point(1, 6);
+            this.vehiclePicture4.Location = new System.Drawing.Point(8, 14);
+            this.vehiclePicture4.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.vehiclePicture4.Name = "vehiclePicture4";
-            this.vehiclePicture4.Size = new System.Drawing.Size(70, 59);
+            this.vehiclePicture4.Size = new System.Drawing.Size(187, 148);
             this.vehiclePicture4.TabIndex = 3;
             this.vehiclePicture4.TabStop = false;
             // 
@@ -223,17 +230,18 @@ namespace TransportSimulatorGUI
             this.lane_3.BackColor = System.Drawing.Color.Transparent;
             this.lane_3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_3.Controls.Add(this.vehiclePicture3);
-            this.lane_3.Location = new System.Drawing.Point(0, 139);
-            this.lane_3.Margin = new System.Windows.Forms.Padding(1);
+            this.lane_3.Location = new System.Drawing.Point(0, 331);
+            this.lane_3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lane_3.Name = "lane_3";
-            this.lane_3.Size = new System.Drawing.Size(812, 65);
+            this.lane_3.Size = new System.Drawing.Size(2165, 155);
             this.lane_3.TabIndex = 3;
             // 
             // vehiclePicture3
             // 
-            this.vehiclePicture3.Location = new System.Drawing.Point(5, 9);
+            this.vehiclePicture3.Location = new System.Drawing.Point(8, 21);
+            this.vehiclePicture3.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.vehiclePicture3.Name = "vehiclePicture3";
-            this.vehiclePicture3.Size = new System.Drawing.Size(67, 56);
+            this.vehiclePicture3.Size = new System.Drawing.Size(187, 148);
             this.vehiclePicture3.TabIndex = 2;
             this.vehiclePicture3.TabStop = false;
             // 
@@ -242,17 +250,18 @@ namespace TransportSimulatorGUI
             this.lane_2.BackColor = System.Drawing.Color.Transparent;
             this.lane_2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.lane_2.Controls.Add(this.vehiclePicture2);
-            this.lane_2.Location = new System.Drawing.Point(1, 72);
-            this.lane_2.Margin = new System.Windows.Forms.Padding(1);
+            this.lane_2.Location = new System.Drawing.Point(3, 172);
+            this.lane_2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lane_2.Name = "lane_2";
-            this.lane_2.Size = new System.Drawing.Size(812, 65);
+            this.lane_2.Size = new System.Drawing.Size(2165, 155);
             this.lane_2.TabIndex = 2;
             // 
             // vehiclePicture2
             // 
-            this.vehiclePicture2.Location = new System.Drawing.Point(4, 3);
+            this.vehiclePicture2.Location = new System.Drawing.Point(8, 7);
+            this.vehiclePicture2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.vehiclePicture2.Name = "vehiclePicture2";
-            this.vehiclePicture2.Size = new System.Drawing.Size(67, 60);
+            this.vehiclePicture2.Size = new System.Drawing.Size(187, 148);
             this.vehiclePicture2.TabIndex = 1;
             this.vehiclePicture2.TabStop = false;
             // 
@@ -268,11 +277,12 @@ namespace TransportSimulatorGUI
             this.toolStripButton2,
             this.toolStripButton6,
             this.toolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(3, 3);
-            this.toolStrip1.MaximumSize = new System.Drawing.Size(38, 0);
-            this.toolStrip1.MinimumSize = new System.Drawing.Size(38, 0);
+            this.toolStrip1.Location = new System.Drawing.Point(8, 7);
+            this.toolStrip1.MaximumSize = new System.Drawing.Size(101, 0);
+            this.toolStrip1.MinimumSize = new System.Drawing.Size(101, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(38, 345);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(101, 827);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             this.toolStrip1.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip1_ItemClicked);
@@ -284,7 +294,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton5.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton5.Text = "Start simulation";
             this.toolStripButton5.Click += new System.EventHandler(this.toolStripButton5_Click);
             // 
@@ -296,7 +306,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton4.Name = "toolStripButton4";
             this.toolStripButton4.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripButton4.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton4.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton4.Text = "toolStripButton4";
             this.toolStripButton4.ToolTipText = "Stop simulation";
             this.toolStripButton4.Click += new System.EventHandler(this.toolStripButton4_Click);
@@ -311,7 +321,7 @@ namespace TransportSimulatorGUI
             this.fuelContolButton.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.fuelContolButton.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.fuelContolButton.Name = "fuelContolButton";
-            this.fuelContolButton.Size = new System.Drawing.Size(36, 36);
+            this.fuelContolButton.Size = new System.Drawing.Size(97, 36);
             this.fuelContolButton.Text = "fuelControlButton";
             this.fuelContolButton.ToolTipText = "Open Fuel Control Window";
             this.fuelContolButton.Click += new System.EventHandler(this.toolStripButton3_Click);
@@ -323,7 +333,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton2.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton2.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton2.Text = "Vehicles on tracks";
             this.toolStripButton2.Click += new System.EventHandler(this.toolStripButton2_Click);
             // 
@@ -334,7 +344,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton6.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton6.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton6.Text = "toolStripButton1";
             this.toolStripButton6.ToolTipText = "Contact developers";
             this.toolStripButton6.Click += new System.EventHandler(this.toolStripButton6_Click);
@@ -346,7 +356,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton1.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton1.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.ToolTipText = "Exit";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
@@ -354,10 +364,11 @@ namespace TransportSimulatorGUI
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.splitContainer1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(10, 48);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(856, 351);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(8, 7, 8, 7);
+            this.tabPage2.Size = new System.Drawing.Size(2284, 841);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Logger";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -365,8 +376,8 @@ namespace TransportSimulatorGUI
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(3, 3);
-            this.splitContainer1.Margin = new System.Windows.Forms.Padding(1);
+            this.splitContainer1.Location = new System.Drawing.Point(8, 7);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.splitContainer1.Name = "splitContainer1";
             // 
             // splitContainer1.Panel1
@@ -377,9 +388,9 @@ namespace TransportSimulatorGUI
             // 
             this.splitContainer1.Panel2.Controls.Add(this.comboBox1);
             this.splitContainer1.Panel2.Controls.Add(this.dataGridView1);
-            this.splitContainer1.Size = new System.Drawing.Size(850, 345);
-            this.splitContainer1.SplitterDistance = 34;
-            this.splitContainer1.SplitterWidth = 2;
+            this.splitContainer1.Size = new System.Drawing.Size(2268, 827);
+            this.splitContainer1.SplitterDistance = 90;
+            this.splitContainer1.SplitterWidth = 5;
             this.splitContainer1.TabIndex = 0;
             // 
             // toolStrip2
@@ -394,7 +405,8 @@ namespace TransportSimulatorGUI
             this.toolStripButton11});
             this.toolStrip2.Location = new System.Drawing.Point(0, 0);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(38, 345);
+            this.toolStrip2.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
+            this.toolStrip2.Size = new System.Drawing.Size(101, 827);
             this.toolStrip2.TabIndex = 1;
             this.toolStrip2.Text = "toolStrip2";
             this.toolStrip2.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.toolStrip2_ItemClicked);
@@ -406,7 +418,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Linen;
             this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton3.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton3.Text = "Import to Excel";
             this.toolStripButton3.Click += new System.EventHandler(this.toolStripButton3_Click_1);
             // 
@@ -418,7 +430,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton7.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton7.Name = "toolStripButton7";
             this.toolStripButton7.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.toolStripButton7.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton7.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton7.Text = "Import to Doc";
             this.toolStripButton7.ToolTipText = "Import to Doc";
             this.toolStripButton7.Click += new System.EventHandler(this.toolStripButton7_Click);
@@ -430,7 +442,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton10.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton10.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton10.Name = "toolStripButton10";
-            this.toolStripButton10.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton10.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton10.Text = "toolStripButton1";
             this.toolStripButton10.ToolTipText = "Contact developers";
             this.toolStripButton10.Click += new System.EventHandler(this.toolStripButton10_Click);
@@ -442,7 +454,7 @@ namespace TransportSimulatorGUI
             this.toolStripButton11.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.toolStripButton11.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton11.Name = "toolStripButton11";
-            this.toolStripButton11.Size = new System.Drawing.Size(36, 36);
+            this.toolStripButton11.Size = new System.Drawing.Size(97, 36);
             this.toolStripButton11.Text = "toolStripButton1";
             this.toolStripButton11.ToolTipText = "Exit";
             this.toolStripButton11.Click += new System.EventHandler(this.toolStripButton11_Click);
@@ -452,12 +464,13 @@ namespace TransportSimulatorGUI
             this.comboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.ItemHeight = 13;
+            this.comboBox1.ItemHeight = 31;
             this.comboBox1.Items.AddRange(new object[] {
             "--Any--"});
-            this.comboBox1.Location = new System.Drawing.Point(104, 3);
+            this.comboBox1.Location = new System.Drawing.Point(277, 7);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(105, 21);
+            this.comboBox1.Size = new System.Drawing.Size(273, 39);
             this.comboBox1.TabIndex = 2;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
@@ -465,24 +478,25 @@ namespace TransportSimulatorGUI
             // 
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12.25F);
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Object,
             this.Event});
             this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.dataGridView1.MultiSelect = false;
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(814, 345);
+            this.dataGridView1.Size = new System.Drawing.Size(2173, 827);
             this.dataGridView1.TabIndex = 0;
             // 
             // Object
@@ -507,26 +521,26 @@ namespace TransportSimulatorGUI
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(797, 378);
-            this.label1.Margin = new System.Windows.Forms.Padding(1, 0, 1, 0);
+            this.label1.Location = new System.Drawing.Point(2125, 901);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 13);
+            this.label1.Size = new System.Drawing.Size(168, 32);
             this.label1.TabIndex = 2;
             this.label1.Text = "Minsk, 2016";
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(511, 311);
+            this.ClientSize = new System.Drawing.Size(1363, 931);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.statusStrip1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(8, 7, 8, 7);
             this.Name = "MainWindow";
             this.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -20,7 +20,13 @@ public abstract class Vehicle
     public int driverAge
     {
         get { return _driverAge; }
-        set {_driverAge=value; }
+        set {_driverAge = value; }
+    }
+    private int _coordinate;
+    public int coordinate
+    {
+        get { return _coordinate; }
+        set { _coordinate = value; }
     }
 
     private int _startSpeed;
@@ -30,8 +36,8 @@ public abstract class Vehicle
         set { _startSpeed = value; }
     }
 
-    private int _Acceleration;
-    public int Acceleration
+    private double _Acceleration;
+    public double Acceleration
     {
         get { return _Acceleration; }
         set { _Acceleration = value; }
@@ -44,8 +50,8 @@ public abstract class Vehicle
         set { _maxSpeed = value; }
     }
 
-    private int _curSpeed;
-    public int curSpeed
+    private double _curSpeed;
+    public double curSpeed
     {
         get {return _curSpeed; }
         set {_curSpeed=value; }

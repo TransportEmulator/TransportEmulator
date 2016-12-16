@@ -26,6 +26,8 @@ namespace TransportSimulatorController
             Trolleybus t = new Trolleybus();
             Vehicle newVehicle =(Vehicle) Activator.CreateInstance(
                 Type.GetType(type+ ",TransportEmulatorLib"));
+            newVehicle.coordinate = 0;
+            newVehicle.curSpeed = 0;          
             newVehicle.startSpeed = vehicleView.startSpeed;
             newVehicle.maxSpeed = vehicleView.maxSpeed;
             newVehicle.name = vehicleView.name;

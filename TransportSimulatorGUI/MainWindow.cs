@@ -21,11 +21,11 @@ namespace TransportSimulatorGUI
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
         private void reinitializePictureBox() {
-            this.vehiclePicture1.Location = new System.Drawing.Point(3, 0);
-            this.vehiclePicture2.Location = new System.Drawing.Point(4, 13);
-            this.vehiclePicture5.Location = new System.Drawing.Point(4, 4);
-            this.vehiclePicture4.Location = new System.Drawing.Point(1, 6);
-            this.vehiclePicture3.Location = new System.Drawing.Point(5, 9);           
+            this.vehiclePicture1.Location = new System.Drawing.Point(0, 3);
+            this.vehiclePicture2.Location = new System.Drawing.Point(0, 3);
+            this.vehiclePicture3.Location = new System.Drawing.Point(0, 3);
+            this.vehiclePicture4.Location = new System.Drawing.Point(0, 3);
+            this.vehiclePicture5.Location = new System.Drawing.Point(0, 3);     
         }
         public void showPlacement(Road road) {
             reinitializePictureBox();
@@ -61,7 +61,7 @@ namespace TransportSimulatorGUI
                 }
                 if (road.lanes[i].hasRails)
                     lanes[i].BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramTransparent013;
-
+               
             }           
         }
         string IMainActions.fuelStatusLabel
@@ -85,7 +85,6 @@ namespace TransportSimulatorGUI
 
         public MainWindow()
         {          
-
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
             simulationTimer.Tick += new EventHandler(simulationTimer_Tick);
@@ -102,20 +101,19 @@ namespace TransportSimulatorGUI
             AddOwnedForm(fuelControlWindow);
             AddOwnedForm(informationWindow);
             AddOwnedForm(vehicleControlWindow);
-           
-
+            Road.graphicsWidth = lane_5.Width = lane_4.Width = lane_3.Width = lane_2.Width = lane_1.Width;
         }
         private void simulationTimer_Tick(Object sender, EventArgs e) {
             this.UpdatePositions();           
         }
-        List<int> positionToPixels(List<int> positions) {
+        List<int> positionToPixels(List<double> positions) {
             List<int> pixels = new List<int>();
             foreach (int pos in positions)
-                pixels.Add((int) (1.5 * pos));
+                pixels.Add((int)(Math.Round((Road.distanceCoefficient * pos), MidpointRounding.AwayFromZero)));
             return pixels;
         }
         private void UpdatePositions() {
-            List<int> positions = new List<int>();            
+            List<double> positions = new List<double>();            
             foreach (TrafficLane tl in mainController.road.lanes)
                 if(tl!=null)
                     positions.Add(tl.position);
@@ -171,10 +169,6 @@ namespace TransportSimulatorGUI
             mainController.startSimulation();
             simulationTimer.Interval = 10;
             simulationTimer.Enabled = true;
-            //lane_1.Visible = true;
-            //vehicle_1.Left = vehicle_1.Left + lane_1.Width / 500;
-            //System.Threading.Thread.Sleep(1);
-            //vehicle_1.BackgroundImage = Properties.Resources.TrolleybusVehicleWhite;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -292,14 +286,7 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
-            /*Random RandomNumber1 = new Random();
-            int x = RandomNumber1.Next(0, 3);
-            if (x == 0)
-                lane_1.BackgroundImage = (Image)null;
-            if (x == 1)
-                lane_1.BackgroundImage = (Image)Properties.Resources.TramTransparent013;
-            if (x == 2)
-                lane_1.BackgroundImage = (Image)Properties.Resources.TrolleyTransparent;*/
+            mainController.stopSimulation();
         }
 
         private void vehicle_1_Paint(object sender, PaintEventArgs e)
