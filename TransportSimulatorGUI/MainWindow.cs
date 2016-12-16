@@ -176,10 +176,17 @@ namespace TransportSimulatorGUI
 
         }
         public void addToDataGridView(string source,string message) {
-            DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
-            row.Cells[0].Value = source;
-            row.Cells[1].Value = message;
-            dataGridView1.Rows.Add(row);
+            try
+            {
+                DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
+                row.Cells[0].Value = source;
+                row.Cells[1].Value = message;
+                dataGridView1.Rows.Add(row);
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Please stop the simulation before changing tab", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);           
+            }
         }
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
@@ -320,5 +327,15 @@ namespace TransportSimulatorGUI
                     dataGridView1.Rows.Remove(i);
             }
             }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void tabControl1_MouseClick(object sender, MouseEventArgs e)
+        {
+            mainController.stopSimulation();
+        }
     }
 }

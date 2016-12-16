@@ -17,6 +17,7 @@ namespace TransportSimulatorController
         IMainActions mainView;
         FuelController fuelController;
         VehicleController vehicleController;
+        Stopwatch sw = new Stopwatch();
         public MainController(IMainActions mainView)
         {
             road = new Road();
@@ -137,37 +138,53 @@ namespace TransportSimulatorController
         }*/
         private void simulate()
         {
+            mainView.addToDataGridView("Main Controller", "Simulation started!");
+            running = true;
             startDelay.Start();
-            Stopwatch sw = new Stopwatch();
             sw.Start();
             List<TrafficLane> runLanes = new List<TrafficLane>(road.lanes);
             calculateTimeCoefficient(runLanes);
-            Random random = new Random();
-            while ((road.lanes.Count != 0) && (running=true))
+            int vehiclesOnRoad = road.checkNonEmptyLine();
+            int stoppedVehicles = 0;
+            while ((runLanes.Count != 0) && (running==true) &&(vehiclesOnRoad > stoppedVehicles))
             {
-                changeVehicleSpeed(road.lanes);
-                //int minSpeed = getMinSpeedOnRoad(road.lanes);
+                changeVehicleSpeed(runLanes);
                 foreach (TrafficLane tl in road.lanes)
                 {
                     if (tl.vehicle != null)
                     {
                         Thread.Sleep((int)(Road.UPDATE_DELAY_MSEC));
                         if (tl.position+tl.vehicle.curSpeed*Road.timeCoefficient >= 500 || tl.vehicle.maxDistance <= tl.position) {
+                            mainView.addToDataGridView("ID=" + tl.vehicle.ID + ", " + tl.vehicle.name, "Finished! Current location = " + (int)(Math.Ceiling(tl.position)));
                             runLanes.Remove(tl);
+                            stoppedVehicles++;
                         }
                         else if (runLanes.Contains(tl))
                         {
                             tl.position = (double)(tl.position + (double)tl.vehicle.curSpeed*Road.timeCoefficient);
                         }
+                        if (tl.position - tl.vehicle.lastContact >= 50)
+                        {
+                            mainView.addToDataGridView("ID=" + tl.vehicle.ID + ", " + tl.vehicle.name, "Current location = " + (int)(tl.position));
+                            tl.vehicle.lastContact = (int)tl.position;
+                        }
+                        //Console.WriteLine(tl.vehicle.name + " CurrentPos=" + tl.position);
                     }
                 }
             }
             sw.Stop();
+            running = false;
+            mainView.addToDataGridView("Main Controller", "Simulation finished!");
         }
 
         public void stopSimulation()
         {
-            running = false;
+            sw.Stop();
+            if (running == true)
+            {
+                mainView.addToDataGridView("Main Controller", "Simulation stopped!");
+            }
+            running = false;            
             foreach (TrafficLane tl in road.lanes)
             {
                 if (tl.vehicle != null)

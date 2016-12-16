@@ -27,6 +27,7 @@ namespace TransportSimulatorController
             Vehicle newVehicle =(Vehicle) Activator.CreateInstance(
                 Type.GetType(type+ ",TransportEmulatorLib"));
             newVehicle.coordinate = 0;
+            newVehicle.lastContact = 0;
             newVehicle.curSpeed = 0;          
             newVehicle.startSpeed = vehicleView.startSpeed;
             newVehicle.maxSpeed = vehicleView.maxSpeed;
@@ -39,7 +40,7 @@ namespace TransportSimulatorController
             {
                 Fuel availableFuel = fuelController.fuelList.FindLast(x => x.type == vehicleView.fuelType);
                 int availableFuelQuantity = availableFuel.quantity;
-                if (availableFuelQuantity <= vehicleView.fuelQuantity)
+                if (availableFuelQuantity < vehicleView.fuelQuantity)
                     return null;
                 ((MotorizedVehicle)newVehicle).consumption = vehicleView.consumption;
                 if (vehicleView.consumption == 0)

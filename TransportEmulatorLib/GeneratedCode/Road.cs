@@ -29,6 +29,23 @@ public class Road
         get { return _lanes; }
         set { _lanes = value; }
     }
+    private int _notEmptyLanes;
+    public int notEmptyLanes
+    {
+        get { return _notEmptyLanes; }
+    }
+    public int checkNonEmptyLine()
+    {
+        _notEmptyLanes = 0;
+        foreach (TrafficLane tl in _lanes)
+        {
+            if(tl.vehicle!=null)
+            {
+                _notEmptyLanes++;
+            }
+        }
+        return _notEmptyLanes;
+    }
     public const int ROAD_LENGTH_KM = 500;
     public const int TIME_AVERAGE_SEC = 10;
     public const int UPDATE_DELAY_MSEC = 10;

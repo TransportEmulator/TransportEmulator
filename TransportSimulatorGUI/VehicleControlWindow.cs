@@ -13,9 +13,10 @@ namespace TransportSimulatorGUI
 {
     public partial class VehicleControlWindow : Form,IVehicleControlView
     {
-        [DllImport("user32.dll")]
+        [DllImport("user32.dll")]        
         public static extern int SendMessage(IntPtr hWnd, int msg, IntPtr wParam, IntPtr lParam);
         VehicleController vehicleController;
+        private int number;
         public VehicleControlWindow()
         {
             InitializeComponent();
@@ -29,6 +30,9 @@ namespace TransportSimulatorGUI
             vehicleListView.Width = 40;
             ListViewItem_SetSpacing(vehicleListView, 40,32);
             vehicleListView.Items[0].Selected = true;
+            number = 0;
+            nameTextField.Text = "DefaultVehicle" + number;
+            number++;
         }
         public int MakeLong(short lowPart, short highPart)
         {
@@ -222,6 +226,11 @@ namespace TransportSimulatorGUI
 
         private void addVehicleButton_Click(object sender, EventArgs e)
         {
+            if (nameTextField.Text == "DefaultVehicle" + (number-1))
+            {
+                nameTextField.Text = "DefaultVehicle" + number;
+            }
+            number++;
             Vehicle newVehicle = null;
             try
             {

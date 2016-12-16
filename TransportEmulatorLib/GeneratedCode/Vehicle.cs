@@ -74,8 +74,15 @@ public abstract class Vehicle
 	{
         return ">" + _name + "," + _weight + "kg," + _maxSpeed + "kph,";
 	}
+    private double _lastContact;
 
-	public virtual void setSpeed(object Integer)
+    public double lastContact
+    {
+        get { return _lastContact; }
+        set { _lastContact = value; }
+    }
+    
+    public virtual void setSpeed(object Integer)
 	{
 		throw new System.NotImplementedException();
 	}    
