@@ -27,7 +27,7 @@ namespace TransportSimulatorGUI
             vehicleListView.Items.Add("", 10);
             vehicleListView.Items.Add("", 10);
             vehicleListView.Width = 40;
-            ListViewItem_SetSpacing(vehicleListView, 40,32);
+            ListViewItem_SetSpacing(vehicleListView, 32,32);
 
         }
         public int MakeLong(short lowPart, short highPart)

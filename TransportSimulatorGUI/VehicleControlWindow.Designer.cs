@@ -141,7 +141,7 @@
             this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
             this.splitContainer1.Size = new System.Drawing.Size(376, 350);
-            this.splitContainer1.SplitterDistance = 83;
+            this.splitContainer1.SplitterDistance = 49;
             this.splitContainer1.TabIndex = 0;
             // 
             // splitContainer2
@@ -160,7 +160,7 @@
             // splitContainer2.Panel2
             // 
             this.splitContainer2.Panel2.Controls.Add(this.deleteButton);
-            this.splitContainer2.Size = new System.Drawing.Size(83, 350);
+            this.splitContainer2.Size = new System.Drawing.Size(49, 350);
             this.splitContainer2.SplitterDistance = 308;
             this.splitContainer2.SplitterWidth = 5;
             this.splitContainer2.TabIndex = 0;
@@ -175,7 +175,7 @@
             this.vehicleListView.MultiSelect = false;
             this.vehicleListView.Name = "vehicleListView";
             this.vehicleListView.Scrollable = false;
-            this.vehicleListView.Size = new System.Drawing.Size(83, 308);
+            this.vehicleListView.Size = new System.Drawing.Size(49, 308);
             this.vehicleListView.SmallImageList = this.tabImages;
             this.vehicleListView.TabIndex = 0;
             this.vehicleListView.TileSize = new System.Drawing.Size(198, 34);
@@ -206,7 +206,7 @@
             this.deleteButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.deleteButton.Location = new System.Drawing.Point(0, 0);
             this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(83, 37);
+            this.deleteButton.Size = new System.Drawing.Size(49, 37);
             this.deleteButton.TabIndex = 0;
             this.deleteButton.Text = "Delete";
             this.deleteButton.UseVisualStyleBackColor = true;
@@ -218,7 +218,7 @@
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 66);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(289, 284);
+            this.panel1.Size = new System.Drawing.Size(323, 284);
             this.panel1.TabIndex = 1;
             // 
             // splitContainer3
@@ -255,7 +255,7 @@
             this.splitContainer3.Panel2.Controls.Add(this.submitVehiclesButton);
             this.splitContainer3.Panel2.Controls.Add(this.addVehicleButton);
             this.splitContainer3.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer3_Panel2_Paint);
-            this.splitContainer3.Size = new System.Drawing.Size(289, 284);
+            this.splitContainer3.Size = new System.Drawing.Size(323, 284);
             this.splitContainer3.SplitterDistance = 241;
             this.splitContainer3.TabIndex = 0;
             // 
@@ -430,7 +430,7 @@
             this.nameTextField.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nameTextField.Location = new System.Drawing.Point(165, 9);
             this.nameTextField.Name = "nameTextField";
-            this.nameTextField.Size = new System.Drawing.Size(67, 20);
+            this.nameTextField.Size = new System.Drawing.Size(101, 20);
             this.nameTextField.TabIndex = 1;
             this.nameTextField.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -454,7 +454,7 @@
             this.submitVehiclesButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.25F, System.Drawing.FontStyle.Bold);
             this.submitVehiclesButton.Location = new System.Drawing.Point(148, 0);
             this.submitVehiclesButton.Name = "submitVehiclesButton";
-            this.submitVehiclesButton.Size = new System.Drawing.Size(141, 39);
+            this.submitVehiclesButton.Size = new System.Drawing.Size(175, 39);
             this.submitVehiclesButton.TabIndex = 2;
             this.submitVehiclesButton.Text = "Submit";
             this.submitVehiclesButton.UseVisualStyleBackColor = true;
@@ -491,7 +491,7 @@
             this.tabControl1.Multiline = true;
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(289, 66);
+            this.tabControl1.Size = new System.Drawing.Size(323, 66);
             this.tabControl1.SizeMode = System.Windows.Forms.TabSizeMode.FillToRight;
             this.tabControl1.TabIndex = 0;
             this.tabControl1.Click += new System.EventHandler(this.motorizedTab_Click);
@@ -502,7 +502,7 @@
             this.trolleybusTab.Location = new System.Drawing.Point(4, 64);
             this.trolleybusTab.Name = "trolleybusTab";
             this.trolleybusTab.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
-            this.trolleybusTab.Size = new System.Drawing.Size(281, 0);
+            this.trolleybusTab.Size = new System.Drawing.Size(315, 0);
             this.trolleybusTab.TabIndex = 0;
             this.trolleybusTab.UseVisualStyleBackColor = true;
             // 
