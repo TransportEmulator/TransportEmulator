@@ -32,8 +32,7 @@ namespace TransportSimulatorController
             _fuelList[3].quantity = fuelView.octane98Quantity;
             _fuelList[4].quantity = fuelView.gasQuantity;
             StringBuilder logMessage = new StringBuilder();
-            foreach (Fuel f in _fuelList)
-                LogHelper.Log(LogTarget.File,f.type.ToString(),"Update: total quantity "+f.quantity+"liters");
+            
         }
        
     }

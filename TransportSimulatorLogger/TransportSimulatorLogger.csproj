@@ -46,16 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataGridLogger.cs" />
-    <Compile Include="DBLogger.cs" />
-    <Compile Include="EventLogger.cs" />
     <Compile Include="WordFile.cs" />
     <Compile Include="ExcelFile.cs" />
-    <Compile Include="ExcelLogger.cs" />
-    <Compile Include="FileLogger.cs" />
-    <Compile Include="LogBase.cs" />
-    <Compile Include="LogHelper.cs" />
-    <Compile Include="LogTarget.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
