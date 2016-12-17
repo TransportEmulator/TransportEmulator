@@ -4616,82 +4616,6 @@
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
-          <property
-            Id="8e5c1c70-88fd-4823-93bb-f8afa5ef91e4"
-            name="color"
-            visibility="Private"
-            isLeaf="false"
-            isStatic="false"
-            isReadOnly="false"
-            isUnique="false"
-            isDerived="false"
-            isDerivedUnion="false"
-            aggregation="None"
-            isComposite="false">
-            <appliedStereotypesInternal>
-              <stereotypeInstance
-                Id="d8e099d8-83d7-44d0-8b4c-97123264beb0"
-                name="property"
-                profile="CSharpProfile">
-                <propertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="5e41f3f6-13ca-4e52-b463-62c2349118c3">
-                    <propertyInstance
-                      Id="331e61e8-140d-46ae-8394-1df3322d4f30"
-                      name="ClrAttributes" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="fdf80f58-2e2d-48dd-b752-7241b81c67df">
-                    <propertyInstance
-                      Id="24c7c403-405c-4f32-bfb4-020c2af810be"
-                      name="Get"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="ac670c51-af61-4fb5-87a9-b379e0e14c60">
-                    <propertyInstance
-                      Id="a5134483-23f5-44a0-ba62-db2616b1d7e0"
-                      name="HasBody"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="79efb6e6-d61e-4ddf-b30a-20b9dfd602c8">
-                    <propertyInstance
-                      Id="3fbf2cc6-b3bc-412b-9284-d7104b734548"
-                      name="IsUnsafe"
-                      value="false" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="1f71d18f-6f18-49e8-aab9-6090e66a1b6f">
-                    <propertyInstance
-                      Id="829725af-bbfc-4730-9f37-24b33c240118"
-                      name="Inheritance"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="51320cb2-88cf-4a48-bdfa-107de4adfe3b">
-                    <propertyInstance
-                      Id="a2a73a69-1de3-452d-83a1-e1c5ea18eb7f"
-                      name="PackageVisibility"
-                      value="internal" />
-                  </stereotypeInstanceHasPropertyInstances>
-                  <stereotypeInstanceHasPropertyInstances
-                    Id="e851d064-3274-42db-ad28-c52fa90e1793">
-                    <propertyInstance
-                      Id="75b5e1e7-8c57-4097-8fa7-b899d2890927"
-                      name="Set"
-                      value="none" />
-                  </stereotypeInstanceHasPropertyInstances>
-                </propertyInstances>
-              </stereotypeInstance>
-            </appliedStereotypesInternal>
-            <type_NamedElement>
-              <primitiveTypeMoniker
-                Id="220a3521-e091-4221-bae9-3ef9018e845c"
-                LastKnownName="Integer"
-                LastKnownLocation="TransportEmulator.uml" />
-            </type_NamedElement>
-          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -7568,7 +7492,7 @@
     <packageHasNamedElement>
       <class
         Id="3409fbc4-6851-4ba1-a987-edd55af039b1"
-        name="SimulateProcessor"
+        name="MainController"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -7584,17 +7508,65 @@
             Id="306ee191-3887-400b-8790-758044341dbb">
             <classMoniker
               Id="49e00c1b-9e7c-4b7d-93bc-d167534161bc"
-              LastKnownName="VehicleHandler"
+              LastKnownName="VehicleController"
               LastKnownLocation="TransportEmulator.uml" />
           </dependency>
           <dependency
             Id="ddb953d1-0426-47af-9c51-9268c075b96f">
             <classMoniker
               Id="389834bc-2235-4b2b-a934-b3ef63a1d299"
-              LastKnownName="LogDAO"
+              LastKnownName="ExcelLogger"
+              LastKnownLocation="TransportEmulator.uml" />
+          </dependency>
+          <dependency
+            Id="360ee7f1-00c2-4373-97f9-314b655f4bb6">
+            <classMoniker
+              Id="bc3b27f8-32ba-41ba-af50-b0156b68ca45"
+              LastKnownName="FuelController"
               LastKnownLocation="TransportEmulator.uml" />
           </dependency>
         </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="061195b9-25fe-4eb7-8684-f7387617394a"
+            isDerived="false"
+            sourceEndRoleName="MainController"
+            targetEndRoleName="Road"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="53e6280e-f1e2-4bed-bfa3-a5c2572b8f92"
+              LastKnownName="Road"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b243b672-c85a-4706-ab41-199a78e9b8c2"
+                  name="MainController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Composite"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="e3e2cde7-95dc-400d-9954-e51cdbe34a13"
+                  name="Road"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="true" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="4167b190-df13-4b6e-9065-d50ae39cea1d"
@@ -7634,11 +7606,49 @@
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
+          <property
+            Id="bd926268-4fc9-48d3-8446-0c88efeddc25"
+            name="vehicleController"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <classMoniker
+                Id="49e00c1b-9e7c-4b7d-93bc-d167534161bc"
+                LastKnownName="VehicleController"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="29fb67fc-b54d-4b8c-aaa8-528f028efe30"
+            name="fuelController"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="cd4c794b-3c9b-4bbd-9780-de8b869c0592"
+                LastKnownName="FuelController"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="ae55ce91-b221-42be-bf01-bb01e1675b21"
-            name="start"
+            name="CalculateMaxDistance"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -7646,7 +7656,7 @@
             isQuery="false" />
           <operation
             Id="95bf57bb-9cbc-4246-9c15-51d65b775f61"
-            name="stop"
+            name="calculateAcceleration"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -7654,7 +7664,7 @@
             isQuery="false" />
           <operation
             Id="2485e240-4eb2-4f01-a4b5-36fbdd4aa6df"
-            name="currentState"
+            name="MainController"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -7662,7 +7672,7 @@
             isQuery="false" />
           <operation
             Id="b69c3ace-e07a-4ece-858b-eba92c75a326"
-            name="init"
+            name="startSimulation"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -7670,7 +7680,7 @@
             isQuery="false" />
           <operation
             Id="a9a14914-9103-4157-94f2-ce062ba3c338"
-            name="log"
+            name="PlaceVehicles"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -7690,10 +7700,19 @@
     <packageHasNamedElement>
       <class
         Id="49e00c1b-9e7c-4b7d-93bc-d167534161bc"
-        name="VehicleHandler"
+        name="VehicleController"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="ff1c6618-109e-4af9-900d-e2ffb94c9d2a">
+            <interfaceMoniker
+              Id="2272bdd2-a6e3-4dda-a646-c390b4474bb4"
+              LastKnownName="IVehicleControlView"
+              LastKnownLocation="TransportEmulator.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="85a04da1-f3d0-4d8f-bf83-a9cb84e5304a"
@@ -7730,7 +7749,20 @@
                   isDerived="false"
                   isDerivedUnion="false"
                   aggregation="None"
-                  isComposite="false" />
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="f4f2e64b-9e17-4224-91dc-99e8cdd91826"
+                      name="Lower"
+                      value="5" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="f0e9599f-14f2-43e6-bd4a-166eab7e0b85"
+                      name="Upper"
+                      value="5" />
+                  </upperValueInternal>
+                </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
@@ -7749,9 +7781,9 @@
             aggregation="None"
             isComposite="false">
             <type_NamedElement>
-              <classMoniker
-                Id="bb11d407-9d6a-46c9-bd96-430e8f134b3d"
-                LastKnownName="Vehicle"
+              <undefinedTypeMoniker
+                Id="0d55d000-a40b-4288-bfad-b6d81961ca8c"
+                LastKnownName="List&lt;Vehicle&gt;"
                 LastKnownLocation="TransportEmulator.uml" />
             </type_NamedElement>
           </property>
@@ -7759,15 +7791,15 @@
         <ownedOperationsInternal>
           <operation
             Id="afb9e08e-c624-4ab5-9183-8d9308593753"
-            name="changeSpeed"
+            name="addVehicle"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
           <operation
-            Id="6f7c1643-9496-499c-92ae-3f85e5c1e027"
-            name="getState"
+            Id="a203ffa8-3055-40e8-9d18-5c7fa5420630"
+            name="deleteVehicle"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -7779,10 +7811,128 @@
     <packageHasNamedElement>
       <class
         Id="389834bc-2235-4b2b-a934-b3ef63a1d299"
-        name="LogDAO"
+        name="ExcelLogger"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="2ec95d03-e561-47df-9554-773e89c3b248"
+            name="ExcelFilePath"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="41764431-a3e1-4163-8ba5-c5388914b5ea"
+            name="app"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="aab19517-fa6e-4e66-85fe-8e45a2753a87"
+                LastKnownName="Excel.Application"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="4b89deae-b131-4195-9ba9-ebe9dc1745b9"
+            name="book"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="0403ac07-a043-4c91-8a88-dfb13b64db2c"
+                LastKnownName="Excel.Workbook"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="7cdefb08-382e-4e87-9b79-52ecded30918"
+            name="rowNumber"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="c0a88f90-3b00-4a7b-835a-78ea60c89b58"
+            name="openExcel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e59d15dc-bef3-4949-93dc-a5920b0d7eae"
+            name="addDataToExcel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d0337ee3-f6fd-40e6-85e5-bce159b7682f"
+            name="closeExcel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ca1f4753-c342-4375-858c-83d2011aeb8b"
+                  name="String source"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4d7d45d8-6ce3-4851-a724-1bb950935e2b"
+                  name="String event"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <undefinedType
@@ -8534,6 +8684,450 @@
           </generalization>
         </generalsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0d55d000-a40b-4288-bfad-b6d81961ca8c"
+        name="List&lt;Vehicle&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="cd4c794b-3c9b-4bbd-9780-de8b869c0592"
+        name="FuelController" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bc3b27f8-32ba-41ba-af50-b0156b68ca45"
+        name="FuelController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="4524579d-b872-4230-a6f9-7b4883661170">
+            <interfaceMoniker
+              Id="f438b571-176e-42c2-b7e0-4fa79fd26222"
+              LastKnownName="IFuelView"
+              LastKnownLocation="TransportEmulator.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="1f9982ff-b952-4a7e-b2df-17c640ff4252"
+            isDerived="false"
+            sourceEndRoleName="FuelController"
+            targetEndRoleName="Fuel"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="26948e1e-257a-4139-b48a-594eb19e1bac"
+              LastKnownName="Fuel"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a6bec513-def7-4f65-b173-c2bbe520c374"
+                  name="FuelController"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dce357d2-c21e-45ed-9b80-c4fdcda6b2d4"
+                  name="Fuel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="aa5932d8-db92-49df-803e-02133100868f"
+            name="fuelList"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="6c31f042-0471-4207-be7d-4043db9f02a8"
+                LastKnownName="List&lt;Fuel&gt;"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e451a2c8-0283-4b15-ae86-7be371e5c855"
+            name="fuelView"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="a029058f-27fa-403b-9617-4acbd7f17d0e"
+                LastKnownName="IFuelView"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="d395e663-be31-4d09-b70c-1a46a237a892"
+            name="updateFuel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="47a4e421-659d-4e6a-bf5c-b2a0e5624c46"
+            name="FuelController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="9498f455-c476-448f-b0a9-5c4c74e6ba9d"
+                  name="view"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="6c31f042-0471-4207-be7d-4043db9f02a8"
+        name="List&lt;Fuel&gt;" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="a029058f-27fa-403b-9617-4acbd7f17d0e"
+        name="IFuelView" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="aab19517-fa6e-4e66-85fe-8e45a2753a87"
+        name="Excel.Application" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <undefinedType
+        Id="0403ac07-a043-4c91-8a88-dfb13b64db2c"
+        name="Excel.Workbook" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="f438b571-176e-42c2-b7e0-4fa79fd26222"
+        name="IFuelView"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedAttributes>
+          <property
+            Id="d5fc37d6-77eb-4002-b960-67c2e3480833"
+            name="dieselQuantity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e199622d-60b4-4e95-85de-9b2d63311e1f"
+            name="octane92Quantity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="60585477-079c-48ae-91f3-b45a479b545a"
+            name="octane95Quantity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ee1bebaf-993f-435c-8a98-b42d5a249536"
+            name="octane98Quantity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="d3eab2c3-cc3a-4757-9960-e80e45b53a74"
+            name="gasQuantity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="256a1e8b-1ea1-4135-9dc9-fb7d92df6055"
+            name="setController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperations>
+      </Interface>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="2272bdd2-a6e3-4dda-a646-c390b4474bb4"
+        name="IVehicleControlView"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="913e5a89-0f06-4184-b3d4-aa6a261d01be"
+            isDerived="false"
+            sourceEndRoleName="IVehicleControlView"
+            targetEndRoleName="FuelType"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="4b71bc2f-08a2-4d95-9941-efd8519f85ff"
+              LastKnownName="FuelType"
+              LastKnownLocation="TransportEmulator.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="433b993d-b27f-4b8b-a7b8-a782fd16bbb8"
+                  name="IVehicleControlView"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="704c8616-c78c-49c9-80c7-809c2f226cbf"
+                  name="FuelType"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributes>
+          <property
+            Id="d102aa3f-40b9-4e38-923e-244651cabe0f"
+            name="consumption"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="bb01871c-50e8-43ee-b33f-4cd8796343ad"
+            name="fuelQuantity"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c3b84a5a-c581-4841-a9b9-bb8de3fca247"
+            name="fuelType"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="3505b861-75c5-4ae3-ad55-2b5086da2655"
+                LastKnownName="FuelType"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="e18c0e68-7074-45ac-b0e6-1e3f2aec12ea"
+            name="name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                LastKnownName="String"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="c31d3ba6-e5bf-4246-bc3f-5351846081a2"
+            name="startSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1ab65341-025d-48e6-98ec-286cce902c3f"
+            name="maxSpeed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <type_NamedElement>
+              <undefinedTypeMoniker
+                Id="775e15e4-a519-4345-b2a3-f41f74d7b00a"
+                LastKnownName="int"
+                LastKnownLocation="TransportEmulator.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation
+            Id="f6ecfff9-d510-47c4-9247-9217f1a62738"
+            name="setController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="457be0f9-e26a-47ba-af51-985a4822ac53"
+                  name="Controller"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
