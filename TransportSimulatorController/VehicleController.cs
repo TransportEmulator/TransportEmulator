@@ -28,13 +28,14 @@ namespace TransportSimulatorController
                 Type.GetType(type+ ",TransportEmulatorLib"));
             newVehicle.coordinate = 0;
             newVehicle.lastContact = 0;
-            newVehicle.curSpeed = 0;          
+            newVehicle.curSpeed = vehicleView.startSpeed;          
             newVehicle.startSpeed = vehicleView.startSpeed;
             newVehicle.maxSpeed = vehicleView.maxSpeed;
             newVehicle.name = vehicleView.name;
             newVehicle.weight = vehicleView.weight;
             newVehicle.driverAge = vehicleView.driverAge;
-            
+            newVehicle.finishRegistered = false;
+
             Fuel fuel = new Fuel(FuelType.ELECTRICITY,-1);
             if ((newVehicle is Bike) || (newVehicle is Car) || (newVehicle is Tank) || (newVehicle is Truck))
             {

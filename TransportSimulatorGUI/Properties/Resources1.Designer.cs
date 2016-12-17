@@ -333,6 +333,16 @@ namespace TransportSimulatorGUI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap TrolleyRoadTransparent1 {
+            get {
+                object obj = ResourceManager.GetObject("TrolleyRoadTransparent1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap TrolleyTransparent {
             get {
                 object obj = ResourceManager.GetObject("TrolleyTransparent", resourceCulture);

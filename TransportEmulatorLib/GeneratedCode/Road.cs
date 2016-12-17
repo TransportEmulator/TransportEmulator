@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 public class Road
 {
+    public static int DRIVER_MIN_AGE = 18;
     private static int _graphicsWidth;
     public static int graphicsWidth
     {

@@ -11,6 +11,7 @@ using System.Text;
 
 public class HorseDrawnCarriage : NonMotorizedVehicle
 {
+    public static int MAX_DISTANCE = 250;
     public HorseDrawnCarriage() {
         ID = 9;
     }

@@ -11,6 +11,7 @@ using System.Text;
 
 public class Trum : MotorizedVehicle
 {
+    public static int MAX_DISTANCE = 501;
     public Trum() {
         ID = 8;
     }

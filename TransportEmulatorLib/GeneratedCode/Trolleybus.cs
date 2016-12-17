@@ -11,6 +11,7 @@ using System.Text;
 
 public class Trolleybus : MotorizedVehicle
 {
+    public static int MAX_DISTANCE = 501;
     private Double electricPower
 	{
 		get;

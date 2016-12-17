@@ -36,17 +36,9 @@ namespace TransportSimulatorLogger
             myExcelApplication = new Excel.Application(); // create Excell App
             myExcelApplication.DisplayAlerts = false; // turn off alerts
             myExcelApplication.Visible = true;
-
-        //    myExcelWorkbook = (Excel.Workbook)(myExcelApplication.Workbooks._Open(excelFilePath, System.Reflection.Missing.Value,
-         //      System.Reflection.Missing.Value, System.Reflection.Missing.Value, System.Reflection.Missing.Value,
-          //     System.Reflection.Missing.Value, System.Reflection.Missing.Value, System.Reflection.Missing.Value,
-           //    System.Reflection.Missing.Value, System.Reflection.Missing.Value, System.Reflection.Missing.Value,
-            //   System.Reflection.Missing.Value, System.Reflection.Missing./Value)); // open the existing excel file
-            //myExcelWorkbook= myExcelApplication.Workbooks.Add(Excel.XlWBATemplate.xlWBATWorksheet);
             myExcelWorkbook = myExcelApplication.Workbooks.Add(misValue);
             myExcelWorkSheet = (Excel.Worksheet)myExcelWorkbook.Worksheets.get_Item(1);// define in which worksheet, do you want to add data
-           // myExcelWorkSheet.Name = "WorkSheet 1"; // define a name for the worksheet (optinal)
-
+           
            
         }
 

@@ -46,43 +46,41 @@ namespace TransportSimulatorController
 
         public void placeVehicles()
         {
-            /* for (int i = 0; i < vehicleList.Count; i++)
-                 if (vehicleList[i] == null)
-                     vehicleList.RemoveAt(i);*/
             List<Vehicle> vehiclesToPlace = new List<Vehicle>(vehicleList);
+            int counter = 0;
             for (int j = 0; j < vehicleList.Count; j++)
-            {
+            {                
                 Vehicle v = vehicleList[j];
                 if (v is Tank || v is HorseDrawnCarriage || v is Scooter)
                 {
                     if (road.lanes[0].vehicle == null)
                     {
                         road.lanes[0].vehicle = v;
-                        mainView.addToDataGridView("ID=" + v.ID + ", " + v.name, "is placed to 1 lane");
+                        mainView.addToDataGridView(v.name, "is placed to 1 lane");
+                        counter++;
                     }
                     else
                     {
                         if (road.lanes[4].vehicle == null)
                         {
                             road.lanes[4].vehicle = v;
-                            mainView.addToDataGridView("ID=" + v.ID + ", " + v.name, "is placed to 5 lane");
+                            mainView.addToDataGridView(v.name, "is placed to 5 lane");
                         }
                         else
                         {
-                            mainView.addToDataGridView("ID=" + v.ID + ", " + v.name, "is not placed because all side lanes are busy");
+                            mainView.addToDataGridView(v.name, "is not placed because all side lanes are busy");
                         }
                     }
                     vehiclesToPlace.Remove(v);
                 }
-            }
-            int counter = 0;
+            }            
             foreach (TrafficLane tl in road.lanes)
             {
                 counter++;
                 if (tl.vehicle == null && vehiclesToPlace.Count != 0)
                 {
                     tl.vehicle = vehiclesToPlace[0];
-                    mainView.addToDataGridView("ID=" + tl.vehicle.ID + ", " + tl.vehicle.name, "is placed to "+counter+" lane");
+                    mainView.addToDataGridView(tl.vehicle.name, "is placed to "+counter+" lane");
                     vehiclesToPlace.RemoveAt(0);
                 }
             }
@@ -91,15 +89,15 @@ namespace TransportSimulatorController
         {
             foreach (Vehicle v in vehicleList)
             {
-                if (v.driverAge < 18)
+                if (v.driverAge < Road.DRIVER_MIN_AGE)
                     v.maxDistance = 0;
                 else if (v is Trolleybus || v is Trum)
-                    v.maxDistance = 501;
+                    v.maxDistance = Trolleybus.MAX_DISTANCE;
                 else v.maxDistance = (v is MotorizedVehicle) ?
                         (((Double)((MotorizedVehicle)v).consumption) == 0 ? 0 :
                     (int)(HUNDRED_KM * ((Double)((MotorizedVehicle)v).Fuel.quantity) / ((Double)((MotorizedVehicle)v).consumption)))
-                    : (v is HorseDrawnCarriage) ? 250
-                    : (v is Bicycle) ? 30 : 10;
+                    : (v is HorseDrawnCarriage) ? HorseDrawnCarriage.MAX_DISTANCE
+                    : (v is Bicycle) ? Bicycle.MAX_DISTANCE : Scooter.MAX_DISTANCE;
                 if (v.maxDistance >= 501)
                 {
                     v.maxDistance = 501;
@@ -133,24 +131,10 @@ namespace TransportSimulatorController
         {
             ThreadPool.QueueUserWorkItem(delegate { simulate(); });
 
-        }
-        /*private void simulate(TrafficLane tl)
-        {
-            while (!start) { }
-            for (int i = 0; i < 500; i++)
-            {
-                Thread.Sleep(8);
-                tl.position += tl.vehicle.curSpeed / 300;
-                Thread.Sleep(0);
-                Thread.Yield();
-            }
-        }*/
+        }        
         private void simulate()
         {
-            mainView.addToDataGridView("Main Controller", "Simulation started!");
-            running = true;
-            startDelay.Start();
-            sw.Start();
+            running = true; 
             List<TrafficLane> runLanes = new List<TrafficLane>(road.lanes);
             calculateTimeCoefficient(runLanes);
             int vehiclesOnRoad = road.checkNonEmptyLine();
@@ -160,39 +144,27 @@ namespace TransportSimulatorController
                 changeVehicleSpeed(runLanes);
                 foreach (TrafficLane tl in road.lanes)
                 {
-                    if (tl.vehicle != null)
+                    if ((tl.vehicle != null) && (runLanes.Contains(tl)))
                     {
                         Thread.Sleep((int)(Road.UPDATE_DELAY_MSEC));
                         if (tl.position+tl.vehicle.curSpeed*Road.timeCoefficient >= 500 || tl.vehicle.maxDistance <= tl.position) {
-                            mainView.addToDataGridView("ID=" + tl.vehicle.ID + ", " + tl.vehicle.name, "Finished! Current location = " + (int)(Math.Ceiling(tl.position)));
                             runLanes.Remove(tl);
-                            stoppedVehicles++;
+                            tl.vehicle.curSpeed = 0;
+                            stoppedVehicles++;                            
                         }
                         else if (runLanes.Contains(tl))
                         {
                             tl.position = (double)(tl.position + (double)tl.vehicle.curSpeed*Road.timeCoefficient);
                         }
-                        if (tl.position - tl.vehicle.lastContact >= 50)
-                        {
-                            mainView.addToDataGridView("ID=" + tl.vehicle.ID + ", " + tl.vehicle.name, "Current location = " + (int)(tl.position));
-                            tl.vehicle.lastContact = (int)tl.position;
-                        }
-                        //Console.WriteLine(tl.vehicle.name + " CurrentPos=" + tl.position);
+                        //Console.WriteLine(tl.vehicle.curSpeed + " CurrentVelocity");
                     }
                 }
-            }
-            sw.Stop();
-            running = false;
-            mainView.addToDataGridView("Main Controller", "Simulation finished!");
+            }           
+            running = false;            
         }
 
         public void stopSimulation()
         {
-            sw.Stop();
-            if (running == true)
-            {
-                mainView.addToDataGridView("Main Controller", "Simulation stopped!");
-            }
             running = false;            
             foreach (TrafficLane tl in road.lanes)
             {
@@ -202,16 +174,7 @@ namespace TransportSimulatorController
                 }
             }
         }
-
-        /*private int getMinSpeedOnRoad(List<TrafficLane> lanes)
-        {
-            int minSpeed = 5000;
-            foreach (TrafficLane tl in lanes)
-                if (tl.vehicle != null)
-                    minSpeed = (tl.vehicle.curSpeed < minSpeed) ? tl.vehicle.curSpeed : minSpeed;
-            return minSpeed;
-        }*/
-
+        
         private void calculateTimeCoefficient(List<TrafficLane> lanes)
         {
             int avgSpeed = 0;
@@ -223,7 +186,10 @@ namespace TransportSimulatorController
                     notEmptyLanes++;
                 }
             avgSpeed = avgSpeed / lanes.Count;
-            Road.timeCoefficient = (double)(2 * notEmptyLanes * Road.UPDATE_DELAY_MSEC * Road.ROAD_LENGTH_KM / avgSpeed) / (3600 * Road.TIME_AVERAGE_SEC);
+            if ((Road.TIME_AVERAGE_SEC != 0) && (avgSpeed!=0))
+            {
+                Road.timeCoefficient = (double)(2 * notEmptyLanes * Road.UPDATE_DELAY_MSEC * Road.ROAD_LENGTH_KM / avgSpeed) / (3600 * Road.TIME_AVERAGE_SEC);
+            }
             Console.WriteLine("TimeCoeff" + Road.timeCoefficient);
         }
 
@@ -231,8 +197,8 @@ namespace TransportSimulatorController
         {
             foreach (TrafficLane tl in lanes)
             {
-                if (tl.vehicle != null)
-                {
+                if ((tl.vehicle != null) && (tl.position<tl.vehicle.maxDistance))
+                 {
                     if (tl.vehicle.curSpeed == 0)
                     {
                         tl.vehicle.curSpeed = tl.vehicle.startSpeed;
@@ -248,7 +214,7 @@ namespace TransportSimulatorController
                             tl.vehicle.curSpeed = tl.vehicle.maxSpeed;
                         }
                     }                   
-                }                
+                }                              
             }
         }
     }

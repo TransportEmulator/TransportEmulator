@@ -17,6 +17,7 @@ namespace TransportSimulatorGUI
     {
         MainController mainController;
         Timer simulationTimer = new Timer();
+        DateTime startTime;
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
@@ -60,8 +61,13 @@ namespace TransportSimulatorGUI
                     pb[i].Visible = true;
                 }
                 if (road.lanes[i].hasRails)
+                {
                     lanes[i].BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramTransparent013;
-               
+                }
+                if (road.lanes[i].hasWire)
+                {
+                    lanes[i].BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TrolleyRoadTransparent1;
+                }
             }           
         }
         string IMainActions.fuelStatusLabel
@@ -87,7 +93,7 @@ namespace TransportSimulatorGUI
         {          
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
-            simulationTimer.Tick += new EventHandler(simulationTimer_Tick);
+            simulationTimer.Tick += new EventHandler(simulationTimer_Tick);            
             images[0] = global::TransportSimulatorGUI.Properties.Resources.trolleybusPicture;
             images[1] = global::TransportSimulatorGUI.Properties.Resources.carPicture;
             images[2] = global::TransportSimulatorGUI.Properties.Resources.truckPic;
@@ -104,7 +110,8 @@ namespace TransportSimulatorGUI
             Road.graphicsWidth = lane_5.Width = lane_4.Width = lane_3.Width = lane_2.Width = lane_1.Width;
         }
         private void simulationTimer_Tick(Object sender, EventArgs e) {
-            this.UpdatePositions();           
+            this.UpdatePositions();
+            toolStripStatusLabel1.Text = "Simulation time: "+DateTime.Now.Subtract(startTime).ToString("ss");         
         }
         List<int> positionToPixels(List<double> positions) {
             List<int> pixels = new List<int>();
@@ -113,10 +120,27 @@ namespace TransportSimulatorGUI
             return pixels;
         }
         private void UpdatePositions() {
-            List<double> positions = new List<double>();            
+            List<double> positions = new List<double>();
             foreach (TrafficLane tl in mainController.road.lanes)
-                if(tl!=null)
+            {
+                if (tl != null)
+                {
                     positions.Add(tl.position);
+                    if (tl.vehicle != null)
+                    {
+                        if (tl.position - tl.vehicle.lastContact >= 50)
+                        {
+                            addToDataGridView(tl.vehicle.name, "Current location = " + (int)(tl.position));
+                            tl.vehicle.lastContact = (int)tl.position;
+                        }
+                        if ((tl.vehicle.curSpeed <= 0.1) && (tl.vehicle.finishRegistered!=true))
+                        {
+                            addToDataGridView(tl.vehicle.name, "Finished at location = " + Math.Round(tl.position));
+                            tl.vehicle.finishRegistered = true;
+                        }                       
+                    }
+                }
+            }
             List<int> pixels = positionToPixels(positions);
             vehiclePicture1.Left = pixels[0];
             vehiclePicture2.Left = pixels[1];
@@ -166,9 +190,13 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton5_Click(object sender, EventArgs e)
         {
+            addToDataGridView("Main Window", "Simulation started");
             mainController.startSimulation();
-            simulationTimer.Interval = 10;
+            simulationTimer.Interval = Road.UPDATE_DELAY_MSEC;
             simulationTimer.Enabled = true;
+            startTime = DateTime.Now;
+            toolStripButton4.Enabled = true;
+            toolStripButton5.Enabled = false;
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -176,17 +204,17 @@ namespace TransportSimulatorGUI
 
         }
         public void addToDataGridView(string source,string message) {
-            try
-            {
+            //try
+            //{
                 DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
                 row.Cells[0].Value = source;
                 row.Cells[1].Value = message;
                 dataGridView1.Rows.Add(row);
-            }
+            /*}
             catch (Exception)
             {
-                MessageBox.Show("Please stop the simulation before changing tab", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);           
-            }
+                //MessageBox.Show("Please stop the simulation before changing tab", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);           
+            }*/
         }
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
@@ -206,6 +234,7 @@ namespace TransportSimulatorGUI
             foreach (String name in vehicleNames)
                 if(!comboBox1.Items.Contains(name))
                     comboBox1.Items.Add(name);
+            toolStripButton5.Enabled = true;
         }
 
         private void toolStripButton6_Click(object sender, EventArgs e)
@@ -250,11 +279,11 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton3_Click_1(object sender, EventArgs e)
         {
-            saveFileDialog1.Filter = "Excel xlsx file (*.xlsx)|*.xlsx|Excel xls file (*.xls)|*.xls";
+            saveFileDialog1.Filter = "Excel xls file (*.xls)|*.xls|Excel xlsx file (*.xlsx)|*.xlsx";
             saveFileDialog1.ShowDialog();
             if (saveFileDialog1.FileName != "") {
                 LogProvider.logExcel(dataGridView1, saveFileDialog1.FileName);
-                
+                addToDataGridView("Log Window", "Imported to xls file");
             }
         }
         private void toolStripButton7_Click(object sender, EventArgs e)
@@ -264,6 +293,7 @@ namespace TransportSimulatorGUI
             if (saveFileDialog1.FileName != "")
             {
                 LogProvider.logWord(dataGridView1, saveFileDialog1.FileName);
+                addToDataGridView("Log Window", "Imported to doc file");
             }
         }
 
@@ -284,7 +314,10 @@ namespace TransportSimulatorGUI
 
         private void toolStripButton4_Click(object sender, EventArgs e)
         {
+            addToDataGridView("Main Window", "Simulation stopped");
             mainController.stopSimulation();
+            toolStripButton4.Enabled = false;
+            toolStripButton5.Enabled = true;
         }
 
         private void vehicle_1_Paint(object sender, PaintEventArgs e)
@@ -304,6 +337,7 @@ namespace TransportSimulatorGUI
         List<DataGridViewRow> filterBackup = new List<DataGridViewRow>(); 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            Console.WriteLine("Filter:'"+comboBox1.SelectedItem+"'");
             if (comboBox1.SelectedItem.Equals("--Any--"))
             {
                 dataGridView1.Rows.Clear();
@@ -314,17 +348,21 @@ namespace TransportSimulatorGUI
             }
             else
             {
-                List<DataGridViewRow> rowsToDelete = new List<DataGridViewRow>();
-                Console.WriteLine("Filter:" + comboBox1.SelectedValue + "," + comboBox1.SelectedText + "," + comboBox1.SelectedItem);
-
+                List<DataGridViewRow> rowsToDelete = new List<DataGridViewRow>();                
                 for (int i = 0; i < dataGridView1.RowCount; i++) {
                     if(!filterBackup.Contains(dataGridView1.Rows[i]) && i!=dataGridView1.RowCount-1)
                         filterBackup.Add(dataGridView1.Rows[i]);
-                    if (i != dataGridView1.RowCount - 1 && !dataGridView1.Rows[i].Cells[0].Equals(comboBox1.SelectedItem))
+                    if (i != dataGridView1.RowCount - 1 && !dataGridView1.Rows[i].Cells[0].Value.Equals(comboBox1.SelectedItem))
                         rowsToDelete.Add(dataGridView1.Rows[i]);
                 }
+
                 foreach (DataGridViewRow i in rowsToDelete)
-                    dataGridView1.Rows.Remove(i);
+
+                    //if (!i.Cells[0].Value.Equals(comboBox1.SelectedItem))
+                   // {
+                        dataGridView1.Rows.Remove(i);
+                       // Console.WriteLine("Delete from grid:'" + i.Cells[0].Value + "'");
+                   // }
             }
             }
 
@@ -335,7 +373,15 @@ namespace TransportSimulatorGUI
 
         private void tabControl1_MouseClick(object sender, MouseEventArgs e)
         {
-            mainController.stopSimulation();
+            //mainController.stopSimulation();
+        }
+        public void vehicleStopped(String vehicle_name, double stop_location)
+        {
+            addToDataGridView(vehicle_name, "Finished at location = "+Math.Round(stop_location));
+        }
+        public void simulationFinished()
+        {
+            addToDataGridView("Main Window", "Simulatuion is finished");
         }
     }
 }

@@ -11,6 +11,7 @@ using System.Text;
 
 public class Scooter : NonMotorizedVehicle
 {
+    public static int MAX_DISTANCE = 10;
     public Scooter() {
         ID = 5;
     }

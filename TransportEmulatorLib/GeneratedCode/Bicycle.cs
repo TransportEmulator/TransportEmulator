@@ -11,6 +11,7 @@ using System.Text;
 
 public class Bicycle : NonMotorizedVehicle
 {
+    public static int MAX_DISTANCE = 30;
     public Bicycle() {
         ID = 4;
     }
