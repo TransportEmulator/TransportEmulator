@@ -48,8 +48,6 @@ namespace TransportSimulatorController
                     return null;
                 }
                 ((MotorizedVehicle)newVehicle).Fuel = new Fuel(vehicleView.fuelType, vehicleView.fuelQuantity);
-               //((MotorizedVehicle)newVehicle).Fuel.type = vehicleView.fuelType;
-               // ((MotorizedVehicle)newVehicle).Fuel.quantity = vehicleView.fuelQuantity;
                 fuelController.fuelList[fuelController.fuelList.IndexOf(availableFuel)].quantity -= vehicleView.fuelQuantity;
 
             }
