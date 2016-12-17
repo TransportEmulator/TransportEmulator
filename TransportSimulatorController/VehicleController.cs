@@ -37,7 +37,7 @@ namespace TransportSimulatorController
             newVehicle.finishRegistered = false;
 
             Fuel fuel = new Fuel(FuelType.ELECTRICITY,-1);
-            if ((newVehicle is Bike) || (newVehicle is Car) || (newVehicle is Tank) || (newVehicle is Truck))
+            if ((newVehicle is Bike) || (newVehicle is Car) || (newVehicle is Tank) || (newVehicle is Truck) || (newVehicle is Bus))
             {
                 Fuel availableFuel = fuelController.fuelList.FindLast(x => x.type == vehicleView.fuelType);
                 int availableFuelQuantity = availableFuel.quantity;
@@ -62,9 +62,11 @@ namespace TransportSimulatorController
 
         public void deleteVehicle(string nameToDelete)
         {
+            Console.WriteLine("Trying to delete:" + nameToDelete);
             foreach (Vehicle v in vehicleList) {
                 if (v.name.Equals(nameToDelete)) {
                     vehicleList.Remove(v);
+                    Console.WriteLine("Deleted" + nameToDelete);
                     break;
                 }
             }

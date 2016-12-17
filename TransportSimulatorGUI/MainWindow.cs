@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Reflection;
 using System.Windows.Forms;
 using TransportSimulatorController;
-
+using System.Diagnostics;
 
 namespace TransportSimulatorGUI
 {
@@ -17,7 +17,9 @@ namespace TransportSimulatorGUI
     {
         MainController mainController;
         Timer simulationTimer = new Timer();
+        Stopwatch sw = new Stopwatch();
         DateTime startTime;
+        bool runningFlag;
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
@@ -27,6 +29,10 @@ namespace TransportSimulatorGUI
             this.vehiclePicture3.Location = new System.Drawing.Point(0, 3);
             this.vehiclePicture4.Location = new System.Drawing.Point(0, 3);
             this.vehiclePicture5.Location = new System.Drawing.Point(0, 3);     
+        }
+        public void stopSimulation()
+        {
+            runningFlag = false;
         }
         public void showPlacement(Road road) {
             reinitializePictureBox();
@@ -60,13 +66,26 @@ namespace TransportSimulatorGUI
                     pb[i].Image = images[road.lanes[i].vehicle.ID];                    
                     pb[i].Visible = true;
                 }
+                else
+                {
+                    Console.WriteLine("Empty lane " + road.lanes[i].vehicle);
+                    pb[i].Image = null;
+                    pb[i].Visible = true;
+                }
                 if (road.lanes[i].hasRails)
                 {
                     lanes[i].BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TramTransparent013;
                 }
-                if (road.lanes[i].hasWire)
+                else
                 {
-                    lanes[i].BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TrolleyRoadTransparent1;
+                    if (road.lanes[i].hasWire)
+                    {
+                        lanes[i].BackgroundImage = global::TransportSimulatorGUI.Properties.Resources.TrolleyRoadTransparent1;
+                    }
+                    else
+                    {
+                        lanes[i].BackgroundImage = null;
+                    }
                 }
             }           
         }
@@ -108,10 +127,12 @@ namespace TransportSimulatorGUI
             AddOwnedForm(informationWindow);
             AddOwnedForm(vehicleControlWindow);
             Road.graphicsWidth = lane_5.Width = lane_4.Width = lane_3.Width = lane_2.Width = lane_1.Width;
+            runningFlag = false;
         }
         private void simulationTimer_Tick(Object sender, EventArgs e) {
             this.UpdatePositions();
-            toolStripStatusLabel1.Text = "Simulation time: "+DateTime.Now.Subtract(startTime).ToString("ss");         
+            //toolStripStatusLabel1.Text = "Simulation time: "+DateTime.Now.Subtract(startTime).ToString("ss");  
+            toolStripStatusLabel1.Text = "Simulation time: " + sw.ElapsedMilliseconds+" ms ";
         }
         List<int> positionToPixels(List<double> positions) {
             List<int> pixels = new List<int>();
@@ -197,6 +218,8 @@ namespace TransportSimulatorGUI
             startTime = DateTime.Now;
             toolStripButton4.Enabled = true;
             toolStripButton5.Enabled = false;
+            runningFlag = true;
+            sw.Start();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -219,13 +242,17 @@ namespace TransportSimulatorGUI
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
             addToDataGridView("User","Open vehicle control dialog");
-            //LogHelper.Log(LogTarget.File,"User","Show vehicle control dialog");
-            mainController.road = new Road();
+            mainController.reinitialize();
+            //mainController.road = new Road();
+            vehicleControlWindow.reinit();
             vehicleControlWindow.ShowDialog();
             mainController.updateFuelStatus();
             mainController.calculateMaxDistance();
             mainController.calculateAcceleration();
-            mainController.placeVehicles();            
+            if(!mainController.placeVehicles())
+            {
+                MessageBox.Show("Some vehicles are not placed due rules restrictions", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }           
             showPlacement(mainController.road);
             HashSet<String> vehicleNames = new HashSet<String>();
             foreach (TrafficLane tl in mainController.road.lanes)
@@ -318,6 +345,7 @@ namespace TransportSimulatorGUI
             mainController.stopSimulation();
             toolStripButton4.Enabled = false;
             toolStripButton5.Enabled = true;
+            sw.Stop();
         }
 
         private void vehicle_1_Paint(object sender, PaintEventArgs e)
@@ -355,14 +383,10 @@ namespace TransportSimulatorGUI
                     if (i != dataGridView1.RowCount - 1 && !dataGridView1.Rows[i].Cells[0].Value.Equals(comboBox1.SelectedItem))
                         rowsToDelete.Add(dataGridView1.Rows[i]);
                 }
-
                 foreach (DataGridViewRow i in rowsToDelete)
-
-                    //if (!i.Cells[0].Value.Equals(comboBox1.SelectedItem))
-                   // {
-                        dataGridView1.Rows.Remove(i);
-                       // Console.WriteLine("Delete from grid:'" + i.Cells[0].Value + "'");
-                   // }
+                {
+                    dataGridView1.Rows.Remove(i);
+                }           
             }
             }
 

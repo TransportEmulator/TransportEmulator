@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-    class Bus : MotorizedVehicle
+    public class Bus : MotorizedVehicle
     {
         public Bus() {
         ID = 3;

@@ -15,35 +15,68 @@
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Net.Http\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Net.Http.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-The thread 0x37d0 has exited with code 0 (0x0).
-The thread 0x35e0 has exited with code 0 (0x0).
-The thread 0x2018 has exited with code 0 (0x0).
+The thread 0x29f0 has exited with code 0 (0x0).
+The thread 0x3634 has exited with code 0 (0x0).
+The thread 0x179c has exited with code 0 (0x0).
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\GitHub\TransportEmulator\TransportSimulatorGUI\bin\Debug\TransportSimulatorGUI.exe'. Symbols loaded.
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\GitHub\TransportEmulator\TransportSimulatorGUI\bin\Debug\TransportSimulatorController.dll'. Symbols loaded.
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll'. Cannot find or open the PDB file.
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\GitHub\TransportEmulator\TransportSimulatorGUI\bin\Debug\TransportEmulatorLib.dll'. Symbols loaded.
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Filter:'--Any--'
+Traffic Lanes: 0
+SELECTED:carTab,DefaultVehicle1,18,0,20
+SELECTED:carTab,DefaultVehicle2,18,0,20
+SELECTED:carTab,DefaultVehicle3,18,0,20
+SELECTED:carTab,DefaultVehicle4,18,0,20
+SELECTED:carTab,DefaultVehicle5,18,0,20
+SELECTED:carTab,DefaultVehicle6,18,0,20
+DefaultVehicle2 MaxDistance=100
+DefaultVehicle3 MaxDistance=100
+DefaultVehicle4 MaxDistance=100
+DefaultVehicle5 MaxDistance=100
+DefaultVehicle6 MaxDistance=100
+DefaultVehicle2 Acceleration=3.99
+DefaultVehicle3 Acceleration=3.99
+DefaultVehicle4 Acceleration=3.99
+DefaultVehicle5 Acceleration=3.99
+DefaultVehicle6 Acceleration=3.99
+Traffic Lanes: 0
+vehicleInListDefaultVehicle2
+vehicleInListDefaultVehicle3
+vehicleInListDefaultVehicle4
+vehicleInListDefaultVehicle5
+vehicleInListDefaultVehicle6
+Car Car
+Car Car
+Car Car
+Car Car
+Car Car
+Traffic Lanes: 0
+Trying to delete:DefaultVehicle2
+DeletedDefaultVehicle2
+Trying to delete:DefaultVehicle3
+DeletedDefaultVehicle3
+Trying to delete:DefaultVehicle4
+DeletedDefaultVehicle4
+Trying to delete:DefaultVehicle5
+DeletedDefaultVehicle5
+Trying to delete:DefaultVehicle6
+DeletedDefaultVehicle6
+Traffic Lanes: 0
+Empty lane 
+Empty lane 
+Empty lane 
+Empty lane 
+Empty lane 
 Traffic Lanes: 0
 Traffic Lanes: 0
-SELECTED:scooterTab,DefaultVehicle1,18,1,20
-DefaultVehicle1 MaxDistance=10
-DefaultVehicle1 Acceleration=39.9
-Car Scooter
-TimeCoeff0.0694444444444444
-3.77083333333333 CurrentVelocity
-6.54166666666667 CurrentVelocity
-9.3125 CurrentVelocity
-12.0833333333333 CurrentVelocity
-14.8541666666667 CurrentVelocity
-17.625 CurrentVelocity
-20.3958333333333 CurrentVelocity
-20 CurrentVelocity
-20 CurrentVelocity
-20 CurrentVelocity
-0 CurrentVelocity
-TimeCoeff0.0694444444444444
-0 CurrentVelocity
-The thread 0x2fa4 has exited with code 0 (0x0).
-The thread 0x1d70 has exited with code 0 (0x0).
-The program '[2156] TransportSimulatorGUI.vshost.exe: Program Trace' has exited with code 0 (0x0).
-The program '[2156] TransportSimulatorGUI.vshost.exe' has exited with code 0 (0x0).
+Empty lane 
+Empty lane 
+Empty lane 
+Empty lane 
+Empty lane 
+The thread 0x12cc has exited with code 0 (0x0).
+The thread 0x2ae4 has exited with code 0 (0x0).
+The program '[14724] TransportSimulatorGUI.vshost.exe: Program Trace' has exited with code 0 (0x0).
+The program '[14724] TransportSimulatorGUI.vshost.exe' has exited with code 0 (0x0).

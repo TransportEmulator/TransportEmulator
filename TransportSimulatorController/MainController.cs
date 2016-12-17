@@ -12,7 +12,7 @@ namespace TransportSimulatorController
     {
         private System.Timers.Timer startDelay;
         private static int HUNDRED_KM = 100;
-        private List<Vehicle> vehicleList = new List<Vehicle>();
+        public List<Vehicle> vehicleList = new List<Vehicle>();
         public Road road;
         IMainActions mainView;
         FuelController fuelController;
@@ -20,7 +20,6 @@ namespace TransportSimulatorController
         Stopwatch sw = new Stopwatch();
         public MainController(IMainActions mainView)
         {
-            road = new Road();
             this.mainView = mainView;
             mainView.setController(this);
             fuelController = new FuelController(mainView.getFuelView());
@@ -44,13 +43,16 @@ namespace TransportSimulatorController
                 mainView.addToDataGridView(f.type.ToString(), "Updated: " + f.quantity);
         }
 
-        public void placeVehicles()
+        public bool placeVehicles()
         {
+            road = new Road();
             List<Vehicle> vehiclesToPlace = new List<Vehicle>(vehicleList);
             int counter = 0;
+            int placedVehicles = 0;
             for (int j = 0; j < vehicleList.Count; j++)
             {                
                 Vehicle v = vehicleList[j];
+                Console.WriteLine("vehicleInList" + v.name);
                 if (v is Tank || v is HorseDrawnCarriage || v is Scooter)
                 {
                     if (road.lanes[0].vehicle == null)
@@ -58,6 +60,7 @@ namespace TransportSimulatorController
                         road.lanes[0].vehicle = v;
                         mainView.addToDataGridView(v.name, "is placed to 1 lane");
                         counter++;
+                        placedVehicles++;
                     }
                     else
                     {
@@ -65,6 +68,7 @@ namespace TransportSimulatorController
                         {
                             road.lanes[4].vehicle = v;
                             mainView.addToDataGridView(v.name, "is placed to 5 lane");
+                            placedVehicles++;
                         }
                         else
                         {
@@ -73,7 +77,7 @@ namespace TransportSimulatorController
                     }
                     vehiclesToPlace.Remove(v);
                 }
-            }            
+            }               
             foreach (TrafficLane tl in road.lanes)
             {
                 counter++;
@@ -82,7 +86,16 @@ namespace TransportSimulatorController
                     tl.vehicle = vehiclesToPlace[0];
                     mainView.addToDataGridView(tl.vehicle.name, "is placed to "+counter+" lane");
                     vehiclesToPlace.RemoveAt(0);
+                    placedVehicles++;
                 }
+            }
+            if (placedVehicles != vehicleList.Count)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
             }
         }
         public void calculateMaxDistance()
@@ -160,7 +173,8 @@ namespace TransportSimulatorController
                     }
                 }
             }           
-            running = false;            
+            running = false;
+            mainView.simulationFinished();           
         }
 
         public void stopSimulation()
@@ -216,6 +230,12 @@ namespace TransportSimulatorController
                     }                   
                 }                              
             }
+        }
+
+        public void reinitialize()
+        {
+            road = new Road();
+            //vehicleList = new List<Vehicle>();
         }
     }
 }

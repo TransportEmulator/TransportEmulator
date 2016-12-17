@@ -34,6 +34,12 @@ namespace TransportSimulatorGUI
             nameTextField.Text = "DefaultVehicle" + number;
             number++;
         }
+        public void reinit()
+        {
+            vehicleListView.Width = 40;
+            ListViewItem_SetSpacing(vehicleListView, 40, 32);
+            vehicleListView.Items[0].Selected = true;
+        }
         public int MakeLong(short lowPart, short highPart)
         {
             return (int)(((ushort)lowPart) | (uint)(highPart << 16));
@@ -242,6 +248,7 @@ namespace TransportSimulatorGUI
                     MessageBox.Show("No enough fuel quantity or fuel consumption is zero", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 else
                 {
+                    vehicleListView.SelectedItems[0].Text = newVehicle.name;
                     int imgNum;
                     imgNum = newVehicle.ID;
                     lv.ImageIndex = imgNum;
@@ -290,8 +297,8 @@ namespace TransportSimulatorGUI
         {
             vehicleController.deleteVehicle(vehicleListView.SelectedItems[0].Text);
             vehicleListView.SelectedItems[0].ImageIndex = 11;
+            vehicleListView.SelectedItems[0].Text = null;
         }
-
         private void consumptionUpDown_ValueChanged(object sender, EventArgs e)
         {
 
