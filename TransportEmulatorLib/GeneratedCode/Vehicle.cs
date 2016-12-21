@@ -22,13 +22,6 @@ public abstract class Vehicle
         get { return _driverAge; }
         set {_driverAge = value; }
     }
-    private int _coordinate;
-    public int coordinate
-    {
-        get { return _coordinate; }
-        set { _coordinate = value; }
-    }
-
     private int _startSpeed;
     public int startSpeed
     {
@@ -79,12 +72,6 @@ public abstract class Vehicle
     {
         get { return _lastContact; }
         set { _lastContact = value; }
-    }
-    private bool _finishRegistered;
-    public bool finishRegistered
-    {
-        get { return _finishRegistered; }
-        set { _finishRegistered = value; }
     }
     public virtual void setSpeed(object Integer)
 	{

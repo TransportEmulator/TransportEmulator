@@ -34,8 +34,6 @@ namespace TransportSimulatorController
             newVehicle.name = vehicleView.name;
             newVehicle.weight = vehicleView.weight;
             newVehicle.driverAge = vehicleView.driverAge;
-            newVehicle.finishRegistered = false;
-
             Fuel fuel = new Fuel(FuelType.ELECTRICITY,-1);
             if ((newVehicle is Bike) || (newVehicle is Car) || (newVehicle is Tank) || (newVehicle is Truck) || (newVehicle is Bus))
             {

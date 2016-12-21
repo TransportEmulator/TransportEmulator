@@ -173,10 +173,9 @@ namespace TransportSimulatorGUI
                             addToDataGridView(tl.vehicle.name, "Current location = " + (int)(tl.position));
                             tl.vehicle.lastContact = (int)tl.position;                            
                         }
-                        if ((tl.vehicle.curSpeed <= 0.1) && (tl.vehicle.finishRegistered != true))
+                        if (tl.vehicle.curSpeed <= 0.1)
                         {
-                            addToDataGridView(tl.vehicle.name, "Finished at location = " + Math.Round(tl.position));
-                            tl.vehicle.finishRegistered = true;
+                            addToDataGridView(tl.vehicle.name, "Finished at location = " + Math.Round(tl.position));                            
                             tl.vehicle = null;
                         }
                     }
