@@ -16,6 +16,5 @@ namespace TransportSimulatorController
         string fuelStatusLabel { get; set; }
         ComboBox filteringComb { get; set; }
         void vehicleStopped(String vehicle_name, double stop_location);
-        void simulationFinished();
     }
 }

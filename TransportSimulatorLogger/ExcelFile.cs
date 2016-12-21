@@ -32,7 +32,6 @@ namespace TransportSimulatorLogger
         public void openExcel()
         {
             myExcelApplication = null;
-
             myExcelApplication = new Excel.Application(); // create Excell App
             myExcelApplication.DisplayAlerts = false; // turn off alerts
             myExcelApplication.Visible = true;

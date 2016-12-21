@@ -20,6 +20,7 @@ namespace TransportSimulatorGUI
         Stopwatch sw = new Stopwatch();
         DateTime startTime;
         bool runningFlag;
+        int numberOfVehicles;
         private FuelControlWindow fuelControlWindow = new FuelControlWindow();
         private InformationWindow informationWindow = new InformationWindow();
         private VehicleControlWindow vehicleControlWindow = new VehicleControlWindow();
@@ -115,6 +116,7 @@ namespace TransportSimulatorGUI
         {
             InitializeComponent();
             comboBox1.SelectedIndex = 0;
+            numberOfVehicles = 0;
             simulationTimer.Tick += new EventHandler(simulationTimer_Tick);
             images[0] = global::TransportSimulatorGUI.Properties.Resources.trolleybusPicture;
             images[1] = global::TransportSimulatorGUI.Properties.Resources.carPicture;
@@ -136,7 +138,8 @@ namespace TransportSimulatorGUI
         {
             this.UpdatePositions();
             //toolStripStatusLabel1.Text = "Simulation time: "+DateTime.Now.Subtract(startTime).ToString("ss");  
-            toolStripStatusLabel1.Text = "Simulation time: " + sw.ElapsedMilliseconds + " ms ";
+            toolStripStatusLabel1.Text = "Active vehicles on road: " + numberOfVehicles + ", time inside: " + ((sw.ElapsedMilliseconds / (3600 * Road.timeCoefficient)) - (sw.ElapsedMilliseconds / (3600 * Road.timeCoefficient))%0.1) + " hours. Elapsed time: " + sw.ElapsedMilliseconds + " ms";
+            numberOfVehicles = 0;
         }
         List<int> positionToPixels(List<double> positions)
         {
@@ -145,8 +148,17 @@ namespace TransportSimulatorGUI
                 pixels.Add((int)(Math.Round((Road.distanceCoefficient * pos), MidpointRounding.AwayFromZero)));
             return pixels;
         }
-        private void UpdatePositions()
+        public void finishSimulation()
         {
+            addToDataGridView("Main Window", "Simulatuion is finished");
+            mainController.stopSimulation();
+            toolStripButton4.Enabled = false;
+            toolStripButton5.Enabled = false;
+            sw.Stop();
+            simulationTimer.Stop();
+        }
+        private void UpdatePositions()
+        {            
             List<double> positions = new List<double>();
             foreach (TrafficLane tl in mainController.road.lanes)
             {
@@ -155,15 +167,17 @@ namespace TransportSimulatorGUI
                     positions.Add(tl.position);
                     if (tl.vehicle != null)
                     {
+                        numberOfVehicles++;
                         if (tl.position - tl.vehicle.lastContact >= 50)
                         {
                             addToDataGridView(tl.vehicle.name, "Current location = " + (int)(tl.position));
-                            tl.vehicle.lastContact = (int)tl.position;
+                            tl.vehicle.lastContact = (int)tl.position;                            
                         }
                         if ((tl.vehicle.curSpeed <= 0.1) && (tl.vehicle.finishRegistered != true))
                         {
                             addToDataGridView(tl.vehicle.name, "Finished at location = " + Math.Round(tl.position));
                             tl.vehicle.finishRegistered = true;
+                            tl.vehicle = null;
                         }
                     }
                 }
@@ -174,6 +188,10 @@ namespace TransportSimulatorGUI
             vehiclePicture3.Left = pixels[2];
             vehiclePicture4.Left = pixels[3];
             vehiclePicture5.Left = pixels[4];
+            if (numberOfVehicles == 0)
+            {
+                this.finishSimulation();
+            }
         }
         public void setController(MainController mainController)
         {
@@ -234,17 +252,10 @@ namespace TransportSimulatorGUI
         }
         public void addToDataGridView(string source, string message)
         {
-            //try
-            //{
             DataGridViewRow row = (DataGridViewRow)dataGridView1.Rows[0].Clone();
             row.Cells[0].Value = source;
             row.Cells[1].Value = message;
             dataGridView1.Rows.Add(row);
-            /*}
-            catch (Exception)
-            {
-                //MessageBox.Show("Please stop the simulation before changing tab", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);           
-            }*/
         }
         private void toolStripButton2_Click(object sender, EventArgs e)
         {
@@ -411,10 +422,6 @@ namespace TransportSimulatorGUI
         public void vehicleStopped(String vehicle_name, double stop_location)
         {
             addToDataGridView(vehicle_name, "Finished at location = " + Math.Round(stop_location));
-        }
-        public void simulationFinished()
-        {
-            addToDataGridView("Main Window", "Simulatuion is finished");
         }
     }
 }

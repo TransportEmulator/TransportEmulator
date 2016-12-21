@@ -160,7 +160,7 @@ namespace TransportSimulatorController
                     if ((tl.vehicle != null) && (runLanes.Contains(tl)))
                     {
                         Thread.Sleep((int)(Road.UPDATE_DELAY_MSEC));
-                        if (tl.position + tl.vehicle.curSpeed * Road.timeCoefficient >= 500 || tl.vehicle.maxDistance <= tl.position)
+                        if (tl.position + tl.vehicle.curSpeed * Road.timeCoefficient >= Road.ROAD_LENGTH_KM || tl.vehicle.maxDistance <= tl.position)
                         {
                             runLanes.Remove(tl);
                             tl.vehicle.curSpeed = 0;
@@ -175,7 +175,6 @@ namespace TransportSimulatorController
                 }
             }
             running = false;
-            mainView.simulationFinished();
         }
 
         public void stopSimulation()
@@ -236,7 +235,6 @@ namespace TransportSimulatorController
         public void reinitialize()
         {
             road = new Road();
-            //vehicleList = new List<Vehicle>();
         }
     }
 }
