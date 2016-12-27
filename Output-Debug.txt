@@ -1,23 +1,4 @@
-﻿'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms\v4.0_4.0.0.0__b77a5c561934e089\System.Windows.Forms.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Drawing\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Drawing.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.HostingProcess.Utilities.Sync\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.HostingProcess.Utilities.Sync.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.VisualStudio.Debugger.Runtime\14.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Debugger.Runtime.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\GitHub\TransportEmulator\TransportSimulatorGUI\bin\Debug\TransportSimulatorGUI.vshost.exe'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Windows.Forms.DataVisualization\v4.0_4.0.0.0__31bf3856ad364e35\System.Windows.Forms.DataVisualization.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Data.DataSetExtensions\v4.0_4.0.0.0__b77a5c561934e089\System.Data.DataSetExtensions.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Microsoft.CSharp\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.CSharp.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Deployment\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Deployment.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Net.Http\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Net.Http.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
-The thread 0x29f0 has exited with code 0 (0x0).
-The thread 0x3634 has exited with code 0 (0x0).
-The thread 0x179c has exited with code 0 (0x0).
+﻿The thread 0x2b1c has exited with code 0 (0x0).
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\GitHub\TransportEmulator\TransportSimulatorGUI\bin\Debug\TransportSimulatorGUI.exe'. Symbols loaded.
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\GitHub\TransportEmulator\TransportSimulatorGUI\bin\Debug\TransportSimulatorController.dll'. Symbols loaded.
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\Accessibility\v4.0_4.0.0.0__b03f5f7f11d50a3a\Accessibility.dll'. Cannot find or open the PDB file.
@@ -25,58 +6,51 @@ The thread 0x179c has exited with code 0 (0x0).
 'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
 Filter:'--Any--'
 Traffic Lanes: 0
-SELECTED:carTab,DefaultVehicle1,18,0,20
-SELECTED:carTab,DefaultVehicle2,18,0,20
-SELECTED:carTab,DefaultVehicle3,18,0,20
-SELECTED:carTab,DefaultVehicle4,18,0,20
-SELECTED:carTab,DefaultVehicle5,18,0,20
-SELECTED:carTab,DefaultVehicle6,18,0,20
-DefaultVehicle2 MaxDistance=100
-DefaultVehicle3 MaxDistance=100
-DefaultVehicle4 MaxDistance=100
-DefaultVehicle5 MaxDistance=100
-DefaultVehicle6 MaxDistance=100
-DefaultVehicle2 Acceleration=3.99
-DefaultVehicle3 Acceleration=3.99
-DefaultVehicle4 Acceleration=3.99
-DefaultVehicle5 Acceleration=3.99
-DefaultVehicle6 Acceleration=3.99
+SELECTED:carTab,DefaultVehicle1,18,0,100
+SELECTED:bikeTab,DefaultVehicle2,18,0,100
+DefaultVehicle1 MaxDistance=500
+DefaultVehicle2 MaxDistance=500
+DefaultVehicle1 Acceleration=19.998
+DefaultVehicle2 Acceleration=19.998
+Traffic Lanes: 0
+vehicleInListDefaultVehicle1
+vehicleInListDefaultVehicle2
+Car Car
+Car Bike
+Empty lane 
+Empty lane 
+Empty lane 
+TimeCoeff0.0138888888888889
+TimeCoeff0.0138888888888889
+TimeCoeff0.0138888888888889
+Filter:'DefaultVehicle1'
+The thread 0x377c has exited with code 0 (0x0).
+The thread 0x4b0 has exited with code 0 (0x0).
+The thread 0x18a4 has exited with code 0 (0x0).
+'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\GitHub\TransportEmulator\TransportSimulatorGUI\bin\Debug\TransportSimulatorLogger.dll'. Symbols loaded.
+'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\Microsoft.Office.Interop.Word\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Word.dll'. Module was built without symbols.
+'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\assembly\GAC_MSIL\office\15.0.0.0__71e9bce111e9429c\office.dll'. Module was built without symbols.
+'TransportSimulatorGUI.vshost.exe' (CLR v4.0.30319: TransportSimulatorGUI.vshost.exe): Loaded 'C:\WINDOWS\Microsoft.Net\assembly\GAC_32\CustomMarshalers\v4.0_4.0.0.0__b03f5f7f11d50a3a\CustomMarshalers.dll'. Skipped loading symbols. Module is optimized and the debugger option 'Just My Code' is enabled.
+Traffic Lanes: 0
+Trying to delete:DefaultVehicle1
+DeletedDefaultVehicle1
+SELECTED:tankTab,DefaultVehicle3,18,0,100
+Trying to delete:DefaultVehicle1
+SELECTED:tankTab,DefaultVehicle4,18,0,100
+DefaultVehicle2 MaxDistance=500
+DefaultVehicle4 MaxDistance=0
+DefaultVehicle2 Acceleration=19.998
+DefaultVehicle4 Acceleration=199.98
 Traffic Lanes: 0
 vehicleInListDefaultVehicle2
-vehicleInListDefaultVehicle3
 vehicleInListDefaultVehicle4
-vehicleInListDefaultVehicle5
-vehicleInListDefaultVehicle6
-Car Car
-Car Car
-Car Car
-Car Car
-Car Car
-Traffic Lanes: 0
-Trying to delete:DefaultVehicle2
-DeletedDefaultVehicle2
-Trying to delete:DefaultVehicle3
-DeletedDefaultVehicle3
-Trying to delete:DefaultVehicle4
-DeletedDefaultVehicle4
-Trying to delete:DefaultVehicle5
-DeletedDefaultVehicle5
-Trying to delete:DefaultVehicle6
-DeletedDefaultVehicle6
-Traffic Lanes: 0
+Car Tank
+Car Bike
 Empty lane 
 Empty lane 
 Empty lane 
-Empty lane 
-Empty lane 
-Traffic Lanes: 0
-Traffic Lanes: 0
-Empty lane 
-Empty lane 
-Empty lane 
-Empty lane 
-Empty lane 
-The thread 0x12cc has exited with code 0 (0x0).
-The thread 0x2ae4 has exited with code 0 (0x0).
-The program '[14724] TransportSimulatorGUI.vshost.exe: Program Trace' has exited with code 0 (0x0).
-The program '[14724] TransportSimulatorGUI.vshost.exe' has exited with code 0 (0x0).
+TimeCoeff0.0138888888888889
+The thread 0x1688 has exited with code 0 (0x0).
+The thread 0x2864 has exited with code 0 (0x0).
+The program '[13188] TransportSimulatorGUI.vshost.exe: Program Trace' has exited with code 0 (0x0).
+The program '[13188] TransportSimulatorGUI.vshost.exe' has exited with code 0 (0x0).
